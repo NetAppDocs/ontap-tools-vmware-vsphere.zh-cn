@@ -1,0 +1,62 @@
+---
+permalink: configure/task_enable_datastore_mounting_across_different_subnets.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您使用 iSCSI 或 NFS ，并且 ESXi 主机和存储系统的子网不同，则必须修改适用于 VMware vSphere 首选项文件的 ONTAP ® 工具。如果不修改首选项文件，则数据存储库配置将失败，因为 Virtual Storage Console （ VSC\ ）无法挂载数据存储库。 
+---
+= 在不同子网之间启用数据存储库挂载
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您使用 iSCSI 或 NFS ，并且 ESXi 主机和存储系统的子网不同，则必须修改适用于 VMware vSphere 首选项文件的 ONTAP ® 工具。如果不修改首选项文件，则数据存储库配置将失败，因为 Virtual Storage Console （ VSC ）无法挂载数据存储库。
+
+* 关于此任务 *
+
+如果数据存储库配置失败， VSC 将记录以下错误消息：
+
+`无法继续。交叉引用控制器上的内核 IP 地址和地址时未找到 IP 地址。
+
+找不到与这些主机的 NFS 挂载卷匹配的网络。`
+
+* 步骤 *
+
+. 登录到 vCenter Server 实例。
+. 使用统一设备虚拟机启动维护控制台。
++
+link:reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html["适用于 VMware vSphere 的 ONTAP 工具的维护控制台"]
+
+. 输入 `4` 以访问 Support and Diagnostics 选项。
+. 输入 `2` 以访问访问诊断 Shell 选项。
+. 输入 `vi /opt/netapp/vscserver/etc/kamino/kaminoprefs.xml` 以更新 `kaminoprefs.xml` 文件。
+. 更新 `kaminoprefs.xml` 文件。
++
+|===
+
+
+| * 如果使用 ...* | * 执行此操作 ...* 
+
+
+ a| 
+iSCSI
+ a| 
+将输入项 `default.allow.iscsi.mount.networks` 的值从 ALL 更改为 ESXi 主机网络的值。
+
+
+
+ a| 
+NFS
+ a| 
+将输入项 `default.allow.nfs.mount.networks` 的值从 ALL 更改为 ESXi 主机网络的值。
+
+|===
++
+首选项文件包含这些输入项的示例值。
+
++
+
+NOTE: 值 "`所有` " 并不表示所有网络。通过 "`all` " 值，可以使用主机和存储系统之间所有匹配的网络来挂载数据存储库。指定主机网络时，只能在指定子网之间挂载。
+
+. 保存并关闭 `kaminoprefs.xml` 文件。
+

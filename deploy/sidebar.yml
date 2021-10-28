@@ -1,0 +1,36 @@
+---
+section: deploy
+title: 部署和升级 ONTAP 工具
+entries:
+- title: 适用于 VMware vSphere 的 ONTAP 工具的新用户部署工作流
+  url: "/deploy/concept_installation_workflow_for_new_users.html"
+- title: 适用于现有 ONTAP 工具用户的部署工作流
+  url: "/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html"
+- title: 部署 ONTAP 工具的要求
+  entries:
+  - title: VSC 的端口要求
+    url: "/deploy/reference_port_requirements_for_vsc.html"
+  - title: ONTAP 工具的空间和规模估算要求
+    url: "/deploy/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html"
+  - title: ONTAP 工具支持的存储系统，许可和应用程序
+    url: "/deploy/concept_supported_storage_system_and_applications.html"
+  - title: 部署 ONTAP 工具的注意事项
+    url: "/deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html"
+- title: 部署 ONTAP 工具
+  entries:
+  - title: 如何下载 ONTAP 工具
+    url: "/deploy/concept_how_to_download_ontap_tools.html"
+  - title: 如何部署 ONTAP 工具
+    url: "/deploy/task_deploy_ontap_tools.html"
+  - title: 启用 VASA Provider 以配置虚拟数据存储库
+    url: "/deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html"
+  - title: 安装 NFS VAAI 插件
+    url: "/deploy/task_install_the_nfs_vaai_plug_in.html"
+  - title: 清除 vSphere 缓存的已下载插件软件包
+    url: "/deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html"
+- title: 升级 ONTAP 工具
+  entries:
+  - title: 升级到最新版本的 ONTAP 工具
+    url: "/deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html"
+  - title: 升级 Storage Replication Adapter
+    url: "/deploy/task_upgrade_storage_replication_adapter.html"

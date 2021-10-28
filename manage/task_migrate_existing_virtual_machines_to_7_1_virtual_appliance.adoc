@@ -1,0 +1,29 @@
+---
+permalink: manage/task_migrate_virtual_machines_with_older_storage_capability_profiles.html 
+sidebar: sidebar 
+keywords:  
+summary: '如果您使用的是适用于 VMware vSphere 的最新版本 ONTAP 工具， 然后，应将配置了 "MaxThroughput MBps" 或 "MaxThroughput IOPS" QoS 指标的虚拟机迁移到使用最新版本 ONTAP 工具的 "Max IOPS" QoS 指标配置的新 VVol 数据存储库。' 
+---
+= 迁移具有较旧存储功能配置文件的虚拟机
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您使用的是适用于 VMware vSphere 的最新版本 ONTAP 工具， 然后，您应将使用 `MaxThroughput MBps` 或 `MaxThroughput IOPS` QoS 指标配置的虚拟机迁移到使用最新版本 ONTAP 工具的 `Mmax IOPS` QoS 指标配置的新 VVol 数据存储库。
+
+* 关于此任务 *
+
+借助最新版本的 ONTAP 工具，您可以为每个虚拟机或虚拟机磁盘（ VMDK ）配置 QoS 指标。QoS 指标先前应用于 ONTAP FlexVol 卷级别，并由该 FlexVol 卷上配置的所有虚拟机或 VMDK 共享。
+
+从 ONTAP 工具 7.2 版开始，一个虚拟机的 QoS 指标不会与其他虚拟机共享。
+
+
+NOTE: 您不能修改现有虚拟机存储策略，因为虚拟机可能会变得不合规。
+
+* 步骤 *
+
+. 使用具有所需 `Max IOPS` 值的新存储功能配置文件创建 VVOL 数据存储库。
+. 创建 VM 存储策略，然后将新的 VM 存储策略映射到新的存储功能配置文件。
+. 使用新的虚拟机存储策略将现有虚拟机迁移到新创建的 VVol 数据存储库。
+

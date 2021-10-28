@@ -1,0 +1,34 @@
+---
+permalink: configure/task_automatically_generating_scps.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过适用于 ONTAP 的 VASA Provider ，您可以自动为现有传统数据存储库生成存储功能配置文件。为数据存储库选择自动生成选项时， VASA Provider 会创建一个配置文件，其中包含该数据存储库使用的存储功能。 
+---
+= 自动生成存储功能配置文件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过适用于 ONTAP 的 VASA Provider ，您可以自动为现有传统数据存储库生成存储功能配置文件。为数据存储库选择自动生成选项时， VASA Provider 会创建一个配置文件，其中包含该数据存储库使用的存储功能。
+
+* 您需要的内容 *
+
+* 您必须已向 Virtual Storage Console （ VSC ）注册 VASA Provider 实例。
+* VSC 必须已发现您的存储。
+
+
+* 关于此任务 *
+
+创建存储功能配置文件后，您可以修改此配置文件以包括更多功能。创建存储功能配置文件向导可提供有关可包含在配置文件中的功能的信息。
+
+* 步骤 *
+
+. 在 ONTAP 工具主页中，单击 * 存储映射 * 。
+. 从可用列表中选择数据存储库。
+. 从操作菜单中，选择 * 自动生成 * 。
+. 自动生成过程完成后，刷新屏幕以查看有关新配置文件的信息。
++
+新配置文件将在关联配置文件列中列出。新配置文件的名称取决于配置文件中的资源。如果需要，您可以重命名配置文件。
+
+

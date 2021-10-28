@@ -1,0 +1,76 @@
+---
+permalink: deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html 
+sidebar: sidebar 
+keywords: Virtual Storage Console, Storage Replication Adapter 
+summary: 您可以按照此处提供的说明，从现有 9.7 设置原位升级到 ONTAP 工具的 9.8 版。 
+---
+= 升级到最新版本的 ONTAP 工具
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以按照此处提供的说明，从现有 9.7 设置原位升级到 ONTAP 工具的 9.8 版。
+
+* 您需要的内容 *
+
+* 您必须已下载适用于 ONTAP 工具 9.8 版的 _.ISO_ 文件。
+* 您必须至少预留 12 GB RAM ， ONTAP 工具才能在升级后以最佳状态运行。
+* 您必须清理 vSphere Client 浏览器缓存。
++
+link:../deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html["清除 vSphere 缓存的已下载插件软件包"]
+
+
+
+升级后，现有部署中 VASA Provider 的状态将保留下来。升级后，您应根据需要手动启用或禁用 VASA Provider 。但是，即使未使用 VMware 虚拟卷（ VVOL ），最好启用 VASA Provider ，因为它可以为传统数据存储库配置启用存储功能配置文件并发出存储警报。
+
+
+NOTE: 您只能从现有 9.7 版原位升级到 ONTAP 工具的 9.8 版。升级到 ONTAP 工具 9.7.1 版后，如果要使用 VVOL 复制，则需要再设置一个安装了 Site Recovery Manager （ SRM ）的 vCenter Server 和 ONTAP 工具。
+
+* 步骤 *
+
+. 将下载的 _.ISO_ 文件挂载到 ONTAP 工具：
++
+.. 单击 * 编辑设置 * > * DVD/CD-ROM 驱动器 * 。
+.. 从下拉列表中选择 * 数据存储 ISO 文件。
+.. 浏览并选择已下载的 _.ISO_ 文件，然后选中 * 启动时连接 * 复选框。
+
+
+. 访问已部署 ONTAP 工具的摘要选项卡。
+. 单击 *image:../media/launch_maintenance_console.gif[""]* 以启动维护控制台。
+. 在 `M菜单` 提示符处，为 * 系统配置 * 输入选项 `2` ，然后为 * 升级 * 输入选项 `8` 。
++
+升级完成后， ONTAP 工具将重新启动。ONTAP 工具会使用与升级前相同的 IP 地址注册到 vCenter Server 。
+
+. 如果要使用 IPv6 地址向 vCenter Server 注册 ONTAP 工具，则必须执行以下操作：
++
+.. 取消注册 ONTAP 工具。
+.. 使用 * 注册 * 页面将 ONTAP 工具的 IPv6 地址注册到 vCenter Server 。
+.. 注册后重新生成 VSC 和 VASA Provider 证书。
+
+
++
+
+IMPORTANT: 只有 vCenter Server 6.7 及更高版本才支持 IPv6 。
+
+. 注销并重新登录到 vSphere Client 以查看已部署的 ONTAP 工具。
++
+.. 从现有 vSphere Web Client 或 vSphere Client 注销并关闭窗口。
+.. 登录到 vSphere Client 。
++
+在 vSphere Client 中更新此插件可能需要几分钟的时间。
+
+
+
+
+
+[NOTE]
+====
+* 如果从 ONTAP 工具 7.0 版升级到 ONTAP 工具的最新版本，则必须先创建存储功能配置文件，然后再尝试编辑现有虚拟机存储策略，否则可能会收到错误，指出值不正确或缺失。
+* 如果从早期版本的 ONTAP 工具升级到 9.8 版，则会发现 `vvol.properties 文件中缺少 `vvol.rebalance.threshold` 属性。
++
+属性的默认值设置为 85% 。
+
+
+
+====

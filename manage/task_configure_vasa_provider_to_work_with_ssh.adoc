@@ -1,0 +1,26 @@
+---
+permalink: manage/task_configure_vasa_provider_to_work_with_ssh.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以通过配置 ONTAP 工具来设置 VASA Provider 以使用 SSH 进行安全访问。 
+---
+= 将 VASA Provider 配置为使用 SSH
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过配置 ONTAP 工具来设置 VASA Provider 以使用 SSH 进行安全访问。
+
+* 关于此任务 *
+
+配置 SSH 时，您必须以维护用户身份登录。这是因为已禁用对 VASA Provider 的 root 访问。如果您使用其他登录凭据，则无法使用 SSH 访问 VASA Provider 。
+
+* 步骤 *
+
+. 从 vCenter Server 中，打开一个控制台，访问 ONTAP 工具。
+. 以维护用户身份登录。
+. 输入 `3` 以选择 * 系统配置 * 。
+. 输入 `6` 以选择 * 启用 SSH 访问 * 。
+. 在确认对话框中输入 `y` 。
+

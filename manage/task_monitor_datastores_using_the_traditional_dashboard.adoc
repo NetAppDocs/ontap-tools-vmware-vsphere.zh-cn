@@ -1,0 +1,52 @@
+---
+permalink: manage/task_monitor_datastores_using_the_traditional_dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用 ONTAP 工具的传统信息板监控传统数据存储库和虚拟机。通过信息板数据，您可以分析数据存储库使用情况并采取更正操作，以防止虚拟机受到与空间相关的限制。 
+---
+= 使用传统信息板分析性能数据
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 ONTAP 工具的传统信息板监控传统数据存储库和虚拟机。通过信息板数据，您可以分析数据存储库使用情况并采取更正操作，以防止虚拟机受到与空间相关的限制。
+
+* 您需要的内容 *
+
+您应在配置存储 I/O 控制对话框中选择 * 启用存储 I/O 控制和统计信息收集 * 或 * 禁用存储 I/O 控制但启用统计信息收集 * 选项。只有在从 VMware 获得 Enterprise Plus 许可证后，才能启用存储 I/O 控制。
+
+https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.resmgmt.doc/GUID-BB5D9BAB-9E0E-4204-A76A-54634CD8AD51.html["VMware vSphere 文档：启用存储 I/O 控制"]
+
+传统信息板可显示从 vCenter Server 获取的 IOPS ，已利用空间，延迟和已使用容量指标。ONTAP 可为传统信息板提供聚合空间节省指标。您可以查看特定聚合的空间节省。通过这些性能参数，您可以确定虚拟环境中的性能瓶颈，并采取更正措施来解决这些问题。
+
+
+NOTE: 直接存储虚拟机（ SVM ）上配置的 FlexGroup 数据存储库不支持文件监控。
+
+通过 ONTAP 工具的传统信息板，您可以查看 NFS 数据存储库或 VMFS 数据存储库。您可以单击某个数据存储库以导航到 vCenter Server 实例提供的数据存储库详细信息视图，以查看和修复 vCenter Server 中数据存储库的任何问题。
+
+* 步骤 *
+
+. 在 vSphere Client 主页页面中，单击 * 适用于 VMware vSphere 的 ONTAP Tools* 。
+. 使用 vCenter Server 下拉菜单选择所需的 vCenter Server 以查看数据存储库。
+. 单击 * 传统信息板 * 。
++
+数据存储库 portlet 可提供以下详细信息：
+
++
+** vCenter Server 实例中由 VSC 管理的传统数据存储库的数量及其性能指标
+** 根据可修改的资源使用情况和性能参数排名前五位的数据存储库，如果需要，您可以根据已用空间， IOPS 或延迟以及所需顺序更改数据存储库列表。
+
+
++
+虚拟机 portlet 可提供以下详细信息：
+
++
+** 在 vCenter Server 中使用 NetApp 数据存储库的虚拟机数量
+** 根据已提交容量，延迟， IOPS ，吞吐量和正常运行时间排名前五位的虚拟机
++
+虚拟机 portlet 中的 IOPS 和吞吐量数据仅适用于在 FlexGroup 支持的卷上创建的数据存储库。
+
+
+
+

@@ -1,0 +1,33 @@
+---
+permalink: protect/task_configure_sra_on_srm_appliance.html 
+sidebar: sidebar 
+keywords:  
+summary: 部署 SRM 设备后，您应在 SRM 设备上配置 SRA 。成功配置 SRA 后， SRM 设备便可与 SRA 进行通信以进行灾难恢复管理。您应将 ONTAP 工具凭据（ IP 地址和管理员密码）存储在 SRM 设备中，以便在 SRM 设备和 SRA 之间进行通信。 
+---
+= 在 SRM 设备上配置 SRA
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+部署 SRM 设备后，您应在 SRM 设备上配置 SRA 。成功配置 SRA 后， SRM 设备便可与 SRA 进行通信以进行灾难恢复管理。您应将 ONTAP 工具凭据（ IP 地址和管理员密码）存储在 SRM 设备中，以便在 SRM 设备和 SRA 之间进行通信。
+
+* 您需要的内容 *
+
+您应已将 _tar.gz_ 文件上传到 SRM 设备。
+
+* 关于此任务 *
+
+在 SRM 设备上配置 SRA 会将 SRA 凭据存储在 SRM 设备中。
+
+* 步骤 *
+
+. 使用管理员帐户使用 putty 登录到 SRM 设备。
+. 使用命令 `su root` 切换到 root 用户
+. 在日志位置输入命令以获取 SRA Docker `ps -l` 使用的 Docker ID
+. 要登录到此容器 ID ，请输入命令 Docker `exec -it -u SRM <container id> sh`
+. 使用以下命令为 SRM 配置 ONTAP 工具 IP 地址和密码： `perl command.pl -i <va-ip> administrator <va-password>``
++
+此时将显示一条成功消息，确认存储凭据已存储。SRA 可以使用提供的 IP 地址，端口和凭据与 SRA 服务器进行通信。
+
+

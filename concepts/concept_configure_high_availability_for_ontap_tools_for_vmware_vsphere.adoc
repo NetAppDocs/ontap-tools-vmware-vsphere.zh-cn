@@ -1,0 +1,58 @@
+---
+permalink: concepts/concept_configure_high_availability_for_ontap_tools_for_vmware_vsphere.html 
+sidebar: sidebar 
+keywords:  
+summary: ONTAP 工具支持高可用性 \ （ HA\ ）配置，以帮助在发生故障时使 ONTAP 工具能够无中断地运行。 
+---
+= 为 ONTAP 工具配置高可用性
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 工具支持高可用性（ High-Availability ， HA ）配置，有助于在发生故障时确保 ONTAP 工具无中断运行。
+
+ONTAP 工具依靠 VMware vSphere 高可用性（ HA ）功能和 vSphere 容错（ FT ）功能来提供高可用性。通过高可用性（ High-Availability ， HA ）解决方案，可以从以下原因导致的中断中快速恢复：
+
+* 主机故障
+* 网络故障
+* 虚拟机故障（子操作系统故障）
+* 应用程序（ ONTAP 工具）崩溃
+
+
+要使 ONTAP 工具提供高可用性，无需进行其他配置。只能根据 vCenter Server 和 ESXi 主机的要求为其配置 VMware vSphere HA 功能或 vSphere FT 功能。HA 和 FT 都需要集群主机以及共享存储。FT 具有其他要求和限制。
+
+除了 VMware vSphere HA 解决方案和 vSphere FT 解决方案之外， ONTAP 工具还有助于保持 ONTAP 工具服务始终运行。ONTAP 工具 watchdog 进程会定期监控所有三项服务，并在检测到任何类型的故障时自动重新启动这些服务。这有助于防止应用程序出现故障。
+
+
+NOTE: ONTAP 工具不支持 vCenter HA 。
+
+
+
+== VMware vSphere HA
+
+您可以在 vSphere 环境中配置适用于 VMware vSphere 的 ONTAP 工具，以实现高可用性（ HA ）。VMware HA 功能可在虚拟环境中提供故障转移保护，防止出现硬件故障和操作系统故障。
+
+VMware HA 功能可监控虚拟机以检测操作系统故障和硬件故障。检测到故障后， VMware HA 功能会在资源池中的其他物理服务器上重新启动虚拟机。检测到服务器故障时，不需要手动干预。
+
+用于配置 VMware HA 的操作步骤取决于 vCenter Server 的版本。例如，您可以使用以下参考链接并选择所需的 vCenter Server 版本，以查看配置 VMware HA 的步骤。
+
+https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-5432CA24-14F1-44E3-87FB-61D937831CF6.html["VMware vSphere 文档：创建和使用 vSphere HA 集群"]
+
+
+
+== VMware vSphere 容错
+
+VMware vSphere Fault Tolerance （ FT ）功能可在更高级别提供高可用性（ HA ），并可在不丢失任何数据或连接的情况下保护虚拟机。您必须在 vCenter Server 中启用或禁用 vSphere FT for ONTAP 工具。
+
+确保您的 vSphere 许可证支持 FT 以及环境中 ONTAP 工具所需的 vCPU 数量（至少 2 个 vCPU ；对于大型环境，至少 4 个 vCPU ）。
+
+通过 vSphere FT ，即使服务器出现故障，虚拟机也可以持续运行。在虚拟机上启用 vSphere FT 后，系统会在分布式资源计划程序（ DRS ）选择的另一主机（二级虚拟机）上自动创建主虚拟机的副本。如果未启用 DRS ，则会从可用主机中选择目标主机。vSphere FT 会在同步模式下运行主虚拟机和二级虚拟机，每个虚拟机都会将主虚拟机的执行状态镜像到二级虚拟机。
+
+如果出现硬件故障，导致主虚拟机发生故障，则二级虚拟机会立即从主虚拟机停止的位置进行接管。二级虚拟机将继续运行，而不会丢失任何网络连接，事务或数据。
+
+在为 vCenter Server 实例配置 vSphere FT 时，您的系统必须满足 CPU 要求，虚拟机限制要求和许可要求。
+
+用于配置 HA 的操作步骤取决于 vCenter Server 的版本。例如，您可以使用以下参考链接并选择所需的 vCenter Server 版本，以查看配置 HA 的步骤。
+
+https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-57929CF0-DA9B-407A-BF2E-E7B72708D825.html["VMware vSphere 文档：容错要求，限制和许可"]

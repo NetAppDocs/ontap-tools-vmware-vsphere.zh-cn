@@ -1,0 +1,66 @@
+---
+settings:
+  name: ONTAP Tools for VMware vSphere
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: true
+    langs: zh-cn,us-en,ja-jp
+sidebar:
+  entries:
+  - title: 适用于 VMware vSphere 的 ONTAP 工具文档
+    url: "/index.html"
+  - title: 发行说明
+    url: "/release_notes.html"
+  - section: concepts
+  - section: deploy
+  - section: configure
+  - section: protect
+  - section: manage
+  - title: 法律声明
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: 入门
+    links:
+    - title: 发行说明
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2875589
+    - title: 了解适用于 VMware vSphere 的 ONTAP 工具
+      url: "/concepts/concept_virtual_storage_console_overview.html"
+    - title: 部署 ONTAP 工具
+      url: "/deploy/task_deploy_ontap_tools.html"
+    - title: 升级 ONTAP 工具
+      url: "/deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html"
+  - title: 使用 ONTAP 工具
+    links:
+    - title: 配置传统数据存储库
+      url: "/configure/task_provision_datastores.html"
+    - title: 配置 VVOL 数据存储库
+      url: "/configure/task_provision_vvols_datastores.html"
+    - title: 配置基于角色的访问控制
+      url: "/concepts/concept_vcenter_server_role_based_access_control_features_in_vsc_for_vmware_vsphere.html"
+    - title: 配置远程诊断
+      url: "/manage/task_configure_vasa_provider_to_use_ssh_for_remote_diag_access.html"
+    - title: 配置高可用性
+      url: "/concepts/concept_configure_high_availability_for_ontap_tools_for_vmware_vsphere.html"
+  - title: 保护和管理数据存储库
+    links:
+    - title: 保护数据存储库
+      url: "/protect/task_enable_storage_replication_adapter.html"
+    - title: 保护虚拟机
+      url: "/protect/concept_configure_replication_for_vvols_datastore.html"
+    - title: 监控传统数据存储库和虚拟机
+      url: "/manage/task_monitor_datastores_using_the_traditional_dashboard.html"
+    - title: 监控 VVOL 数据存储库和虚拟机
+      url: "/manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html"
+  - title: 更多资源
+    links:
+    - title: 适用于 VMware 的早期版本 ONTAP 工具的文档
+      url: https://docs.netapp.com/vapp-98/index.jsp?topic=%2Fcom.netapp.ndc.vapp-vers%2FGUID-DEB0FBD4-89B8-4EA1-98BF-685190F79086.html
+    - title: NetApp 知识库— ONTAP 工具
+      url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/VSC_and_VASA_Provider
+    - title: NetApp 导入实用程序—视频
+      url: https://www.youtube.com/watch?v=CEQmIEzNVfA
+    - title: NetApp 社区— ONTAP 工具
+      url: https://community.netapp.com/t5/VMware-Solutions-Discussions/bd-p/vmware-solutions-discussions

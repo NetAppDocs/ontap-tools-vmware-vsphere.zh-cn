@@ -1,0 +1,57 @@
+---
+permalink: deploy/reference_deployment_customization_requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: 在自定义部署 ONTAP 工具时，您必须考虑一些限制。 
+---
+= 部署自定义注意事项
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在自定义部署 ONTAP 工具时，您必须考虑一些限制。
+
+
+
+== 设备管理员用户密码
+
+管理员密码不得使用任何空格。
+
+
+
+== 设备维护控制台凭据
+
+您必须使用 `m部分` 的用户名访问维护控制台。您可以在部署期间为 " `m熟悉` " 用户设置密码。您可以使用 ONTAP 工具维护控制台的应用程序配置菜单更改密码。
+
+
+
+== vCenter Server 管理员凭据
+
+您可以在部署 ONTAP 工具时设置 vCenter Server 的管理员凭据。
+
+如果 vCenter Server 的密码发生更改，则可以使用以下 URL 更新管理员的密码： \https://<IP>:8143/Register.html ，其中 IP 地址是您在部署期间提供的 ONTAP 工具的 IP 地址。
+
+
+
+== vCenter Server IP 地址
+
+* 您应提供要将 ONTAP 工具注册到的 vCenter Server 实例的 IP 地址（ IPv4 或 IPv6 ）。
++
+生成的 VSC 和 VASA 证书类型取决于您在部署期间提供的 IP 地址（ IPv4 或 IPv6 ）。在部署 ONTAP 工具时，如果尚未输入任何静态 IP 详细信息和 DHCP ，则网络将同时提供 IPv4 和 IPv6 地址。
+
+* 用于向 vCenter Server 注册的 ONTAP 工具 IP 地址取决于在部署向导中输入的 vCenter Server IP 地址类型（ IPv4 或 IPv6 ）。
++
+VSC 和 VASA 证书都将使用在 vCenter Server 注册期间使用的相同类型的 IP 地址生成。
+
++
+
+NOTE: ：只有 vCenter Server 6.7 及更高版本才支持 IPv6 。
+
+
+
+
+
+== 设备网络属性
+
+如果不使用 DHCP ，请为 ONTAP 工具和其他网络参数指定有效的 DNS 主机名（非限定）以及静态 IP 地址。要正确安装和操作，所有这些参数都是必需的。

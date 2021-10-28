@@ -1,0 +1,28 @@
+---
+permalink: deploy/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html 
+sidebar: sidebar 
+keywords: Virtual Storage Console,Storage Replication Adapter 
+summary: 在为 VMware vSphere 部署 ONTAP 工具之前，您应熟悉部署软件包的空间要求以及一些基本主机系统要求。 
+---
+= ONTAP 工具的空间和规模估算要求
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在为 VMware vSphere 部署 ONTAP 工具之前，您应熟悉部署软件包的空间要求以及一些基本主机系统要求。
+
+* * 安装软件包空间要求 *
++
+** 2.1 GB 用于精简配置安装
+** 54.0 GB 用于厚配置安装
+
+
+* * 主机系统规模估算要求 *
++
+** ESXi 6.5U3 或更高版本
+** 建议内存： 12 GB RAM
+** 建议的 CPU ： 2
+
+
+

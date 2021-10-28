@@ -1,0 +1,101 @@
+---
+permalink: deploy/task_deploy_ontap_tools.html 
+sidebar: sidebar 
+keywords:  
+summary: 您应在环境中部署 ONTAP 工具并指定所需的参数，以便能够使用此设备。 
+---
+= 如何部署 ONTAP 工具
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您应在环境中部署 ONTAP 工具并指定所需的参数，以便能够使用此设备。
+
+* 您需要的内容 *
+
+* 您必须运行受支持的 vCenter Server 版本。
++
+
+NOTE: 可以将 ONTAP 工具注册到 vCenter Server 的 Windows 部署或 VMware vCenter Server 虚拟设备（ vCSA ）部署中。
+
++
+https://mysupport.netapp.com/matrix/imt.jsp?components=97563;&solution=56&isHWU&src=IMT["互操作性表工具： VSC 9.7"]
+
+* 您必须已配置和设置 vCenter Server 环境。
+* 您必须已为虚拟机设置 ESXi 主机。
+* 您必须已下载 _.ova_ 文件。
+* 您必须具有 vCenter Server 实例的管理员登录凭据。
+* 您应已注销并关闭 vSphere Client 的所有浏览器会话，并删除浏览器缓存，以避免在部署 ONTAP 工具期间出现任何浏览器缓存问题描述。
++
+link:../deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html["清除 vSphere 缓存的已下载插件软件包"]
+
+* 您必须已启用 Internet 控制消息协议（ Internet Control Message Protocol ， ICMP ）。
++
+如果禁用 ICMP ，则 ONTAP 工具的初始配置将失败，并且 VSC 在部署后无法启动 VSC 和 VASA Provider 服务。您必须在部署后手动启用 VSC 和 VASA Provider 服务。
+
+
+
+* 关于此任务 *
+
+如果要部署全新安装的 ONTAP 工具，则默认情况下会启用 VASA Provider 。但是，如果从早期版本的 ONTAP 工具升级，则 VASA Provider 的状态会保留下来，您可能需要手动启用 VASA Provider 。
+
+link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html["启用 VASA Provider 以配置虚拟数据存储库"]
+
+* 步骤 *
+
+. 登录到 vSphere Client 。
+. 选择 * 主页 * > * 主机和集群 * 。
+. 右键单击所需的数据中心，然后单击 * 部署 OVA 模板 * 。
+. 选择适当的方法为 ONTAP 工具提供部署文件，然后单击 * 下一步 * 。
++
+|===
+
+
+| * 位置 * | * 操作 * 
+
+
+ a| 
+URL
+ a| 
+提供 ONTAP 工具的 _.ova_ 文件的 URL 。
+
+
+
+ a| 
+文件夹
+ a| 
+从保存的位置为 ONTAP 工具选择 _.ova_ 文件。
+
+|===
+. 输入详细信息以自定义部署向导。
++
+请参见 link:../deploy/reference_deployment_customization_requirements.html["部署自定义注意事项"] 了解完整的详细信息。
+
+. 查看配置数据，然后单击 * 下一步 * 完成部署。
++
+在等待部署完成时，您可以从任务选项卡查看部署进度。
+
+. 启动 ONTAP Tools 虚拟机，然后打开运行 ONTAP 工具的虚拟机的控制台。
+. 在部署完成后，验证 ONTAP 工具是否正在运行。
+. 如果 ONTAP 工具未注册到任何 vCenter Server ，请使用 `` https://appliance_ip:8143/Register.html` 注册 VSC 实例。
+. 注销并重新登录到 vSphere Client 以查看已部署的 ONTAP 工具。
++
+在 vSphere Client 中更新此插件可能需要几分钟的时间。
+
++
+* 故障排除： * 如果登录后仍无法查看此插件，则必须清理 vSphere Client 缓存。
+
++
+link:../deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html["清除 vSphere 缓存的已下载插件软件包"]
+
+
+
+
+NOTE: 如果您使用的是 ONTAP 9.6 或更早版本，则要查看 VVOL 信息板，必须下载并安装 OnCommand API 服务。但是，对于 ONTAP 9.7 ，您不需要向 VASA Provider 注册 OnCommand API 服务。
+
+link:../deploy/task_register_oncommand_api_services_with_ONTAP_tools.html["向 ONTAP 工具注册 OnCommand API 服务"]
+
+* 相关信息 *
+
+https://kb.netapp.com/?title=Advice_and_Troubleshooting%2FData_Storage_Software%2FVirtual_Storage_Console_for_VMware_vSphere%2FError_during_fresh_deployment_of_virtual_appliance_for_VSC%252C_VASA_Provider%252C_and_SRA["全新部署 VSC ， VASA Provider 和 SRA 虚拟设备期间出错"]

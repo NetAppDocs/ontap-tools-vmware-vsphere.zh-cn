@@ -1,0 +1,27 @@
+---
+permalink: configure/task_assign_qos_policies.html 
+sidebar: sidebar 
+keywords:  
+summary: 配置 FlexGroup 数据存储库不支持为数据存储库分配存储功能配置文件。但是，您可以将 QoS 策略分配给在 FlexGroup 支持的数据存储库上创建的虚拟机。 
+---
+= 分配 QoS 策略
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+配置 FlexGroup 数据存储库不支持为数据存储库分配存储功能配置文件。但是，您可以将 QoS 策略分配给在 FlexGroup 支持的数据存储库上创建的虚拟机。
+
+* 关于此任务 *
+
+可以在虚拟机级别或数据存储库级别应用 QoS 策略。数据存储库需要使用 QoS 策略来配置吞吐量（最大和最小 IOPS ）阈值。在数据存储库上设置 QoS 时，此 QoS 将应用于驻留在数据存储库上的虚拟机，而不是 FlexGroup 卷上的虚拟机。但是，如果在数据存储库中的所有虚拟机上设置 QoS ，则会覆盖虚拟机的任何单个 QoS 设置。这仅适用于数据存储库中可用的虚拟机，而不适用于任何已迁移或添加的虚拟机。如果要对特定数据存储库中新添加或迁移的虚拟机应用 QoS ，则必须手动设置 QoS 值。
+
+
+NOTE: 您不能在数据存储库或虚拟机级别为直接 Storage VM 上配置的数据存储库应用 QoS 设置，因为 ONTAP 在 Storage VM 管理级别不支持 QoS 。
+
+* 步骤 *
+
+. 在 ONTAP 工具主页上，单击 * 菜单 * > * 主机和集群 * 。
+. 右键单击所需的数据存储库或虚拟机，然后单击 * NetApp ONTAP tools* > * 分配 QoS* 。
+. 在分配 QoS 对话框中，输入所需 IOPS 值的值，然后单击 * 应用 * 。
+

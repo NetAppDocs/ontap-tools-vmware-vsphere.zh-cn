@@ -1,0 +1,21 @@
+---
+permalink: protect/concept_configure_protected_and_recovery_site_resources.html 
+sidebar: sidebar 
+keywords:  
+summary: 您必须在两个站点上配置 VM 网络， ESXi 主机和文件夹等资源映射，以便能够将每个资源从受保护站点映射到恢复站点上的相应资源。 
+---
+= 配置受保护站点和恢复站点资源
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须在两个站点上配置 VM 网络， ESXi 主机和文件夹等资源映射，以便能够将每个资源从受保护站点映射到恢复站点上的相应资源。
+
+您必须完成以下资源配置：
+
+* 网络映射
+* 文件夹映射
+* 资源映射
+* 占位数据存储库
+

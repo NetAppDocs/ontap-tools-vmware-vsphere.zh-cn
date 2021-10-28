@@ -1,0 +1,50 @@
+---
+section: manage
+title: 管理 ONTAP 工具
+entries:
+- title: 管理数据存储库
+  entries:
+  - title: 在其他主机上挂载数据存储库
+    url: "/manage/task_mount_datastores_on_host.html"
+  - title: 调整数据存储库大小
+    url: "/manage/task_resize_datastores.html"
+  - title: 编辑 VVOL 数据存储库
+    url: "/manage/task_edit_a_vvols_datastore.html"
+  - title: 向 VVOL 数据存储库添加存储
+    url: "/manage/task_add_storage_to_a_vvols_datastore.html"
+  - title: 从 VVol 数据存储库中删除存储
+    url: "/manage/task_remove_storage_from_a_vvols_datastore.html"
+  - title: 挂载 VVOL 数据存储库
+    url: "/manage/task_mount_a_vvols_datastore.html"
+- title: 管理虚拟机
+  entries:
+  - title: 迁移或克隆虚拟机的注意事项
+    url: "/manage/reference_considerations_for_migrating_virtual_machines.html"
+  - title: 将传统虚拟机迁移到 VVOL 数据存储库
+    url: "/manage/task_migrate_standard_virtual_machines_to_vvols_datastores.html"
+  - title: 迁移具有较旧存储功能配置文件的虚拟机
+    url: "/manage/task_migrate_virtual_machines_with_older_storage_capability_profiles.html"
+- title: 修改 ESXi 主机设置
+  url: "/manage/task_edit_esxi_host_settings.html"
+- title: 访问 ONTAP 工具维护控制台
+  entries:
+  - title: ONTAP 工具维护控制台概述
+    url: "/manage/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html"
+  - title: VSC 和 VASA Provider 日志文件
+    url: "/manage/concept_virtual_storage_console_and_vasa_provider_log_files.html"
+  - title: 更改管理员密码
+    url: "/manage/task_change_the_administrative_password.html"
+  - title: 将 VASA Provider 配置为使用 SSH
+    url: "/manage/task_configure_vasa_provider_to_work_with_ssh.html"
+  - title: 配置远程诊断访问
+    url: "/manage/task_configure_vasa_provider_to_use_ssh_for_remote_diag_access.html"
+- title: 收集日志文件
+  url: "/manage/task_collect_the_log_files.html"
+- title: 监控数据存储库和 VVol 报告的性能
+  entries:
+  - title: ONTAP 工具数据存储库和虚拟机报告概述
+    url: "/manage/concept_virtual_storage_console_reports.html"
+  - title: 使用传统信息板分析性能数据
+    url: "/manage/task_monitor_datastores_using_the_traditional_dashboard.html"
+  - title: 使用 VVol 信息板分析性能数据
+    url: "/manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html"

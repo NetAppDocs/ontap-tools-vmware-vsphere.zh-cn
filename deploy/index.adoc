@@ -1,0 +1,11 @@
+---
+permalink: deploy/index.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 部署和设置指南
+:icons: font
+:imagesdir: ../media/
+
+

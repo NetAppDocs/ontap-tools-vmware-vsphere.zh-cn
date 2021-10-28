@@ -1,0 +1,75 @@
+---
+permalink: protect/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html 
+sidebar: sidebar 
+keywords:  
+summary: 您必须根据建议的设置配置存储超时间隔，以使 Storage Replication Adapter （ SRA ）能够在高度扩展的环境中以最佳性能运行。 
+---
+= 为高度扩展的环境配置 Storage Replication Adapter
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须根据建议的设置配置存储超时间隔，以使 Storage Replication Adapter （ SRA ）能够在高度扩展的环境中以最佳性能运行。
+
+
+
+== 存储提供程序设置
+
+您应在 SRM 上为扩展环境设置以下超时值：
+
+|===
+
+
+| * 高级设置 * | * 超时值 * 
+
+
+ a| 
+`storageProvider.resignatureTimeout`
+ a| 
+将设置值从 900 秒增加到 12000 秒。
+
+
+
+ a| 
+`storageProvider.hostRescanDelaySec`
+ a| 
+60
+
+
+
+ a| 
+`storageProvider.hostRescanRepeatCnt`
+ a| 
+20
+
+
+
+ a| 
+`storageProvider.hostRescanTimeoutSec`
+ a| 
+设置一个高值（例如： 99999 ）
+
+|===
+您还应启用 `StorageProvider.autoResignatureMode` 选项。
+
+有关修改存储提供程序设置的详细信息，请参见 VMware 文档。
+
+https://docs.vmware.com/en/Site-Recovery-Manager/6.5/com.vmware.srm.admin.doc/GUID-E4060824-E3C2-4869-BC39-76E88E2FF9A0.html["VMware vSphere 文档：更改存储提供程序设置"]
+
+
+
+== 存储设置
+
+对于高度扩展的环境，必须将 `storage.commandTimeout` 和 `storage.maxConcurrentCommandCnt` 超时间隔的值设置为 99 ， 999 秒。
+
+
+NOTE: 指定的超时间隔为最大值。您无需等待达到最大超时值。大多数命令都会在设置的最大超时间隔内完成。
+
+您还应在 vvol.properties 文件中设置 SRA 执行单个操作的最长时间： offtap.operation.timeout.period.seconds=86400 。
+
+https://kb.netapp.com/app/answers/answer_view/a_id/1001111["NetApp 知识库问题解答 1001111 ：《适用于 ONTAP 的 NetApp 存储复制适配器 4.0/7.X 规模估算指南》"]
+
+有关修改 SAN Provider 设置的 VMware 文档提供了更多信息。
+
+https://docs.vmware.com/en/Site-Recovery-Manager/6.5/com.vmware.srm.admin.doc/GUID-711FD223-50DB-414C-A2A7-3BEB8FAFDBD9.html["VMware Site Recovery Manager 文档：更改存储设置"]

@@ -1,0 +1,64 @@
+---
+permalink: configure/reference_set_ipv4_or_ipv6.html 
+sidebar: sidebar 
+keywords:  
+summary: 在首选项文件 kaminoprefs.xml中 添加了一个新选项，您可以设置该选项，以便为添加到 VSC 的所有存储系统启用 IPv4 或 IPv6 支持。 
+---
+= 使用首选项文件设置 IPv4 或 IPv6
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+首选项文件包含用于控制 VMware vSphere 操作的 ONTAP 工具的设置。在大多数情况下，您无需修改这些文件中的设置。了解 Virtual Storage Console （ VSC ）使用哪些首选项文件很有帮助。
+
+VSC 具有多个首选项文件。这些文件包含输入关键字和值，用于确定 VSC 如何执行各种操作。以下是 VSC 使用的一些首选项文件：
+
+` /opt/netapp/vscserver/etc/kamino/kaminoprefs.xml`
+
+` /opt/netapp/vscserver/etc/vsc/vscPreferences.xml`
+
+在某些情况下，您可能需要修改首选项文件。例如，如果您使用 iSCSI 或 NFS ，并且 ESXi 主机和存储系统的子网不同，则必须修改首选项文件。如果不修改首选项文件中的设置，则数据存储库配置将失败，因为 VSC 无法挂载数据存储库。
+
+在首选项文件 `kaminoprefs.xml` 中添加了一个新选项，您可以将该选项设置为对添加到 VSC 的所有存储系统启用 IPv4 或 IPv6 支持。
+
+* `default.override.option.provision.mount.datastore.address.family` 参数已添加到 `kaminoprefs.xml` 首选项文件中，用于为数据存储库配置设置首选数据 LIF 协议。
++
+此首选项适用于添加到 VSC 中的所有存储系统。
+
+* 新选项的值为 `IPv4` ， `IPv6` 和 `none` 。
+* 默认情况下，此值设置为 `none` 。
+
+
+|===
+
+
+| * 值 * | * 问题描述 * 
+
+
+ a| 
+无
+ a| 
+* 配置使用与用于添加存储的集群或 SVM 管理 LIF 类型相同的 IPv6 或 IPv4 地址类型的数据 LIF 进行。
+* 如果 SVM 中不存在相同的 IPv6 或 IPv4 地址类型的数据 LIF ，则会通过其他类型的数据 LIF 进行配置（如果可用）。
+
+
+
+
+ a| 
+IPv4
+ a| 
+* 在选定 SVM 中使用 IPv4 数据 LIF 进行配置。
+* 如果 SVM 没有 IPv4 数据 LIF ，则会通过 IPv6 数据 LIF 进行配置（如果此数据 LIF 在 SVM 中可用）。
+
+
+
+
+ a| 
+IPv6
+ a| 
+* 在选定 SVM 中使用 IPv6 数据 LIF 进行配置。
+* 如果 SVM 没有 IPv6 数据 LIF ，则会通过 IPv4 数据 LIF 进行配置（如果此数据 LIF 在 SVM 中可用）。
+
+
+|===

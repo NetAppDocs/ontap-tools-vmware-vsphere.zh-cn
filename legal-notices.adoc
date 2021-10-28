@@ -1,0 +1,14 @@
+---
+sidebar: sidebar 
+permalink: legal-notices.html 
+keywords:  
+summary:  
+---
+= 法律声明
+:icons: font
+:imagesdir: ./media/
+
+
+link:https://raw.githubusercontent.com/NetAppDocs/common/main/_include/common-legal-notices.adoc[""]
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2875811["适用于 VMware vSphere 9.8 的 ONTAP 工具注意事项"^]

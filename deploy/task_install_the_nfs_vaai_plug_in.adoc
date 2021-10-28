@@ -1,0 +1,46 @@
+---
+permalink: deploy/task_install_the_nfs_vaai_plug_in.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用适用于 VMware vSphere 的 ONTAP 工具的图形用户界面安装适用于 VMware vStorage APIs for Array Integration\ （ VAAI\ ）的 NetApp NFS 插件。 
+---
+= 安装 NFS VAAI 插件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用适用于 VMware vSphere 的 ONTAP 工具的图形用户界面安装适用于 VMware vStorage APIs for Array Integration （ VAAI ）的 NetApp NFS 插件。
+
+* 您需要的内容 *
+
+* 您应已从 NetApp 支持站点下载适用于 VAAI 的 NFS 插件的安装包（`` .vib` ）。
++
+https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"]
+
+* 您应已安装 ESXi 主机 6.5 或更高版本以及 ONTAP 9.1 或更高版本。
+* 您应已启动 ESXi 主机并挂载 NFS 数据存储库。
+* 您应已将 `DataMover.HardwareAcceleratedMove` ， `DataMover.HardwareAcceleratedInit` 和 `VMFS3.HardwareAcceleratedLocking` 主机设置的值设置为 "`1` " 。
++
+更新 " 建议设置 " 对话框后，这些值将在 ESXi 主机上自动设置。
+
+* 您应已使用 `vserver nfs modify -vserver vserver_name -vStorage enabled` 命令在 Storage Virtual Machine （ SVM ）上启用 vStorage 选项。
+* 如果您使用的是 NetApp NFS VAAI 插件 2.0 ，则应安装 ESXi 7.0 Update1 或更高版本。
+
+
+* 步骤 *
+
+. 将从 NetApp 支持站点下载的 ` .vib` 文件重命名为 NetAppNasPlugy.vib ，以匹配 VSC 使用的预定义名称。
+. 单击 ONTAP 工具主页中的 * 设置 * 。
+. 单击 * NFS VAAI 工具 * 选项卡。
+. 单击 * 现有版本 * 部分中的 * 更改 * 。
+. 浏览并选择已重命名的 ` .vib` 文件，然后单击 * 上传 * 将此文件上传到 ONTAP 工具。
+. 在 "Install on ESXi Hosts" 部分中，选择要安装 NFS VAAI 插件的 ESXi 主机，然后单击 * 安装 * 。
++
+您应按照屏幕上的说明完成安装。您可以在 vSphere Web Client 的任务部分中监控安装进度。
+
+. 安装完成后重新启动 ESXi 主机。
++
+重新启动 ESXi 主机时， VSC 会自动检测 NFS VAAI 插件。您无需执行其他步骤即可启用此插件。
+
+

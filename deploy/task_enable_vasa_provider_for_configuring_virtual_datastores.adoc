@@ -1,0 +1,78 @@
+---
+permalink: deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html 
+sidebar: sidebar 
+keywords:  
+summary: 默认情况下，适用于 VMware vSphere 的 ONTAP 工具已启用 VASA Provider 功能。您可以为每个 VVOL 数据存储库配置具有所需存储功能配置文件的 VMware 虚拟卷 \ （ VVOL\ ）数据存储库。 
+---
+= 启用 VASA Provider 以配置虚拟数据存储库
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+默认情况下，适用于 VMware vSphere 的 ONTAP 工具已启用 VASA Provider 功能。您可以为每个 VVOL 数据存储库配置具有所需存储功能配置文件的 VMware 虚拟卷（ VVOL ）数据存储库。
+
+* 您需要的内容 *
+
+* 您必须已设置 vCenter Server 实例并配置 ESXi 。
+* 您必须已部署 ONTAP 工具。
+
+
+* 关于此任务 *
+
+如果在升级到 ONTAP Tools 9.7.1 版之前禁用了 VASA Provider 功能，则在升级后， VASA Provider 功能仍会处于禁用状态。此版本允许您为 VVol 数据存储库启用 VVol 复制功能。
+
+* 步骤 *
+
+. 登录到 VMware vSphere 的 Web 用户界面。
+. 在 vSphere Client 中，单击 * 菜单 * > * ONTAP Tools Console* 。
+. 单击 * 设置 * 。
+. 单击管理设置选项卡中的 * 管理功能 * 。
+. 在管理功能对话框中，选择要启用的 VASA Provider 扩展。
+. 如果要对 VVOL 数据存储库使用复制功能，请使用 * 启用 VVOL 复制 * 切换按钮。
+. 输入 ONTAP 工具的 IP 地址和管理员密码，然后单击 * 应用 * 。
++
+
+NOTE: 如果在启用 VASA Provider 扩展后， VASA Provider 状态仍显示为 "`脱机` " ，请检查 `` /var/log/vmware/vmware-sps/sps.log` 文件中是否存在与 VASA Provider 的任何连接错误，或者重新启动 "`vmware-sps` " 服务。
+
+
+
+
+
+== 向 ONTAP 9.6 或更早版本注册 OnCommand API 服务
+
+如果您使用的是 ONTAP 9.6 或更早版本，则只有在您已为 VASA Provider 注册 OnCommand API 服务以获取 VVOL VM 和数据存储库报告的数据时， VVOL 信息板才能显示 VMware 虚拟卷（ VVOL ）数据存储库和虚拟机的详细信息。
+
+* 您需要的内容 *
+
+您必须已从 OnCommand 支持站点下载 NetApp API 服务 2.1 或更高版本。
+
+
+NOTE: 只有在使用 ONTAP 9.3 或更高版本配置 SAN VVOL 数据存储库和虚拟机时， VVOL 信息板才会显示性能指标。
+
+* 步骤 *
+
+. 在 ONTAP 工具主页中，单击 * 设置 * 。
+. 单击管理设置选项卡中的 * 管理扩展 * 。
+. 使用注册 OnCommand API 服务滑块启用 OnCommand API 服务。
+. 输入 OnCommand API 服务的 IP 地址，服务端口和凭据。
++
+您还可以使用管理 VASA Provider 扩展对话框进行以下修改：
+
++
+** 在凭据发生任何更改时更新 OnCommand API 服务注册。
+** 不再需要 VVOL 信息板时取消注册 OnCommand API 服务。
++
+要删除 VASA Provider 的 OnCommand API 服务注册，必须清除注册 OnCommand API 服务复选框。
+
+
+
+. 单击 * 应用 * 。
++
+只有在 OnCommand API 服务注册完成后， VVOL 信息板才会显示 ONTAP 9.6 或更早版本 SAN VVOL 数据存储库的指标。
+
+
+
+* 相关信息 *
+
+https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"]

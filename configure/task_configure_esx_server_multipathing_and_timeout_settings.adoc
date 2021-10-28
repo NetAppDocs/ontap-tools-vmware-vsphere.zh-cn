@@ -1,0 +1,31 @@
+---
+permalink: configure/task_configure_esx_server_multipathing_and_timeout_settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 适用于 VMware vSphere 的 ONTAP ® 工具可检查并设置最适合 NetApp 存储系统的 ESXi 主机多路径设置和 HBA 超时设置。 
+---
+= 配置 ESXi 服务器多路径和超时设置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+适用于 VMware vSphere 的 ONTAP 工具可检查并设置最适合 NetApp 存储系统的 ESXi 主机多路径设置和 HBA 超时设置。
+
+* 关于此任务 *
+
+此过程可能需要很长时间，具体取决于您的配置和系统负载。任务进度将显示在 " 近期任务 " 面板中。任务完成后，主机状态警报图标将替换为正常图标或等待重新启动图标。
+
+* 步骤 *
+
+. 在 VMware vSphere Web Client 主页页面中，单击 * vCenter * > * 主机 * 。
+. 右键单击某个主机，然后选择 * 操作 * > * NetApp VSC* > * 设置建议值 * 。
+. 在 NetApp 建议设置对话框中，选择最适合您的系统的值。
++
+默认情况下会设置标准建议值。
+
++
+image::../media/vsc_recommended_hosts_settings.gif[VSC 建议的主机设置]
+
+. 单击 * 确定 * 。
+

@@ -1,0 +1,37 @@
+---
+permalink: deploy/concept_supported_storage_system_and_applications.html 
+sidebar: sidebar 
+keywords:  
+summary: 在开始为 VMware vSphere 部署 ONTAP 工具之前，您应了解基本存储系统要求，应用程序要求和许可证要求。 
+---
+= ONTAP 工具支持的存储系统，许可和应用程序
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在开始为 VMware vSphere 部署 ONTAP 工具之前，您应了解基本存储系统要求，应用程序要求和许可证要求。
+
+互操作性表工具（ IMT ）包含有关受支持的 ONTAP ， vCenter Server ， ESXi 主机，插件应用程序和 Site Recovery Manager （ SRM ）版本的最新信息。
+
+https://mysupport.netapp.com/matrix/["互操作性表工具"]
+
+要对 VMware 虚拟卷（ VVOL ）数据存储库执行虚拟机快照操作和克隆操作，必须启用 FlexClone 许可证。
+
+Storage Replication Adapter （ SRA ）需要以下许可证：
+
+* SnapMirror 许可证
++
+要对 SRA 执行故障转移操作，必须启用 SnapMirror 许可证。
+
+* FlexClone 许可证
++
+要对 SRA 执行测试故障转移操作，必须启用 FlexClone 许可证。
+
+
+
+要查看数据存储库的 IOPS ，必须启用存储 I/O 控制或取消选中存储 I/O 控制配置中的禁用存储 I/O 统计信息收集复选框。只有在从 VMware 获得 Enterprise Plus 许可证后，才能启用存储 I/O 控制。
+
+* https://kb.vmware.com/s/article/1022091["对存储 I/O 控制进行故障排除"]
+* https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.resmgmt.doc/GUID-37CC0E44-7BC7-479C-81DC-FFFC21C1C4E3.html["存储 I/O 控制要求"]
+
