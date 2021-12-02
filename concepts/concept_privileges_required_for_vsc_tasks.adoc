@@ -2,7 +2,7 @@
 permalink: concepts/concept_privileges_required_for_vsc_tasks.html 
 sidebar: sidebar 
 keywords:  
-summary: 用于 VMware vSphere 任务的不同 ONTAP ® 工具需要不同的特权组合，这些特权特定于虚拟存储控制台 \ （ VSC\ ）和原生 vCenter Server 特权。 
+summary: 用于 VMware vSphere 任务的不同 ONTAP 工具需要不同的特权组合，这些特权专用于 Virtual Storage Console\（ VSC\ ）和原生 vCenter Server 特权。 
 ---
 = VSC 任务所需的特权
 :icons: font
@@ -10,7 +10,7 @@ summary: 用于 VMware vSphere 任务的不同 ONTAP ® 工具需要不同的特
 
 
 [role="lead"]
-用于 VMware vSphere 任务的不同 ONTAP ® 工具需要使用不同的特权组合来处理特定于虚拟存储控制台（ VSC ）和原生 vCenter Server 特权。
+适用于 VMware vSphere 任务的不同 ONTAP 工具需要使用不同的特权组合来处理 Virtual Storage Console （ VSC ）和原生 vCenter Server 特权。
 
 有关 VSC 任务所需特权的信息，请参见 NetApp 知识库文章 1032542 。
 
@@ -18,9 +18,9 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_S
 
 
 
-== 适用于 VMware vSphere 的 ONTAP ® 工具所需的产品级特权
+== 适用于 VMware vSphere 的 ONTAP 工具所需的产品级特权
 
-要访问适用于 VMware vSphere GUI 的 ONTAP ® 工具，您必须在正确的 vSphere 对象级别分配产品级 VSC 专用的查看权限。如果您在没有此权限的情况下登录，则在单击 NetApp 图标时， VSC 会显示一条错误消息，并阻止您访问 VSC 。
+要访问适用于 VMware vSphere GUI 的 ONTAP 工具，您必须在正确的 vSphere 对象级别分配产品级 VSC 专用的查看权限。如果您在没有此权限的情况下登录，则在单击 NetApp 图标时， VSC 会显示一条错误消息，并阻止您访问 VSC 。
 
 以下信息介绍了 VSC 产品级查看权限：
 

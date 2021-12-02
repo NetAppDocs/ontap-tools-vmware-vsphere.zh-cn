@@ -16,18 +16,12 @@
   <block id="25a08ebfd4f1cc837be8e7fd29c9e2a1" category="section-title">MetroCluster 配置和 VASA Provider</block>
   <block id="99f2236cef71d63edd309e83692bae51" category="paragraph">VASA Provider 会自动支持使用 MetroCluster 配置的环境。切换在 VASA Provider 环境中是透明的。您不能将直接 SVM 添加到 VASA Provider 。</block>
   <block id="aa01ce52a20efe46b8d9f8d571874ece" category="admonition">在切换后， VASA Provider 不会在二级站点上的 SVM 名称后面附加 "` -mc` " 后缀。</block>
-  <block id="b4139731c79d253fe2baa8e02abb04f0" category="summary">用于 VMware vSphere 任务的不同 ONTAP ® 工具需要不同的特权组合，这些特权特定于虚拟存储控制台 \ （ VSC\ ）和原生 vCenter Server 特权。</block>
   <block id="7d95f88d5acd32cda8bb48c562c0a438" category="doc">VSC 任务所需的特权</block>
-  <block id="f9714b8ab87f01f23b2584adaac6b46a" category="paragraph">用于 VMware vSphere 任务的不同 ONTAP ® 工具需要使用不同的特权组合来处理特定于虚拟存储控制台（ VSC ）和原生 vCenter Server 特权。</block>
   <block id="04b73aa98bf2f2396de0535eaf3faf8e" category="paragraph">有关 VSC 任务所需特权的信息，请参见 NetApp 知识库文章 1032542 。</block>
   <block id="6b894d7e8f2bb219ece874c3c249c3f7" category="inline-link">如何为 Virtual Storage Console 配置 RBAC</block>
   <block id="14d107055fdbd0aa4ef3c23300469f88" category="paragraph"><block ref="14d107055fdbd0aa4ef3c23300469f88" category="inline-link-rx"></block></block>
-  <block id="09c9bb6813052a83b16544c3c02346c8" category="section-title">适用于 VMware vSphere 的 ONTAP ® 工具所需的产品级特权</block>
   <block id="3cd4a44b3b904a2571f0a38e4172e2af" category="paragraph">要访问适用于 VMware vSphere GUI 的 ONTAP ® 工具，您必须在正确的 vSphere 对象级别分配产品级 VSC 专用的查看权限。如果您在没有此权限的情况下登录，则在单击 NetApp 图标时， VSC 会显示一条错误消息，并阻止您访问 VSC 。</block>
   <block id="bf4c84b12f3372e0d4531a23f98f42a3" category="paragraph">以下信息介绍了 VSC 产品级查看权限：</block>
-  <block id="da9bfc85083315208f885745400bb7ca" category="cell">* 权限 *</block>
-  <block id="d4a6ad536901f6ba91a006a1071a13c9" category="cell">* 问题描述 *</block>
-  <block id="ef536faeea4f2c86833d64a811b1b56b" category="cell">* 分配级别 *</block>
   <block id="4351cfebe4b61d8aa5efa1d020710005" category="paragraph">查看</block>
   <block id="5f75013356b202d1ff8ee54e1388c05c" category="paragraph">您可以访问 VSC 图形用户界面。此权限不允许您在 VSC 中执行任务。要执行任何 VSC 任务，您必须具有执行这些任务的正确 VSC 专用特权和原生 vCenter Server 特权。</block>
   <block id="7946e40cd710abd7ae3684408b1d8501" category="paragraph">分配级别决定了您可以查看的 UI 部分。通过在根对象（文件夹）上分配查看权限，您可以通过单击 NetApp 图标进入 VSC 。</block>
@@ -81,7 +75,6 @@
   <block id="3d384eb1ba36d273adab30ad3d265c2d" category="list-text">销毁存储</block>
   <block id="021f124189b20e2f6f27d6d11b2002aa" category="paragraph">使用此角色可以销毁存储。此角色还包括与发现角色，创建存储角色和修改存储角色关联的所有特权。</block>
   <block id="9d64075f7476840c8c1339f43bb2904c" category="paragraph">如果您使用的是适用于 ONTAP 的 VASA Provider ，则还应设置基于策略的管理（ Policy-Based Management ， PBM ）角色。通过此角色，您可以使用存储策略管理存储。此角色还要求您设置 `Discovery` 角色。</block>
-  <block id="3864f514d7d5b6bdf9bd849a5b2620b4" category="summary">在使用 vCenter Server 权限时，需要牢记几个要点。适用于 VMware vSphere 的 ONTAP ® 工具任务是否成功取决于您分配权限的位置或用户在修改权限后执行的操作。</block>
   <block id="74357ddc4a8bb94a1e387cdc464d35b9" category="doc">有关为 vCenter Server 分配和修改权限的要点</block>
   <block id="c8ae2664c1636dc82742c9e4a7d61618" category="section-title">分配权限</block>
   <block id="930763c1a1aa2d8dac9f593b88cc97f3" category="paragraph">只有在希望限制对 vSphere 对象和任务的访问时，才需要设置 vCenter Server 权限。否则，您可以以管理员身份登录。通过此登录，您可以自动访问所有 vSphere 对象。</block>
@@ -103,11 +96,9 @@
   <block id="80bcb999ba82a6a1735d3b331e492294" category="doc">ONTAP 工具附带的标准角色</block>
   <block id="a9a80aa47fcaa73837cbe598c5ec021b" category="paragraph">为了简化 vCenter Server 特权和基于角色的访问控制（ Role-Based Access Control ， RBAC ）的使用， Virtual Storage Console （ VSC ）提供了标准 VSC 角色，可用于执行关键 VSC 任务。此外，您还可以使用只读角色查看 VSC 信息，但不能执行任何任务。</block>
   <block id="4797f6fbb591d5a8ff4f4cca1e952f0f" category="paragraph">标准 VSC 角色具有用户执行 VSC 任务所需的 VSC 专用特权和原生 vCenter Server 特权。此外，这些角色会进行设置，以便在所有受支持的 vCenter Server 版本中具有所需的特权。</block>
-  <block id="46b976f02aa2bf591f8c0ce5c8e09162" category="paragraph">作为管理员，您可以根据需要将这些角色分配给用户。</block>
   <block id="ed262a17b17027c186d2f4959236b610" category="admonition">将 VSC 升级到最新版本时，标准角色会自动升级以使用新版本的 VSC 。</block>
   <block id="788e1de3a7bee65991ce6ac2a2c16df2" category="paragraph">您可以单击 vSphere Client 主页页面上的 * 角色 * 来查看 VSC 标准角色。</block>
   <block id="044cb1a9b7ea095d18f2e6b48cdf4055" category="paragraph">通过 VSC 提供的角色，您可以执行以下任务：</block>
-  <block id="c3bb1642fa2f5fe4b846c0480b61b5d0" category="cell">* 角色 *</block>
   <block id="c9ef8e8cb4e9071b6711dacd2032d148" category="paragraph">VSC 管理员</block>
   <block id="590c0db1af29adabce858b066a78d2cb" category="paragraph">提供执行所有 VSC 任务所需的所有原生 vCenter Server 特权和 VSC 专用特权。</block>
   <block id="c1c2bda70ad6cdf12fd6f3f51eed2c3d" category="paragraph">VSC 只读</block>
@@ -188,7 +179,6 @@
   <block id="4e97a87c57d50537bba2389e33f34a93" category="paragraph">您可以对根对象（也称为根文件夹）设置 vCenter Server 权限。然后，您可以通过限制不需要这些权限的子实体来细化安全性。</block>
   <block id="841bb5ced0d59570cb962f537fa9bfdc" category="summary">适用于 VMware vSphere 的 ONTAP 工具可为使用 NetApp 存储系统的 VMware 环境中的虚拟机提供端到端生命周期管理。它支持管理员直接管理 vCenter Server 中的存储，从而简化了 VMware 环境的存储和数据管理。</block>
   <block id="539018505dde88069c03ead0e16d021b" category="doc">ONTAP 工具概述</block>
-  <block id="ef9103c7282eb8ff80b900365425579a" category="paragraph">在 vSphere 6.5 中， VMware 引入了一个基于 HTML5 的新客户端，称为 vSphere Client 。ONTAP 工具 9.6 版仅支持 vSphere Client 。ONTAP 工具可与 vSphere Client 集成，使您能够使用单点登录（ Single Sign-On ， SSO ）服务。在具有多个 vCenter Server 实例的环境中，要管理的每个 vCenter Server 实例都必须有自己注册的 VSC 实例。</block>
   <block id="088edf0a41c67ef0d8cab2de751c7631" category="paragraph">ONTAP 工具中的每个组件都提供有助于更高效地管理存储的功能。</block>
   <block id="527b7aa10737dcb10d3d402f476806ea" category="section-title">Virtual Storage Console （ VSC ）</block>
   <block id="cd4b13dbc29722160a07355d3fdfd2a7" category="paragraph">使用 VSC 可以执行以下任务：</block>
@@ -210,7 +200,6 @@
   <block id="5e74e3ce9f13bb59245f0f8fa262e332" category="list-text">验证数据存储库和存储功能配置文件之间的合规性</block>
   <block id="44380621e031ade0625da25866567e59" category="list-text">设置警报，以便在卷和聚合接近阈值限制时向您发出警告</block>
   <block id="36b4d24c1c526cca8353b8227a54be2f" category="list-text">监控虚拟机磁盘（ Virtual Machine Disk ， VMDK ）和 VVol 数据存储库上创建的虚拟机的性能</block>
-  <block id="048ddcc75cd22891bf6afb39ac96c023" category="paragraph">如果您使用的是 ONTAP 9.6 或更早版本，则 VASA Provider 将使用 VASA API 与 vCenter Server 进行通信，并使用称为 ZAPI 的 NetApp API 与 ONTAP 进行通信。要查看 ONTAP 9.6 及更早版本的 VVOL 信息板，您必须已在 vCenter Server 中安装并注册 OnCommand API 服务。如果您使用的是 ONTAP 9.7 ，则无需向 VASA Provider 注册 OnCommand API 服务即可查看 VVOL 信息板。</block>
   <block id="7827bbf9984fd7391403ae16526da170" category="admonition">对于 ONTAP 9.6 及更早版本， VASA Provider 需要一个专用的 OnCommand API 服务实例。一个 OnCommand API 服务实例不能与多个 VASA Provider 实例共享。</block>
   <block id="410414402089bdca884f44be14088a59" category="section-title">Storage Replication Adapter （ SRA ）</block>
   <block id="ecc73715a6caa4489796ed0e7795a35d" category="paragraph">启用 SRA 并将其与 VMware Site Recovery Manager （ SRM ）结合使用后，您可以在发生故障时恢复 vCenter Server 数据存储库和虚拟机。通过 SRA ，您可以对受保护站点和恢复站点使用基于阵列的复制（ ABR ），以便在发生故障时进行灾难恢复。</block>
@@ -230,7 +219,6 @@
   <block id="83002a8f3da272c6326e5e31c94c7134" category="admonition">在此图中，灰色方框表示 vCenter Server 中的组件，白色方框表示运行 vCenter Server 的操作系统中的组件。</block>
   <block id="d6604cece2634ee88b99e28a1cc25369" category="image-alt">权限已更新图形</block>
   <block id="d4613ce1ce58f0172e8a4a07c9582cdf" category="section-title">特权</block>
-  <block id="ea1393b5e0edffdc9a44a1c2b736ffd6" category="paragraph">适用于 VMware vSphere 的 ONTAP ® 工具具有两种特权：</block>
   <block id="ac38773d017495a97d5b88f242578cb8" category="list-text">原生 vCenter Server 特权</block>
   <block id="812c5d24b89720dbab0e021d979b0bdf" category="paragraph">这些特权随 vCenter Server 一起提供。</block>
   <block id="2ea487293094c000053b7ecdcc4f9d0f" category="list-text">VSC 专用特权</block>
@@ -238,12 +226,8 @@
   <block id="70b39d807e560871dc0c378bc38e13f3" category="paragraph">VSC 任务既需要 VSC 专用特权，也需要 vCenter Server 原生特权。这些权限构成用户的 "`role` " 。一个权限可以具有多个权限。这些特权适用于已登录到 vCenter Server 的用户。</block>
   <block id="4dc8d442f599c6c18cf7dd10b52fa487" category="admonition">为了简化 vCenter Server RBAC 的使用， VSC 提供了几个标准角色，其中包含执行 VSC 任务所需的所有 VSC 专用特权和原生特权。</block>
   <block id="a61c7e49f2d62469efe4be0dd2d42a28" category="paragraph">如果更改了某个权限中的权限，则与该权限关联的用户应先注销，然后再登录以启用更新后的权限。</block>
-  <block id="8d92cc8f63be08003fb7bc73a4f8a1ee" category="cell">* 角色 *</block>
-  <block id="c745baeb9d49741e13dfb5997bd7a153" category="cell">* 任务 *</block>
-  <block id="a966abf0803ecebe94f5a7b28ce15858" category="paragraph">* NetApp ONTAP Tools Console* &gt; * 查看 *</block>
   <block id="c5ac298b280c51f301192df10798efec" category="list-text">VSC 只读</block>
   <block id="1f0cf4c19fd3048b62df0cf67d5b3434" category="paragraph">所有 VSC 和 VASA Provider 专用任务都需要查看权限。</block>
-  <block id="c9aac4fb7a0abe7fd69e810a160cd453" category="paragraph">* NetApp 虚拟存储控制台 * &gt; * 基于策略的管理 * &gt; * 管理 * 或 * privilege.nvpfVSC.VASAGroup.com.netapp.nvpf.label* &gt; * 管理 *</block>
   <block id="977ab2e24a7487c2a601a55ebc3ad363" category="paragraph">与存储功能配置文件和阈值设置相关的 VSC 和 VASA Provider 任务。</block>
   <block id="0c26eb3da0cc8bb038a438623b92ece4" category="section-title">vSphere 对象</block>
   <block id="6c624932dc6dcc57d998289b2da4f386" category="paragraph">权限与 vSphere 对象关联，例如 vCenter Server ， ESXi 主机，虚拟机，数据存储库，数据中心， 和文件夹。您可以为任何 vSphere 对象分配权限。根据分配给 vSphere 对象的权限， vCenter Server 可确定谁可以对该对象执行哪些任务。对于 VSC 专用任务，只会在根文件夹级别（ vCenter Server ）分配和验证权限，而不会在任何其他实体上分配和验证权限。VAAI 插件操作除外，其中会针对相关 ESXi 验证权限。</block>
@@ -253,7 +237,6 @@
   <block id="c3a3dd532edfb82b4e332bc19f333c01" category="paragraph">没有为用户和组分配角色。他们通过加入 vCenter Server 权限来获得某个角色的访问权限。</block>
   <block id="431526444f5217c0c4d88bbb5bd31943" category="summary">您可以为 vSphere 环境配置适用于 VMware vSphere 的 ONTAP 工具，以实现高可用性 \ （ HA\ ）。VMware HA 功能可在虚拟环境中提供故障转移保护，防止出现硬件故障和操作系统故障。</block>
   <block id="ef9fe79e06af531fbe18dd870cdb7dc7" category="summary">如果要对适用于 VMware vSphere 的 ONTAP ® 工具使用基于角色的访问控制，则必须在存储系统上配置 ONTAP 基于角色的访问控制 \ （ RBAC ）。您可以使用 ONTAP RBAC 功能创建一个或多个具有有限访问权限的自定义用户帐户。</block>
-  <block id="add2d6a7317b79687f315ecd1e5dd229" category="doc">如何为适用于 VMware vSphere 的 ONTAP ® 工具配置 ONTAP 基于角色的访问控制</block>
   <block id="95a8fea7c48e0913322d9167443759ef" category="paragraph">如果要对适用于 VMware vSphere 的 ONTAP ® 工具使用基于角色的访问控制，则必须在存储系统上配置 ONTAP 基于角色的访问控制（ Role-Based Access Control ， RBAC ）。您可以使用 ONTAP RBAC 功能创建一个或多个具有有限访问权限的自定义用户帐户。</block>
   <block id="b52c90b248d9f62d24671e4edfc2261a" category="paragraph">VSC 和 SRA 可以在集群级别或 Storage Virtual Machine （ SVM ） SVM 级别访问存储系统。如果要在集群级别添加存储系统，则必须提供管理员用户的凭据，以提供所有必需的功能。如果您要通过直接添加 SVM 详细信息来添加存储系统，则必须注意 "`vsadmin` " 用户没有执行某些任务所需的所有角色和功能。</block>
   <block id="3efaac93d4a2b12bc7bf283063f35f84" category="paragraph">VASA Provider 只能在集群级别访问存储系统。如果特定存储控制器需要 VASA Provider ，则必须在集群级别将存储系统添加到 VSC 中，即使您使用的是 VSC 或 SRA 也是如此。</block>
@@ -275,11 +258,6 @@
   <block id="6e44145c3e783bea336bc5f349025e9a" category="paragraph">您只能在集群级别创建基于策略的管理。此角色支持使用存储功能配置文件对存储进行基于策略的管理。</block>
   <block id="86b7641afb5cdf4c3101910328663b4d" category="section-title">SRA 角色</block>
   <block id="d40b84cd39848a2632ff0f16278a6ad7" category="paragraph">SRA 会在集群级别或 SVM 级别将 ONTAP 权限分为 SAN 或 NAS 角色。这样，用户就可以运行 SRM 操作。</block>
-  <block id="0f839a3b6df097a46ada931b4d2d902b" category="admonition">如果要使用 ONTAP 命令手动配置角色和特权，必须参考 NetApp 知识库文章。</block>
-  <block id="319b38e28018c3d989d5c3c1738c404d" category="inline-link">VSC ， VASA 和 SRA 7.0 ONTAP RBAC 配置</block>
-  <block id="7c56d341168ec21f300344b848d4681d" category="list-text"><block ref="7c56d341168ec21f300344b848d4681d" category="inline-link-rx"></block></block>
-  <block id="567585cab428c909bdee0b5379df239e" category="inline-link">在 SVM 级别汇总 VSC 和 SRA 的所有命令</block>
-  <block id="c2d6749989e301127c484a40a8b98b9b" category="list-text"><block ref="c2d6749989e301127c484a40a8b98b9b" category="inline-link-rx"></block></block>
   <block id="6fa9d4b747333eb053b24b538dfdcdb9" category="paragraph">将集群添加到 VSC 时， VSC 会对 ONTAP RBAC 角色执行初始权限验证。如果添加了直接 SVM 存储 IP ，则 VSC 不会执行初始验证。VSC 会稍后在任务工作流中检查并强制实施这些特权。</block>
   <block id="442ea0eca66e22693105f5c322b9b5bc" category="summary">配置 ONTAP 工具包括配置存储系统，创建存储功能配置文件，配置数据存储库以及选择配置 SRA 以实现灾难恢复。</block>
   <block id="d9d16dc3acbe809713bf4f3dbd3f8e9a" category="doc">用于配置 ONTAP 工具的工作流</block>
@@ -288,7 +266,6 @@
   <block id="fc7d7e475ac8c3868d7426bb41df9b09" category="doc">配置 VVOL 数据存储库</block>
   <block id="d428ebb7ac02e1484781b38a799a4f99" category="paragraph">* 您需要的内容 *</block>
   <block id="323f5fdeffd3401949bdeb66312e15e4" category="list-text">您应确保在 Kaminoprefs.xml 中输入 ESXi 托管的连接到的所有网络的子网详细信息。</block>
-  <block id="484ba310d21d7620e70f18b2edf51ec0" category="paragraph">请参见适用于 VMware vSphere 9.8 的 ONTAP 工具部署和设置指南中的 * 在不同子网之间启用数据存储库挂载 * 一节。</block>
   <block id="c60fea2cddf668505852e6e517002f7c" category="list-text">您应在源站点和目标站点的数据存储库上配置类似的复制策略和计划，以便成功执行反向复制。</block>
   <block id="d774884e6a5b0de49df63f2658291441" category="paragraph">通过配置数据存储库菜单，您可以为数据存储库指定存储功能配置文件，此配置文件有助于指定一致的服务级别目标（ Service Level Objective ， SLO ）并简化配置过程。只有在启用了 VASA Provider 的情况下，才能指定存储功能配置文件。</block>
   <block id="df0bfccfbae6677e8033479179e18a7a" category="paragraph">只有在运行 ONTAP 9.5 或更高版本时，用作后备存储的 FlexVol 卷才会显示在 VVOL 信息板上。您不应使用 vCenter Server 的 " 新建数据存储库 " 向导配置 VVOL 数据存储库。</block>
@@ -324,7 +301,6 @@
   <block id="600901e70afccc50e18676048766ba78" category="paragraph">* 结果 *</block>
   <block id="244d0e8e256c3993154967878caa0ec7" category="paragraph">配置 VVOL 数据存储库后，会在后端创建复制组。</block>
   <block id="0b49e456e8c1d283caac4a367f41a02d" category="inline-link-macro">VVOL 信息板数据要求</block>
-  <block id="57abc3b1843d12c6612e7b6875536144" category="paragraph"><block ref="57abc3b1843d12c6612e7b6875536144" category="inline-link-macro-rx"></block></block>
   <block id="33e56a0de825b362ef14edf3b9b5a12e" category="summary">默认情况下，适用于 VMware vSphere 的 ONTAP 工具已启用 VASA Provider 功能。您可以为每个 VVOL 数据存储库配置具有所需存储功能配置文件的 VMware 虚拟卷 \ （ VVOL\ ）数据存储库。</block>
   <block id="b74ab2582dce89d478a834957aa9a0e4" category="doc">&lt;Strong&gt; 启用 VASA Provider 以配置虚拟数据存储库 &lt;/Strong&gt;</block>
   <block id="32c44544d19f721059a8fcff5e25184a" category="paragraph">默认情况下，适用于 VMware vSphere 的 ONTAP 工具已启用 VASA Provider 功能。您可以为每个 VVOL 数据存储库配置具有所需存储功能配置文件的 VMware 虚拟卷（ VVOL ）数据存储库。</block>
@@ -486,7 +462,6 @@
   <block id="b99c66e545699af17ae5ea16a32c40b2" category="summary">您可以使用 Virtual Storage Console \ （ VSC\ ）在 vCenter Server 中配置数据存储库和虚拟机。由 VSC 配置的数据存储库和虚拟机将显示在 VSC 的信息板上。这样，您就可以轻松地监控和管理这些数据存储库和虚拟机。</block>
   <block id="8c9aff8d70d2347574f52228c778a94e" category="doc">配置传统数据存储库和虚拟机</block>
   <block id="d18aaaa0e20d11c7476650aff63f8a22" category="paragraph">您可以使用 Virtual Storage Console （ VSC ）在 vCenter Server 中配置数据存储库和虚拟机。由 VSC 配置的数据存储库和虚拟机将显示在 VSC 的信息板上。这样，您就可以轻松地监控和管理这些数据存储库和虚拟机。</block>
-  <block id="3fe2217c372486bb644175ee9821fefe" category="summary">如果您在一个 VMware vSphere HTML5 客户端所在的环境中使用适用于 VMware vSphere 的 ONTAP ® 工具。要管理多个 vCenter Server 实例，您必须向每个 vCenter Server 注册一个 VSC 实例，以便 VSC 与 vCenter Server 之间存在 1 ： 1 配对关系。这样，您就可以通过一个 vSphere HTML5 客户端在链接模式和非链接模式下管理运行 vCenter 6.0 或更高版本的所有服务器。</block>
   <block id="1e0319b0e97f2097276080f0446901c2" category="doc">在多个 vCenter Server 环境中注册 VSC 的要求</block>
   <block id="b2a4034dbb48a31012f1a45709e80824" category="admonition">如果要将 VSC 与 vCenter Server 结合使用，则必须为要管理的每个 vCenter Server 实例设置或注册一个 VSC 实例。每个已注册的 VSC 实例必须具有相同的版本。</block>
   <block id="8f13650de3b253cee4bb94c4e8ef4c31" category="paragraph">链接模式会在 vCenter Server 部署期间自动安装。链接模式使用 Microsoft Active Directory 应用程序模式（ ADAM ）在多个 vCenter Server 系统之间存储和同步数据。</block>
@@ -949,7 +924,6 @@
   <block id="829473db3a0de5d067b9dd905c8a9da0" category="doc">VSC 的端口要求</block>
   <block id="49a58a3955e265e3985c722625928e45" category="paragraph">默认情况下， Virtual Storage Console （ VSC ）使用指定的端口在其组件（包括存储系统和 VMware vCenter Server ）之间进行通信。如果启用了防火墙，则必须确保将防火墙设置为允许例外。</block>
   <block id="396f242373aff4dd5fd8216b09f0dfae" category="paragraph">对于 Windows 以外的防火墙，您应手动授予对 VSC 使用的特定端口的访问权限。如果不授予对这些端口的访问权限，则会显示如下错误消息。</block>
-  <block id="0369df6a7d165172e08ae8662f09fc8b" category="paragraph">无法与服务器进行通信 _</block>
   <block id="60a5cb8bad06dbd50e4b20c4a0e54bdc" category="paragraph">VSC 使用以下默认双向 TCP 端口：</block>
   <block id="ac234df83bfcb986ebeb55e2c7819fd9" category="cell">* 默认端口号 *</block>
   <block id="a44ba9086b2b83ccf2baf7c678723449" category="paragraph">9083.</block>
@@ -976,7 +950,6 @@
   <block id="17de9fead8820d69261ae184d169285f" category="paragraph">您可以从 NetApp 支持站点下载适用于 VMware vSphere 的 ONTAP 工具的 _.ova_ 文件。</block>
   <block id="4896e2709401375536dda6c408b39e70" category="paragraph">_.ova_ 文件包含 ONTAP 工具。部署完成后，所有这三种产品都会安装在您的环境中。默认情况下，一旦您确定后续部署模式并根据您的要求选择是否启用 VASA Provider 和 SRA ， VSC 就会开始工作。</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp 支持站点</block>
-  <block id="620678761a842b17ab56a2e85e0b3767" category="paragraph">您可以从下载 ONTAP 工具<block ref="734d81ca25b576b24df4dccf215ffe68" category="inline-link-rx"></block> 使用软件下载页面。</block>
   <block id="759c03b6b17de770a7b5c6d4c2dfcc3f" category="paragraph">如果要在部署 ONTAP 工具时启用 SRA ，则必须已在 Site Recovery Manager （ SRM ）服务器上安装 SRA 插件。您可以从 " 软件下载 " 部分的 * 适用于 ONTAP 的存储复制适配器 * 菜单下载 SRA 插件的安装文件。</block>
   <block id="713364b60b952cca2f5bfb2a0ea9453e" category="summary">如果您是 VMware 的新用户且从未使用过 NetApp VSC 产品，则在部署和配置 ONTAP 工具之前，您需要配置 vCenter Server 并设置 ESXi 主机。</block>
   <block id="a1d4132863587881219851bdedff9008" category="image-alt">新的用户部署工作流 VSC VP 和 SRA 7 0</block>
@@ -1032,8 +1005,6 @@
   <block id="988a8cbd50f072106aa0cc7589031a95" category="doc">如何部署 ONTAP 工具</block>
   <block id="284ff625891d588a04415377b2ccf4fc" category="list-text">您必须运行受支持的 vCenter Server 版本。</block>
   <block id="22d503fcf87b43d3d538960286a3aabe" category="admonition">可以将 ONTAP 工具注册到 vCenter Server 的 Windows 部署或 VMware vCenter Server 虚拟设备（ vCSA ）部署中。</block>
-  <block id="49d98079d9a8192734694283d4bc0d3a" category="inline-link">互操作性表工具： VSC 9.7</block>
-  <block id="1977dea1a456f53ec140bbc110915e5b" category="paragraph"><block ref="65f5171b9d21bfd323252dde329785db" category="inline-link-rx"></block></block>
   <block id="0efacb73c35dfad8adbb34de54b95af2" category="list-text">您必须已配置和设置 vCenter Server 环境。</block>
   <block id="ba4e8017753da6e2cad1d40cac107160" category="list-text">您必须已为虚拟机设置 ESXi 主机。</block>
   <block id="7cbcf00129841736fb6fde756a86dd32" category="list-text">您必须已下载 _.ova_ 文件。</block>
@@ -1053,7 +1024,6 @@
   <block id="512ee12e07f95b9b6abbcc9146f992ea" category="paragraph">从保存的位置为 ONTAP 工具选择 _.ova_ 文件。</block>
   <block id="b74ac16094255bdf0eabd36ff36949d7" category="list-text">输入详细信息以自定义部署向导。</block>
   <block id="c939783f93b1afb10f97a0d5e171777b" category="inline-link-macro">部署自定义注意事项</block>
-  <block id="d8dc276b24ce516bfcfc023ce20bf4bd" category="paragraph">请参见 <block ref="51217df6c223dd9cf269acb2b089b5c0" category="inline-link-macro-rx"></block> 了解完整的详细信息。</block>
   <block id="4539adaf7ad2170543ffc624dcdbf903" category="list-text">查看配置数据，然后单击 * 下一步 * 完成部署。</block>
   <block id="ef015e5f0928a96862bd36dc6ec2d4e1" category="paragraph">在等待部署完成时，您可以从任务选项卡查看部署进度。</block>
   <block id="3a0fada6aa12b6a52488d616eb60f818" category="list-text">启动 ONTAP Tools 虚拟机，然后打开运行 ONTAP 工具的虚拟机的控制台。</block>
@@ -1062,8 +1032,6 @@
   <block id="a1b22c4e860c222593e335f2f89f0846" category="list-text">注销并重新登录到 vSphere Client 以查看已部署的 ONTAP 工具。</block>
   <block id="64f9a35a2eeb85b42855122a932f1a1c" category="paragraph">* 故障排除： * 如果登录后仍无法查看此插件，则必须清理 vSphere Client 缓存。</block>
   <block id="72059dc2826da1b244431ffa8e8cc781" category="admonition">如果您使用的是 ONTAP 9.6 或更早版本，则要查看 VVOL 信息板，必须下载并安装 OnCommand API 服务。但是，对于 ONTAP 9.7 ，您不需要向 VASA Provider 注册 OnCommand API 服务。</block>
-  <block id="95b7c6c282251c413a00b929523c3370" category="inline-link-macro">向 ONTAP 工具注册 OnCommand API 服务</block>
-  <block id="87ac8b3ad484dff96893d5fdb3c918c7" category="paragraph"><block ref="87ac8b3ad484dff96893d5fdb3c918c7" category="inline-link-macro-rx"></block></block>
   <block id="a001ce2a2f719c7ab3b42e8b33cfc003" category="inline-link">全新部署 VSC ， VASA Provider 和 SRA 虚拟设备期间出错</block>
   <block id="66d64def2411cb336365eb2aa4c8c21d" category="paragraph"><block ref="66d64def2411cb336365eb2aa4c8c21d" category="inline-link-rx"></block></block>
   <block id="bcbd9f9d2ccf0cb7b5832aca2ca7d2b1" category="summary">在自定义部署 ONTAP 工具时，您必须考虑一些限制。</block>
@@ -1139,15 +1107,10 @@
   <block id="a0616a23fd099dfad3eb5032733a31a3" category="list-text">删除浏览器缓存。</block>
   <block id="a81218cfa1b12253d3738424f7fe41f1" category="list-text">删除 vSphere Client 缓存的插件软件包。</block>
   <block id="d3f8fbc38c70102f80ae8f7fad51a2ba" category="cell">* 如果使用的是 ...*</block>
-  <block id="86739b4224dd270df53d3eb29c44369d" category="paragraph">* Windows vCenter Server *</block>
   <block id="08ade16156fae5f96326f33fb911645a" category="paragraph">删除位于以下位置的以下文件夹 `com.netapp.vasa.vvol.webclient-x.x.x.xxxx` ， `com.netapp.nvpf.webclient-x.x.x.xxxx` 和 `com.netapp.vsch5-x.x.x.xxxx` ：</block>
   <block id="c50bfe91c2a67370ca4e01f0fbcaa60b" category="list-text">vSphere Web Client 路径： `C ： \ProgramData\VMware\vCenterServer\cfg\vsphere-client\vc-packages\vsphere-client-serenity`</block>
   <block id="dd286c989dcb346e3dcbcdcffb367513" category="list-text">vSphere Client （ HTML5 ）路径： `C ： \ProgramData\VMware\vCenterServer\cfg\vsphere-ui\vc-packages\vsphere-client-serenity`</block>
-  <block id="3533e0e8861a53c2ff99c4a54359dc42" category="paragraph">* VCSA *</block>
   <block id="7828ebc558b735f6dff95945a2060819" category="list-text">通过 SSH 连接到 VCSA 设备。</block>
-  <block id="af1a2e484b21e91a0e53e60c92896ef3" category="list-text">使用 `cd /etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity` 将目录更改为 vCenter Web 客户端 UI 扩展目录</block>
-  <block id="7e274777b85a0b672ac7b02dfd45e92f" category="list-text">使用以下命令删除缓存的插件软件包：</block>
-  <block id="bd102b609640a336d673bcb7001cf07e" category="list-text">使用 `cd /etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity` 将目录更改为 vCenter Client （ HTML5 ） UI 扩展目录</block>
   <block id="04817d905fd962e9edfde7e6036e0241" category="list-text">使用以下命令登录到 vSphere 并重新启动 vSphere Web Client 和 vSphere Client 服务：</block>
   <block id="c78cdaf254148594556f4223226172c2" category="summary">您可以使用适用于 VMware vSphere 的 ONTAP 工具的图形用户界面安装适用于 VMware vStorage APIs for Array Integration\ （ VAAI\ ）的 NetApp NFS 插件。</block>
   <block id="e1f59101bee140f72feebf78fe15f214" category="doc">安装 NFS VAAI 插件</block>
@@ -1239,7 +1202,6 @@
   <block id="0f9c1659759566667a4bbf3f5cdc80f5" category="list-text">选择要挂载数据存储库的主机，然后单击 * 确定 * 。</block>
   <block id="4ab0f64ae83512e7fbbf600986f5a269" category="summary">您可以使用 VSC 图形用户界面（ GUI\ ）中提供的选项收集适用于 VMware vSphere 的 ONTAP ® 工具的日志文件。技术支持可能会要求您收集日志文件以帮助解决问题。</block>
   <block id="84fd2e9f48ced2057b35ca005d2e23dd" category="doc">收集日志文件</block>
-  <block id="42a8c42d153da7133d4aae6e73a0570d" category="paragraph">您可以通过 VSC 图形用户界面（ GUI ）中的选项收集适用于 VMware vSphere 的 ONTAP ® 工具的日志文件。技术支持可能会要求您收集日志文件以帮助解决问题。</block>
   <block id="ef1070995ad39c34df59dcf7aa1fbea4" category="paragraph">如果需要 VASA Provider 日志文件，您可以从 Vendor Provider 控制面板屏幕生成支持包。此页面是 VASA Provider 维护菜单的一部分，可从虚拟设备的控制台访问这些菜单。</block>
   <block id="8f124924c0fbddac76336e23aaeb30d9" category="paragraph">` https://vm_ip:9083`</block>
   <block id="6d74a8de1959d0b43477e06a0ef27565" category="paragraph">您可以使用 VSC 图形用户界面中的 "`导出 VSC 日志` " 功能来收集 VSC 日志文件。在启用了 VASA Provider 的情况下收集 VSC 日志包时， VSC 日志包也会包含 VP 日志。以下步骤说明了如何收集 VSC 日志文件：</block>
@@ -1321,7 +1283,6 @@
   <block id="c00d479945ae0ac31dc91b4e3dd1e862" category="summary">挂载数据存储库可为其他主机提供存储访问。将主机添加到 VMware 环境后，您可以将数据存储库挂载到其他主机上。</block>
   <block id="f64ff679157bbc742a9d375a7b59029d" category="doc">在其他主机上挂载数据存储库</block>
   <block id="d006f6ed98bbc1b6405989b6c2f474f2" category="paragraph">您必须确保在 `Kaminoprefs.xml` 中输入 ESXi 托管的连接到的所有网络的子网详细信息。</block>
-  <block id="6aac1b16a7364f5fd315873b3970ddba" category="paragraph">请参见 _VSC 9.6 部署和设置指南 _ 中的在不同子网之间启用数据存储库挂载一节。</block>
   <block id="3e919dcfc20808ddf2ade7ab9176112b" category="list-text">在导航窗格中，选择包含主机的数据中心。</block>
   <block id="1e08ec71c2d2c7b9039817023cf0561c" category="list-text">对任何其他主机重复步骤 2 。</block>
   <block id="fbde18caea1f59ebdbc6e863ef5381a9" category="list-text">右键单击主机，然后选择 * NetApp ONTAP Tools* &gt; * 挂载数据存储库 * 。</block>
@@ -1452,7 +1413,6 @@
   <block id="145d7ffcbcc4e33328fd9d5fd4fe51c4" category="list-text">输入 `6` 以选择 * 启用 SSH 访问 * 。</block>
   <block id="f055cf863289d0d7eb6da567696d8191" category="list-text">在确认对话框中输入 `y` 。</block>
   <block id="43abac5977ec623d402bd88e93ae9fe5" category="doc">管理指南</block>
-  <block id="c783d4322b5d7a8728e6e8a818b9384c" category="paragraph">Perfalink ： manage/task_resize_datastores.html 边栏：边栏关键字：摘要： " 调整数据存储库大小可用于增加或减少虚拟机文件的存储。随着基础架构要求的变化，您可能需要更改数据存储库的大小。 " -- = 调整数据存储库大小：图标：字体： imagesdir ： ../media/</block>
   <block id="ff7962acf1e40c3bdacdc576b16178a8" category="paragraph">调整数据存储库大小可以增加或减少虚拟机文件的存储。随着基础架构要求的变化，您可能需要更改数据存储库的大小。</block>
   <block id="3d7de81ead511dc0d2bd3eeb864ff231" category="paragraph">如果希望 VSC 在调整 VMFS 数据存储库的大小时调整包含的卷的大小，则在最初配置 VMFS 数据存储库时，不应使用存储属性部分下的 * 使用现有卷 * 选项，而是让它自动为每个数据存储库创建一个新卷。</block>
   <block id="b6b2c55f92e8e04471c740483e69a795" category="paragraph">可以增加或减小 NFS 数据存储库的大小，但对于 VMFS 数据存储库，只能增加其大小。使用自动增长和缩减选项的 FlexGroup 数据存储库也支持调整数据存储库大小。属于传统数据存储库的 FlexGroup 以及属于 VVOL 数据存储库的 FlexVol 卷不能缩减到低于现有大小，但最多可增长 120% 。在这些 FlexGroup 和 FlexVol 卷上启用默认快照。</block>
@@ -1830,4 +1790,111 @@
   <block id="12681823486b41daa05bf9d691b0f8cd" category="sidebar">将 Windows SRM 迁移到 SRM 设备</block>
   <block id="3d7d171ecad1cba0c2d8d707b648b023" category="sidebar">配置受保护站点和恢复站点</block>
   <block id="6956cfc9382ccb41c8ac57f99255b409" category="sidebar">验证复制的存储系统</block>
+  <block id="6022f5a040dd9eabb5e196140c0a3837" category="paragraph">Windows vCenter 服务器</block>
+  <block id="32b6ae27b932f6df4adc3773921186b2" category="paragraph">VCSA</block>
+  <block id="c2893b865600d46b6cf4853c3e95aaef" category="list-text">使用 `cd /etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity` 将目录更改为 vCenter Web 客户端 UI 扩展目录</block>
+  <block id="c967b27fa47f0711ff8f4f94f6001d1c" category="list-text">使用 `rm -rf` 命令删除 NetApp 专用的缓存插件软件包：示例：此处 x.x.xxxx 是您的插件版本。— rm -rf com.netapp.vasa.vvol.webclient-x.x.x.xxxx rm -rf com.netapp.nvpf.webclient-x.x.x.xxxx rm -rf com.netapp.vsch5-x.x.x.xxxx —</block>
+  <block id="58068878d43aa1275186e320e39c8f61" category="list-text">使用 `cd /etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity` 将目录更改为 vCenter Client （ HTML5 ） UI 扩展目录</block>
+  <block id="e8472057a9b51ca61b841e7cba26f994" category="list-text">使用 `rm -rf` 命令删除特定于 NetApp 插件的缓存插件软件包：示例：此处 x.x.xxxx 是您的插件版本— rm -rf com.netapp.vasa.vvol.webclient-x.x.x.xxxx rm -rf com.netapp.nvpf.webclient-x.x.x.xxxx rm -rf com.netapp.vsch5-x.x.x.xxxx ——</block>
+  <block id="77508822eda5d675bed0a20bfe5cf0ff" category="paragraph">`无法与服务器通信。`</block>
+  <block id="299cf230e1ea53865489979e4dff9e65" category="paragraph">您可以从下载 ONTAP 工具<block ref="0e1d5eb136c80762086cbb6a49f15235" category="inline-link-rx"></block> 使用软件下载页面。</block>
+  <block id="6a5585f421abf00fe228f5361f1631cc" category="inline-link">互操作性表工具： OTV 9.8</block>
+  <block id="f3c93e8183bddbf523817ad71f85d111" category="paragraph"><block ref="e7b5300ea258b28dc836f45642464b44" category="inline-link-rx"></block></block>
+  <block id="75b6efb222a5c381cad5f8509996949d" category="paragraph">请参见 <block ref="db87f0e7d398509389710de2acd5bc37" category="inline-link-macro-rx"></block> 了解完整的详细信息。</block>
+  <block id="6065b86534f4e1dc9696d0369170eb2d" category="summary">如果您在一个 VMware vSphere HTML5 客户端管理多个 vCenter Server 实例的环境中使用适用于 VMware vSphere 的 ONTAP ® 工具，则必须向每个 vCenter Server 注册一个 VSC 实例，以便 VSC 与 vCenter Server 之间建立 1 ： 1 配对关系。这样，您就可以通过一个 vSphere HTML5 客户端在链接模式和非链接模式下管理运行 vCenter 6.0 或更高版本的所有服务器。</block>
+  <block id="c741ed49a5385413c6168a727f99799f" category="paragraph">您可以使用适用于 VMware vSphere 的 ONTAP 工具为 vCenter Server 中的存储系统设置默认凭据。</block>
+  <block id="b687c8591c9af7ea7efd899f76980c74" category="paragraph">请参见 "`配置用户角色和权限` " 一节。</block>
+  <block id="32767fdce160df9addbb5084b54551c6" category="paragraph">请参见 * 在不同子网之间启用数据存储库挂载 * 一节。</block>
+  <block id="c6f86e205896dda442288a84af6c1576" category="paragraph"><block ref="c6f86e205896dda442288a84af6c1576" category="inline-link-macro-rx"></block></block>
+  <block id="3a7126e89509a7e2ce3446580acdf318" category="paragraph">您可以通过 VSC 图形用户界面（ GUI ）中的选项收集适用于 VMware vSphere 的 ONTAP 工具的日志文件。技术支持可能会要求您收集日志文件以帮助解决问题。</block>
+  <block id="dcf31c875641db4a234eb4a24983f4eb" category="paragraph">请参见在不同子网之间启用数据存储库挂载一节。</block>
+  <block id="5589c3092776301a216aaf2d3ac2d8a8" category="summary">用于 VMware vSphere 任务的不同 ONTAP 工具需要不同的特权组合，这些特权专用于 Virtual Storage Console\（ VSC\ ）和原生 vCenter Server 特权。</block>
+  <block id="193c88c1ab14526b933d9caf9484432a" category="paragraph">适用于 VMware vSphere 任务的不同 ONTAP 工具需要使用不同的特权组合来处理 Virtual Storage Console （ VSC ）和原生 vCenter Server 特权。</block>
+  <block id="b6d1b0cb2147f5fa73ba96a40d7c5374" category="paragraph">要访问适用于 VMware vSphere GUI 的 ONTAP 工具，您必须在正确的 vSphere 对象级别分配产品级 VSC 专用的查看权限。如果您在没有此权限的情况下登录，则在单击 NetApp 图标时， VSC 会显示一条错误消息，并阻止您访问 VSC 。</block>
+  <block id="6b3c5cff95a01171d231d2c77b8852ff" category="doc">如何为适用于 VMware vSphere 的 ONTAP 工具配置 ONTAP 基于角色的访问控制</block>
+  <block id="a6d17c927c13495891ad7b6fb1e8230d" category="paragraph">在 vSphere 6.5 中， VMware 引入了一个基于 HTML5 的新客户端，称为 vSphere Client 。ONTAP 工具 9.6 及更高版本仅支持 vSphere Client 。ONTAP 工具可与 vSphere Client 集成，使您能够使用单点登录（ Single Sign-On ， SSO ）服务。在具有多个 vCenter Server 实例的环境中，要管理的每个 vCenter Server 实例都必须有自己注册的 VSC 实例。</block>
+  <block id="863669ae4c4bb58b52e7a37dab376fbb" category="paragraph">如果您使用的是 ONTAP 9.6 或更早版本，则 VASA Provider 将使用 VASA API 与 vCenter Server 进行通信，并使用称为 ZAPI 的 NetApp API 与 ONTAP 进行通信。要查看 ONTAP 9.6 及更早版本的 VVOL 信息板，您必须已在 vCenter Server 中安装并注册 OnCommand API 服务。如果您使用的是 ONTAP 9.7 及更高版本，则无需向 VASA Provider 注册 OnCommand API 服务即可查看 VVOL 信息板。</block>
+  <block id="7ea79dfc92d95f271e38ad8d0b267dd5" category="paragraph">作为管理员，您可以根据需要将这些角色分配给用户。</block>
+  <block id="cf917d8457fcc174b9b969143eda5613" category="cell">* 角色 *</block>
+  <block id="a06e01651b689422008d3b0b46478373" category="paragraph">使用适用于 VMware vSphere 角色的标准 ONTAP 工具时，应遵循特定准则。</block>
+  <block id="3413a918b6452d3e60e37eb18410f94c" category="summary">在使用 vCenter Server 权限时，需要牢记几个要点。适用于 VMware vSphere 的 ONTAP 工具任务是否成功取决于您分配权限的位置或用户在修改权限后执行的操作。</block>
+  <block id="b96085011a4e0805bceab50863c6d6a7" category="paragraph">适用于 VMware vSphere 的 ONTAP 工具具有两种特权：</block>
+  <block id="d1dc06daf2b40eda05a92978bd21de6b" category="cell">* 角色 *</block>
+  <block id="f197f8354a88ee5425ed2bd92e3432cd" category="cell">* 任务 *</block>
+  <block id="0cb2da946a062062901268b47762e8b4" category="paragraph">NetApp ONTAP Tools 控制台 &gt; 查看</block>
+  <block id="d843fc807a4643e3570b6bf94e75e58f" category="paragraph">NetApp Virtual Storage Console &gt; 基于策略的管理 &gt; 管理或 privilege.nvpfVSC.VASAGroup.com.netapp.nvpf.label &gt; 管理</block>
+  <block id="8f7c4a87ce8fc0f59eab7afd9a2efbb7" category="summary">提供有关部署和初始化适用于 VMware vSphere 的 ONTAP 工具的说明。</block>
+  <block id="ae797764cbca1ca8efcd5ef67c6285c5" category="doc">适用于 VMware vSphere 的 ONTAP 工具快速入门</block>
+  <block id="3ddf32c65912e957cce308d5a3df3998" category="paragraph">适用于 VMware vSphere 的 ONTAP 工具是一个 vCenter Server 插件，其中包括 VSC ， VASA Provider 和 Storage Replication Adapter （ SRA ）扩展。建议在所有 ONTAP vSphere 环境中使用 VSC ，因为 VSC 会根据最佳实践配置 ESXi 主机设置并配置 ONTAP 存储。要支持虚拟卷（ VVOL ），需要使用 VASA Provider ，而 SRA 可与 VMware Site Recovery Manager 配合使用。</block>
+  <block id="940e6992d6d93b47b8889b1f27daa310" category="section-title">准备安装</block>
+  <block id="8ee2af7eaf4bb800c6978db4ecfbf9c8" category="paragraph">您可以将此插件部署为虚拟设备，这样可以减少在 vCenter Server 中单独安装和注册每个产品的工作量。</block>
+  <block id="ff31982aef870d546d52f49bb30ef34b" category="section-title">部署要求</block>
+  <block id="7dbc03160c35d84d113cf544dad5f6f0" category="paragraph">ONTAP 工具可与 Windows vCenter Server 或 VMware vCenter Server 虚拟设备（ vCSA ）结合使用。您必须在包含 ESXi 系统的受支持 vSphere 上部署 ONTAP 工具。</block>
+  <block id="b1b9e64fcb7143271a2c70320984f7a7" category="paragraph">最小空间和主机规模估算要求如下：</block>
+  <block id="dc1ecf8620e5c055a2b23392f8e7f25d" category="cell">* 系统 *</block>
+  <block id="d54802040021d687335cbcb507d0a765" category="cell">* 最低要求 *</block>
+  <block id="d511f8439ecde36647437fbba67a4394" category="cell">空间</block>
+  <block id="a6f87c83e1586cc53305887424633255" category="cell">2.1 GB 用于精简配置安装， 54.0 GB 用于厚配置安装</block>
+  <block id="e8d38bba93d906313eae0069eac33f34" category="cell">主机规模估算</block>
+  <block id="10c8a8e4f003b766ecb4a19fff4d98d0" category="cell">建议内存： 12 GB ，建议 CPU ： 2</block>
+  <block id="b500b9d1b38c1e9e7f6afa50a30c7e6a" category="paragraph">您应了解以下许可证：</block>
+  <block id="ee998db55a5373c890946748cb8dafeb" category="cell">* 许可证 *</block>
+  <block id="794cb725c5631ad99b5b7c000307f0df" category="cell">SnapMirror</block>
+  <block id="acd210c63856d7ff4dbb477377cf6220" category="cell">（可选）如果您使用 VVol 复制，则需要对 SRA 和 VASA Provider 执行故障转移操作。</block>
+  <block id="a701f5d044348085ee4f97fef6636845" category="cell">FlexClone</block>
+  <block id="c59f5b4eafde41dcff5020fd29fca866" category="cell">（可选）对于对 SRA 执行测试故障转移操作以及对 VASA Provider 执行 VVOL 操作都是必需的。</block>
+  <block id="d80c1bd338ebb1110423911faecee190" category="paragraph">ONTAP 工具使用以下默认双向 TCP 端口：</block>
+  <block id="89a71adc7ceff2f08a2162d1abfd9de6" category="cell">* 其他要求 *</block>
+  <block id="ad3fbba845249aa049a193e4e344bf61" category="cell">* 问题描述列 *</block>
+  <block id="f6bfd6bd8ed886acfafded075083f4f4" category="cell">启用后， VASA Provider 和 SRA 均使用此端口与 vCenter Server 进行通信。要获取 TCP/IP 设置，也需要此端口。</block>
+  <block id="97157b0bbe0ba304414559c34c463fa8" category="paragraph">最低存储和应用程序要求：</block>
+  <block id="495d63c3f347c7d241c61c9f988a6523" category="cell">* 存储，主机和应用程序 *</block>
+  <block id="beb34180fd99ea25331033f185458b28" category="cell">* 版本要求 *</block>
+  <block id="253b40ae359ba25b56231803430c4873" category="cell">ONTAP</block>
+  <block id="9915ba1d46f378d1ae3e1d5ee68adee9" category="cell">ONTAP 9.1 ， 9.3 ， 9.5 ， 9.6 ， 9.7 ， 9.8P1 或更高版本。</block>
+  <block id="9c564741b6540c27a49e170c8d8e979d" category="cell">VMware vSphere ， vCenter Server ， ESXi 主机， Site Recovery Manager （ SRM ），插件应用程序和数据库列 1</block>
+  <block id="2bce362f9639e3055c53be498ae49326" category="cell">请参见<block ref="4847652d37da3e6bec2044a0be4c5502" category="inline-link-rx"></block></block>
+  <block id="86f56c72e0832c1bb59b9394dbcb0853" category="section-title">ONTAP 工具要求</block>
+  <block id="b617261cab9c7f9e335f8f61a682f04e" category="list-text">配置和设置 vCenter Server 环境。</block>
+  <block id="dfa57bc5abba0952197bf25265b987c7" category="list-text">下载 .ova 文件。</block>
+  <block id="a81177e1cbc66e893d0b2b880b7fb4f4" category="list-text">vCenter Server 实例的登录凭据。</block>
+  <block id="ab5480998cf10648108d48ef6c5e21e9" category="list-text">删除浏览器缓存以避免在部署 ONTAP 工具期间出现任何浏览器缓存问题描述。</block>
+  <block id="be7133ac04ddd5b9e7343c60238a23a9" category="list-text">配置虚拟设备响应 ICMP ping 所使用的默认网关。</block>
+  <block id="709a092675883193355585e2619e945e" category="list-text">虚拟设备的有效 DNS 主机名。</block>
+  <block id="99833f17a89119a60d32c0c7c0b88673" category="list-text">如果要查看 VVOL 信息板，请下载并安装适用于 ONTAP 9.6 或更早版本的 OnCommand API 服务。如果您使用的是 ONTAP 9.7 或更高版本，则无需向 VASA Provider 注册 OnCommand API 服务。</block>
+  <block id="1fa1714964c44d433ef492daa02e1e01" category="section-title">SRA 的可选要求</block>
+  <block id="6d1df687a3ec4b96c454bb41f9491d64" category="paragraph">如果要将虚拟设备部署为与 VMware Site Recovery Manager 结合使用，则只有在要配置 Site Recovery Manager （ SRM ）灾难恢复解决方案时，您才必须： * 已下载 SRA 插件的 ` .msi` 文件。如果您使用的是 SRM 设备，则第 1 列 * 已下载适用于 SRA 的 ` .tar.gz` 文件。</block>
+  <block id="89dcb78225538fa3316ac390c49526c7" category="section-title">部署 ONTAP 工具</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步骤</block>
+  <block id="ecbbfa8bf4816f857a9909feac2fd2cb" category="list-text">从下载 ` .ova` 文件<block ref="c28762f698ce57f013f1f9dff01575ab" category="inline-link-rx"></block> 连接到 vSphere Client 系统以部署 ONTAP 工具。</block>
+  <block id="7d3e457dd0f8dea0ba38def55ed45309" category="paragraph">如果要部署 SRA ，则必须在源站点和目标站点上部署 ` 。 ova` 文件。</block>
+  <block id="6ae85978a03f6985f3007d34f9e2194b" category="list-text">登录到 vSphere Web Client ，选择 * 主页 * &gt; * 主机和集群 * 。</block>
+  <block id="b64caba5c61660e7847bb9c5b1e06c18" category="list-text">右键单击所需数据中心，然后单击 * 部署 OVF 模板 * 。</block>
+  <block id="30c646b98c28a3a8e7e2402e7d6bc241" category="list-text">您可以输入 .ova 文件的 URL ，也可以浏览到保存 .ova 文件的文件夹，然后单击 * 下一步 * 。</block>
+  <block id="c603093e1d9f5dfa1ca8712428afd09f" category="list-text">输入所需详细信息以完成部署。</block>
+  <block id="5119f652c228e29b376f5a5d6b1bef8a" category="paragraph">您可以从 * 任务 * 选项卡查看部署进度，并等待部署完成。</block>
+  <block id="6b269b20df34e901843fcd5a950c69db" category="section-title">在 SRM 上部署 SRA</block>
+  <block id="c1d2902bf6c51a0bd0110439888815a6" category="paragraph">您可以在 Windows SRM 服务器或 8.2 SRM 设备上部署 SRA 。</block>
+  <block id="a6c1475bc5e324555cbbb6e51a0cec84" category="section-title">在 Windows SRM 服务器上安装 SRA</block>
+  <block id="25958623bf7bfbf711f166b65e7f5df0" category="list-text">从 NetApp 支持站点下载适用于 SRA 插件的 ` .msi` 安装程序。</block>
+  <block id="217f0a0f9c8b3c064b5de5ce3a191069" category="list-text">双击为 SRA 插件下载的 ` .msi` 安装程序，然后按照屏幕上的说明进行操作。</block>
+  <block id="e6ef17aef692076cfa79187842935de8" category="list-text">输入已部署虚拟设备的 IP 地址和密码，以便在 SRM 服务器上完成 SRA 插件的安装。</block>
+  <block id="22fe08aa8f9cad3d698c0539cc5bba51" category="section-title">在 SRM 设备上上传和配置 SRA</block>
+  <block id="09fdbe71c906d6c2cf23b780016d4f5e" category="list-text">从下载 ` .tar.gz` 文件<block ref="c28762f698ce57f013f1f9dff01575ab" category="inline-link-rx"></block>。</block>
+  <block id="9116c0660346fac6f564a610e6a26da2" category="list-text">在 SRM 设备屏幕上，单击 * 存储复制适配器 * &gt; * 新适配器 * 。</block>
+  <block id="c7aab97235ca0d478e4e443b314f6335" category="list-text">将 ` .tar.gz` 文件上传到 SRM 。</block>
+  <block id="180cfe5983ad9ec5ad0046ccad843e8a" category="list-text">使用管理员帐户使用 putty 登录到 SRM 设备。</block>
+  <block id="be280321d69d14f5dfce8709e117a691" category="list-text">切换到 root 用户： `su root`</block>
+  <block id="9d7f1b1965b299ca0f83a93983a67fa9" category="list-text">在日志位置输入命令以获取 SRA Docker 使用的 Docker ID ： `docker ps -l`</block>
+  <block id="a3fbfd6ca26f7eba2deb3733ea046eb1" category="list-text">登录到容器 ID ： `docker exec -it -u SRM &lt;container id&gt; sh`</block>
+  <block id="c93a0f0ebeda9ccb76c7ccdb97a1b6fc" category="list-text">使用 ONTAP 工具 IP 地址和密码配置 SRM ： `perl command.pl -i &lt;va-ip&gt; administrator &lt;va-password&gt;` 此时将显示一条成功消息，确认存储凭据已存储。</block>
+  <block id="3849324d415efa553fdff378e6dd712e" category="section-title">正在更新 SRA 凭据</block>
+  <block id="744ec7526945686620ba725a3be0778f" category="list-text">使用以下命令删除 /SRM/SRA 目录的内容：</block>
+  <block id="9394c3b706fe8eb791b91c156fbd1c93" category="section-title">启用 VASA Provider 和 SRA</block>
+  <block id="743107386a6cc6f0642e727e2e4181dc" category="list-text">使用您在部署期间指定的 IP 地址登录到 vSphere Web Client 。</block>
+  <block id="3f799c83f4fba0de5194eb1b91341f9a" category="list-text">单击 * OTV* 图标，输入部署期间指定的用户名和密码，然后单击 * 登录 * 。</block>
+  <block id="1c30dcc8f4d7a52289b613541eae0de4" category="list-text">在 OTV 的左窗格中，选择 * 设置 &gt; 管理设置 &gt; 管理功能 * ，然后启用所需功能。</block>
+  <block id="20cbf632da037959a9ff1b82711dd95e" category="admonition">默认情况下， VASA Provider 处于启用状态。如果要对 VVOL 数据存储库使用复制功能，请使用启用 VVOL 复制切换按钮。</block>
+  <block id="1537475e9cb38b66999a49d547c694d2" category="list-text">输入 ONTAP 工具的 IP 地址和管理员密码，然后单击 * 应用 * 。</block>
+  <block id="e695b432b77d6bddfcb785c76f5e5442" category="sidebar">ONTAP 工具快速入门</block>
 </blocks>

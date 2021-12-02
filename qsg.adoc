@@ -1,0 +1,188 @@
+---
+sidebar: sidebar 
+permalink: qsg.html 
+keywords: QSG, ONTAP tools for VMware vSphere, Quick start guide, Installing 
+summary: 提供有关部署和初始化适用于 VMware vSphere 的 ONTAP 工具的说明。 
+---
+= 适用于 VMware vSphere 的 ONTAP 工具快速入门
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+适用于 VMware vSphere 的 ONTAP 工具是一个 vCenter Server 插件，其中包括 VSC ， VASA Provider 和 Storage Replication Adapter （ SRA ）扩展。建议在所有 ONTAP vSphere 环境中使用 VSC ，因为 VSC 会根据最佳实践配置 ESXi 主机设置并配置 ONTAP 存储。要支持虚拟卷（ VVOL ），需要使用 VASA Provider ，而 SRA 可与 VMware Site Recovery Manager 配合使用。
+
+
+
+== 准备安装
+
+您可以将此插件部署为虚拟设备，这样可以减少在 vCenter Server 中单独安装和注册每个产品的工作量。
+
+
+
+=== 部署要求
+
+ONTAP 工具可与 Windows vCenter Server 或 VMware vCenter Server 虚拟设备（ vCSA ）结合使用。您必须在包含 ESXi 系统的受支持 vSphere 上部署 ONTAP 工具。
+
+最小空间和主机规模估算要求如下：
+
+[cols="25,75"]
+|===
+| * 系统 * | * 最低要求 * 
+
+
+| 空间 | 2.1 GB 用于精简配置安装， 54.0 GB 用于厚配置安装 
+
+
+| 主机规模估算 | 建议内存： 12 GB ，建议 CPU ： 2 
+|===
+您应了解以下许可证：
+
+[cols="25,75"]
+|===
+| * 许可证 * | * 问题描述 * 
+
+
+| SnapMirror | （可选）如果您使用 VVol 复制，则需要对 SRA 和 VASA Provider 执行故障转移操作。 
+
+
+| FlexClone | （可选）对于对 SRA 执行测试故障转移操作以及对 VASA Provider 执行 VVOL 操作都是必需的。 
+|===
+ONTAP 工具使用以下默认双向 TCP 端口：
+
+|===
+| * 其他要求 * | * 问题描述列 * 
+
+
+| 9083. | 启用后， VASA Provider 和 SRA 均使用此端口与 vCenter Server 进行通信。要获取 TCP/IP 设置，也需要此端口。 
+
+
+| 443. | 根据凭据的配置方式， VMware vCenter Server 和存储系统会侦听此端口上的安全通信。 
+
+
+| 8143 | VSC 会侦听此端口上的安全通信。 
+
+
+| 7. | VSC 会向 ONTAP 发送回显请求以验证可访问性，只有在添加存储系统时才需要此请求，并且可以稍后禁用。 
+|===
+最低存储和应用程序要求：
+
+|===
+| * 存储，主机和应用程序 * | * 版本要求 * 
+
+
+| ONTAP | ONTAP 9.1 ， 9.3 ， 9.5 ， 9.6 ， 9.7 ， 9.8P1 或更高版本。 
+
+
+| VMware vSphere ， vCenter Server ， ESXi 主机， Site Recovery Manager （ SRM ），插件应用程序和数据库列 1 | 请参见 https://mysupport.netapp.com/matrix/imt.jsp?components=99343;&solution=1777&isHWU&src=IMT["互操作性表工具"^] 
+|===
+
+
+=== ONTAP 工具要求
+
+* 配置和设置 vCenter Server 环境。
+* 下载 .ova 文件。
+* vCenter Server 实例的登录凭据。
+* 删除浏览器缓存以避免在部署 ONTAP 工具期间出现任何浏览器缓存问题描述。
+* 配置虚拟设备响应 ICMP ping 所使用的默认网关。
+* 虚拟设备的有效 DNS 主机名。
+* 如果要查看 VVOL 信息板，请下载并安装适用于 ONTAP 9.6 或更早版本的 OnCommand API 服务。如果您使用的是 ONTAP 9.7 或更高版本，则无需向 VASA Provider 注册 OnCommand API 服务。
+
+
+
+
+=== SRA 的可选要求
+
+如果要将虚拟设备部署为与 VMware Site Recovery Manager 结合使用，则只有在要配置 Site Recovery Manager （ SRM ）灾难恢复解决方案时，您才必须： * 已下载 SRA 插件的 ` .msi` 文件。如果您使用的是 SRM 设备，则第 1 列 * 已下载适用于 SRA 的 ` .tar.gz` 文件。
+
+
+
+== 部署 ONTAP 工具
+
+.步骤
+. 从下载 ` .ova` 文件 https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab["NetApp 支持站点"^] 连接到 vSphere Client 系统以部署 ONTAP 工具。
++
+如果要部署 SRA ，则必须在源站点和目标站点上部署 ` 。 ova` 文件。
+
+. 登录到 vSphere Web Client ，选择 * 主页 * > * 主机和集群 * 。
+. 右键单击所需数据中心，然后单击 * 部署 OVF 模板 * 。
+. 您可以输入 .ova 文件的 URL ，也可以浏览到保存 .ova 文件的文件夹，然后单击 * 下一步 * 。
+. 输入所需详细信息以完成部署。
++
+您可以从 * 任务 * 选项卡查看部署进度，并等待部署完成。
+
+
+
+
+
+=== 在 SRM 上部署 SRA
+
+您可以在 Windows SRM 服务器或 8.2 SRM 设备上部署 SRA 。
+
+
+
+==== 在 Windows SRM 服务器上安装 SRA
+
+.步骤
+. 从 NetApp 支持站点下载适用于 SRA 插件的 ` .msi` 安装程序。
+. 双击为 SRA 插件下载的 ` .msi` 安装程序，然后按照屏幕上的说明进行操作。
+. 输入已部署虚拟设备的 IP 地址和密码，以便在 SRM 服务器上完成 SRA 插件的安装。
+
+
+
+
+==== 在 SRM 设备上上传和配置 SRA
+
+.步骤
+. 从下载 ` .tar.gz` 文件 https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab["NetApp 支持站点"^]。
+. 在 SRM 设备屏幕上，单击 * 存储复制适配器 * > * 新适配器 * 。
+. 将 ` .tar.gz` 文件上传到 SRM 。
+. 重新扫描适配器以验证是否已在 "SRM Storage Replication Adapter" 页面中更新详细信息。
+. 使用管理员帐户使用 putty 登录到 SRM 设备。
+. 切换到 root 用户： `su root`
+. 在日志位置输入命令以获取 SRA Docker 使用的 Docker ID ： `docker ps -l`
+. 登录到容器 ID ： `docker exec -it -u SRM <container id> sh`
+. 使用 ONTAP 工具 IP 地址和密码配置 SRM ： `perl command.pl -i <va-ip> administrator <va-password>` 此时将显示一条成功消息，确认存储凭据已存储。
+
+
+
+
+==== 正在更新 SRA 凭据
+
+.步骤
+. 使用以下命令删除 /SRM/SRA 目录的内容：
++
+.. `cd /SRM/SRA / conf`
+.. `rm -rf *`
+
+
+. 执行 perl 命令以使用新凭据配置 SRA ：
++
+.. `cd /SRM/SRA /`
+.. `perl command.pl -i <va-ip> administrator <va-password>`
+
+
+
+
+
+
+==== 启用 VASA Provider 和 SRA
+
+.步骤
+. 使用您在部署期间指定的 IP 地址登录到 vSphere Web Client 。
+. 单击 * OTV* 图标，输入部署期间指定的用户名和密码，然后单击 * 登录 * 。
+. 在 OTV 的左窗格中，选择 * 设置 > 管理设置 > 管理功能 * ，然后启用所需功能。
++
+
+NOTE: 默认情况下， VASA Provider 处于启用状态。如果要对 VVOL 数据存储库使用复制功能，请使用启用 VVOL 复制切换按钮。
+
+. 输入 ONTAP 工具的 IP 地址和管理员密码，然后单击 * 应用 * 。
+

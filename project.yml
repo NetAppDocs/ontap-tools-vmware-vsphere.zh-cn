@@ -1,6 +1,6 @@
 ---
 settings:
-  name: ONTAP Tools for VMware vSphere
+  name: ONTAP tools for VMware vSphere
   internal:
     pdf_enabled: true
   prod:
@@ -28,6 +28,8 @@ homepage:
       url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2875589
     - title: 了解适用于 VMware vSphere 的 ONTAP 工具
       url: "/concepts/concept_virtual_storage_console_overview.html"
+    - title: ONTAP 工具快速入门
+      url: "/qsg.html"
     - title: 部署 ONTAP 工具
       url: "/deploy/task_deploy_ontap_tools.html"
     - title: 升级 ONTAP 工具

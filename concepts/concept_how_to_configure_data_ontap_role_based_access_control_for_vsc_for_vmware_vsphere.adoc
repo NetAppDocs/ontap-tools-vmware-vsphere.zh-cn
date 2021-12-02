@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 如果要对适用于 VMware vSphere 的 ONTAP ® 工具使用基于角色的访问控制，则必须在存储系统上配置 ONTAP 基于角色的访问控制 \ （ RBAC ）。您可以使用 ONTAP RBAC 功能创建一个或多个具有有限访问权限的自定义用户帐户。 
 ---
-= 如何为适用于 VMware vSphere 的 ONTAP ® 工具配置 ONTAP 基于角色的访问控制
+= 如何为适用于 VMware vSphere 的 ONTAP 工具配置 ONTAP 基于角色的访问控制
 :icons: font
 :imagesdir: ../media/
 
@@ -76,12 +76,5 @@ VSC 会将 ONTAP 特权分为以下几组 VSC 角色：
 == SRA 角色
 
 SRA 会在集群级别或 SVM 级别将 ONTAP 权限分为 SAN 或 NAS 角色。这样，用户就可以运行 SRM 操作。
-
-
-NOTE: 如果要使用 ONTAP 命令手动配置角色和特权，必须参考 NetApp 知识库文章。
-
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/VSC%2C_VASA%2C_and_SRA_7.0_ONTAP_RBAC_Configuration_Version_1["VSC ， VASA 和 SRA 7.0 ONTAP RBAC 配置"]
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/Roll_up_of_all_commands_for_VSC_and_SRA_for_SVM_level["在 SVM 级别汇总 VSC 和 SRA 的所有命令"]
-
 
 将集群添加到 VSC 时， VSC 会对 ONTAP RBAC 角色执行初始权限验证。如果添加了直接 SVM 存储 IP ，则 VSC 不会执行初始验证。VSC 会稍后在任务工作流中检查并强制实施这些特权。

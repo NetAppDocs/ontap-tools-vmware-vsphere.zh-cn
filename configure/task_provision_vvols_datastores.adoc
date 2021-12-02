@@ -16,7 +16,7 @@ summary: 只有在 ONTAP 工具中启用了 VASA Provider 的情况下，才能�
 
 * 您应确保在 Kaminoprefs.xml 中输入 ESXi 托管的连接到的所有网络的子网详细信息。
 +
-请参见适用于 VMware vSphere 9.8 的 ONTAP 工具部署和设置指南中的 * 在不同子网之间启用数据存储库挂载 * 一节。
+请参见 * 在不同子网之间启用数据存储库挂载 * 一节。
 
 * 您应在源站点和目标站点的数据存储库上配置类似的复制策略和计划，以便成功执行反向复制。
 
@@ -111,4 +111,4 @@ summary: 只有在 ONTAP 工具中启用了 VASA Provider 的情况下，才能�
 
 * 相关信息 *
 
-link:../manage/reference_verify_vvol_dashboard_data_requirements.html["VVOL 信息板数据要求"]
+link:../manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html["使用 VVol 信息板分析性能数据"]

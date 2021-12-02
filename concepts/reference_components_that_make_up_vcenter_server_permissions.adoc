@@ -39,7 +39,7 @@ image::../media/permission_updated_graphic.gif[权限已更新图形]
 
 == 特权
 
-适用于 VMware vSphere 的 ONTAP ® 工具具有两种特权：
+适用于 VMware vSphere 的 ONTAP 工具具有两种特权：
 
 * 原生 vCenter Server 特权
 +
@@ -65,7 +65,7 @@ NOTE: 为了简化 vCenter Server RBAC 的使用， VSC 提供了几个标准角
 
 
  a| 
-* NetApp ONTAP Tools Console* > * 查看 *
+NetApp ONTAP Tools 控制台 > 查看
  a| 
 * VSC 管理员
 * VSC 配置
@@ -77,7 +77,7 @@ NOTE: 为了简化 vCenter Server RBAC 的使用， VSC 提供了几个标准角
 
 
  a| 
-* NetApp 虚拟存储控制台 * > * 基于策略的管理 * > * 管理 * 或 * privilege.nvpfVSC.VASAGroup.com.netapp.nvpf.label* > * 管理 *
+NetApp Virtual Storage Console > 基于策略的管理 > 管理或 privilege.nvpfVSC.VASAGroup.com.netapp.nvpf.label > 管理
  a| 
 VSC 管理员
  a| 
