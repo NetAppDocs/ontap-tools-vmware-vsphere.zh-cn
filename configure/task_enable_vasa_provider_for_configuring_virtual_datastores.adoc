@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 默认情况下，适用于 VMware vSphere 的 ONTAP 工具已启用 VASA Provider 功能。您可以为每个 VVOL 数据存储库配置具有所需存储功能配置文件的 VMware 虚拟卷 \ （ VVOL\ ）数据存储库。 
 ---
-= <Strong> 启用 VASA Provider 以配置虚拟数据存储库 </Strong>
+= 启用 VASA Provider 以配置虚拟数据存储库
 :icons: font
 :imagesdir: ../media/
 
