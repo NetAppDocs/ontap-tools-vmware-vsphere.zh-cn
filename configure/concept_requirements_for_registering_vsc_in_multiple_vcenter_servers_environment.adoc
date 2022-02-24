@@ -10,7 +10,7 @@ summary: 如果您在一个 VMware vSphere HTML5 客户端管理多个 vCenter S
 
 
 [role="lead"]
-如果您在一个 VMware vSphere HTML5 客户端管理多个 vCenter Server 实例的环境中使用适用于 VMware vSphere 的 ONTAP ® 工具，则必须向每个 vCenter Server 注册一个 VSC 实例，以便 VSC 与 vCenter Server 之间建立 1 ： 1 配对关系。这样，您就可以通过一个 vSphere HTML5 客户端在链接模式和非链接模式下管理运行 vCenter 6.0 或更高版本的所有服务器。
+如果您在一个 VMware vSphere HTML5 客户端管理多个 vCenter Server 实例的环境中使用适用于 VMware vSphere 的 ONTAP 工具，则必须向每个 vCenter Server 注册一个 VSC 实例，以便 VSC 与 vCenter Server 之间存在 1 ： 1 配对关系。这样，您就可以通过一个 vSphere HTML5 客户端在链接模式和非链接模式下管理运行 vCenter 6.0 或更高版本的所有服务器。
 
 
 NOTE: 如果要将 VSC 与 vCenter Server 结合使用，则必须为要管理的每个 vCenter Server 实例设置或注册一个 VSC 实例。每个已注册的 VSC 实例必须具有相同的版本。

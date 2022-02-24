@@ -52,7 +52,7 @@ ONTAP RBAC 仅适用于访问存储系统以及执行与存储相关的 VSC 任�
 
 要创建新的用户角色，您必须以管理员身份登录到运行 ONTAP 的存储系统。您可以使用以下方法之一创建 ONTAP 角色：
 
-* ONTAP System Manager 9.7 或更高版本
+* ONTAP System Manager 9.8P1 或更高版本
 +
 link:../configure/task_configure_user_role_and_privileges.html["配置用户角色和权限"]
 

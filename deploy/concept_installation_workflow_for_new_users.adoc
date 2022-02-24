@@ -10,6 +10,6 @@ summary: 如果您是 VMware 的新用户且从未使用过 NetApp VSC 产品，
 
 
 [role="lead"]
-如果您是 VMware 的新用户且从未使用过 NetApp VSC 产品，则在部署和配置 ONTAP 工具之前，您需要配置 vCenter Server 并设置 ESXi 主机。
+如果您是 VMware 的新用户且从未使用过 NetApp ONTAP 工具产品，则在部署和配置 ONTAP 工具之前，您需要配置 vCenter Server 并设置 ESXi 主机。
 
-image::../media/new_user_deployment_workflow_vsc_vp_and_sra_7_0.gif[新的用户部署工作流 VSC VP 和 SRA 7 0]
+image::../media/new_user_deployment_workflow_ontap_tools.png[新用户部署]

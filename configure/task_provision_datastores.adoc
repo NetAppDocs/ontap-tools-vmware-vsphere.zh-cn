@@ -20,11 +20,11 @@ summary: 配置数据存储库会为虚拟机及其虚拟机磁盘（ VMDK\ ）�
 
 * 您必须确保在 kaminoprefs.xml 中输入 ESXi 主机连接到的所有网络的子网详细信息。
 +
-请参见 _VSC 9.8 部署和设置指南 _ 中的 " 在不同子网之间启用数据存储库挂载 " 一节。
+请参见 " 在不同子网之间启用数据存储库挂载 " 。
 
 * 如果您使用 NFS 或 iSCSI ，并且 ESXi 主机和存储系统的子网不同，则 kaminoprefs 首选项文件中的 NFS 或 iSCSI 设置必须包括 ESXi 主机子网掩码。
 +
-此首选项文件也适用于创建 VVOL 数据存储库。《适用于 VMware vSphere 的 ONTAP 工具 9.8 版部署和设置指南》提供了有关首选项文件以及在不同子网之间启用数据存储库挂载的详细信息。
+此首选项文件也适用于创建 VVOL 数据存储库。有关详细信息，请参见 _Enable datastore mounting across different subnets_ 和 _Configure the VSC preferences files_ 。
 
 * 如果已启用 VASA Provider ，并且要为 NFS 数据存储库或 VMFS 数据存储库指定存储功能配置文件，则必须已创建一个或多个存储功能配置文件。
 * 要创建 NFSv4.1 数据存储库，必须已在 SVM 级别启用 NFSv4.1 。
@@ -44,7 +44,7 @@ VSC 可以在 NFS 卷或 LUN 上创建数据存储库：
 
 [NOTE]
 ====
-* 在与运行 ONTAP 9.8 及更高版本的 ASA 和经批准的 AFF 系统结合使用时， ONTAP 工具 9.8 版支持配置 VMFS5 和 VMFS6 数据存储库，其最大 VMFS LUN 和卷大小为 64 TB 。
+* 如果在运行 ONTAP 9.8 及更高版本的 ASA 和经批准的 AFF 系统中使用 VMFS5 和 VMFS6 数据存储库，则 ONTAP 工具支持将其配置为最大 VMFS LUN 和 64 TB 的卷大小。
 +
 在其他平台上，支持的最大 LUN 大小为 16 TB 。
 

@@ -33,6 +33,11 @@ summary: 只有在 ONTAP 工具中启用了 VASA Provider 的情况下，才能�
 * 您应已在源站点和目标站点上完成集群配对和 SVM 配对。
 
 
+* 关于此任务 *
+
+
+NOTE: ONTAP 工具 9.10 版支持为全 SAN 阵列（ ASA ）类型的 ONTAP 9.9.1 或更高版本的存储平台创建 vmdk 大小大于 16 TB 的 VVOL 数据存储库。
+
 * 步骤 *
 
 . 在 vSphere Client 主页页面中，单击 * 主机和集群 * 。
@@ -81,7 +86,8 @@ summary: 只有在 ONTAP 工具中启用了 VASA Provider 的情况下，才能�
  a| 
 " 新建数据存储库 " 对话框的 " 常规 " 部分提供了用于输入新数据存储库的位置，名称，问题描述，类型和协议的选项。VVOL 数据存储库类型用于配置 VVOL 数据存储库。
 
-* 注： * 如果要为 VVol 复制配置 iSCSI VVol 数据存储库，则在目标站点上创建 VVol 数据存储库之前，需要执行 SnapMirror 更新和集群重新发现。
+
+NOTE: 如果要为 VVOL 复制配置 iSCSI VVOL 数据存储库，则在目标站点上创建 VVOL 数据存储库之前，需要执行 SnapMirror 更新和集群重新发现。
 
 
 
@@ -90,7 +96,9 @@ summary: 只有在 ONTAP 工具中启用了 VASA Provider 的情况下，才能�
  a| 
 通过此部分，您可以选择是要使 VVol 数据存储库启用还是禁用复制。此版本仅允许使用异步类型复制配置文件。然后，您可以选择列出的一个或多个存储功能配置文件。系统会自动填充已配对 * 存储系统 * 和 * 存储虚拟机 * 的系统建议值。只有在 ONTAP 中配对后，才会填充建议值。您可以根据需要修改这些值。
 
-* 注： * 在 ONTAP 中创建 FlexVol 卷时，应确保使用要在存储功能配置文件中选择的属性创建这些卷。读写和数据保护 FlexVol 卷都应具有类似的属性。创建 FlexVol 卷并在 ONTAP 中初始化 SnapMirror 后，您应在 VSC 中运行存储重新发现，以便能够查看新卷。
+* 注： * 在 ONTAP 中创建 FlexVol 卷时，应确保使用要在存储功能配置文件中选择的属性创建这些卷。读写和数据保护 FlexVol 卷都应具有类似的属性。
+
+创建 FlexVol 卷并在 ONTAP 中初始化 SnapMirror 后，您应在 VSC 中运行存储重新发现，以便能够查看新卷。
 
 
 
@@ -99,7 +107,11 @@ summary: 只有在 ONTAP 工具中启用了 VASA Provider 的情况下，才能�
  a| 
 您应从现有列表中选择 SnapMirror 计划以及所需的 FlexVol 卷。此计划应与在 VM 存储策略页面中选择的计划类似。用户应已使用列出的 SnapMirror 在 ONTAP 上创建 FlexVol 卷。您可以使用 * 默认存储功能配置文件 * 选项选择用于创建 VVOL 的默认存储功能配置文件。默认情况下，所有卷都会设置为 Maximum Autogrow Size （最大自动增长大小）为 120 % ，并在这些卷上启用默认 Snapshot 。
 
-* 注意： * 属于 VVOL 数据存储库的 FlexVol 卷不能缩减到现有大小以下，但最多可增长 120% 。此 FlexVol 卷上已启用默认快照。
+* 注： *
+
+** 属于 VVOL 数据存储库的 FlexVol 卷不能缩减到低于现有大小，但最多可增长 120% 。此 FlexVol 卷上已启用默认快照。
+** 应创建的 FlexVol 卷的最小大小为 5 GB 。
+
 
 |===
 . 在摘要部分中，单击 "**Finish" 。

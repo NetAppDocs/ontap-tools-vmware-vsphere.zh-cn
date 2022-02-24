@@ -41,7 +41,7 @@ VCSA
 .. 通过 SSH 连接到 VCSA 设备。
 .. 使用 `cd /etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity` 将目录更改为 vCenter Web 客户端 UI 扩展目录
 .. 使用 `rm -rf` 命令删除 NetApp 专用的缓存插件软件包：示例：此处 x.x.xxxx 是您的插件版本。— rm -rf com.netapp.vasa.vvol.webclient-x.x.x.xxxx rm -rf com.netapp.nvpf.webclient-x.x.x.xxxx rm -rf com.netapp.vsch5-x.x.x.xxxx —
-.. 使用 `cd /etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity` 将目录更改为 vCenter Client （ HTML5 ） UI 扩展目录
+.. 使用 `cd /etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity` 将目录更改为 vCenter Client （ HTML5 ） UI 扩展目录
 .. 使用 `rm -rf` 命令删除特定于 NetApp 插件的缓存插件软件包：示例：此处 x.x.xxxx 是您的插件版本— rm -rf com.netapp.vasa.vvol.webclient-x.x.x.xxxx rm -rf com.netapp.nvpf.webclient-x.x.x.xxxx rm -rf com.netapp.vsch5-x.x.x.xxxx ——
 
 

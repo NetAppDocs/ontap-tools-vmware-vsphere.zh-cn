@@ -1,0 +1,245 @@
+---
+permalink: deploy/vmware_cloud_foundation_mode_deployment.html 
+sidebar: sidebar 
+keywords:  
+summary: 适用于 VMware vSphere 的 ONTAP 工具可以部署在 VMware Cloud 基础环境中。 
+---
+= 适用于 ONTAP 工具的 VMware 云基础部署模式
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+适用于 VMware vSphere 的 ONTAP 工具可以部署在 VMware Cloud Foundation （ VCF ）环境中。VCF 部署的主要目标是在云设置中使用 ONTAP 工具，并在不使用 vCenter Server 的情况下创建容器。
+
+通过 VCF 模式，您无需 vCenter Server 即可为存储创建容器。在 VCF 模式下部署 ONTAP 工具后， VASA Provider 默认处于启用状态。部署完成后，您可以使用 REST API 添加存储系统并创建容器。引入了一个新的 API ，用于生成用于对 API 调用进行身份验证的 _appliation-api-token_ 。对某些现有 API 进行了修改，以包括 _appliation-api-token_ 标头。
+
+可用于 VCF 部署模式的 API 包括：
+
+|===
+
+
+| * API * | * HTTP 方法 * | * 新增 / 修改 * | * 章节标题 * 
+
+
+ a| 
+/1.0/admin/containers
+ a| 
+获取
+ a| 
+新增
+ a| 
+容器
+
+
+
+ a| 
+/1.0/admin/containers
+ a| 
+发布
+ a| 
+新增
+ a| 
+容器
+
+
+
+ a| 
+/1.0/vcf/user/login
+ a| 
+发布
+ a| 
+新增
+ a| 
+用户身份验证
+
+
+
+ a| 
+/1.0/admin/storage-systems
+ a| 
+获取
+ a| 
+已修改
+ a| 
+存储系统
+
+
+
+ a| 
+/1.0/admin/storage-systems
+ a| 
+发布
+ a| 
+已修改
+ a| 
+存储系统
+
+
+
+ a| 
+/2.0/storage/clusters 或 discover
+ a| 
+发布
+ a| 
+已修改
+ a| 
+存储系统
+
+
+
+ a| 
+/2.0/storage/capability-profiles
+ a| 
+获取
+ a| 
+已修改
+ a| 
+存储功能配置文件
+
+
+
+ a| 
+/2.0/tasks/ ｛ id ｝
+ a| 
+获取
+ a| 
+已修改
+ a| 
+任务
+
+|===
+您只能在 VCF 部署模式下使用 VVOL 数据存储库。要创建容器，您需要使用为 VCF 部署自定义的 REST API 。部署完成后，可以从 Swagger 界面访问 REST API 。在 VCF 模式下创建容器时，您需要提供 Storage VM ，聚合和卷的名称。您需要使用 ONTAP API 获取这些详细信息，因为 ONTAP 工具获取这些资源的 API 不会更新。
+
+|===
+
+
+| * 存储对象 * | * API * 
+
+
+ a| 
+存储 VM
+ a| 
+API/SVM/SVM
+
+
+
+ a| 
+聚合
+ a| 
+存储 / 聚合
+
+
+
+ a| 
+Volume
+ a| 
+存储 / 卷
+
+|===
+在执行容器创建 API 时，您可以将现有卷添加到容器中。但是，您应确保现有卷的数据压缩和重复数据删除值与容器的存储功能匹配。如果值不匹配，则虚拟机创建将失败。下表详细介绍了现有卷在相应存储功能配置文件中应具有的值。
+
+|===
+
+
+| * 容器存储功能配置文件 * | * 重复数据删除 * | * 数据压缩 * 
+
+
+ a| 
+白金级
+ a| 
+两者
+ a| 
+两者
+
+
+
+ a| 
+AFF_Thick
+ a| 
+两者
+ a| 
+两者
+
+
+
+ a| 
+AFF_Default
+ a| 
+两者
+ a| 
+两者
+
+
+
+ a| 
+AFF_Tiering
+ a| 
+两者
+ a| 
+两者
+
+
+
+ a| 
+AFF_encrypted
+ a| 
+两者
+ a| 
+两者
+
+
+
+ a| 
+AFF_Encrypted_Tiering
+ a| 
+两者
+ a| 
+两者
+
+
+
+ a| 
+AFF_Encrypted_Min50
+ a| 
+两者
+ a| 
+两者
+
+
+
+ a| 
+FAS_Default
+ a| 
+背景
+ a| 
+无
+
+
+
+ a| 
+FAS_Max20
+ a| 
+背景
+ a| 
+无
+
+
+
+ a| 
+铜牌
+ a| 
+无
+ a| 
+无
+
+|===
+您可以使用 ONTAP 修补程序 API 设置适当的值。
+
+`https://<machine_IP>/api/storage/volumes/{uuid}`
+
+ONTAP 工具的 VCF 部署仅允许容器创建工作流。如果要使用其他工作流，例如配置数据存储库，创建存储功能配置文件或灾难恢复，则应使用 Register.html 页面向 vCenter Server 注册 ONTAP 工具。在 VCF 模式下， ONTAP 工具的限制是，您无法为灾难恢复配置 SRA 。
+
+image::../media/VCF_deployment.png[VMware Cloud Foundation 部署工作流]
+
+link:../deploy/task_deploy_ontap_tools.html["如何部署 ONTAP 工具"]

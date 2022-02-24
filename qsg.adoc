@@ -79,10 +79,10 @@ ONTAP 工具使用以下默认双向 TCP 端口：
 | * 存储，主机和应用程序 * | * 版本要求 * 
 
 
-| ONTAP | ONTAP 9.1 ， 9.3 ， 9.5 ， 9.6 ， 9.7 ， 9.8P1 或更高版本。 
+| ONTAP | ONTAP 9.3 ， 9.5 ， 9.6 ， 9.7 ， 9.8P1 或更高版本。 
 
 
-| VMware vSphere ， vCenter Server ， ESXi 主机， Site Recovery Manager （ SRM ），插件应用程序和数据库列 1 | 请参见 https://mysupport.netapp.com/matrix/imt.jsp?components=99343;&solution=1777&isHWU&src=IMT["互操作性表工具"^] 
+| VMware vSphere ， vCenter Server ， ESXi 主机， Site Recovery Manager （ SRM ），插件应用程序和数据库列 1 | 请参见 https://imt.netapp.com/matrix/imt.jsp?components=103229;&solution=1777&isHWU&src=IMT["互操作性表工具： OTV 9.10"] 
 |===
 
 
@@ -117,9 +117,12 @@ ONTAP 工具使用以下默认双向 TCP 端口：
 . 您可以输入 .ova 文件的 URL ，也可以浏览到保存 .ova 文件的文件夹，然后单击 * 下一步 * 。
 . 输入所需详细信息以完成部署。
 +
+
+NOTE: （可选）如果要在不向 vCenter Server 注册的情况下创建容器，请在配置 vCenter 或启用 VCF 部分中选中启用 VMware Cloud Foundation （ VCF ）复选框。
+
+
+
 您可以从 * 任务 * 选项卡查看部署进度，并等待部署完成。
-
-
 
 
 

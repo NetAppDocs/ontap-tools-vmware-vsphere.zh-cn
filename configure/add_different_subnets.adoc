@@ -1,0 +1,23 @@
+---
+permalink: configure/add_different_subnets.html 
+sidebar: sidebar 
+keywords:  
+summary: 现在，您可以使用 ONTAP 工具界面为数据存储库挂载添加不同的子网。 
+---
+= 添加不同的子网
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 ONTAP 工具界面或 REST API 添加 ESXi 主机的不同子网。这样，您可以在配置存储系统后允许或限制数据存储库挂载操作的子网。如果不添加 ESXi 主机的子网，则 ONTAP 工具会阻止这些子网的数据存储库挂载操作。
+
+* 步骤 *
+
+. 登录到 vCenter Server 实例并访问 ONTAP 工具。
+. 在主页上，单击 * 设置 * > * 管理子网访问 * 。
+. 在管理子网访问对话框中，单击 NFS 子网访问允许的子网中的 * 选定 * 选项。
+. 输入所需子网的值，然后单击 * 添加 * 。
+. 为受限子网选择 * 无 * 或 * 已选择 * 。
+. 对 iSCSI 子网访问重复上述步骤，然后单击 * 应用 * 。
+

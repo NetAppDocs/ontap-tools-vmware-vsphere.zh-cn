@@ -10,11 +10,11 @@ summary: 您可以设置多个建议的 ONTAP 角色，以便使用适用于 VMw
 
 
 [role="lead"]
-您可以设置多个建议的 ONTAP 角色，以便使用适用于 VMware vSphere 的 ONTAP ® 工具和基于角色的访问控制（ Role-Based Access Control ， RBAC ）。这些角色包含执行虚拟存储控制台（ VSC ）任务所需的存储操作所需的 ONTAP 特权。
+您可以设置多个建议的 ONTAP 角色，以便使用适用于 VMware vSphere 的 ONTAP 工具和基于角色的访问控制（ Role-Based Access Control ， RBAC ）。这些角色包含执行虚拟存储控制台（ VSC ）任务所需的存储操作所需的 ONTAP 特权。
 
 要创建新的用户角色，您必须以管理员身份登录到运行 ONTAP 的存储系统。您可以使用以下方法之一创建 ONTAP 角色：
 
-* ONTAP System Manager 9.7 或更高版本
+* ONTAP System Manager 9.8P1 或更高版本
 +
 link:../configure/task_configure_user_role_and_privileges.html["配置用户角色和权限"]
 

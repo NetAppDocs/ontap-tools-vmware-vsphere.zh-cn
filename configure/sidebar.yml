@@ -26,6 +26,8 @@ entries:
   entries:
   - title: 使用首选项文件设置 IPv4 或 IPv6
     url: "/configure/reference_set_ipv4_or_ipv6.html"
+  - title: 添加不同的子网
+    url: "/configure/add_different_subnets.html"
   - title: 在不同子网之间启用数据存储库挂载
     url: "/configure/task_enable_datastore_mounting_across_different_subnets.html"
   - title: 为 VSC 重新生成 SSL 证书

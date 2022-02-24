@@ -20,7 +20,7 @@ summary: 您应在环境中部署 ONTAP 工具并指定所需的参数，以便�
 NOTE: 可以将 ONTAP 工具注册到 vCenter Server 的 Windows 部署或 VMware vCenter Server 虚拟设备（ vCSA ）部署中。
 
 +
-https://mysupport.netapp.com/matrix/imt.jsp?components=99343;&solution=1777&isHWU&src=IMT["互操作性表工具： OTV 9.8"]
+https://imt.netapp.com/matrix/imt.jsp?components=103229;&solution=1777&isHWU&src=IMT["互操作性表工具"]
 
 * 您必须已配置和设置 vCenter Server 环境。
 * 您必须已为虚拟机设置 ESXi 主机。
@@ -67,7 +67,12 @@ URL
 |===
 . 输入详细信息以自定义部署向导。
 +
-请参见 link:../deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html["部署自定义注意事项"] 了解完整的详细信息。
+（可选）在配置 vCenter 或启用 VCF 部分中，选中 * 启用 VMware Cloud Foundation （ VCF ） * 复选框，并为 ONTAP 工具凭据提供密码。您不需要提供 IP 地址，但必须提供密码。有关完整的详细信息，请参见以下内容。
+
++
+** link:../deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html["部署自定义注意事项"]
+** link:../deploy/vmware_cloud_foundation_mode_deployment.html["适用于 ONTAP 工具的 VMware 云基础部署模式"]
+
 
 . 查看配置数据，然后单击 * 下一步 * 完成部署。
 +

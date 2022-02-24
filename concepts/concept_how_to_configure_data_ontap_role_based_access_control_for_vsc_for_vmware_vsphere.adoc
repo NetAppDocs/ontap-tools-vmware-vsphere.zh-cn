@@ -10,7 +10,7 @@ summary: 如果要对适用于 VMware vSphere 的 ONTAP ® 工具使用基于角
 
 
 [role="lead"]
-如果要对适用于 VMware vSphere 的 ONTAP ® 工具使用基于角色的访问控制，则必须在存储系统上配置 ONTAP 基于角色的访问控制（ Role-Based Access Control ， RBAC ）。您可以使用 ONTAP RBAC 功能创建一个或多个具有有限访问权限的自定义用户帐户。
+如果要将基于角色的访问控制与适用于 VMware vSphere 的 ONTAP 工具结合使用，则必须在存储系统上配置 ONTAP 基于角色的访问控制（ Role-Based Access Control ， RBAC ）。您可以使用 ONTAP RBAC 功能创建一个或多个具有有限访问权限的自定义用户帐户。
 
 VSC 和 SRA 可以在集群级别或 Storage Virtual Machine （ SVM ） SVM 级别访问存储系统。如果要在集群级别添加存储系统，则必须提供管理员用户的凭据，以提供所有必需的功能。如果您要通过直接添加 SVM 详细信息来添加存储系统，则必须注意 "`vsadmin` " 用户没有执行某些任务所需的所有角色和功能。
 
@@ -24,7 +24,7 @@ VASA Provider 只能在集群级别访问存储系统。如果特定存储控制
 NOTE: 您可以使用以下方法之一创建这些角色：
 
 +
-** ONTAP System Manager 9.8
+** ONTAP System Manager 9.8P1 或更高版本
 +
 link:../configure/task_configure_user_role_and_privileges.html["配置用户角色和权限"]
 

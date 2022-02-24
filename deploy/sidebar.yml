@@ -6,6 +6,8 @@ entries:
   url: "/deploy/concept_installation_workflow_for_new_users.html"
 - title: 适用于现有 ONTAP 工具用户的部署工作流
   url: "/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html"
+- title: 适用于 ONTAP 工具的 VMware 云基础部署模式
+  url: "/deploy/vmware_cloud_foundation_mode_deployment.html"
 - title: ONTAP 工具快速入门
   url: "/qsg.html"
 - title: 部署 ONTAP 工具的要求

@@ -1,0 +1,53 @@
+---
+permalink: protect/configure_vvols_replication_existing_datastore.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用 Site Recovery Manager （ SRM\ ）中的阵列管理器向导配置 Storage Replication Adapter （ SRA ），以启用 SRM 与 Storage Virtual Machine （ SVM\ ）之间的交互。 
+---
+= 为现有数据存储库配置 VVol 复制
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+VVOL 复制功能已得到增强，可为在 SRM 设置之前创建的现有虚拟机提供 VVOL 复制。这样，您就可以恢复现有虚拟机并在恢复站点上对其进行保护。
+
+* 您需要的内容 *
+
+* 集群和 SVM 已建立对等关系。
+* 在源站点和目标站点上创建数据存储库和 FlexVol 卷。
+* 源站点和目标站点具有相同的存储功能配置文件。
+* FlexVol 卷具有相同的 SnapMirror 计划。
+* 已启用 VVol 复制。
+
+
+现有数据存储库未创建复制组。
+
+* 步骤 *
+
+. 访问 Swagger 接口。
+. 执行 REST API 为现有数据存储库配置复制组。
++
+API ： /3.0/admin/ ｛ datastore ｝ / 复制组
+
+. 使用用于创建此数据存储库的存储功能配置文件为现有 VVol 数据存储库创建 VM 存储策略。
++
+从可用列表中添加复制策略，复制计划和兼容数据存储库。
+
+
+
+
+NOTE: 如果您使用 System Manager 保护 FlexVol 卷，并且存储功能配置文件的 QoS 策略为 " 无 " ，请确保未选中 * 强制执行性能限制 * 选项，以便成功进行灾难恢复。
+
+. 访问未受保护的虚拟机并编辑 VM 存储策略。
+. 选择 VM 存储策略和数据存储库。
+. 将复制组添加到未受保护的虚拟机。
+
+
+image::../media/vvols_replication_existing_datastore.png[VVOL 复制现有数据存储库]
+
+* 注： *
+
+* 在配置虚拟机以对现有数据存储库启用复制时，请确保验证具有配置 VVol 的 FlexVol 卷。
+* 如果现有虚拟机的 VVOL 分布在多个数据存储库中，则在启用复制之前，应使用 vMotion 将该虚拟机的所有 VVOL 移动到单个数据存储库。
+

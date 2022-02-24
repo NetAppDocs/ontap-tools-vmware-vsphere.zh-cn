@@ -2,7 +2,7 @@
 permalink: configure/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html 
 sidebar: sidebar 
 keywords:  
-summary: 您可以使用适用于 VMware vSphere 的 ONTAP ® 工具在 ESXi 主机上设置超时和其他值，以确保性能最佳并成功完成故障转移。Virtual Storage Console （ VSC\ ）设置的值基于 NetApp 内部测试。 
+summary: 您可以使用适用于 VMware vSphere 的 ONTAP 工具在 ESXi 主机上设置超时和其他值，以确保性能最佳并成功进行故障转移。Virtual Storage Console （ VSC\ ）设置的值基于 NetApp 内部测试。 
 ---
 = 使用 ONTAP 工具设置的 ESXi 主机值
 :icons: font
@@ -10,7 +10,7 @@ summary: 您可以使用适用于 VMware vSphere 的 ONTAP ® 工具在 ESXi 主
 
 
 [role="lead"]
-您可以使用适用于 VMware vSphere 的 ONTAP ® 工具在 ESXi 主机上设置超时和其他值，以确保性能最佳并成功完成故障转移。Virtual Storage Console （ VSC ）设置的值基于 NetApp 内部测试。
+您可以使用适用于 VMware vSphere 的 ONTAP 工具在 ESXi 主机上设置超时和其他值，以确保性能最佳并成功进行故障转移。ONTAP 工具设置的值基于 NetApp 内部测试。
 
 您可以在 ESXi 主机上设置以下值：
 
@@ -38,7 +38,7 @@ summary: 您可以使用适用于 VMware vSphere 的 ONTAP ® 工具在 ESXi 主
 
 * * 网络 .TcpipHeapMax*
 +
-如果您使用的是 vSphere 6.0 或更高版本，则应将此值设置为 1536 。
+如果您使用的是 vSphere 6.0 或更高版本，则对于 ESXi 主机 6.x ，请将此值设置为 512 ，对于 ESXi 7.x ，请将此值设置为 1024 。
 
 * * 。 nfs.MaxVolumes*
 +

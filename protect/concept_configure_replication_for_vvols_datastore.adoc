@@ -23,3 +23,5 @@ WARNING: 您不应在一个 VVOL 数据存储库中混合配置受保护和未�
 NOTE: 如果您要对 VVOL 数据存储库使用灾难恢复，则无需单独配置 Storage Replication Adapter （ SRA ），因为 VASA Provider 功能已增强，可以进行 VVOL 复制。
 
 image::../media/vvols_replication.png[VVOL 复制]
+
+link:../protect/configure_vvols_replication_existing_datastore.html["为现有数据存储库配置 VVol 复制"]

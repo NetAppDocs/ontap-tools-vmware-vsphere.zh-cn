@@ -18,6 +18,8 @@ entries:
   url: "/protect/concept_migration_of_disaster_recovery_setup_from_windows_to_appliance.html"
 - title: 为 VVOL 数据存储库配置复制以保护虚拟机
   url: "/protect/concept_configure_replication_for_vvols_datastore.html"
+- title: 为现有数据存储库配置 VVol 复制
+  url: "/protect/configure_vvols_replication_existing_datastore.html"
 - title: 保护未受保护的虚拟机
   url: "/protect/task_protect_non_protected_virtual_machines.html"
 - title: 配置受保护站点和恢复站点

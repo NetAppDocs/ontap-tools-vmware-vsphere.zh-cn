@@ -24,7 +24,7 @@ https://mysupport.netapp.com/site/global/dashboard[]
 * 您的存储系统应使用 ONTAP 9.3 或更高版本。
 
 
-ONTAP 提供的 IOPS 数据将进行四舍五入并显示在 VVOL 信息板上。ONTAP 提供的实际 IOPS 值与 VVol 信息板上显示的 IOPS 值之间可能存在差异。从 ONTAP 工具的 9.8 版开始，可对基于 NFS 的 VVOL 数据存储库进行性能监控。
+ONTAP 提供的 IOPS 数据将进行四舍五入并显示在 VVOL 信息板上。ONTAP 提供的实际 IOPS 值与 VVol 信息板上显示的 IOPS 值之间可能存在差异。ONTAP 工具可为基于 NFS 的 VVOL 数据存储库提供性能监控。
 
 
 NOTE: 如果您是首次注册 OnCommand API 服务，则只能在 15 到 30 分钟后在 VVOL 信息板上查看 SAN VVOL 数据存储库的所有性能指标数据。
