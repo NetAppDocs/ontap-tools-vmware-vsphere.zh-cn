@@ -436,6 +436,8 @@
 
 
 
+
+
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
@@ -625,6 +627,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -788,6 +792,8 @@
     
 
   
+
+
 
 
 
@@ -1061,7 +1067,7 @@
   });
 </script><div class="sidebar-nav-container">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/index.html">
-        适用于 VMware vSphere 的 ONTAP 工具文档
+        适用于 VMware vSphere 的 ONTAP Tools 9.10 文档
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/release_notes.html">
         发行说明
       </a></li><li class="subfolders "><a href="#">
@@ -1101,6 +1107,8 @@
         适用于 VMware vSphere 的 ONTAP 工具的新用户部署工作流
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html">
         适用于现有 ONTAP 工具用户的部署工作流
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/deploy/vmware_cloud_foundation_mode_deployment.html">
+        适用于 ONTAP 工具的 VMware 云基础部署模式
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/qsg.html">
         ONTAP 工具快速入门
       </a></li><li class="subfolders "><a href="#">
@@ -1164,6 +1172,8 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/configure/reference_set_ipv4_or_ipv6.html">
         使用首选项文件设置 IPv4 或 IPv6
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/configure/add_different_subnets.html">
+        添加不同的子网
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/configure/task_enable_datastore_mounting_across_different_subnets.html">
         在不同子网之间启用数据存储库挂载
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/configure/task_regenerate_an_ssl_certificate_for_vsc.html">
@@ -1229,6 +1239,8 @@
         将 Windows SRM 迁移到 SRM 设备
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/protect/concept_configure_replication_for_vvols_datastore.html">
         为 VVOL 数据存储库配置复制以保护虚拟机
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/protect/configure_vvols_replication_existing_datastore.html">
+        为现有数据存储库配置 VVol 复制
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/protect/task_protect_non_protected_virtual_machines.html">
         保护未受保护的虚拟机
       </a></li><li class="subfolders "><a href="#">
@@ -1343,7 +1355,7 @@
         
 
         <li class="n-breadcrumb__list-item">
-          <a href="/zh-cn/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere</a>
+          <a href="/zh-cn/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere&nbsp;9.10</a>
         </li>
         <li class="n-breadcrumb__list-item">
           配置 VVOL 数据存储库
@@ -1376,7 +1388,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-31 18:26:14 +0000">01/31/2022</time>
+    <time datetime="2022-02-24 06:16:26 +0000">02/24/2022</time>
     
   
 
@@ -1434,6 +1446,25 @@
 <li>
 <p>您应已在源站点和目标站点上完成集群配对和 SVM 配对。</p>
 </li>
+<li>
+<p>关于此任务 *</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-tools-vmware-vsphere/images/note.svg" alt="注">
+</td>
+<td class="content">
+ONTAP 工具 9.10 版支持为全 SAN 阵列（ ASA ）类型的 ONTAP 9.9.1 或更高版本的存储平台创建 vmdk 大小大于 16 TB 的 VVOL 数据存储库。
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
 <li>
 <p>步骤 *</p>
 <div class="olist arabic">
@@ -1508,12 +1539,17 @@
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>" 新建数据存储库 " 对话框的 " 常规 " 部分提供了用于输入新数据存储库的位置，名称，问题描述，类型和协议的选项。VVOL 数据存储库类型用于配置 VVOL 数据存储库。</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>注： * 如果要为 VVol 复制配置 iSCSI VVol 数据存储库，则在目标站点上创建 VVol 数据存储库之前，需要执行 SnapMirror 更新和集群重新发现。</p>
-</li>
-</ul>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-tools-vmware-vsphere/images/note.svg" alt="注">
+</td>
+<td class="content">
+如果要为 VVOL 复制配置 iSCSI VVOL 数据存储库，则在目标站点上创建 VVOL 数据存储库之前，需要执行 SnapMirror 更新和集群重新发现。
+</td>
+</tr>
+</table>
 </div></div></td>
 </tr>
 <tr>
@@ -1526,9 +1562,12 @@
 <div class="ulist">
 <ul>
 <li>
-<p>注： * 在 ONTAP 中创建 FlexVol 卷时，应确保使用要在存储功能配置文件中选择的属性创建这些卷。读写和数据保护 FlexVol 卷都应具有类似的属性。创建 FlexVol 卷并在 ONTAP 中初始化 SnapMirror 后，您应在 VSC 中运行存储重新发现，以便能够查看新卷。</p>
+<p>注： * 在 ONTAP 中创建 FlexVol 卷时，应确保使用要在存储功能配置文件中选择的属性创建这些卷。读写和数据保护 FlexVol 卷都应具有类似的属性。</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>创建 FlexVol 卷并在 ONTAP 中初始化 SnapMirror 后，您应在 VSC 中运行存储重新发现，以便能够查看新卷。</p>
 </div></div></td>
 </tr>
 <tr>
@@ -1541,7 +1580,17 @@
 <div class="ulist">
 <ul>
 <li>
-<p>注意： * 属于 VVOL 数据存储库的 FlexVol 卷不能缩减到现有大小以下，但最多可增长 120% 。此 FlexVol 卷上已启用默认快照。</p>
+<p>注： *</p>
+<div class="ulist">
+<ul>
+<li>
+<p>属于 VVOL 数据存储库的 FlexVol 卷不能缩减到低于现有大小，但最多可增长 120% 。此 FlexVol 卷上已启用默认快照。</p>
+</li>
+<li>
+<p>应创建的 FlexVol 卷的最小大小为 5 GB 。</p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div></div></td>

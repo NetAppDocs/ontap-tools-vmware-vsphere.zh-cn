@@ -436,6 +436,8 @@
 
 
 
+
+
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
@@ -625,6 +627,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -788,6 +792,8 @@
     
 
   
+
+
 
 
 
@@ -1061,7 +1067,7 @@
   });
 </script><div class="sidebar-nav-container">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/index.html">
-        适用于 VMware vSphere 的 ONTAP 工具文档
+        适用于 VMware vSphere 的 ONTAP Tools 9.10 文档
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/release_notes.html">
         发行说明
       </a></li><li class="subfolders "><a href="#">
@@ -1101,6 +1107,8 @@
         适用于 VMware vSphere 的 ONTAP 工具的新用户部署工作流
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html">
         适用于现有 ONTAP 工具用户的部署工作流
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/deploy/vmware_cloud_foundation_mode_deployment.html">
+        适用于 ONTAP 工具的 VMware 云基础部署模式
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/qsg.html">
         ONTAP 工具快速入门
       </a></li><li class="subfolders "><a href="#">
@@ -1164,6 +1172,8 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/configure/reference_set_ipv4_or_ipv6.html">
         使用首选项文件设置 IPv4 或 IPv6
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/configure/add_different_subnets.html">
+        添加不同的子网
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/configure/task_enable_datastore_mounting_across_different_subnets.html">
         在不同子网之间启用数据存储库挂载
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/configure/task_regenerate_an_ssl_certificate_for_vsc.html">
@@ -1229,6 +1239,8 @@
         将 Windows SRM 迁移到 SRM 设备
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/protect/concept_configure_replication_for_vvols_datastore.html">
         为 VVOL 数据存储库配置复制以保护虚拟机
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/protect/configure_vvols_replication_existing_datastore.html">
+        为现有数据存储库配置 VVol 复制
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/ontap-tools-vmware-vsphere/protect/task_protect_non_protected_virtual_machines.html">
         保护未受保护的虚拟机
       </a></li><li class="subfolders "><a href="#">
@@ -1343,7 +1355,7 @@
         
 
         <li class="n-breadcrumb__list-item">
-          <a href="/zh-cn/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere</a>
+          <a href="/zh-cn/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere&nbsp;9.10</a>
         </li>
         <li class="n-breadcrumb__list-item">
           创建存储功能配置文件
@@ -1376,7 +1388,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-31 18:26:14 +0000">01/31/2022</time>
+    <time datetime="2022-02-24 06:16:26 +0000">02/24/2022</time>
     
   
 
@@ -1406,7 +1418,7 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>您必须已向适用于 VMware vSphere 的 ONTAP ® 工具注册 VASA Provider 实例。</p>
+<p>您必须已向适用于 VMware vSphere 的 ONTAP 工具注册 VASA Provider 实例。</p>
 </div>
 <div class="paragraph">
 <p>设置配置文件后，您可以根据需要编辑此配置文件。</p>
@@ -1454,27 +1466,26 @@
 </ol>
 </div>
 </li>
-<li>
-<p>注： *</p>
-<div class="ulist">
-<ul>
-<li>
-<p>要查看与现有配置文件关联的值，您可以单击存储功能配置文件页面中的配置文件名称。然后， VASA Provider 将显示该配置文件的 " 摘要 " 页面。</p>
-</li>
-<li>
-<p>您不能修改在 9.6 ONTAP 工具之前创建的任何现有存储功能配置文件。</p>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-tools-vmware-vsphere/images/note.svg" alt="注">
+</td>
+<td class="content">
+要查看与现有配置文件关联的值，您可以单击存储功能配置文件页面中的配置文件名称。然后， VASA Provider 将显示该配置文件的 " 摘要 " 页面。
+</td>
+</tr>
+</table>
+</div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
 <p>完成创建存储功能配置文件向导中的页面以设置配置文件或编辑值以修改现有配置文件。</p>
 <div class="paragraph">
 <p>此向导中的大多数字段都是不言自明的。下表介绍了一些可能需要指导的字段。</p>
-</div>
-</li>
-</ol>
-</div>
-</li>
-</ul>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1510,6 +1521,14 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>协议</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>您可以根据为存储系统选择的平台从列出的可用协议中进行选择。在配置虚拟机时，您可以使用存储功能配置文件配置 VM 存储策略，并且协议字段会根据特定协议筛选数据存储库。字段 " 任何 " 允许您使用所有协议。</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>性能</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
@@ -1523,7 +1542,7 @@
 <li>
 <p>如果选择 * QoS 策略组 * ，则会将传统 QoS 策略应用于 VVOL 。</p>
 <div class="paragraph">
-<p>您可以设置 * 最大 IOPS* 和 * 最小 IOPS* 的值，以便使用 QoS 功能。如果选择无限 IOPS ，则最大 IOPS 字段将被禁用。如果应用于传统数据存储库，则会创建一个具有 <code>Max IOPS</code> 值的 QoS 策略并将其分配给 FlexVol 卷。如果与 VVol 数据存储库结合使用，则会为每个数据 VVol 创建一个 QoS 策略，其中包含 Max IOPS 和 Min IOPS 值。</p>
+<p>您可以设置 * 最大 IOPS* 和 * 最小 IOPS* 的值，以便使用 QoS 功能。如果选择无限 IOPS ，则最大 IOPS 字段将被禁用。如果应用于传统数据存储库，则会创建一个具有 <code>Max IOPS</code> 值的 QoS 策略并将其分配给 FlexVol 卷。如果与 VVOL 数据存储库结合使用，则会为每个数据 VVOL 数据存储库创建一个具有最大 IOPS 和最小 IOPS 值的 QoS 策略。</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1564,31 +1583,24 @@
 <li>
 <p>如果选择 AFF 存储，则可以启用加密和分层。</p>
 <div class="paragraph">
-<p>默认情况下， AFF 存储会启用重复数据删除和数据压缩，并且无法禁用。空间预留配置为精简，不能更改为厚（聚合效率和分层需要精简）。</p>
+<p>默认情况下， AFF 存储会启用重复数据删除和数据压缩，并且无法禁用。</p>
 </div>
 <div class="paragraph">
 <p>通过分层属性，可以使用启用了 FabricPool 的聚合中的卷（对于采用 ONTAP 9.4 及更高版本的 AFF 系统， VASA Provider 支持这些卷）。您可以为分层属性配置以下策略之一：</p>
 </div>
 </li>
 <li>
-<p>any ：允许对任何 FlexVol 卷使用此存储功能配置文件，无论是否使用了 Fabric Pool</p>
-</li>
-<li>
 <p>无：防止将卷数据移动到容量层</p>
 </li>
 <li>
-<p>snapshot-only ：将卷 Snapshot 副本中未与活动文件系统关联的用户数据块移动到容量层</p>
-</li>
-<li>
-<p>自动：将 Snapshot 副本和活动文件系统中的冷用户数据块移至容量层</p>
+<p>Snapshot ：将与活动文件系统无关的卷 Snapshot 副本的用户数据块移动到容量层</p>
 </li>
 </ul>
 </div></div></td>
 </tr>
 </tbody>
 </table>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
 <li>
 <p>在摘要页面上查看您选择的内容，然后单击 * 确定 * 。</p>
 <div class="paragraph">
@@ -1596,9 +1608,6 @@
 </div>
 </li>
 </ol>
-</div>
-</li>
-</ul>
 </div>
 
     </article>
