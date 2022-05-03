@@ -5,6 +5,7 @@ keywords:
 summary: vCenter Server 提供了基于角色的访问控制（ RBAC ），可用于控制对 vSphere 对象的访问。在适用于 VMware vSphere 的 ONTAP ® 工具中， vCenter Server RBAC 可与 ONTAP RBAC 结合使用，以确定特定用户可以对特定存储系统上的对象执行哪些 VSC 任务。 
 ---
 = ONTAP 工具中基于角色的访问控制概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

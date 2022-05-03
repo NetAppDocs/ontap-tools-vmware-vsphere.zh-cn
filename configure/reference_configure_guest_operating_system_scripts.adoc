@@ -5,6 +5,7 @@ keywords: Guest operating system
 summary: 子操作系统脚本的 ISO 映像挂载在适用于 VMware vSphere 服务器的 ONTAP ® 工具上。要使用子操作系统脚本为虚拟机设置存储超时，必须从 vSphere Client 挂载这些脚本。 
 ---
 = 配置子操作系统脚本
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

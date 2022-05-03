@@ -5,6 +5,7 @@ keywords:
 summary: 您可以设置多个建议的 ONTAP 角色，以便使用适用于 VMware vSphere 的 ONTAP ® 工具以及基于角色的访问控制 \ （ RBAC ）。这些角色包含执行虚拟存储控制台（ VSC\ ）任务所需的存储操作所需的 ONTAP 特权。 
 ---
 = 使用适用于 VMware vSphere 的 ONTAP 工具时的建议 ONTAP 角色
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

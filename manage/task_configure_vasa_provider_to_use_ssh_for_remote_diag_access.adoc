@@ -5,6 +5,7 @@ keywords:
 summary: 您可以配置 ONTAP 工具，以便为 diag 用户启用 SSH 访问。 
 ---
 = 配置远程诊断访问
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: 在首选项文件 kaminoprefs.xml中 添加了一个新选项，您可以设置该选项，以便为添加到 VSC 的所有存储系统启用 IPv4 或 IPv6 支持。 
 ---
 = 使用首选项文件设置 IPv4 或 IPv6
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

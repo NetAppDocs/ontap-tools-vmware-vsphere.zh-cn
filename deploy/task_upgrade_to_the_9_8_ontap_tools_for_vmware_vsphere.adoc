@@ -5,6 +5,7 @@ keywords: Virtual Storage Console, Storage Replication Adapter
 summary: 您可以按照此处提供的说明，从现有 9.7.1 或更高版本的设置原位升级到最新版本的 ONTAP 工具。 
 ---
 = 升级到最新版本的 ONTAP 工具
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

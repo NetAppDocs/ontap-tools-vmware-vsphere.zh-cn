@@ -5,6 +5,7 @@ keywords:
 summary: 您可以使用适用于 VMware vSphere 的 ONTAP ® 工具提供的更新功能刷新有关存储系统的信息，并强制 Virtual Storage Console （ VSC\ ）发现存储系统。 
 ---
 = 刷新存储系统显示内容
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

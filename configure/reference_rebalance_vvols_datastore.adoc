@@ -5,6 +5,7 @@ keywords: vVols datastore,rebalancing
 summary: ONTAP 工具支持使用命令重新平衡数据中心中的 FlexVol 卷。主要目标是在 FlexVol 卷之间实现均匀的空间利用率。ONTAP 工具会根据空间使用情况，精简配置， LUN 计数和存储功能配置文件在现有卷之间重新分布 VVOL 。 
 ---
 = 重新平衡 VVol 数据存储库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

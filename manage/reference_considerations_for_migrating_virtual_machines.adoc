@@ -5,6 +5,7 @@ keywords:
 summary: 在数据中心中迁移现有虚拟机时，您应了解一些注意事项。 
 ---
 = 迁移或克隆虚拟机的注意事项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

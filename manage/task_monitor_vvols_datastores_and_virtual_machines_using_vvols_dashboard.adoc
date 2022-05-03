@@ -5,6 +5,7 @@ keywords:
 summary: 您可以使用 ONTAP 工具的 VVol 信息板根据所选参数监控性能并查看 vCenter Server 中排名前五位的 SAN 和 NAS VMware 虚拟卷（ VVols ）数据存储库。 
 ---
 = 使用 VVol 信息板分析性能数据
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: 您可以使用 ONTAP 工具的传统信息板监控传统数据存储库和虚拟机。通过信息板数据，您可以分析数据存储库使用情况并采取更正操作，以防止虚拟机受到与空间相关的限制。 
 ---
 = 使用传统信息板分析性能数据
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

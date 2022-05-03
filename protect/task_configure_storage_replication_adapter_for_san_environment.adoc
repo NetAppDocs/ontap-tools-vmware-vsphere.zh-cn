@@ -5,6 +5,7 @@ keywords:
 summary: 在为 Site Recovery Manager （ SRM\ ）运行 Storage Replication Adapter （ SRA ）之前，必须先设置存储系统。 
 ---
 = 为 SAN 环境配置 Storage Replication Adapter
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

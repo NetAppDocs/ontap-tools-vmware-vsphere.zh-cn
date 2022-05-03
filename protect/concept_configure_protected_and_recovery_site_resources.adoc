@@ -5,6 +5,7 @@ keywords:
 summary: 您必须在两个站点上配置 VM 网络， ESXi 主机和文件夹等资源映射，以便能够将每个资源从受保护站点映射到恢复站点上的相应资源。 
 ---
 = 配置受保护站点和恢复站点资源
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

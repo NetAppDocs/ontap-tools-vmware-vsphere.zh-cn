@@ -5,6 +5,7 @@ keywords:
 summary: 为了简化 vCenter Server 特权和基于角色的访问控制的使用， Virtual Storage Console （ VSC\ ）提供了标准 VSC 角色，可用于执行关键 VSC 任务。此外，您还可以使用只读角色查看 VSC 信息，但不能执行任何任务。 
 ---
 = ONTAP 工具附带的标准角色
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

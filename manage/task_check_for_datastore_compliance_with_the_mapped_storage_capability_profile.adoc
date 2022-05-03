@@ -5,6 +5,7 @@ keywords:
 summary: 您可以快速验证数据存储库是否符合映射到数据存储库的存储功能配置文件。 
 ---
 = 验证数据存储库是否符合映射的存储功能配置文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

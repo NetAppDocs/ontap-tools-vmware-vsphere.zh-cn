@@ -5,6 +5,7 @@ keywords:
 summary: 用于 VMware vSphere 任务的不同 ONTAP 工具需要不同的特权组合，这些特权专用于 Virtual Storage Console\（ VSC\ ）和原生 vCenter Server 特权。 
 ---
 = VSC 任务所需的特权
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

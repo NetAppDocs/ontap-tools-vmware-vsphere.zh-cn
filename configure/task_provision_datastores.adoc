@@ -5,6 +5,7 @@ keywords:
 summary: 配置数据存储库会为虚拟机及其虚拟机磁盘（ VMDK\ ）创建一个逻辑容器。您可以配置数据存储库，然后将数据存储库连接到单个主机，集群中的所有主机或数据中心中的所有主机。 
 ---
 = 配置传统数据存储库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

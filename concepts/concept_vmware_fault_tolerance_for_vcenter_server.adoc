@@ -5,6 +5,7 @@ keywords: VSC
 summary: VMware vSphere Fault Tolerance （ FT\ ）功能可在更高级别提供高可用性（ HA\ ），使您能够在不丢失任何数据或连接的情况下保护虚拟机。您必须在 vCenter Server 中启用或禁用 vSphere FT for ONTAP 工具。 
 ---
 = VMware vSphere 容错
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

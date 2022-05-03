@@ -5,6 +5,7 @@ keywords:
 summary: 您可以手动将存储系统添加到 Virtual Storage Console （ VSC\ ）。 
 ---
 = 将存储系统添加到 VSC
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: 只有在 ONTAP 工具中启用了 VASA Provider 的情况下，才能使用配置数据存储库向导配置 VVOL 数据存储库。 
 ---
 = 配置 VVOL 数据存储库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

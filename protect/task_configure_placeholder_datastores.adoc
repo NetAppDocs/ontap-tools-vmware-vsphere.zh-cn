@@ -5,6 +5,7 @@ keywords:
 summary: 您必须配置占位数据存储库，以便在受保护虚拟机（ VM\ ）的恢复站点的 vCenter 清单中占据位置。占位数据存储库不需要很大，因为占位 VM 很小，只使用几百 KB 或更少的 KB 。 
 ---
 = 配置占位数据存储库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

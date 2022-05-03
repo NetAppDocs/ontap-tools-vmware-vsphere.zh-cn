@@ -5,6 +5,7 @@ keywords:
 summary: 在开始为 VMware vSphere 部署 ONTAP 工具之前，您应了解基本存储系统要求，应用程序要求和许可证要求。 
 ---
 = ONTAP 工具支持的存储系统，许可和应用程序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

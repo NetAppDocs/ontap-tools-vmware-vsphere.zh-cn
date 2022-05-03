@@ -5,6 +5,7 @@ keywords:
 summary: 您可以使用 VSC 图形用户界面（ GUI\ ）中提供的选项收集适用于 VMware vSphere 的 ONTAP ® 工具的日志文件。技术支持可能会要求您收集日志文件以帮助解决问题。 
 ---
 = 收集日志文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

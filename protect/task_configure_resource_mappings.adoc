@@ -5,6 +5,7 @@ keywords:
 summary: 您必须在受保护站点和恢复站点上映射资源，以便将虚拟机配置为故障转移到一组主机或另一组主机。 
 ---
 = 配置资源映射
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

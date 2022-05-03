@@ -5,6 +5,7 @@ keywords:
 summary: 调整数据存储库大小可以增加或减少虚拟机文件的存储。随着基础架构要求的变化，您可能需要更改数据存储库的大小。 
 ---
 = 调整数据存储库大小
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: clean up browser cache
 summary: 如果在部署或升级 ONTAP 工具后未自动更新插件，则应清理浏览器和 vCenter Server 上缓存的下载插件包以解决 vCenter Server 插件问题。 
 ---
 = 清除 vSphere 缓存的已下载插件软件包
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

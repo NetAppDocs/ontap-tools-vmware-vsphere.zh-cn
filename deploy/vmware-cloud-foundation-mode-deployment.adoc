@@ -5,6 +5,7 @@ keywords:
 summary: 适用于 VMware vSphere 的 ONTAP 工具可以部署在 VMware Cloud 基础环境中。 
 ---
 = 适用于 ONTAP 工具的 VMware 云基础部署模式
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

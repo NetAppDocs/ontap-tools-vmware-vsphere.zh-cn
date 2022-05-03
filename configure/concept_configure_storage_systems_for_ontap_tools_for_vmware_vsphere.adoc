@@ -5,6 +5,7 @@ keywords:
 summary: 如果需要，您应使用 VSC 界面将存储系统添加到 ONTAP 工具并设置默认凭据。 
 ---
 = ONTAP 工具存储系统概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

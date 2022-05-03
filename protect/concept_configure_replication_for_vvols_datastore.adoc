@@ -5,6 +5,7 @@ keywords:
 summary: 您可以使用 ONTAP 工具为 VVOL 数据存储库配置复制。VVOL 复制的主要目的是，在灾难恢复期间使用 VMware Site Recovery Manager （ SRM\ ）保护关键虚拟机。 
 ---
 = 为 VVOL 数据存储库配置复制以保护虚拟机
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

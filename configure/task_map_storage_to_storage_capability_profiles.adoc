@@ -5,6 +5,7 @@ keywords:
 summary: 您可以将与适用于 ONTAP 的 VASA Provider 关联的数据存储库映射到存储功能配置文件。您可以将配置文件分配给未与存储功能配置文件关联的数据存储库。 
 ---
 = 将数据存储库映射到存储功能配置文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

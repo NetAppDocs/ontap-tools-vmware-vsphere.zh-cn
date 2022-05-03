@@ -5,6 +5,7 @@ keywords:
 summary: 您可以使用 VSC 设置警报，以便在卷阈值和聚合阈值达到设置的限制时向您发出通知。 
 ---
 = 配置警报阈值
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

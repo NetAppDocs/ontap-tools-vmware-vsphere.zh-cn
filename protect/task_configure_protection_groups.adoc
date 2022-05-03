@@ -5,6 +5,7 @@ keywords:
 summary: 您必须创建保护组来保护受保护站点上的一组虚拟机。 
 ---
 = 配置保护组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

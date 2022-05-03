@@ -5,6 +5,7 @@ keywords:
 summary: ONTAP 工具支持高可用性 \ （ HA\ ）配置，以帮助在发生故障时使 ONTAP 工具能够无中断地运行。 
 ---
 = 为 ONTAP 工具配置高可用性
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: 首次在 vSphere Client 中运行 Virtual Storage Console （ VSC\ ）时， VSC 将发现 ESXi 主机，其 LUN 和 NFS 导出以及拥有这些 LUN 和导出的 NetApp 存储系统。 
 ---
 = 发现存储系统和主机
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

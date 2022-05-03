@@ -5,6 +5,7 @@ keywords:
 summary: 现在，您可以使用 ONTAP 工具界面为数据存储库挂载添加不同的子网。 
 ---
 = 添加不同的子网
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

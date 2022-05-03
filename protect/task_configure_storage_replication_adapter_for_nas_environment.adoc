@@ -5,6 +5,7 @@ keywords:
 summary: 在运行适用于 VMware vCenter Site Recovery Manager （ SRM\ ）的 Storage Replication Adapter （ SRA ）之前，必须配置存储系统。 
 ---
 = 为 NAS 环境配置 Storage Replication Adapter
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

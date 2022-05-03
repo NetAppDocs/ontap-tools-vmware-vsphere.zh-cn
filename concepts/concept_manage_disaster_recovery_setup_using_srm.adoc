@@ -5,6 +5,7 @@ keywords:
 summary: 您可以在 vCenter Server 中创建和管理灾难恢复设置以及 VMware 的 Site Recovery Manager （ SRM ）。 
 ---
 = 配置灾难恢复设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

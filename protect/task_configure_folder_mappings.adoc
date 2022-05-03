@@ -5,6 +5,7 @@ keywords:
 summary: 您必须映射受保护站点和恢复站点上的文件夹，才能在它们之间进行通信。 
 ---
 = 配置文件夹映射
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

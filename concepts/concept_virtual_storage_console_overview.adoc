@@ -5,6 +5,7 @@ keywords:
 summary: 适用于 VMware vSphere 的 ONTAP 工具可为使用 NetApp 存储系统的 VMware 环境中的虚拟机提供端到端生命周期管理。它支持管理员直接管理 vCenter Server 中的存储，从而简化了 VMware 环境的存储和数据管理。 
 ---
 = ONTAP 工具概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

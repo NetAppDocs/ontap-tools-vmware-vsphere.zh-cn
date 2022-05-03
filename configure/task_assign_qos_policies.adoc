@@ -5,6 +5,7 @@ keywords:
 summary: 配置 FlexGroup 数据存储库不支持为数据存储库分配存储功能配置文件。但是，您可以将 QoS 策略分配给在 FlexGroup 支持的数据存储库上创建的虚拟机。 
 ---
 = 分配 QoS 策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

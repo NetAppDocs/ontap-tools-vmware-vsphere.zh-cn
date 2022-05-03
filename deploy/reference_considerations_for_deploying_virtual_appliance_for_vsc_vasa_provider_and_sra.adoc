@@ -5,6 +5,7 @@ keywords: Virtual Storage Console,Storage Replication Adapter
 summary: 在为 VMware vSphere 部署 ONTAP 工具之前，最好先对部署进行规划，并确定希望如何在环境中配置 ONTAP 工具。 
 ---
 = 部署 ONTAP 工具的注意事项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

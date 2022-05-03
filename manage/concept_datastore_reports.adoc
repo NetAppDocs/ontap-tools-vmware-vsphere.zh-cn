@@ -5,6 +5,7 @@ keywords: Datastore Reports
 summary: 数据存储库报告提供了有关传统数据存储库以及在这些数据存储库上创建的虚拟机的详细信息。 
 ---
 = 数据存储库报告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

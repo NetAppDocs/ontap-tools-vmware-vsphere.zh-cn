@@ -5,6 +5,7 @@ keywords:
 summary: 您可以使用适用于 VMware vSphere 的 ONTAP 工具的图形用户界面安装适用于 VMware vStorage APIs for Array Integration\ （ VAAI\ ）的 NetApp NFS 插件。 
 ---
 = 安装 NFS VAAI 插件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

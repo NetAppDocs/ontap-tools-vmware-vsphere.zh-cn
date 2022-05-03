@@ -5,6 +5,7 @@ keywords:
 summary: 您可以使用适用于 VMware vSphere 的 ONTAP 工具信息板编辑 ESXi 主机设置。 
 ---
 = 使用 ONTAP 工具修改 ESXi 主机设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

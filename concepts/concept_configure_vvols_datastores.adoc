@@ -5,6 +5,7 @@ keywords:
 summary: 您可以使用适用于 ONTAP 的 VASA Provider 创建和管理 VMware 虚拟卷（ VVols\ ）。您可以配置，编辑，挂载和删除 VVOL 数据存储库。您也可以向 VVOL 数据存储库添加存储或从 VVOL 数据存储库中删除存储。以提高灵活性。您可以配置和管理每个虚拟机以及相关 VMDK 。 
 ---
 = VVOL 的 VASA Provider 配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: preferences files
 summary: 这些首选项文件包含用于控制 ONTAP ® 工具以执行 VMware vSphere 操作的设置。在大多数情况下，您无需修改这些文件中的设置。了解 Virtual Storage Console （ VSC\ ）使用哪些首选项文件很有帮助。 
 ---
 = 配置 VSC 首选项文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

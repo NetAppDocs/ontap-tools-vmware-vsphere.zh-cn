@@ -5,6 +5,7 @@ keywords:
 summary: 适用于 VMware vSphere 的 ONTAP 工具提供了一个选项，可用于在 VSC 中使用 SRA 功能来配置灾难恢复。 
 ---
 = 启用 SRA 以保护数据存储库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

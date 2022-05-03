@@ -8,6 +8,7 @@ summary: 提供有关部署和初始化适用于 VMware vSphere 的 ONTAP 工具
 :toc: macro
 :hardbreaks:
 :toclevels: 1
+:allow-uri-read: 
 :toc: 
 :toclevels: 1
 :nofooter: 

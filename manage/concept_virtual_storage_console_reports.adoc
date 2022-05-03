@@ -5,6 +5,7 @@ keywords:
 summary: 您可以使用 ONTAP 工具控制台报告菜单查看特定 vCenter Server 中选定 VSC 实例管理的所有数据存储库的预定义报告。您可以执行排序和导出报告等操作。 
 ---
 = ONTAP 工具数据存储库和 VVOL 报告概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: 子操作系统 \ （ OS\ ）超时脚本可为 Windows 子操作系统设置 SCSI I/O 超时设置。您可以指定 60 秒超时或 190 秒超时。要使设置生效，必须重新启动 Windows 子操作系统。 
 ---
 = 设置 Windows 子操作系统的超时值
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

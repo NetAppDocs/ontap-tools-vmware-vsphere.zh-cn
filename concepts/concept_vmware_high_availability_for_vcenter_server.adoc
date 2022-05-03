@@ -5,6 +5,7 @@ keywords: VSC
 summary: 您可以为 vSphere 环境配置适用于 VMware vSphere 的 ONTAP 工具，以实现高可用性 \ （ HA\ ）。VMware HA 功能可在虚拟环境中提供故障转移保护，防止出现硬件故障和操作系统故障。 
 ---
 = VMware vSphere HA
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

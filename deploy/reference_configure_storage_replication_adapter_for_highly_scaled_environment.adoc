@@ -5,6 +5,7 @@ keywords:
 summary: 您必须根据建议的设置配置存储超时间隔，以使 Storage Replication Adapter （ SRA ）能够在高度扩展的环境中以最佳性能运行。 
 ---
 = 为高度扩展的环境配置 Storage Replication Adapter
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

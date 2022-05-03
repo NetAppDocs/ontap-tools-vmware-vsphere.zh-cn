@@ -5,6 +5,7 @@ keywords: VSC, VASA Provider, and SRA
 summary: VVOL 报告可显示有关 VMware 虚拟卷 \ （ VVol\ ）数据存储库以及在这些数据存储库上创建的虚拟机的详细信息。您可以通过 VVOL 信息板查看和确定 vCenter Server 中 VVOL 数据存储库和虚拟机的潜在问题。 
 ---
 = VVOL 报告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

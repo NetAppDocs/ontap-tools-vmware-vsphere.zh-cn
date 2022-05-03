@@ -5,6 +5,7 @@ keywords:
 summary: 适用于 VMware vSphere 的 ONTAP ® 工具可检查并设置最适合 NetApp 存储系统的 ESXi 主机多路径设置和 HBA 超时设置。 
 ---
 = 配置 ESXi 服务器多路径和超时设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: 您可以使用适用于 VMware vSphere 的 ONTAP 工具在 ESXi 主机上设置超时和其他值，以确保性能最佳并成功进行故障转移。Virtual Storage Console （ VSC\ ）设置的值基于 NetApp 内部测试。 
 ---
 = 使用 ONTAP 工具设置的 ESXi 主机值
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

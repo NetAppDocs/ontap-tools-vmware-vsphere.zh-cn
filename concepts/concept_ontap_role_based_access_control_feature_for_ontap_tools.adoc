@@ -5,6 +5,7 @@ keywords:
 summary: 通过 ONTAP 基于角色的访问控制 \ （ RBAC ），您可以控制对特定存储系统的访问，并控制用户可以对这些存储系统执行的操作。在适用于 VMware vSphere 的 ONTAP ® 工具中， ONTAP RBAC 可与 vCenter Server RBAC 结合使用，以确定特定用户可以对特定存储系统上的对象执行哪些虚拟存储控制台（ VSC\ ）任务。 
 ---
 = ONTAP 存储系统和 vSphere 对象的权限
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

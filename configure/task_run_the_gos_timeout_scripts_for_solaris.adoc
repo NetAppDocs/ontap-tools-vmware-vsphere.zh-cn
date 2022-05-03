@@ -5,6 +5,7 @@ keywords:
 summary: 子操作系统 \ （ OS\ ）超时脚本用于设置 Solaris 10 的 SCSI I/O 超时设置。您可以指定 60 秒超时或 190 秒超时。 
 ---
 = 设置 Solaris 子操作系统的超时值
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

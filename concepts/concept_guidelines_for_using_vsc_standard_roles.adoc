@@ -5,6 +5,7 @@ keywords:
 summary: 使用适用于 VMware vSphere 角色的标准 ONTAP ® 工具时，应遵循特定准则。 
 ---
 = 使用 VSC 标准角色的准则
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

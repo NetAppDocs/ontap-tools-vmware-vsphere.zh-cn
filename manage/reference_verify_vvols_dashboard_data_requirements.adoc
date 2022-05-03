@@ -5,6 +5,7 @@ keywords: vVol dashboard
 summary: 要显示 VMware 虚拟卷 \ （ vvol\ ）数据存储库和虚拟机的动态详细信息，您必须验证 VVol 信息板的一些重要要求。 
 ---
 = VVOL 信息板数据要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

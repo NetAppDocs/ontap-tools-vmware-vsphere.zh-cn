@@ -5,6 +5,7 @@ keywords:
 summary: 您可以从 NetApp 支持站点下载适用于 VMware vSphere 的 ONTAP 工具的 .ova 文件。 
 ---
 = 如何下载 ONTAP 工具
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

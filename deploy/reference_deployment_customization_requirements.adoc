@@ -5,6 +5,7 @@ keywords:
 summary: 在自定义部署 ONTAP 工具时，您必须考虑一些限制。 
 ---
 = 部署自定义注意事项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

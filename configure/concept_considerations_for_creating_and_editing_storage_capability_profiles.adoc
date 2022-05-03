@@ -5,6 +5,7 @@ keywords:
 summary: 您应了解创建和编辑存储功能配置文件的注意事项。 
 ---
 = 创建和编辑存储功能配置文件的注意事项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

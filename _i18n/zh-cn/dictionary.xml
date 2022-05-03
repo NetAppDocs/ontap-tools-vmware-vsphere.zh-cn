@@ -2,7 +2,6 @@
 <blocks>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
-  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
   <block id="1633df946f0d6e82efbce7d3e6e50cc6" category="summary">适用于 VMware vSphere 的 ONTAP 工具支持对 ONTAP 使用 MetroCluster IP 和 FC 配置的环境。大多数情况下，这种支持都是自动提供的。但是，在将 MetroCluster 环境与 VSC 和 VASA Provider 结合使用时，您可能会注意到一些不同之处。</block>
   <block id="926c545e813337f4bef6900a78c65bfc" category="doc">ONTAP 工具支持的 MetroCluster 配置</block>
   <block id="39e2af895ac75a278cab1467d55da02b" category="admonition">SRA 不支持 MetroCluster 配置。</block>
@@ -1991,4 +1990,8 @@
   <block id="afa73da64573c9300600d9dcda03dbca" category="inline-link">适用于 VMware vSphere 9.10 的 ONTAP 工具发行说明</block>
   <block id="1d39c4b0a8cc202b1cc30e5c2df964fb" category="paragraph">有关详细信息，请参见<block ref="8da3a9cd5d4fe240d226b42d5d3c0796" category="inline-link-rx"></block>。</block>
   <block id="4cf800e4c7e3afad619ba39d635e53c7" category="sidebar">适用于 VMware vSphere 的 ONTAP Tools 9.10 文档</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
 </blocks>

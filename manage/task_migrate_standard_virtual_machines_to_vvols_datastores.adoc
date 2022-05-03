@@ -5,6 +5,7 @@ keywords: Migrate traditional virtual machines
 summary: 您可以将虚拟机从传统数据存储库迁移到虚拟卷 \ （ vvol\ ）数据存储库，以利用基于策略的虚拟机管理和其他 vVol 功能。通过 VVOL 数据存储库，您可以满足日益增长的工作负载需求。 
 ---
 = 将传统虚拟机迁移到 VVOL 数据存储库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

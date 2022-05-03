@@ -5,6 +5,7 @@ keywords:
 summary: 您可以使用 Site Recovery Manager （ SRM\ ）中的阵列管理器向导配置 Storage Replication Adapter （ SRA ），以启用 SRM 与 Storage Virtual Machine （ SVM\ ）之间的交互。 
 ---
 = 使用阵列管理器配置 SRA
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

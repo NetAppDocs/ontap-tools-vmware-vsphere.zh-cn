@@ -5,6 +5,7 @@ keywords:
 summary: 您应配置 VM 存储策略以管理 VVOL 数据存储库上配置的虚拟机，并为虚拟磁盘启用复制等服务。对于传统数据存储库，可以选择使用这些 VM 存储策略。 
 ---
 = 配置 VM 存储策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

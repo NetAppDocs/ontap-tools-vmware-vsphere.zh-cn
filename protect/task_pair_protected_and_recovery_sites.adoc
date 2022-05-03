@@ -5,6 +5,7 @@ keywords:
 summary: 您必须对使用 vSphere Client 创建的受保护站点和恢复站点进行配对，以使 Storage Replication Adapter （ SRA ）能够发现存储系统。 
 ---
 = 将受保护站点和恢复站点配对
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

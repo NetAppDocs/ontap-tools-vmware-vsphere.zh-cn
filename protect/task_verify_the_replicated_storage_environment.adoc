@@ -5,6 +5,7 @@ keywords:
 summary: 配置 Storage Replication Adapter （ SRA ）后，您必须验证受保护站点和恢复站点是否已成功配对。受保护站点和恢复站点都必须能够发现复制的存储系统。 
 ---
 = 验证复制的存储系统
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

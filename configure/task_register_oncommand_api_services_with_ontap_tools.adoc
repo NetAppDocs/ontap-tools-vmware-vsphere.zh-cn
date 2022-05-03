@@ -5,6 +5,7 @@ keywords: virtual volume datastores
 summary: 如果您使用的是 ONTAP 9.6 或更早版本，则只有在您已为 VASA Provider 注册 OnCommand API 服务以获取 VVOL VM 和数据存储库报告的数据时， VVOL 信息板才能显示 VMware 虚拟卷 \ （ VVols\ ）数据存储库和虚拟机的详细信息。 
 ---
 = 将 OnCommand API 服务注册到 ONTAP 工具中
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

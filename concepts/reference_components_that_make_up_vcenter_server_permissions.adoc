@@ -5,6 +5,7 @@ keywords:
 summary: vCenter Server 可识别权限，而不是权限。每个 vCenter Server 权限都包含三个组件。 
 ---
 = vCenter Server 权限的组成部分
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

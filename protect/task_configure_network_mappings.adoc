@@ -5,6 +5,7 @@ keywords:
 summary: 您必须映射受保护站点和恢复站点上的网络，才能在它们之间进行通信。 
 ---
 = 配置网络映射
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

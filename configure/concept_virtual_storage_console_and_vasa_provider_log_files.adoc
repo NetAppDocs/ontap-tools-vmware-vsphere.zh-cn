@@ -5,6 +5,7 @@ keywords:
 summary: 遇到错误时，您可以检查 /opt/netapp/vscserver/log 目录和 /opt/netapp/vpserver/log 目录中的日志文件。 
 ---
 = Virtual Storage Console 和 VASA Provider 日志文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

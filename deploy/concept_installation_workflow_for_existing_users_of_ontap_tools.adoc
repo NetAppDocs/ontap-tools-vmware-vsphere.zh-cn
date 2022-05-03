@@ -5,6 +5,7 @@ keywords:
 summary: 适用于 VMware vSphere 的 ONTAP 工具 9.x 版支持原位升级到最新版本。 
 ---
 = 适用于现有 ONTAP 工具用户的部署工作流
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

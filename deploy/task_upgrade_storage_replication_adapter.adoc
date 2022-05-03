@@ -5,6 +5,7 @@ keywords: SRA, upgrade
 summary: 升级 ONTAP 工具或部署最新版本的 ONTAP 工具后，您必须升级存储复制适配器 \ （ SRA ）。 
 ---
 = 升级 Storage Replication Adapter
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

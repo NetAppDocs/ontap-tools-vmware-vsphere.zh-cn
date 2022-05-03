@@ -5,6 +5,7 @@ keywords: virtual volume datastores
 summary: 您可以通过使用添加存储向导向现有 VMware 虚拟卷（ VVols\ ）数据存储库添加 FlexVol 卷来增加可用存储。 
 ---
 = 向 VVOL 数据存储库添加存储
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

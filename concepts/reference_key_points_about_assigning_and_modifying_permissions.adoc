@@ -5,6 +5,7 @@ keywords:
 summary: 在使用 vCenter Server 权限时，需要牢记几个要点。适用于 VMware vSphere 的 ONTAP 工具任务是否成功取决于您分配权限的位置或用户在修改权限后执行的操作。 
 ---
 = 有关为 vCenter Server 分配和修改权限的要点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

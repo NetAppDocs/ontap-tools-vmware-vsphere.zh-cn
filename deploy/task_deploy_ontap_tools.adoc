@@ -5,6 +5,7 @@ keywords:
 summary: 您应在环境中部署 ONTAP 工具并指定所需的参数，以便能够使用此设备。 
 ---
 = 如何部署 ONTAP 工具
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

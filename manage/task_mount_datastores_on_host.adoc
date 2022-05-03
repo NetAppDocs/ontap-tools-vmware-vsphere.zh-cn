@@ -5,6 +5,7 @@ keywords:
 summary: 挂载数据存储库可为其他主机提供存储访问。将主机添加到 VMware 环境后，您可以将数据存储库挂载到其他主机上。 
 ---
 = 在其他主机上挂载数据存储库
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
