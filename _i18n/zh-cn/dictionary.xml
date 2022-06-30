@@ -1105,27 +1105,11 @@
   <block id="01de6d9be7e1aa419839bb0c0de0ebde" category="paragraph">提供有关适用于 VMware vSphere 的此版本 ONTAP 工具的重要信息，包括已修复的问题，已知问题，注意事项和限制。</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">法律声明提供对版权声明、商标、专利等的访问。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版权</block>
-  <block id="de6edae22bc37b97b38a15c7f8af62e2" category="inline-link"><block ref="de6edae22bc37b97b38a15c7f8af62e2" category="inline-link-rx"></block></block>
-  <block id="bb66384fc72d3c628df8a5f0f82af691" category="paragraph"><block ref="bb66384fc72d3c628df8a5f0f82af691" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商标</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 徽标和 NetApp 商标页面上列出的标记是 NetApp 、 Inc. 的商标。其他公司和产品名称可能是其各自所有者的商标。</block>
-  <block id="a93bc0a57623c2facaa010825c808507" category="inline-link"><block ref="a93bc0a57623c2facaa010825c808507" category="inline-link-rx"></block></block>
-  <block id="e895a12067be0bbd74a4e8b2b0aa1151" category="paragraph"><block ref="e895a12067be0bbd74a4e8b2b0aa1151" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">专利</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">有关 NetApp 拥有的专利的最新列表，请访问：</block>
-  <block id="547ea2e305891e64d8e744949b0aca2c" category="inline-link"><block ref="547ea2e305891e64d8e744949b0aca2c" category="inline-link-rx"></block></block>
-  <block id="f48d97bbf0d920d837c970ab54fcbf14" category="paragraph"><block ref="f48d97bbf0d920d837c970ab54fcbf14" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隐私政策</block>
-  <block id="50921fca0d376fca62102a5e608994e2" category="inline-link"><block ref="50921fca0d376fca62102a5e608994e2" category="inline-link-rx"></block></block>
-  <block id="3440f69304b6f0194e5502be93aede3f" category="paragraph"><block ref="3440f69304b6f0194e5502be93aede3f" category="inline-link-rx"></block></block>
-  <block id="b4de17ead867a3cf0b9d11e57e562672" category="section-title">机器翻译</block>
-  <block id="19d4bd8b5bc76a91b74c1aa69ecea894" category="paragraph">有关本地化内容的重要信息。</block>
-  <block id="db9bfd81e26275c9db26e2db3ac172c3" category="inline-link"><block ref="db9bfd81e26275c9db26e2db3ac172c3" category="inline-link-rx"></block></block>
-  <block id="53028fa3036b4b4d8b4ba1c27bf5f0f8" category="paragraph"><block ref="53028fa3036b4b4d8b4ba1c27bf5f0f8" category="inline-link-rx"></block></block>
-  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
-  <block id="0d06100a9c9a8a7758a0d58988e99d2f" category="paragraph">提供有关本产品中使用的第三方版权和许可证的信息。您的产品不一定使用下面所述的所有软件组件。</block>
-  <block id="64c6ddc210e10224f0d332d29e9010bc" category="inline-link">SnapCenter 4.5 注意事项</block>
-  <block id="3cf6934ea14c435e103764252b785bcc" category="paragraph"><block ref="3cf6934ea14c435e103764252b785bcc" category="inline-link-rx"></block></block>
   <block id="8f7be3c874feb6ef0fd5f20afd8d5fbb" category="summary">通过适用于 VMware vSphere 的 ONTAP 工具，您可以在 vCenter Server 环境中配置，管理和保护虚拟数据存储库。</block>
   <block id="46c4d9bfa1c229940459326940489ab0" category="doc">适用于 VMware vSphere 的 ONTAP 工具文档</block>
   <block id="5a26627e54a06d78a8fc3c6d0b650e36" category="summary">您可以在部署后使用维护控制台更改 ONTAP 工具的管理员密码。</block>
@@ -1923,7 +1907,6 @@
   <block id="07e86e3a6e2b9123cf44bd39073dcf67" category="paragraph">如果您在一个 VMware vSphere HTML5 客户端管理多个 vCenter Server 实例的环境中使用适用于 VMware vSphere 的 ONTAP 工具，则必须向每个 vCenter Server 注册一个 VSC 实例，以便 VSC 与 vCenter Server 之间存在 1 ： 1 配对关系。这样，您就可以通过一个 vSphere HTML5 客户端在链接模式和非链接模式下管理运行 vCenter 6.0 或更高版本的所有服务器。</block>
   <block id="1242e163636ceb52703fad8214a2bedc" category="list-text">您应已配置 ONTAP 9.8P1 或更高版本的存储。</block>
   <block id="b1be7fedf2bae707bc5e880facde39f0" category="inline-link">适用于 VMware vSphere 9.10 的 ONTAP 工具注意事项</block>
-  <block id="e28321b20146417dee6e7820cb1031c3" category="paragraph"><block ref="e28321b20146417dee6e7820cb1031c3" category="inline-link-rx"></block></block>
   <block id="169debc36900220172817b74d871e07b" category="summary">您可以按照此处提供的说明，从现有 9.7.1 或更高版本的设置原位升级到最新版本的 ONTAP 工具。</block>
   <block id="c5910340b269c593d16e5bb21c2ce618" category="paragraph">您可以按照此处提供的说明，从现有 9.7P1 或更高版本原位升级到最新版本的 ONTAP 工具。</block>
   <block id="2dc470ea65bfb20ee49093121123d780" category="list-text">您必须已下载最新版本 ONTAP 工具的 _.ISO_ 文件。</block>
@@ -1994,4 +1977,5 @@
   <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="adc8e197d36a3b2270201bc307f60f15" category="paragraph"><block ref="adc8e197d36a3b2270201bc307f60f15" category="inline-link-rx"></block></block>
 </blocks>
