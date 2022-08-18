@@ -41,8 +41,6 @@ NOTE: 在启用远程诊断时，您必须为 `dIAG` 用户设置密码。
 . 更改 Virtual Storage Console 服务的日志级别
 . 更改 VASA Provider 和 SRA 服务的日志级别
 . 显示 TLS 配置
-. 启用 TLS 协议
-. 禁用 TLS 协议
 
 
 

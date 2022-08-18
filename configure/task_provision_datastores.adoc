@@ -53,6 +53,17 @@ VSC 可以在 NFS 卷或 LUN 上创建数据存储库：
 
 
 ====
+* 对于Kerberos身份验证、您需要满足以下要求：
++
+** 使用Active Directory (AD)的Windows计算机
+** 域名服务器(DNS)
+** 密钥分发中心(KDC)
+** 配置了Kerberos的ONTAP 存储系统(集群)
+** 配置了Kerberos的ESXi主机
+
+
+
+
 如果在配置期间未指定存储功能配置文件，您可以稍后使用存储映射页面将数据存储库映射到存储功能配置文件。您可以对 FlexGroup 支持的数据存储库上配置的虚拟机的数据 VMDK 文件应用存储服务质量设置，吞吐量上限（最大 IOPS ）和吞吐量下限（最小 IOPS ）。可以通过右键单击数据存储库在数据存储库级别或单个虚拟机级别应用 QoS 设置。右键单击选项仅适用于由 FlexGroup 数据存储库提供支持的数据存储库或虚拟机。将 QoS 应用于数据存储库后，任何已存在的数据存储库或虚拟机 QoS 设置将被覆盖。无法在数据存储库级别或虚拟机级别为直接 SVM 上配置的数据存储库应用 QoS 设置，因为 ONTAP 在 SVM 管理级别不支持 QoS 。
 
 * 步骤 *
@@ -127,28 +138,57 @@ ONTAP 工具主页
  a| 
 常规
  a| 
-" 新建数据存储库配置 " 对话框的 " 常规 " 部分提供了用于输入新数据存储库的目标，名称，大小，类型和协议的选项。您可以选择 * NFS * 或 * VMFS* 协议来配置传统数据存储库。此版本允许您配置最大大小为 64 TB 的 VMFS 数据存储库。您可以 `D选项 " 在 ONTAP 集群中分布数据存储库数据` " ，以便在存储系统上配置 FlexGroup 卷。选择此选项会自动取消选中复选框 "`Use Storage Capability Profile for provisioning` " 。对于 FlexGroup 数据存储库配置，仅会列出 9.8 及更高版本的 ONTAP 集群以供选择。VVOL 数据存储库类型用于配置 VVOL 数据存储库。如果启用了 VASA Provider ，则还可以决定是否使用存储功能配置文件。* 数据存储库集群 * 选项仅适用于传统数据存储库。您应使用 * 高级 * 选项指定 * VMFS5* 或 * VMFS6* 文件系统。
+" 新建数据存储库配置 " 对话框的 " 常规 " 部分提供了用于输入新数据存储库的目标，名称，大小，类型和协议的选项。
+
+您可以选择* NFS *或* VMFS*类型的协议来配置传统数据存储库。对于NFS、您可以选择NFS3或NFS 4.1。
+
+此版本允许您配置最大大小为 64 TB 的 VMFS 数据存储库。您可以 `D选项 " 在 ONTAP 集群中分布数据存储库数据` " ，以便在存储系统上配置 FlexGroup 卷。选择此选项会自动取消选中复选框 "`Use Storage Capability Profile for provisioning` " 。对于 FlexGroup 数据存储库配置，仅会列出 9.8 及更高版本的 ONTAP 集群以供选择。VVOL 数据存储库类型用于配置 VVOL 数据存储库。如果启用了 VASA Provider ，则还可以决定是否使用存储功能配置文件。* 数据存储库集群 * 选项仅适用于传统数据存储库。您应使用 * 高级 * 选项指定 * VMFS5* 或 * VMFS6* 文件系统。
+
+
+
+ a| 
+Kerberos 身份验证
+ a| 
+如果在*常规*页面中选择了NFS 4.1、请选择安全级别。
+
+只有FlexVol才支持Kerberos身份验证。
 
 
 
  a| 
 存储系统
  a| 
-如果您在常规部分中选择了相应选项，则可以选择列出的存储功能配置文件之一。如果要配置 FlexGroup 数据存储库，则不支持此数据存储库的存储功能配置文件。存储系统和 Storage Virtual Machine 的系统建议值已填充，以便于使用。但是，如果需要，您可以修改这些值。
+如果您在常规部分中选择了相应选项，则可以选择列出的存储功能配置文件之一。
+
+** 如果要配置FlexGroup 数据存储库、则不支持此数据存储库的存储功能配置文件。存储系统和 Storage Virtual Machine 的系统建议值已填充，以便于使用。但是，如果需要，您可以修改这些值。
+** 对于Kerberos身份验证、将列出为Kerberos启用的存储系统。
+
 
 
 
  a| 
 存储属性
  a| 
-默认情况下， VSC 会填充 * 聚合 * 和 * 卷 * 选项的建议值。您可以根据自己的要求自定义这些值。FlexGroup 数据存储库不支持选择聚合，因为 ONTAP 负责管理聚合选择。此外，还会填充 * 高级 * 菜单下的 * 空间预留 * 选项，以获得最佳结果。
+默认情况下， VSC 会填充 * 聚合 * 和 * 卷 * 选项的建议值。您可以根据自己的要求自定义这些值。FlexGroup 数据存储库不支持选择聚合，因为 ONTAP 负责管理聚合选择。
+
+此外，还会填充 * 高级 * 菜单下的 * 空间预留 * 选项，以获得最佳结果。
+
+(可选)您可以在*更改启动程序组名称*字段中指定启动程序组名称。
+
+** 如果尚未创建具有此名称的新启动程序组、则会创建一个此名称的新启动程序组。
+** 协议名称将附加到指定的启动程序组名称。
+** 如果发现选定启动程序具有现有igroup、则此igroup将使用提供的名称进行重命名、并将重复使用。
+** 如果不指定igroup名称、则会使用默认名称创建igroup。
+
 
 
 
  a| 
 摘要
  a| 
-您可以查看为新数据存储库指定的参数摘要。摘要页面中提供了一个新字段 "`卷模式` " ，用于区分创建的数据存储库类型。"`卷模式` " 可以是 "`FlexVol` " 或 "`FlexGroup` " 。
+您可以查看为新数据存储库指定的参数摘要。
+
+通过字段"`卷模式`"、您可以区分创建的数据存储库类型。"`卷模式` " 可以是 "`FlexVol` " 或 "`FlexGroup` " 。
 
 |===
 
@@ -159,3 +199,13 @@ NOTE: 传统数据存储库中的 FlexGroup 不能缩减到低于现有大小，
 * 相关信息 *
 
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/Datastore_inaccessible_when_volume_status_is_changed_to_offline["当卷状态更改为脱机时，无法访问数据存储库"]
+
+https://docs.netapp.com/us-en/ontap/nfs-admin/ontap-support-kerberos-concept.html["ONTAP 支持 Kerberos"]
+
+https://docs.netapp.com/us-en/ontap/nfs-admin/requirements-configuring-kerberos-concept.html["使用 NFS 配置 Kerberos 的要求"]
+
+https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/concept_kerberos_realm_services.html["使用 System Manager — ONTAP 9.7 及更早版本管理 Kerberos 域服务"]
+
+https://docs.netapp.com/us-en/ontap/nfs-config/create-kerberos-config-task.html["在数据 LIF 上启用 Kerberos"]
+
+https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-BDCB7500-72EC-4B6B-9574-CFAEAF95AE81.html["为ESXi主机配置Kerberos身份验证"]

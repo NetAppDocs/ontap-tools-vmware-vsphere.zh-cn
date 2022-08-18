@@ -359,7 +359,6 @@
   <block id="944df66e06b22f6332bfa0c03f99d5cf" category="list-text">右键单击所需的数据存储库或虚拟机，然后单击 * NetApp ONTAP tools* &gt; * 分配 QoS* 。</block>
   <block id="438a5a3c55ac2da39715ccc2098b77d7" category="list-text">在分配 QoS 对话框中，输入所需 IOPS 值的值，然后单击 * 应用 * 。</block>
   <block id="18b21d5b06a5a5f79020d85de9c49a5d" category="doc">重新平衡 VVol 数据存储库</block>
-  <block id="fbaf83390e5a4d870b5b750c0656b670" category="paragraph">VVOL 数据存储库的重新平衡通过 LUN 移动或文件移动来执行。VVOL 重新平衡期间考虑的标准是：</block>
   <block id="b0b15a5664f313c682449715f8797570" category="list-text">不会调整现有 FlexVol 卷的大小，也不会添加新的 FlexVol 卷</block>
   <block id="5415ed28641dd79c706bfc42b5c7606c" category="list-text">只有具有相同存储功能或卷属性的 FlexVol 卷才会重新平衡</block>
   <block id="656a7ca9d5565aff5c4e7369951a72a3" category="list-text">考虑重新平衡空间利用率最高的 FlexVol 卷</block>
@@ -542,11 +541,7 @@
   <block id="e940bf2d37cbed917a25a040c93e7998" category="paragraph">右键单击某个数据中心，然后选择 * NetApp ONTAP Tools* &gt; * 配置数据存储库 * 。</block>
   <block id="fba794904ebef2bde415b1b48535b36a" category="paragraph">右键单击主机集群，然后选择 * NetApp ONTAP Tools* &gt; * 配置数据存储库 * 。</block>
   <block id="01c940a8320a768f254d17b5ad22e77d" category="paragraph">右键单击某个主机，然后选择 * NetApp ONTAP tools* &gt; * 配置数据存储库 * 。</block>
-  <block id="5d796cb61105a94007269d4dd1796747" category="paragraph">" 新建数据存储库配置 " 对话框的 " 常规 " 部分提供了用于输入新数据存储库的目标，名称，大小，类型和协议的选项。您可以选择 * NFS * 或 * VMFS* 协议来配置传统数据存储库。此版本允许您配置最大大小为 64 TB 的 VMFS 数据存储库。您可以 `D选项 " 在 ONTAP 集群中分布数据存储库数据` " ，以便在存储系统上配置 FlexGroup 卷。选择此选项会自动取消选中复选框 "`Use Storage Capability Profile for provisioning` " 。对于 FlexGroup 数据存储库配置，仅会列出 9.8 及更高版本的 ONTAP 集群以供选择。VVOL 数据存储库类型用于配置 VVOL 数据存储库。如果启用了 VASA Provider ，则还可以决定是否使用存储功能配置文件。* 数据存储库集群 * 选项仅适用于传统数据存储库。您应使用 * 高级 * 选项指定 * VMFS5* 或 * VMFS6* 文件系统。</block>
-  <block id="f3a6fc9fb4ad23951edb2fc7ea7ce05b" category="paragraph">如果您在常规部分中选择了相应选项，则可以选择列出的存储功能配置文件之一。如果要配置 FlexGroup 数据存储库，则不支持此数据存储库的存储功能配置文件。存储系统和 Storage Virtual Machine 的系统建议值已填充，以便于使用。但是，如果需要，您可以修改这些值。</block>
-  <block id="56b417b201b79abcd233bd24a3f67c7f" category="paragraph">默认情况下， VSC 会填充 * 聚合 * 和 * 卷 * 选项的建议值。您可以根据自己的要求自定义这些值。FlexGroup 数据存储库不支持选择聚合，因为 ONTAP 负责管理聚合选择。此外，还会填充 * 高级 * 菜单下的 * 空间预留 * 选项，以获得最佳结果。</block>
   <block id="290612199861c31d1036b185b4e69b75" category="paragraph">摘要</block>
-  <block id="c00d812223c8931a6abca969bbb9c373" category="paragraph">您可以查看为新数据存储库指定的参数摘要。摘要页面中提供了一个新字段 "`卷模式` " ，用于区分创建的数据存储库类型。"`卷模式` " 可以是 "`FlexVol` " 或 "`FlexGroup` " 。</block>
   <block id="ce9642ced5a02053cc009b2bcdc0de38" category="admonition">传统数据存储库中的 FlexGroup 不能缩减到低于现有大小，但最大可增长 120% 。在这些 FlexGroup 卷上启用默认快照。。在摘要部分中，单击 * 完成 * 。</block>
   <block id="db25841cad5f4a3789c93e40d334c1b8" category="inline-link">当卷状态更改为脱机时，无法访问数据存储库</block>
   <block id="e8f51520d45845b237d7483dd8e847f2" category="paragraph"><block ref="e8f51520d45845b237d7483dd8e847f2" category="inline-link-rx"></block></block>
@@ -1970,12 +1965,48 @@
   <block id="57a78a866bc67d01f079d70f0f08d264" category="paragraph">ONTAP 工具的 VCF 部署仅允许容器创建工作流。如果要使用其他工作流，例如配置数据存储库，创建存储功能配置文件或灾难恢复，则应使用 Register.html 页面向 vCenter Server 注册 ONTAP 工具。在 VCF 模式下， ONTAP 工具的限制是，您无法为灾难恢复配置 SRA 。</block>
   <block id="dc6f079855bc9a7477861302bbb0343f" category="image-alt">VMware Cloud Foundation 部署工作流</block>
   <block id="6e87afa480416c8595b0460888551386" category="paragraph"><block ref="6e87afa480416c8595b0460888551386" category="inline-link-macro-rx"></block></block>
-  <block id="afa73da64573c9300600d9dcda03dbca" category="inline-link">适用于 VMware vSphere 9.10 的 ONTAP 工具发行说明</block>
-  <block id="1d39c4b0a8cc202b1cc30e5c2df964fb" category="paragraph">有关详细信息，请参见<block ref="8da3a9cd5d4fe240d226b42d5d3c0796" category="inline-link-rx"></block>。</block>
-  <block id="4cf800e4c7e3afad619ba39d635e53c7" category="sidebar">适用于 VMware vSphere 的 ONTAP Tools 9.10 文档</block>
   <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="adc8e197d36a3b2270201bc307f60f15" category="paragraph"><block ref="adc8e197d36a3b2270201bc307f60f15" category="inline-link-rx"></block></block>
+  <block id="1415c1c83a97d2309236d6acbf410723" category="list-text">对于Kerberos身份验证、您需要满足以下要求：</block>
+  <block id="232c27acd8cefdcf2eab2fd4448e58b7" category="list-text">使用Active Directory (AD)的Windows计算机</block>
+  <block id="3b190489626bc91788e69bde26b23e49" category="list-text">域名服务器(DNS)</block>
+  <block id="c33ec8bbf1e9679441ee7b5780300148" category="list-text">密钥分发中心(KDC)</block>
+  <block id="ffc5820bec391adec4d3ea0c0b487f5c" category="list-text">配置了Kerberos的ONTAP 存储系统(集群)</block>
+  <block id="87e73a2e34acfaa495847cdc56b91075" category="list-text">配置了Kerberos的ESXi主机</block>
+  <block id="247ab06aaf332c4dffa16f9e44bfb784" category="paragraph">" 新建数据存储库配置 " 对话框的 " 常规 " 部分提供了用于输入新数据存储库的目标，名称，大小，类型和协议的选项。</block>
+  <block id="b8f85eda1edc7ce9e1da9898d153444e" category="paragraph">您可以选择* NFS *或* VMFS*类型的协议来配置传统数据存储库。对于NFS、您可以选择NFS3或NFS 4.1。</block>
+  <block id="d728bb03f29ad9ea3295bc22a35d9cb0" category="paragraph">此版本允许您配置最大大小为 64 TB 的 VMFS 数据存储库。您可以 `D选项 " 在 ONTAP 集群中分布数据存储库数据` " ，以便在存储系统上配置 FlexGroup 卷。选择此选项会自动取消选中复选框 "`Use Storage Capability Profile for provisioning` " 。对于 FlexGroup 数据存储库配置，仅会列出 9.8 及更高版本的 ONTAP 集群以供选择。VVOL 数据存储库类型用于配置 VVOL 数据存储库。如果启用了 VASA Provider ，则还可以决定是否使用存储功能配置文件。* 数据存储库集群 * 选项仅适用于传统数据存储库。您应使用 * 高级 * 选项指定 * VMFS5* 或 * VMFS6* 文件系统。</block>
+  <block id="ad37ded9046268d8e5ea7cb253bb5dda" category="paragraph">Kerberos 身份验证</block>
+  <block id="3ea519f69263ba3e63c00ba026dfbb01" category="paragraph">如果在*常规*页面中选择了NFS 4.1、请选择安全级别。</block>
+  <block id="12f4ceb4f1dabc544795882faae863af" category="paragraph">只有FlexVol才支持Kerberos身份验证。</block>
+  <block id="cd506470f5e5655bb026fe078bbbcdd3" category="paragraph">如果您在常规部分中选择了相应选项，则可以选择列出的存储功能配置文件之一。</block>
+  <block id="90a7ec5aa6debb1e9f051b3011306ea5" category="list-text">如果要配置FlexGroup 数据存储库、则不支持此数据存储库的存储功能配置文件。存储系统和 Storage Virtual Machine 的系统建议值已填充，以便于使用。但是，如果需要，您可以修改这些值。</block>
+  <block id="395cd4e6b9788357ea9b4875980f0735" category="list-text">对于Kerberos身份验证、将列出为Kerberos启用的存储系统。</block>
+  <block id="d656972a3bb8dc447ca461f90894a1c0" category="paragraph">默认情况下， VSC 会填充 * 聚合 * 和 * 卷 * 选项的建议值。您可以根据自己的要求自定义这些值。FlexGroup 数据存储库不支持选择聚合，因为 ONTAP 负责管理聚合选择。</block>
+  <block id="11d67c18b6ade2844dac7ac6e8d8e996" category="paragraph">此外，还会填充 * 高级 * 菜单下的 * 空间预留 * 选项，以获得最佳结果。</block>
+  <block id="8f0960fd537565d013c63b424e32e545" category="paragraph">(可选)您可以在*更改启动程序组名称*字段中指定启动程序组名称。</block>
+  <block id="ff34df29001826a51c55234f7899a5c8" category="list-text">如果尚未创建具有此名称的新启动程序组、则会创建一个此名称的新启动程序组。</block>
+  <block id="87d50d4aca5654404d2bd923ef01f39d" category="list-text">协议名称将附加到指定的启动程序组名称。</block>
+  <block id="fddf43b7509a27a580ae5b8204ed1b6e" category="list-text">如果发现选定启动程序具有现有igroup、则此igroup将使用提供的名称进行重命名、并将重复使用。</block>
+  <block id="66f5d92a1b6d185f278cc7e3df89631f" category="list-text">如果不指定igroup名称、则会使用默认名称创建igroup。</block>
+  <block id="f112f880ee3808f45fa645d31a60919e" category="paragraph">您可以查看为新数据存储库指定的参数摘要。</block>
+  <block id="d95d2027ad4faa7afb16847cf6829317" category="paragraph">通过字段"`卷模式`"、您可以区分创建的数据存储库类型。"`卷模式` " 可以是 "`FlexVol` " 或 "`FlexGroup` " 。</block>
+  <block id="fe0891bb90d313b1b9098fdd3e5f531a" category="inline-link">ONTAP 支持 Kerberos</block>
+  <block id="5e31aad48428786bd6d1afc4fa881f95" category="paragraph"><block ref="5e31aad48428786bd6d1afc4fa881f95" category="inline-link-rx"></block></block>
+  <block id="b492eaf1aa700257b5bd87a0787ffbba" category="inline-link">使用 NFS 配置 Kerberos 的要求</block>
+  <block id="2f9647a83c40cf2ae0233ad123484629" category="paragraph"><block ref="2f9647a83c40cf2ae0233ad123484629" category="inline-link-rx"></block></block>
+  <block id="0503dc7bdab97ba0513cd725666d3394" category="inline-link">使用 System Manager — ONTAP 9.7 及更早版本管理 Kerberos 域服务</block>
+  <block id="7fe6d5584982526cfe5bb1b708c9e10f" category="paragraph"><block ref="7fe6d5584982526cfe5bb1b708c9e10f" category="inline-link-rx"></block></block>
+  <block id="1a69d38f7b46901c58e85d024e87b034" category="inline-link">在数据 LIF 上启用 Kerberos</block>
+  <block id="bcafb10f2c5e3e1c946d39793d902146" category="paragraph"><block ref="bcafb10f2c5e3e1c946d39793d902146" category="inline-link-rx"></block></block>
+  <block id="b292d4b33c15cd5429a4aec0164b62f4" category="inline-link">为ESXi主机配置Kerberos身份验证</block>
+  <block id="2775eee214a07dd3ad16007a75341d1d" category="paragraph"><block ref="2775eee214a07dd3ad16007a75341d1d" category="inline-link-rx"></block></block>
+  <block id="f05d67a2632f89a349f888bc1abd2314" category="paragraph">VVOL 数据存储库的重新平衡通过 LUN 移动或文件移动来执行。VVOL重新平衡期间考虑的标准如下：</block>
+  <block id="4240120fee603161e3f32fa6a4127dc3" category="list-text">不支持NFS VVol数据存储库</block>
+  <block id="325ed2f7ffe6974144615e01682ab317" category="inline-link">适用于VMware vSphere 9.11的ONTAP 工具发行说明</block>
+  <block id="1b4b4851374b4f5e2e06a8e2cdea0bfc" category="paragraph">有关详细信息，请参见<block ref="ef3304265bfcc8fef389579152b8897d" category="inline-link-rx"></block>。</block>
+  <block id="08420002b9383a71acf39a2e9f9d504a" category="sidebar">适用于VMware vSphere的ONTAP Tools 9.11文档</block>
 </blocks>

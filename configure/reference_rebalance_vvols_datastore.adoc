@@ -13,8 +13,9 @@ summary: ONTAP 工具支持使用命令重新平衡数据中心中的 FlexVol �
 [role="lead"]
 ONTAP 工具支持使用命令重新平衡数据中心中的 FlexVol 卷。主要目标是在 FlexVol 卷之间实现均匀的空间利用率。ONTAP 工具会根据空间使用情况，精简配置， LUN 计数和存储功能配置文件在现有卷之间重新分布 VVOL 。
 
-VVOL 数据存储库的重新平衡通过 LUN 移动或文件移动来执行。VVOL 重新平衡期间考虑的标准是：
+VVOL 数据存储库的重新平衡通过 LUN 移动或文件移动来执行。VVOL重新平衡期间考虑的标准如下：
 
+* 不支持NFS VVol数据存储库
 * 不会调整现有 FlexVol 卷的大小，也不会添加新的 FlexVol 卷
 * 只有具有相同存储功能或卷属性的 FlexVol 卷才会重新平衡
 * 考虑重新平衡空间利用率最高的 FlexVol 卷
