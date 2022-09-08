@@ -1901,7 +1901,6 @@
   <block id="88da7b011d6c44231a237e4eb64d680f" category="paragraph">如果您使用 iSCSI 或 NFS ，并且 ESXi 主机和存储系统的子网不同，则必须修改适用于 VMware vSphere 首选项文件的 ONTAP 工具。如果不修改首选项文件，则数据存储库配置将失败，因为 Virtual Storage Console （ VSC ）无法挂载数据存储库。</block>
   <block id="07e86e3a6e2b9123cf44bd39073dcf67" category="paragraph">如果您在一个 VMware vSphere HTML5 客户端管理多个 vCenter Server 实例的环境中使用适用于 VMware vSphere 的 ONTAP 工具，则必须向每个 vCenter Server 注册一个 VSC 实例，以便 VSC 与 vCenter Server 之间存在 1 ： 1 配对关系。这样，您就可以通过一个 vSphere HTML5 客户端在链接模式和非链接模式下管理运行 vCenter 6.0 或更高版本的所有服务器。</block>
   <block id="1242e163636ceb52703fad8214a2bedc" category="list-text">您应已配置 ONTAP 9.8P1 或更高版本的存储。</block>
-  <block id="b1be7fedf2bae707bc5e880facde39f0" category="inline-link">适用于 VMware vSphere 9.10 的 ONTAP 工具注意事项</block>
   <block id="169debc36900220172817b74d871e07b" category="summary">您可以按照此处提供的说明，从现有 9.7.1 或更高版本的设置原位升级到最新版本的 ONTAP 工具。</block>
   <block id="c5910340b269c593d16e5bb21c2ce618" category="paragraph">您可以按照此处提供的说明，从现有 9.7P1 或更高版本原位升级到最新版本的 ONTAP 工具。</block>
   <block id="2dc470ea65bfb20ee49093121123d780" category="list-text">您必须已下载最新版本 ONTAP 工具的 _.ISO_ 文件。</block>
@@ -1969,7 +1968,6 @@
   <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
-  <block id="adc8e197d36a3b2270201bc307f60f15" category="paragraph"><block ref="adc8e197d36a3b2270201bc307f60f15" category="inline-link-rx"></block></block>
   <block id="1415c1c83a97d2309236d6acbf410723" category="list-text">对于Kerberos身份验证、您需要满足以下要求：</block>
   <block id="232c27acd8cefdcf2eab2fd4448e58b7" category="list-text">使用Active Directory (AD)的Windows计算机</block>
   <block id="3b190489626bc91788e69bde26b23e49" category="list-text">域名服务器(DNS)</block>
@@ -2009,4 +2007,7 @@
   <block id="325ed2f7ffe6974144615e01682ab317" category="inline-link">适用于VMware vSphere 9.11的ONTAP 工具发行说明</block>
   <block id="1b4b4851374b4f5e2e06a8e2cdea0bfc" category="paragraph">有关详细信息，请参见<block ref="ef3304265bfcc8fef389579152b8897d" category="inline-link-rx"></block>。</block>
   <block id="08420002b9383a71acf39a2e9f9d504a" category="sidebar">适用于VMware vSphere的ONTAP Tools 9.11文档</block>
+  <block id="f6d09a6ca81951d147ef393d3877b8d5" category="inline-link">适用于VMware vSphere 9.11的ONTAP 工具注意事项</block>
+  <block id="02994633d024cf9b53f3747d971a0667" category="paragraph"><block ref="02994633d024cf9b53f3747d971a0667" category="inline-link-rx"></block></block>
+  <block id="ed9018b2e8611a3d2c03bb6a205b9715" category="sidebar">适用于 VMware vSphere 的 ONTAP 工具</block>
 </blocks>
