@@ -83,7 +83,7 @@ ONTAP 工具使用以下默认双向 TCP 端口：
 | ONTAP | ONTAP 9.3 ， 9.5 ， 9.6 ， 9.7 ， 9.8P1 或更高版本。 
 
 
-| VMware vSphere ， vCenter Server ， ESXi 主机， Site Recovery Manager （ SRM ），插件应用程序和数据库列 1 | 请参见 https://imt.netapp.com/matrix/imt.jsp?components=103229;&solution=1777&isHWU&src=IMT["互操作性表工具： OTV 9.10"] 
+| VMware vSphere ， vCenter Server ， ESXi 主机， Site Recovery Manager （ SRM ），插件应用程序和数据库列 1 | 请参见 https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT["互操作性表工具"^] 
 |===
 
 

@@ -1825,8 +1825,6 @@
   <block id="1b837800f24f729eb8e73a102257c0bd" category="admonition">如果在 ONTAP 9.9.1 或更高版本中使用全 SAN 阵列（ ASA ）类型的存储平台，则只能创建 vmdk 大小大于 16 TB 的 VVOL 数据存储库。</block>
   <block id="7e4398bcc994aff66c591cf052f8da8c" category="paragraph">ONTAP 提供的 IOPS 数据将进行四舍五入并显示在 VVOL 信息板上。ONTAP 提供的实际 IOPS 值与 VVol 信息板上显示的 IOPS 值之间可能存在差异。ONTAP 工具可为基于 NFS 的 VVOL 数据存储库提供性能监控。</block>
   <block id="690357a744b773276381391369196306" category="cell">ONTAP 9.3 ， 9.5 ， 9.6 ， 9.7 ， 9.8P1 或更高版本。</block>
-  <block id="b6bdbb42dd11a260ba5e106ec1746d08" category="inline-link">互操作性表工具： OTV 9.10</block>
-  <block id="b6097d7254f8b577b98c43ebf2550517" category="cell">请参见<block ref="195a086b43ebc4eb09de5db7eca98aaf" category="inline-link-rx"></block></block>
   <block id="4c59e09d33a14633705995f32d9780b3" category="admonition">（可选）如果要在不向 vCenter Server 注册的情况下创建容器，请在配置 vCenter 或启用 VCF 部分中选中启用 VMware Cloud Foundation （ VCF ）复选框。</block>
   <block id="a25b09ef62f093cb958512723cf9c709" category="inline-link-macro">为现有数据存储库配置 VVol 复制</block>
   <block id="d54b1afb8378e7fe0084d91e5e715292" category="paragraph"><block ref="d54b1afb8378e7fe0084d91e5e715292" category="inline-link-macro-rx"></block></block>
@@ -1909,7 +1907,6 @@
   <block id="9eed5a43956cb1df77adfee8b3733333" category="list-text">升级到已启用 FIPS 的最新 OTV （ 9.10 ）版本，但您使用的 vCenter 版本较旧，不支持 FIPS 后，此部署仍可正常运行。但是，如果您将 vCenter 升级到支持 FIPS 的最新版本，并且您使用的是早期版本的 ONTAP 工具，则只有在 vCenter 上禁用了 FIPS 时，部署才会起作用。</block>
   <block id="a7189062665fe6b8b3263ee857e62834" category="paragraph">如果您是 VMware 的新用户且从未使用过 NetApp ONTAP 工具产品，则在部署和配置 ONTAP 工具之前，您需要配置 vCenter Server 并设置 ESXi 主机。</block>
   <block id="78b9c306d2b9e90dc4612872a3412b17" category="image-alt">新用户部署</block>
-  <block id="213681fae7ab740d065d6128157952d7" category="paragraph"><block ref="97e9e497c6215eaee7f74a091f9793db" category="inline-link-rx"></block></block>
   <block id="bd102b609640a336d673bcb7001cf07e" category="list-text">使用 `cd /etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity` 将目录更改为 vCenter Client （ HTML5 ） UI 扩展目录</block>
   <block id="5584c9cd70ee56e5a5efd81211571c12" category="paragraph">Virtual Storage Console 6.x ， Storage Replication Adapter 2.x ， 3.x ， 4.x 和 VASA Provider 6.x 等各个应用程序的早期版本使用不同的升级过程。如果您在设置中安装了这些旧版本的 VSC ， VASA Provider 或 SRA ，则应执行以下操作：</block>
   <block id="7f92b985b9e4bff91f2d31ae0cc7bdd7" category="list-text">如果您使用的是 SRA 4.0P1 ，则必须先升级到 SRA9.6 ，然后再原位升级 SRA 9.6 版。您可以稍后升级到最新版本的 ONTAP 工具。</block>
@@ -2010,4 +2007,6 @@
   <block id="f6d09a6ca81951d147ef393d3877b8d5" category="inline-link">适用于VMware vSphere 9.11的ONTAP 工具注意事项</block>
   <block id="02994633d024cf9b53f3747d971a0667" category="paragraph"><block ref="02994633d024cf9b53f3747d971a0667" category="inline-link-rx"></block></block>
   <block id="ed9018b2e8611a3d2c03bb6a205b9715" category="sidebar">适用于 VMware vSphere 的 ONTAP 工具</block>
+  <block id="d9feb2b730ded2731ab499f4b64cca33" category="paragraph"><block ref="ccafd2400edf7c1aa273a76ad605940f" category="inline-link-rx"></block></block>
+  <block id="8cd78caf975d066200418cff9639fdef" category="cell">请参见<block ref="c4e3c5dd56e9c0925a46d52133eef091" category="inline-link-rx"></block></block>
 </blocks>

@@ -21,7 +21,7 @@ summary: 您应在环境中部署 ONTAP 工具并指定所需的参数，以便�
 NOTE: 可以将 ONTAP 工具注册到 vCenter Server 的 Windows 部署或 VMware vCenter Server 虚拟设备（ vCSA ）部署中。
 
 +
-https://imt.netapp.com/matrix/imt.jsp?components=103229;&solution=1777&isHWU&src=IMT["互操作性表工具"]
+https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT["互操作性表工具"^]
 
 * 您必须已配置和设置 vCenter Server 环境。
 * 您必须已为虚拟机设置 ESXi 主机。

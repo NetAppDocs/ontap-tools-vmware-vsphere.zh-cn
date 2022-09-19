@@ -35,7 +35,7 @@ homepage:
   - title: 入门
     links:
     - title: 发行说明
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2881273
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2883436
     - title: 了解适用于 VMware vSphere 的 ONTAP 工具
       url: "/concepts/concept_virtual_storage_console_overview.html"
     - title: ONTAP 工具快速入门

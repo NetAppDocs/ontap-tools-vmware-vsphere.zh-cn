@@ -15,7 +15,7 @@ summary: 在开始为 VMware vSphere 部署 ONTAP 工具之前，您应了解基
 
 互操作性表工具（ IMT ）包含有关受支持的 ONTAP ， vCenter Server ， ESXi 主机，插件应用程序和 Site Recovery Manager （ SRM ）版本的最新信息。
 
-https://imt.netapp.com/matrix/imt.jsp?components=103229;&solution=1777&isHWU&src=IMT["互操作性表工具"]
+https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT["互操作性表工具"^]
 
 要对 VMware 虚拟卷（ VVOL ）数据存储库执行虚拟机快照操作和克隆操作，必须启用 FlexClone 许可证。
 
