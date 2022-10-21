@@ -18,7 +18,7 @@ summary: 您可以使用 ONTAP 工具的维护控制台来管理应用程序，�
 
 NOTE: 在启用远程诊断时，您必须为 `dIAG` 用户设置密码。
 
-您应使用已部署 ONTAP 工具的摘要选项卡访问维护控制台。单击时 image:../media/launch_maintenance_console.gif[""]，此时维护控制台将启动。
+您应使用已部署 ONTAP 工具的 * 摘要 * 选项卡访问维护控制台。单击时 image:../media/launch_maintenance_console.gif[""]，此时维护控制台将启动。
 
 |===
 
@@ -41,8 +41,6 @@ NOTE: 在启用远程诊断时，您必须为 `dIAG` 用户设置密码。
 . 更改 Virtual Storage Console 服务的日志级别
 . 更改 VASA Provider 和 SRA 服务的日志级别
 . 显示 TLS 配置
-. 启用 TLS 协议
-. 禁用 TLS 协议
 
 
 

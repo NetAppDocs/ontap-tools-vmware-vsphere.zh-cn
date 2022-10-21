@@ -568,12 +568,8 @@
   <block id="400fae8e788b3721b9ac25fe01f04f50" category="list-text">单击 * 应用 * 。</block>
   <block id="aea7780202aad9f17865502971d71ddb" category="paragraph">只有在 OnCommand API 服务注册完成后， VVOL 信息板才会显示 ONTAP 9.6 或更早版本 SAN VVOL 数据存储库的指标。</block>
   <block id="5239d77bc203f1ccbb06d46c0327b099" category="summary">您可以使用 ONTAP 工具的维护控制台来管理应用程序，系统和网络配置。您可以更改管理员密码和维护密码。您还可以生成支持包，设置不同的日志级别，查看和管理 TLS 配置以及启动远程诊断。</block>
-  <block id="0c99c2d41b42b35f0be071f1b29ac58a" category="doc">ONTAP 工具的维护控制台选项</block>
   <block id="417ba69cd3cff33af12fb92ce9169d33" category="paragraph">在部署 ONTAP 工具后，您必须已安装 VMware Tools 才能访问维护控制台。您应使用 `m部分` 作为用户名，并使用您在部署期间配置的密码登录到 ONTAP 工具的维护控制台。</block>
   <block id="2e5b406e34be2192a717470c0af8e621" category="admonition">在启用远程诊断时，您必须为 `dIAG` 用户设置密码。</block>
-  <block id="3a8f5c62d9ad72e1e28c71f8d0a4451b" category="paragraph">您应使用已部署 ONTAP 工具的 * 摘要 * 选项卡访问维护控制台。单击时 <block ref="646d51cfcc95b274401d8044823da1c3" category="inline-image-macro-rx" type="image"></block>，此时维护控制台将启动。</block>
-  <block id="b01a305eaba26950499c18ed4f42608f" category="cell">控制台菜单</block>
-  <block id="dae8ace18bdcbcc6ae5aece263e14fe8" category="cell">选项</block>
   <block id="8771bccdcac2e3ecfec998ef1fff4833" category="paragraph">应用程序配置</block>
   <block id="be26199d886066a84db4063998d2f165" category="list-text">显示服务器状态摘要</block>
   <block id="7eb3185a1570bf537b78f8ccb0697633" category="list-text">启动 Virtual Storage Console 服务</block>
@@ -582,13 +578,10 @@
   <block id="c5f5f62fa8098788ec639d85e5f58b17" category="list-text">停止 VASA Provider 和 SRA 服务</block>
   <block id="47143644236f774216e54ca22d1cd883" category="list-text">更改 "administrator" 用户密码</block>
   <block id="2b85c9deceb1ac9fcc6fd6ff2bda7190" category="list-text">重新生成证书</block>
-  <block id="f4cbc772b7acc2c81f673e2eb77a6ca8" category="list-text">硬重置密钥库和证书</block>
   <block id="3edfaa1d35137d169aaa6dadbc1e0fe3" category="list-text">硬重置数据库</block>
   <block id="5ba55d604880b0b6ad27a48df8bfc5a9" category="list-text">更改 Virtual Storage Console 服务的日志级别</block>
   <block id="293ad933a5979b221ce4825406b4e447" category="list-text">更改 VASA Provider 和 SRA 服务的日志级别</block>
   <block id="aea013b92d5d9e0908613c12a6ef462e" category="list-text">显示 TLS 配置</block>
-  <block id="35d170dc4d56336951ac7a99f310afce" category="list-text">启用 TLS 协议</block>
-  <block id="6f5b9f5237a43bee958b38be8626f249" category="list-text">禁用 TLS 协议</block>
   <block id="9b685fecb65f77899f1ea4fd1e767722" category="paragraph">系统配置</block>
   <block id="978968aa0140e7645f3db01d1e5743c3" category="list-text">重新启动虚拟机</block>
   <block id="c795b3f02d3ba272bf89b7228980a7c6" category="list-text">关闭虚拟机</block>
@@ -618,7 +611,6 @@
   <block id="d32b692a228c985bcc53d0e3be7f3ee9" category="list-text">访问诊断 Shell</block>
   <block id="fc50930a1e8c2b869ad303b5b5234574" category="list-text">启用远程诊断访问</block>
   <block id="234464a5fac0a1ef3a08301b88046660" category="inline-link-macro">Virtual Storage Console 和 VASA Provider 日志文件</block>
-  <block id="3588d8f1b7af566c4b91addbce496cd0" category="paragraph"><block ref="3588d8f1b7af566c4b91addbce496cd0" category="inline-link-macro-rx"></block></block>
   <block id="855a790093b915b2672c967da47d34c8" category="summary">您可以手动将存储系统添加到 Virtual Storage Console （ VSC\ ）。</block>
   <block id="0f700202b00d956398e3d2d111decca2" category="doc">将存储系统添加到 VSC</block>
   <block id="723456cd23133acf945d5daf4f883e37" category="paragraph">您可以手动将存储系统添加到 Virtual Storage Console （ VSC ）。</block>
@@ -1014,12 +1006,7 @@
   <block id="2a60e4df2b66e723fc502252815fd80f" category="list-text">迁移任何现有配置数据。</block>
   <block id="2ce72eb7080f033d37c840a728de9539" category="paragraph">配置数据包括存储系统凭据以及在 `kaminoprefs.xml` 和 `vscPreferences.xml` 文件中找到的首选项。</block>
   <block id="9f9554604b180d4f12390e136147beb7" category="paragraph"><block ref="9f9554604b180d4f12390e136147beb7" category="inline-link-macro-rx"></block></block>
-  <block id="f0257f32dc0bfda00ae02ce78c8c7f9e" category="paragraph">在许多情况下，您可能不需要迁移配置数据。但是，如果您之前已自定义了首选项文件，则可能需要查看这些文件并对新部署的 ONTAP 工具进行类似的更改。您可以执行以下操作之一：</block>
-  <block id="2612149a04c869d4a60c63a5b19cc6b2" category="inline-link">适用于 SnapCenter 和虚拟存储控制台的 NetApp 导入实用程序</block>
-  <block id="9731cece65b178e7bf213f0f3d5e891d" category="list-text">使用 ...<block ref="29824d14e430788052b1250d1e3cc9dc" category="inline-link-rx"></block> 将存储系统凭据从 VSC 6.X 和 SRA 4.X 迁移到新部署。</block>
-  <block id="60caf4ce70cf77e2e70855a9ad54064a" category="list-text">将存储系统添加到新部署的 ONTAP 工具中，并在添加时指定凭据。</block>
   <block id="b306db6d6bcaf976db5689e930b5aee2" category="paragraph">如果要从 VASA Provider 6.X 升级，则应在升级之前取消注册 VASA Provider 。有关详细信息，请参见当前版本的文档。</block>
-  <block id="4aa2239dda37e378c2fd9033db9ad2f7" category="paragraph">如果您也要从 SRA 4.0 或更早版本升级：</block>
   <block id="6db555bae030dd891aa85762ae9d5b14" category="paragraph"><block ref="6db555bae030dd891aa85762ae9d5b14" category="inline-link-macro-rx"></block></block>
   <block id="5df401ea01c055d3d0545c3236d0342d" category="list-text">如果您使用的是 SRA 2.1 或 3.0 ，则应首先记下现有站点配置详细信息。</block>
   <block id="29207911ce269dda752ac4d44a979ae1" category="paragraph">《适用于 ONTAP 的存储复制适配器 4.0 安装和设置指南》中的详细说明位于 " 升级概述 " 一节中。这些 SRA 版本还使用 VASA Provider ，因此您必须取消注册 VASA Provider ，然后部署最新版本的 ONTAP 工具。升级完成后，可以删除先前版本的服务器（` 。 ova` ）。</block>
@@ -1310,7 +1297,6 @@
   <block id="1b779c313afbdbc7de30f9feaac2b8b8" category="paragraph">报告中的每个虚拟机名称都是指向选定虚拟机的 " 监控 " 选项卡的链接。您可以根据需要对虚拟机报告进行排序，并将报告导出为 .CSV 文件，然后将报告保存在本地系统上。报告的时间戳也会附加到保存的报告中。</block>
   <block id="f81c7969fdefea8a13463f2714b8bc6f" category="paragraph">对于由 FlexGroup 卷提供支持的虚拟机，打开新虚拟机的电源后，文件将在 ONTAP 上注册以进行监控。从 ONTAP 访问 VM 报告时，将获取延迟，吞吐量和 IOPS 的历史指标。</block>
   <block id="1160aea292cdf3dd55420a7a7bafa77e" category="doc">ONTAP 工具维护控制台概述</block>
-  <block id="53a0316200f9542f29bdba91612e8744" category="paragraph">您应使用已部署 ONTAP 工具的摘要选项卡访问维护控制台。单击时 <block ref="646d51cfcc95b274401d8044823da1c3" category="inline-image-macro-rx" type="image"></block>，此时维护控制台将启动。</block>
   <block id="0b8a80106a177e9178ec383905046532" category="cell">* 控制台菜单 *</block>
   <block id="2c639d8cf692c100e3eba8b611821414" category="cell">* 选项 *</block>
   <block id="d2a90b891e76a96b4b7f2eb26a53b356" category="list-text">硬重置密钥存储和证书</block>
@@ -1545,8 +1531,6 @@
   <block id="5964a20b29586f71f419711aae6ae487" category="paragraph">此适配器安装在 SRM 上。</block>
   <block id="39d642e40fbcd108eb0ab15715ee349d" category="list-text">验证主 ESXi 主机是否已连接到受保护站点上主存储系统中的 LUN 。</block>
   <block id="c295c005211b8c46c7e8ae09f97dae78" category="list-text">验证 LUN 是否位于主存储系统上已将 `ostype` 选项设置为 _vmware_ 的 igroup 中。</block>
-  <block id="83e07e8dd229d7dad2fa5d0574490b80" category="list-text">验证恢复站点上的 ESXi 主机是否与 Storage Virtual Machine （ SVM ）具有适当的 FC 或 iSCSI 连接。</block>
-  <block id="94d40bdd7b43645e14cbce746d040edf" category="paragraph">为此，您可以验证 ESXi 主机是否已在 SVM 上连接本地 LUN ，也可以在 SVM 上使用 `fcp show initiators` 命令或 `iscsi show initiators` 命令。</block>
   <block id="c15f6cdb57f72faef1aa17926a9bf11b" category="list-text">在恢复站点的每个 ESXi 主机上使用 `ping` 命令，验证主机是否具有一个 VMkernel 端口，该端口可访问用于从 SVM 提供 NFS 导出的 IP 地址。</block>
   <block id="090d563c49141ab020a2a13fed6d62cc" category="summary">如果您正在使用基于 Windows 的 Site Recovery Manager （ SRM ）进行灾难恢复，并且要使用 SRM 设备进行相同的设置，则应将 Windows 灾难恢复设置迁移到基于设备的 SRM 。</block>
   <block id="b1615a1d50989bbe005256e6352c9d57" category="doc">将 Windows SRM 迁移到 SRM 设备</block>
@@ -2009,4 +1993,13 @@
   <block id="ed9018b2e8611a3d2c03bb6a205b9715" category="sidebar">适用于 VMware vSphere 的 ONTAP 工具</block>
   <block id="d9feb2b730ded2731ab499f4b64cca33" category="paragraph"><block ref="ccafd2400edf7c1aa273a76ad605940f" category="inline-link-rx"></block></block>
   <block id="8cd78caf975d066200418cff9639fdef" category="cell">请参见<block ref="c4e3c5dd56e9c0925a46d52133eef091" category="inline-link-rx"></block></block>
+  <block id="c84e3f1fce618833b2fe90a7026984c3" category="paragraph">您应使用已部署 ONTAP 工具的 * 摘要 * 选项卡访问维护控制台。单击时 <block ref="646d51cfcc95b274401d8044823da1c3" category="inline-image-macro-rx" type="image"></block>，此时维护控制台将启动。</block>
+  <block id="5cd110d372988e6fedf83dab3b77194b" category="list-text">运行命令`cd /var/log/vmware/SRM`以导航到日志目录。</block>
+  <block id="ecf618584c0254b7edf0733670fcb0f8" category="list-text">验证恢复站点上的 ESXi 主机是否与 Storage Virtual Machine （ SVM ）具有适当的 FC 或 iSCSI 连接。二级站点ESXi主机应能够访问二级站点存储、同样、主站点ESXi主机也应能够访问主站点存储。</block>
+  <block id="785694280aa2f361cd62ad2d7aadb3a7" category="paragraph">为此，您可以验证 ESXi 主机是否已在 SVM 上连接本地 LUN ，也可以在 SVM 上使用 `fcp show initiators` 命令或 `iscsi show initiators` 命令。检查ESXi中映射的LUN的LUN访问权限、以验证FC和iSCSI连接。</block>
+  <block id="34ab17700f5d219ac84124b2c9f0b173" category="paragraph">在许多情况下，您可能不需要迁移配置数据。但是，如果您之前已自定义了首选项文件，则可能需要查看这些文件并对新部署的 ONTAP 工具进行类似的更改。您可以将存储系统添加到新部署的ONTAP 工具中、并在添加时指定凭据。</block>
+  <block id="d09d8dd95e7b4f1ec5ecf89bb65d374e" category="paragraph">如果要从SRA 4.0或更早版本升级：</block>
+  <block id="f41a0f70d00fe5c4c096315736c1c5f5" category="paragraph">要使用用户界面配置IPv4或IPv6、请参见以下各节：</block>
+  <block id="9e61293b777b055e3576d637f3d16625" category="list-text"><block ref="9e61293b777b055e3576d637f3d16625" category="inline-link-macro-rx"></block></block>
+  <block id="c012b5b3ff136d3277c106ffd47bf52e" category="list-text"><block ref="c012b5b3ff136d3277c106ffd47bf52e" category="inline-link-macro-rx"></block></block>
 </blocks>

@@ -28,6 +28,7 @@ summary: 部署 SRM 设备后，您应在 SRM 设备上配置 SRA 。成功配�
 . 重新扫描适配器以验证是否已在 "SRM Storage Replication Adapter" 页面中更新详细信息。
 . 使用管理员帐户使用 putty 登录到 SRM 设备。
 . 使用命令 `su root` 切换到 root 用户
+. 运行命令`cd /var/log/vmware/SRM`以导航到日志目录。
 . 在日志位置输入命令以获取 SRA 使用的 Docker ID ： `docker ps -l`
 . 要登录到容器 ID ，请输入命令： `docker exec -it -u SRM <container id> sh`
 . 使用以下命令为 SRM 配置 ONTAP 工具 IP 地址和密码： `perl command.pl -i <va-ip> administrator <va-password>`

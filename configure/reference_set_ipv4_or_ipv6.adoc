@@ -63,3 +63,8 @@ IPv6
 
 
 |===
+要使用用户界面配置IPv4或IPv6、请参见以下各节：
+
+* link:../configure/add_different_subnets.html["添加不同的子网"]
+* link:../configure/task_enable_datastore_mounting_across_different_subnets.html["在不同子网之间启用数据存储库挂载"]
+

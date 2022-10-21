@@ -24,15 +24,11 @@ Virtual Storage Console 6.x ， Storage Replication Adapter 2.x ， 3.x ， 4.x 
 
 link:../configure/reference_set_ipv4_or_ipv6.html["使用首选项文件设置 IPv4 或 IPv6"]
 
-在许多情况下，您可能不需要迁移配置数据。但是，如果您之前已自定义了首选项文件，则可能需要查看这些文件并对新部署的 ONTAP 工具进行类似的更改。您可以执行以下操作之一：
-
-* 使用 ... https://mysupport.netapp.com/tools/index.html["适用于 SnapCenter 和虚拟存储控制台的 NetApp 导入实用程序"] 将存储系统凭据从 VSC 6.X 和 SRA 4.X 迁移到新部署。
-* 将存储系统添加到新部署的 ONTAP 工具中，并在添加时指定凭据。
-
+在许多情况下，您可能不需要迁移配置数据。但是，如果您之前已自定义了首选项文件，则可能需要查看这些文件并对新部署的 ONTAP 工具进行类似的更改。您可以将存储系统添加到新部署的ONTAP 工具中、并在添加时指定凭据。
 
 如果要从 VASA Provider 6.X 升级，则应在升级之前取消注册 VASA Provider 。有关详细信息，请参见当前版本的文档。
 
-如果您也要从 SRA 4.0 或更早版本升级：
+如果要从SRA 4.0或更早版本升级：
 
 * 如果您使用的是 SRA 4.0P1 ，则必须先升级到 SRA9.6 ，然后再原位升级 SRA 9.6 版。您可以稍后升级到最新版本的 ONTAP 工具。
 +
