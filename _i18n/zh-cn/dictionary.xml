@@ -1851,7 +1851,6 @@
   <block id="2efb0fa4cef9462e9a212abf6778b626" category="list-text">对 iSCSI 子网访问重复上述步骤，然后单击 * 应用 * 。</block>
   <block id="481a4353946c90ce05d5219831e46abe" category="summary">您可以使用适用于 VMware vSphere 的 ONTAP 工具在 ESXi 主机上设置超时和其他值，以确保性能最佳并成功进行故障转移。Virtual Storage Console （ VSC\ ）设置的值基于 NetApp 内部测试。</block>
   <block id="e9df7d5252c2104198351b64e368569b" category="paragraph">您可以使用适用于 VMware vSphere 的 ONTAP 工具在 ESXi 主机上设置超时和其他值，以确保性能最佳并成功进行故障转移。ONTAP 工具设置的值基于 NetApp 内部测试。</block>
-  <block id="b38bf8be6e7b723590f1617ac2c54cc5" category="paragraph">如果您使用的是 vSphere 6.0 或更高版本，则对于 ESXi 主机 6.x ，请将此值设置为 512 ，对于 ESXi 7.x ，请将此值设置为 1024 。</block>
   <block id="56cfa018d4e9a7aa0b73e64b0dd88f77" category="paragraph">请参见 " 在不同子网之间启用数据存储库挂载 " 。</block>
   <block id="8df76ca12987982377e22db05992acb3" category="paragraph">此首选项文件也适用于创建 VVOL 数据存储库。有关详细信息，请参见 _Enable datastore mounting across different subnets_ 和 _Configure the VSC preferences files_ 。</block>
   <block id="ec2fa05ad1e1cd992e000b32058b54e0" category="list-text">如果在运行 ONTAP 9.8 及更高版本的 ASA 和经批准的 AFF 系统中使用 VMFS5 和 VMFS6 数据存储库，则 ONTAP 工具支持将其配置为最大 VMFS LUN 和 64 TB 的卷大小。</block>
@@ -2002,4 +2001,5 @@
   <block id="f41a0f70d00fe5c4c096315736c1c5f5" category="paragraph">要使用用户界面配置IPv4或IPv6、请参见以下各节：</block>
   <block id="9e61293b777b055e3576d637f3d16625" category="list-text"><block ref="9e61293b777b055e3576d637f3d16625" category="inline-link-macro-rx"></block></block>
   <block id="c012b5b3ff136d3277c106ffd47bf52e" category="list-text"><block ref="c012b5b3ff136d3277c106ffd47bf52e" category="inline-link-macro-rx"></block></block>
+  <block id="9ed575bd998ffefe31b2b6708094410d" category="paragraph">对于vSphere 6.X版本、应将此值设置为512 MB、但6.5U3和6.7U3版本除外。对于vSphere 6.5U3和6.7U3版本、请将此值设置为1024 MB。如果您使用的是vSphere 7.0或更高版本、则应将此值设置为1024 MB。</block>
 </blocks>

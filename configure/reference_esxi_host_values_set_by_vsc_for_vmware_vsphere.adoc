@@ -39,7 +39,7 @@ summary: 您可以使用适用于 VMware vSphere 的 ONTAP 工具在 ESXi 主机
 
 * * 网络 .TcpipHeapMax*
 +
-如果您使用的是 vSphere 6.0 或更高版本，则对于 ESXi 主机 6.x ，请将此值设置为 512 ，对于 ESXi 7.x ，请将此值设置为 1024 。
+对于vSphere 6.X版本、应将此值设置为512 MB、但6.5U3和6.7U3版本除外。对于vSphere 6.5U3和6.7U3版本、请将此值设置为1024 MB。如果您使用的是vSphere 7.0或更高版本、则应将此值设置为1024 MB。
 
 * * 。 nfs.MaxVolumes*
 +
