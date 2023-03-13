@@ -1894,7 +1894,6 @@
   <block id="5584c9cd70ee56e5a5efd81211571c12" category="paragraph">Virtual Storage Console 6.x ， Storage Replication Adapter 2.x ， 3.x ， 4.x 和 VASA Provider 6.x 等各个应用程序的早期版本使用不同的升级过程。如果您在设置中安装了这些旧版本的 VSC ， VASA Provider 或 SRA ，则应执行以下操作：</block>
   <block id="7f92b985b9e4bff91f2d31ae0cc7bdd7" category="list-text">如果您使用的是 SRA 4.0P1 ，则必须先升级到 SRA9.6 ，然后再原位升级 SRA 9.6 版。您可以稍后升级到最新版本的 ONTAP 工具。</block>
   <block id="e2444e964cdc125f0e5e638cd372f502" category="paragraph">如果您拥有 VSC ， VASA Provider 和 SRA 虚拟设备 7.2 或 7.2.1 版，则无法直接升级到统一设备的 9.7P1 或更高版本。您必须先将现有设置升级到虚拟设备 9.7 版，然后再升级到最新版本。</block>
-  <block id="4bd884e7fb553fa43999861fb99f4795" category="paragraph">要升级到 ONTAP Tools 9.10 ，您应运行虚拟设备 9.7P1 或更高版本。不支持从虚拟设备 9.7P1 之前的早期版本升级。</block>
   <block id="b718294cda68e2103389a24908b155e6" category="paragraph">如果您要部署最新版本的 ONTAP 工具，则必须查看主题 `部署 ONTAP 工具的要求。` 主题 `升级到最新版本的 ONTAP Tools` 提供了有关执行原位升级的信息。</block>
   <block id="ff22f9429bb46603451057ba28a08029" category="paragraph">（可选）在配置 vCenter 或启用 VCF 部分中，选中 * 启用 VMware Cloud Foundation （ VCF ） * 复选框，并为 ONTAP 工具凭据提供密码。您不需要提供 IP 地址，但必须提供密码。有关完整的详细信息，请参见以下内容。</block>
   <block id="db87f0e7d398509389710de2acd5bc37" category="list-text"><block ref="db87f0e7d398509389710de2acd5bc37" category="inline-link-macro-rx"></block></block>
@@ -2002,4 +2001,5 @@
   <block id="9e61293b777b055e3576d637f3d16625" category="list-text"><block ref="9e61293b777b055e3576d637f3d16625" category="inline-link-macro-rx"></block></block>
   <block id="c012b5b3ff136d3277c106ffd47bf52e" category="list-text"><block ref="c012b5b3ff136d3277c106ffd47bf52e" category="inline-link-macro-rx"></block></block>
   <block id="9ed575bd998ffefe31b2b6708094410d" category="paragraph">对于vSphere 6.X版本、应将此值设置为512 MB、但6.5U3和6.7U3版本除外。对于vSphere 6.5U3和6.7U3版本、请将此值设置为1024 MB。如果您使用的是vSphere 7.0或更高版本、则应将此值设置为1024 MB。</block>
+  <block id="ed2b91672ee08a221afee30153dc24a9" category="paragraph">要从ONTAP Tools 9.10及更高版本升级、请运行虚拟设备9.7P1或更高版本。不支持从虚拟设备 9.7P1 之前的早期版本升级。</block>
 </blocks>

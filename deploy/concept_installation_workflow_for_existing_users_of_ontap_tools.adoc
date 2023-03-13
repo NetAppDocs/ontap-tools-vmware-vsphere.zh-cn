@@ -46,7 +46,7 @@ link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html["升�
 
 如果您拥有 VSC ， VASA Provider 和 SRA 虚拟设备 7.2 或 7.2.1 版，则无法直接升级到统一设备的 9.7P1 或更高版本。您必须先将现有设置升级到虚拟设备 9.7 版，然后再升级到最新版本。
 
-要升级到 ONTAP Tools 9.10 ，您应运行虚拟设备 9.7P1 或更高版本。不支持从虚拟设备 9.7P1 之前的早期版本升级。
+要从ONTAP Tools 9.10及更高版本升级、请运行虚拟设备9.7P1或更高版本。不支持从虚拟设备 9.7P1 之前的早期版本升级。
 
 如果您要部署最新版本的 ONTAP 工具，则必须查看主题 `部署 ONTAP 工具的要求。` 主题 `升级到最新版本的 ONTAP Tools` 提供了有关执行原位升级的信息。
 
