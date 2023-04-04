@@ -1816,7 +1816,6 @@
   <block id="d75bd630a4a4d5d445ca5dcb7d3bf5c4" category="list-text">将 _.tar.gz_ 文件上传到 SRM 。</block>
   <block id="9d58dbd20800ce51e37de67c2297da5f" category="list-text">在日志位置输入命令以获取 SRA 使用的 Docker ID ： `docker ps -l`</block>
   <block id="7202896d218d74a45a1995fe74164f61" category="list-text">要登录到容器 ID ，请输入命令： `docker exec -it -u SRM &lt;container id&gt; sh`</block>
-  <block id="6408528f5006f0df83e2b2cc7b5f3eae" category="list-text">使用以下命令为 SRM 配置 ONTAP 工具 IP 地址和密码： `perl command.pl -i &lt;va-ip&gt; administrator &lt;va-password&gt;`</block>
   <block id="8ec4d083f1f58ff4d24863f551d313e7" category="paragraph">VVOL 复制功能已得到增强，可为在 SRM 设置之前创建的现有虚拟机提供 VVOL 复制。这样，您就可以恢复现有虚拟机并在恢复站点上对其进行保护。</block>
   <block id="7bb0ac2008249d1c5d6777d0a276762d" category="list-text">集群和 SVM 已建立对等关系。</block>
   <block id="66f6503e9d4345aa09d4da6511c79764" category="list-text">在源站点和目标站点上创建数据存储库和 FlexVol 卷。</block>
@@ -2002,4 +2001,5 @@
   <block id="c012b5b3ff136d3277c106ffd47bf52e" category="list-text"><block ref="c012b5b3ff136d3277c106ffd47bf52e" category="inline-link-macro-rx"></block></block>
   <block id="9ed575bd998ffefe31b2b6708094410d" category="paragraph">对于vSphere 6.X版本、应将此值设置为512 MB、但6.5U3和6.7U3版本除外。对于vSphere 6.5U3和6.7U3版本、请将此值设置为1024 MB。如果您使用的是vSphere 7.0或更高版本、则应将此值设置为1024 MB。</block>
   <block id="ed2b91672ee08a221afee30153dc24a9" category="paragraph">要从ONTAP Tools 9.10及更高版本升级、请运行虚拟设备9.7P1或更高版本。不支持从虚拟设备 9.7P1 之前的早期版本升级。</block>
+  <block id="65f6fb9b3fd7c8798ba4a7010e84a65b" category="list-text">使用以下命令使用ONTAP 工具IP地址和密码配置SRM：<block ref="2ca82e2fa9750815c3356b6e1692f9ca" prefix=" " category="inline-code"></block></block>
 </blocks>
