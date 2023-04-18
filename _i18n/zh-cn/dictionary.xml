@@ -1556,7 +1556,6 @@
   <block id="bc5ad92fecd3f6eeb4473c9df6479d46" category="list-text">`rm -rf *`</block>
   <block id="42f35b3ef9c82737da1f02ca0b45f308" category="list-text">执行 perl 命令以使用新凭据配置 SRA ：</block>
   <block id="325c22d13dffac10de126d900c39ff29" category="list-text">`cd /SRM/SRA /`</block>
-  <block id="000595390ba91f5d02fbc87c52ad2a40" category="list-text">`perl command.pl -i &lt;va-ip&gt; administrator &lt;va-password&gt;`</block>
   <block id="56432a21668094f186d5ab119b91103a" category="summary">您可以使用 Site Recovery Manager （ SRM\ ）中的阵列管理器向导配置 Storage Replication Adapter （ SRA ），以启用 SRM 与 Storage Virtual Machine （ SVM\ ）之间的交互。</block>
   <block id="e19aa5b1d5cc9af071d6a8aaa3d6133b" category="doc">使用阵列管理器配置 SRA</block>
   <block id="162e9c2c35038a17f958fbf922755a04" category="paragraph">您可以使用 Site Recovery Manager （ SRM ）的 Array Manager 向导配置 Storage Replication Adapter （ SRA ），以便在 SRM 和 Storage Virtual Machine （ SVM ）之间进行交互。</block>
@@ -1796,7 +1795,6 @@
   <block id="be280321d69d14f5dfce8709e117a691" category="list-text">切换到 root 用户： `su root`</block>
   <block id="9d7f1b1965b299ca0f83a93983a67fa9" category="list-text">在日志位置输入命令以获取 SRA Docker 使用的 Docker ID ： `docker ps -l`</block>
   <block id="a3fbfd6ca26f7eba2deb3733ea046eb1" category="list-text">登录到容器 ID ： `docker exec -it -u SRM &lt;container id&gt; sh`</block>
-  <block id="c93a0f0ebeda9ccb76c7ccdb97a1b6fc" category="list-text">使用 ONTAP 工具 IP 地址和密码配置 SRM ： `perl command.pl -i &lt;va-ip&gt; administrator &lt;va-password&gt;` 此时将显示一条成功消息，确认存储凭据已存储。</block>
   <block id="3849324d415efa553fdff378e6dd712e" category="section-title">正在更新 SRA 凭据</block>
   <block id="744ec7526945686620ba725a3be0778f" category="list-text">使用以下命令删除 /SRM/SRA 目录的内容：</block>
   <block id="9394c3b706fe8eb791b91c156fbd1c93" category="section-title">启用 VASA Provider 和 SRA</block>
@@ -2001,5 +1999,7 @@
   <block id="c012b5b3ff136d3277c106ffd47bf52e" category="list-text"><block ref="c012b5b3ff136d3277c106ffd47bf52e" category="inline-link-macro-rx"></block></block>
   <block id="9ed575bd998ffefe31b2b6708094410d" category="paragraph">对于vSphere 6.X版本、应将此值设置为512 MB、但6.5U3和6.7U3版本除外。对于vSphere 6.5U3和6.7U3版本、请将此值设置为1024 MB。如果您使用的是vSphere 7.0或更高版本、则应将此值设置为1024 MB。</block>
   <block id="ed2b91672ee08a221afee30153dc24a9" category="paragraph">要从ONTAP Tools 9.10及更高版本升级、请运行虚拟设备9.7P1或更高版本。不支持从虚拟设备 9.7P1 之前的早期版本升级。</block>
-  <block id="65f6fb9b3fd7c8798ba4a7010e84a65b" category="list-text">使用以下命令使用ONTAP 工具IP地址和密码配置SRM：<block ref="2ca82e2fa9750815c3356b6e1692f9ca" prefix=" " category="inline-code"></block></block>
+  <block id="a88efd6c9b7763df783d278ede79c4a6" category="list-text">使用ONTAP 工具IP地址和密码配置SRM：<block ref="4222690b3b5a5c9afb047223bc02154e" prefix=" " category="inline-code"></block>此时将显示一条成功消息，确认存储凭据已存储。</block>
+  <block id="092016eb57c00c965fc19b3bff7ff343" category="list-text"><block ref="4222690b3b5a5c9afb047223bc02154e" prefix="" category="inline-code"></block></block>
+  <block id="b8e3b3982008f247b4868b6fd9b104d8" category="list-text">使用以下命令使用ONTAP 工具IP地址和密码配置SRM：<block ref="4222690b3b5a5c9afb047223bc02154e" prefix=" " category="inline-code"></block></block>
 </blocks>

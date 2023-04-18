@@ -154,7 +154,7 @@ NOTE: （可选）如果要在不向 vCenter Server 注册的情况下创建容�
 . 切换到 root 用户： `su root`
 . 在日志位置输入命令以获取 SRA Docker 使用的 Docker ID ： `docker ps -l`
 . 登录到容器 ID ： `docker exec -it -u SRM <container id> sh`
-. 使用 ONTAP 工具 IP 地址和密码配置 SRM ： `perl command.pl -i <va-ip> administrator <va-password>` 此时将显示一条成功消息，确认存储凭据已存储。
+. 使用ONTAP 工具IP地址和密码配置SRM： `perl command.pl -I <otv-IP> administrator <otv-password>`此时将显示一条成功消息，确认存储凭据已存储。
 
 
 
@@ -171,7 +171,7 @@ NOTE: （可选）如果要在不向 vCenter Server 注册的情况下创建容�
 . 执行 perl 命令以使用新凭据配置 SRA ：
 +
 .. `cd /SRM/SRA /`
-.. `perl command.pl -i <va-ip> administrator <va-password>`
+.. `perl command.pl -I <otv-IP> administrator <otv-password>`
 
 
 
