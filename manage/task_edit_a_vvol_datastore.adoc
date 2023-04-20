@@ -1,5 +1,5 @@
 ---
-permalink: manage/task_edit_a_vvols_datastore.html 
+permalink: manage/task_edit_a_vvol_datastore.html 
 sidebar: sidebar 
 keywords:  
 summary: 您可以编辑现有 VMware 虚拟卷（ VVols ）数据存储库以更改默认存储功能配置文件。默认存储功能配置文件主要用于交换 VVol 。 

@@ -29,8 +29,8 @@ NOTE: 直接存储虚拟机（ SVM ）上配置的 FlexGroup 数据存储库不�
 * 步骤 *
 
 . 在 vSphere Client 主页页面中，单击 * 适用于 VMware vSphere 的 ONTAP Tools* 。
-. 使用 vCenter Server 下拉菜单选择所需的 vCenter Server 以查看数据存储库。
-. 单击 * 传统信息板 * 。
+. 使用*实例*选择器选择所需的vCenter Server以查看数据存储库。
+. 单击*概述>传统信息板*。
 +
 数据存储库 portlet 可提供以下详细信息：
 

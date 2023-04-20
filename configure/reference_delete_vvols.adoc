@@ -1,0 +1,29 @@
+---
+permalink: configure/reference_delete_vvols.html 
+sidebar: sidebar 
+keywords: vVols datastore,delete vVol 
+summary: ONTAP 工具支持使用命令删除数据中心中的FlexVol 卷。 
+---
+= 删除此数据存储库
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+从vCenter中的ONTAP 工具中删除vVol数据存储库任务将执行以下操作：
+
+* 卸载VVOV容器。
+* 清理igroup。如果igrop未在使用中、则从igrop中删除iqn。
+* 删除vvol容器。
+* 将Flex卷保留在存储阵列上。
+
+
+按照以下步骤从vCenter中从ONTAP 工具中删除VVOV数据存储库：
+
+步骤
+
+. 从清单*view*中选择数据存储库。
+. 右键单击vVol数据存储库、然后选择* NetApp ONTAP tools*>*删除vVol数据存储库*。
+. 清理存储阵列和igroup中的灵活卷。
+

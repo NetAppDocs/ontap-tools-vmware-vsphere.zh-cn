@@ -11,10 +11,8 @@ summary: 您可以从 NetApp 支持站点下载适用于 VMware vSphere 的 ONTA
 
 
 [role="lead"]
-您可以从 NetApp 支持站点下载适用于 VMware vSphere 的 ONTAP 工具的 _.ova_ 文件。
+您可以下载 `.zip` 包含中适用于VMware vSphere的ONTAP 工具的二进制文件(_.ova_)和签名证书的文件 https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab["NetApp 支持站点"^]。
 
-_.ova_ 文件包含 ONTAP 工具。部署完成后，所有这三种产品都会安装在您的环境中。默认情况下，一旦您确定后续部署模式并根据您的要求选择是否启用 VASA Provider 和 SRA ， VSC 就会开始工作。
-
-您可以从下载 ONTAP 工具 https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab["NetApp 支持站点"] 使用软件下载页面。
+_.ova_ 文件包含 ONTAP 工具。部署完成后、您的环境中将安装VSC、VASA和SRA产品。默认情况下，一旦您确定后续部署模式并根据您的要求选择是否启用 VASA Provider 和 SRA ， VSC 就会开始工作。
 
 如果要在部署 ONTAP 工具时启用 SRA ，则必须已在 Site Recovery Manager （ SRM ）服务器上安装 SRA 插件。您可以从 " 软件下载 " 部分的 * 适用于 ONTAP 的存储复制适配器 * 菜单下载 SRA 插件的安装文件。

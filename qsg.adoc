@@ -80,7 +80,7 @@ ONTAP 工具使用以下默认双向 TCP 端口：
 | * 存储，主机和应用程序 * | * 版本要求 * 
 
 
-| ONTAP | ONTAP 9.3 ， 9.5 ， 9.6 ， 9.7 ， 9.8P1 或更高版本。 
+| ONTAP | ONTAP 9.7、9.8P1或更高版本。 
 
 
 | VMware vSphere ， vCenter Server ， ESXi 主机， Site Recovery Manager （ SRM ），插件应用程序和数据库列 1 | 请参见 https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT["互操作性表工具"^] 
@@ -95,51 +95,67 @@ ONTAP 工具使用以下默认双向 TCP 端口：
 * 删除浏览器缓存以避免在部署 ONTAP 工具期间出现任何浏览器缓存问题描述。
 * 配置虚拟设备响应 ICMP ping 所使用的默认网关。
 * 虚拟设备的有效 DNS 主机名。
-* 如果要查看 VVOL 信息板，请下载并安装适用于 ONTAP 9.6 或更早版本的 OnCommand API 服务。如果您使用的是 ONTAP 9.7 或更高版本，则无需向 VASA Provider 注册 OnCommand API 服务。
 
 
 
 
 === SRA 的可选要求
 
-如果要将虚拟设备部署为与 VMware Site Recovery Manager 结合使用，则只有在要配置 Site Recovery Manager （ SRM ）灾难恢复解决方案时，您才必须： * 已下载 SRA 插件的 ` .msi` 文件。如果您使用的是 SRM 设备，则第 1 列 * 已下载适用于 SRA 的 ` .tar.gz` 文件。
+如果要部署虚拟设备以与VMware Site Recovery Manager结合使用、则必须事先：*下载 `.tar.gz` 文件。
 
 
 
 == 部署 ONTAP 工具
 
 .步骤
-. 从下载 ` .ova` 文件 https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab["NetApp 支持站点"^] 连接到 vSphere Client 系统以部署 ONTAP 工具。
+. 下载 `.zip` 包含中的二进制文件和签名证书的文件 https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab["NetApp 支持站点"^] 连接到 vSphere Client 系统以部署 ONTAP 工具。
+. 提取 `.zip` 归档并部署 `.ova` 文件
 +
 如果要部署 SRA ，则必须在源站点和目标站点上部署 ` 。 ova` 文件。
 
-. 登录到 vSphere Web Client ，选择 * 主页 * > * 主机和集群 * 。
+. 登录到vSphere Web Client、选择*主页*>*主机和群集*。
 . 右键单击所需数据中心，然后单击 * 部署 OVF 模板 * 。
++
+如果您使用的是vCenter7.0u3e及更高版本、请执行以下操作、否则请继续执行步骤5。这是一个可选步骤、用于验证OVA二进制文件完整性是否未被篡改。
+
++
+** 从NetApp 支持站点 下载_OTV_inter_root_CERT_chain.pem_文件。
+** 导航到*vCenter*>*管理*>*证书管理*。
+** 单击*添加可信根证书*选项。
+** 单击*Browse*并提供_OTV_inter_root_CERT_chain.pep_文件的路径。
+** 单击 * 添加 * 。
++
+
+NOTE: 消息Entrust Code signing - OVCS2 (Trusted certificATE)用于确认下载的OVA文件的完整性。如果看到Entrust代码签名- OVCS2 (证书无效)消息、请将VMware vCenter Server升级到7.0U3E或更高版本。
+
+
+
 . 您可以输入 .ova 文件的 URL ，也可以浏览到保存 .ova 文件的文件夹，然后单击 * 下一步 * 。
 . 输入所需详细信息以完成部署。
-+
+
+
 
 NOTE: （可选）如果要在不向 vCenter Server 注册的情况下创建容器，请在配置 vCenter 或启用 VCF 部分中选中启用 VMware Cloud Foundation （ VCF ）复选框。
 
-
-
 您可以从 * 任务 * 选项卡查看部署进度，并等待部署完成。
+
+在部署过程中、会执行校验和验证。如果部署失败、请执行以下操作：
+
+. 验证vpserver/logs/校 验和.log。如果显示"Checksum verification failed (校验和验证失败)"、则可以在同一日志中看到失败的JAR的验证。
++
+日志文件包含执行_na256sum -c /opt/NetApp/vpserver/conf/checksosqupsu_。
+
+. 验证vscserver/log/校 验和.log。如果显示"Checksum verification failed (校验和验证失败)"、则可以在同一日志中看到失败的JAR的验证。
++
+日志文件包含执行_sc256sum -c /opt/NetApp/vscserver/etc/checksosqu并且
+
+
 
 
 
 === 在 SRM 上部署 SRA
 
 您可以在 Windows SRM 服务器或 8.2 SRM 设备上部署 SRA 。
-
-
-
-==== 在 Windows SRM 服务器上安装 SRA
-
-.步骤
-. 从 NetApp 支持站点下载适用于 SRA 插件的 ` .msi` 安装程序。
-. 双击为 SRA 插件下载的 ` .msi` 安装程序，然后按照屏幕上的说明进行操作。
-. 输入已部署虚拟设备的 IP 地址和密码，以便在 SRM 服务器上完成 SRA 插件的安装。
-
 
 
 
@@ -181,9 +197,9 @@ NOTE: （可选）如果要在不向 vCenter Server 注册的情况下创建容�
 ==== 启用 VASA Provider 和 SRA
 
 .步骤
-. 使用您在部署期间指定的 IP 地址登录到 vSphere Web Client 。
-. 单击 * OTV* 图标，输入部署期间指定的用户名和密码，然后单击 * 登录 * 。
-. 在 OTV 的左窗格中，选择 * 设置 > 管理设置 > 管理功能 * ，然后启用所需功能。
+. 使用在OVA ONTAP 工具部署期间提供的vCenter IP登录到vSphere Web Client。
+. 在快捷方式页面中，单击插件部分下的*NetApp ONTAP tools*。
+. 在ONTAP 工具的左窗格中，选择*Settings > Administrative Settings > Manage Capabilities*，然后启用所需的功能。
 +
 
 NOTE: 默认情况下， VASA Provider 处于启用状态。如果要对 VVOL 数据存储库使用复制功能，请使用启用 VVOL 复制切换按钮。

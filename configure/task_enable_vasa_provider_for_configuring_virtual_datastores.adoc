@@ -26,7 +26,7 @@ summary: 默认情况下，适用于 VMware vSphere 的 ONTAP 工具已启用 VA
 * 步骤 *
 
 . 登录到 VMware vSphere 的 Web 用户界面。
-. 在 vSphere Client 中，单击 * 菜单 * > * ONTAP Tools Console* 。
+. 在vSphere Client中，单击*菜单*>*NetApp ONTAP tools*控制台。
 . 单击 * 设置 * 。
 . 单击管理设置选项卡中的 * 管理功能 * 。
 . 在管理功能对话框中，选择要启用的 VASA Provider 扩展。
@@ -34,8 +34,10 @@ summary: 默认情况下，适用于 VMware vSphere 的 ONTAP 工具已启用 VA
 . 输入 ONTAP 工具的 IP 地址和管理员密码，然后单击 * 应用 * 。
 +
 
-NOTE: 如果即使在启用 VASA Provider 扩展后， VASA Provider 状态仍显示为 "`脱机` " ，请检查 /var/log/vmware/vmware-sps/sps.log 文件中是否存在与 VASA Provider 的任何连接错误，或者重新启动 "`vmware-sps` " 服务。
+NOTE: 如果在启用VASA Provider扩展后、VASA Provider状态仍显示为"`脱机`"、请检查/var/log/vmware/vmware-sps/sps.log文件中是否存在与VASA Provider的任何连接错误、或者重新启动"`vmware-sps`"服务。
 
 
 
-如果您使用的是 ONTAP 9.6 或更早版本的集群，则必须向 VASA Provider 注册 OnCommand API 服务，以获取在 SAN VVOL VM 和 SAN VVOL 数据存储库报告中使用的 VVOL 数据存储库和虚拟机的详细信息。但是，如果您使用的是 ONTAP 9.7 或更高版本，则无需向 VASA Provider 注册 OnCommand API 服务。
+* 相关信息 *
+
+https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"]

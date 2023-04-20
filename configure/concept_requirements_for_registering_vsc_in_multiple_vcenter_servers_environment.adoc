@@ -11,7 +11,7 @@ summary: 如果您在一个 VMware vSphere HTML5 客户端管理多个 vCenter S
 
 
 [role="lead"]
-如果您在一个 VMware vSphere HTML5 客户端管理多个 vCenter Server 实例的环境中使用适用于 VMware vSphere 的 ONTAP 工具，则必须向每个 vCenter Server 注册一个 VSC 实例，以便 VSC 与 vCenter Server 之间存在 1 ： 1 配对关系。这样，您就可以通过一个 vSphere HTML5 客户端在链接模式和非链接模式下管理运行 vCenter 6.0 或更高版本的所有服务器。
+如果您在一个 VMware vSphere HTML5 客户端管理多个 vCenter Server 实例的环境中使用适用于 VMware vSphere 的 ONTAP 工具，则必须向每个 vCenter Server 注册一个 VSC 实例，以便 VSC 与 vCenter Server 之间存在 1 ： 1 配对关系。这样、您就可以通过一个vSphere HTML5客户端在链接模式和非链接模式下管理运行vCenter 7.0或更高版本的所有服务器。
 
 
 NOTE: 如果要将 VSC 与 vCenter Server 结合使用，则必须为要管理的每个 vCenter Server 实例设置或注册一个 VSC 实例。每个已注册的 VSC 实例必须具有相同的版本。
@@ -36,7 +36,7 @@ NOTE: 如果要将 VSC 与 vCenter Server 结合使用，则必须为要管理�
 
 
 
-在执行需要指定 vCenter Server 的任务时， * vCenter Server* 下拉框会按字母顺序显示可用的 vCenter Server 。默认 vCenter Server 始终是下拉列表中的第一个服务器。
+在执行需要指定vCenter Server的任务时、屏幕左上角的*实例*选择器会按字母顺序显示可用的vCenter Server。默认 vCenter Server 始终是下拉列表中的第一个服务器。
 
 如果存储的位置已知（例如，当您使用配置向导且数据存储库位于由特定 vCenter Server 管理的主机上时），则 vCenter Server 列表将显示为只读选项。只有在使用右键单击选项选择 vSphere Web Client 中的某个项目时，才会发生这种情况。
 

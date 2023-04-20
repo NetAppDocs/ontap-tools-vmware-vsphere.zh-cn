@@ -38,8 +38,12 @@ entries:
     url: "/configure/concept_configure_storage_systems_for_ontap_tools_for_vmware_vsphere.html"
   - title: 设置存储系统的默认凭据
     url: "/configure/task_set_default_credentials_for_storage_systems.html"
-  - title: 将存储系统添加到 VSC
+  - title: 添加存储系统
     url: "/configure/task_add_storage_systems.html"
+  - title: 修改存储系统
+    url: "/configure/task_modify_storage_system.html"
+  - title: 更新证书
+    url: "/configure/task_update_certificate.html"
   - title: 发现存储系统和主机
     url: "/configure/task_discover_storage_systems_and_hosts.html"
   - title: 刷新存储系统显示内容
@@ -70,3 +74,5 @@ entries:
     url: "/configure/task_provision_vvols_datastores.html"
   - title: 重新平衡 VVol 数据存储库
     url: "/configure/reference_rebalance_vvols_datastore.html"
+  - title: 删除此数据存储库
+    url: "/configure/reference_delete_vvols.html"

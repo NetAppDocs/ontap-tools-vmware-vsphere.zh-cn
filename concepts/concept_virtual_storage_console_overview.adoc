@@ -2,7 +2,7 @@
 permalink: concepts/concept_virtual_storage_console_overview.html 
 sidebar: sidebar 
 keywords:  
-summary: 适用于 VMware vSphere 的 ONTAP 工具可为使用 NetApp 存储系统的 VMware 环境中的虚拟机提供端到端生命周期管理。它支持管理员直接管理 vCenter Server 中的存储，从而简化了 VMware 环境的存储和数据管理。 
+summary: 适用于 VMware vSphere 的 ONTAP 工具可为使用 NetApp 存储系统的 VMware 环境中的虚拟机提供端到端生命周期管理。它使管理员可以直接管理vCenter Server中的存储、从而简化VMware环境的存储和数据管理。 
 ---
 = ONTAP 工具概述
 :allow-uri-read: 
@@ -11,11 +11,13 @@ summary: 适用于 VMware vSphere 的 ONTAP 工具可为使用 NetApp 存储系�
 
 
 [role="lead"]
-适用于 VMware vSphere 的 ONTAP 工具可为使用 NetApp 存储系统的 VMware 环境中的虚拟机提供端到端生命周期管理。它支持管理员直接管理 vCenter Server 中的存储，从而简化了 VMware 环境的存储和数据管理。
+适用于 VMware vSphere 的 ONTAP 工具可为使用 NetApp 存储系统的 VMware 环境中的虚拟机提供端到端生命周期管理。它使管理员可以直接管理vCenter Server中的存储、从而简化VMware环境的存储和数据管理。
 
-在 vSphere 6.5 中， VMware 引入了一个基于 HTML5 的新客户端，称为 vSphere Client 。ONTAP 工具 9.6 及更高版本仅支持 vSphere Client 。ONTAP 工具可与 vSphere Client 集成，使您能够使用单点登录（ Single Sign-On ， SSO ）服务。在具有多个 vCenter Server 实例的环境中，要管理的每个 vCenter Server 实例都必须有自己注册的 VSC 实例。
+ONTAP 工具可与 vSphere Client 集成，使您能够使用单点登录（ Single Sign-On ， SSO ）服务。在具有多个vCenter Server实例的环境中、您要管理的每个vCenter Server实例都必须具有各自已注册的ONTAP 工具实例。
 
 ONTAP 工具中的每个组件都提供有助于更高效地管理存储的功能。
+
+VMware vSphere Client远程插件工具旨在将插件功能集成到vSphere Client中、而无需在vCenter Server中运行。这样可以隔离插件、并可横向扩展在大型vSphere环境中运行的插件。
 
 
 
@@ -57,11 +59,6 @@ VSC 未附带适用于 VAAI 的 NetApp NFS 插件。但是，您可以从 NetApp
 * 设置警报，以便在卷和聚合接近阈值限制时向您发出警告
 * 监控虚拟机磁盘（ Virtual Machine Disk ， VMDK ）和 VVol 数据存储库上创建的虚拟机的性能
 
-
-如果您使用的是 ONTAP 9.6 或更早版本，则 VASA Provider 将使用 VASA API 与 vCenter Server 进行通信，并使用称为 ZAPI 的 NetApp API 与 ONTAP 进行通信。要查看 ONTAP 9.6 及更早版本的 VVOL 信息板，您必须已在 vCenter Server 中安装并注册 OnCommand API 服务。如果您使用的是 ONTAP 9.7 及更高版本，则无需向 VASA Provider 注册 OnCommand API 服务即可查看 VVOL 信息板。
-
-
-NOTE: 对于 ONTAP 9.6 及更早版本， VASA Provider 需要一个专用的 OnCommand API 服务实例。一个 OnCommand API 服务实例不能与多个 VASA Provider 实例共享。
 
 
 

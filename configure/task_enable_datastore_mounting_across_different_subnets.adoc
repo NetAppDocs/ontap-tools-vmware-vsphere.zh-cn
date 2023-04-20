@@ -17,16 +17,14 @@ summary: 如果您使用 iSCSI 或 NFS ，并且 ESXi 主机和存储系统的�
 
 如果数据存储库配置失败， VSC 将记录以下错误消息：
 
-`无法继续。交叉引用控制器上的内核 IP 地址和地址时未找到 IP 地址。
-
-找不到与这些主机的 NFS 挂载卷匹配的网络。`
+'无法继续。交叉引用控制器上的内核 IP 地址和地址时未找到 IP 地址。找不到与这些主机的NFS挂载卷匹配的网络。'
 
 * 步骤 *
 
 . 登录到 vCenter Server 实例。
 . 使用统一设备虚拟机启动维护控制台。
 +
-link:reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html["适用于 VMware vSphere 的 ONTAP 工具的维护控制台"]
+link:../manage/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html["适用于 VMware vSphere 的 ONTAP 工具的维护控制台"]
 
 . 输入 `4` 以访问 Support and Diagnostics 选项。
 . 输入 `2` 以访问访问诊断 Shell 选项。

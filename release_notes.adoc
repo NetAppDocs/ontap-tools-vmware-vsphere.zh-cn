@@ -13,4 +13,4 @@ summary: 提供有关适用于 VMware vSphere 的此版本 ONTAP 工具的重要
 [role="lead"]
 提供有关适用于 VMware vSphere 的此版本 ONTAP 工具的重要信息，包括已修复的问题，已知问题，注意事项和限制。
 
-有关详细信息，请参见 https://library.netapp.com/ecm/ecm_download_file/ECMLP2883436["适用于VMware vSphere 9.11的ONTAP 工具发行说明"^]。
+有关详细信息，请参见 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885833["《适用于VMware vSphere 9.12的ONTAP 工具发行说明》"^]。

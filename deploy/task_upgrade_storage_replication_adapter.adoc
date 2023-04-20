@@ -27,9 +27,7 @@ summary: 升级 ONTAP 工具或部署最新版本的 ONTAP 工具后，您必须
 Windows
  a| 
 .. 登录到 SRM Windows Server 。
-.. 从 SRM Server 卸载现有的 SRA _.msi 安装程序。
 .. 将系统路径更改为 `C ： \Program Files\VMware\VMware vCenter Site Recovery Manager\external\perl\c\bin`
-.. 双击从 NetApp 支持站点下载的 _.msi 安装程序，然后按照屏幕上的说明进行操作。
 .. 输入已部署 ONTAP 工具的 IP 地址和密码。
 
 

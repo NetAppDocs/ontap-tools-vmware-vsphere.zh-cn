@@ -26,8 +26,6 @@ summary: 在为 VMware vSphere 部署 ONTAP 工具之前，最好先对部署进
  a| 
 部署 ONTAP 工具会自动安装 VSC 功能。
 
-link:../deploy/concept_deploy_or_upgrade_ontap_tools.html["部署和升级 ONTAP 工具"]
-
 link:../deploy/concept_installation_workflow_for_new_users.html["适用于 VMware vSphere 的 ONTAP 工具的新用户部署工作流"]
 
 
@@ -107,7 +105,7 @@ VSC 同时支持 vCenter Server RBAC 和 ONTAP RBAC 。用于向 vCenter Server 
  a| 
 ONTAP 版本
  a| 
-存储系统必须运行 ONTAP 9.3 ， 9.5 ， 9.6 ， 9.7 ， 9.8P1 或更高版本。
+存储系统必须运行ONTAP 9.7、9.8P1或更高版本。
 
 
 
@@ -125,9 +123,9 @@ ONTAP 版本
 
 
 
-=== 设备管理员用户密码
+=== 应用程序用户密码
 
-管理员密码不得使用任何空格。
+这是分配给管理员帐户的密码。出于安全原因、建议密码长度为8到30个字符、并且至少包含一个大写、一个小写、一个数字和一个特殊字符。密码将在90天后过期。
 
 
 
@@ -142,6 +140,12 @@ ONTAP 版本
 您可以在部署 ONTAP 工具时设置 vCenter Server 的管理员凭据。
 
 如果 vCenter Server 的密码发生变化，则可以使用以下 URL 更新管理员的密码： `` \https://<IP>:8143/Register.html` ，其中 IP 地址是您在部署期间提供的 ONTAP 工具的 IP 地址。
+
+
+
+=== Derby数据库密码
+
+出于安全原因、建议密码长度为8到30个字符、并且至少包含一个大写、一个小写、一个数字和一个特殊字符。密码将在90天后过期。
 
 
 

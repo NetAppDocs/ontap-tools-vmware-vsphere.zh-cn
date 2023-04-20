@@ -13,8 +13,4 @@ summary: 如果要配置 vCenter Server 以进行灾难恢复，则必须在部�
 [role="lead"]
 如果要配置 vCenter Server 以进行灾难恢复，则必须在部署后启用 Storage Replication Adapter （ SRA ）。默认情况下，部署 ONTAP 工具会安装 VSC 。在部署 ONTAP 工具后，您必须为 vCenter Server 启用 SRA 。
 
-* 相关信息 *
-
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Storage_Replication_Adapter_for_Data_ONTAP/SRA_4.0P1_client_plugin_(netapp_sra_4.0P1_ontap_64bit.msi)_hangs_at_the_server_IP["安装 SRA 4.0P1 客户端插件（ NetApp_SRA _4.0P1_ontap_64bit.msi ）将在服务器 IP 和密码屏幕处挂起"]
-
 link:../protect/task_enable_storage_replication_adapter.html["启用 Storage Replication Adapter"]

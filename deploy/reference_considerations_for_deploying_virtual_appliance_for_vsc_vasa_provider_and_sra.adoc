@@ -26,8 +26,6 @@ summary: 在为 VMware vSphere 部署 ONTAP 工具之前，最好先对部署进
  a| 
 部署 ONTAP 工具会自动安装 VSC 功能。
 
-link:../deploy/concept_deploy_or_upgrade_ontap_tools.html["部署或升级适用于 VMware vSphere 的 ONTAP 工具"]
-
 link:../deploy/concept_installation_workflow_for_new_users.html["适用于 VMware vSphere 的 ONTAP 工具的新用户部署工作流"]
 
 
@@ -107,7 +105,7 @@ VSC 同时支持 vCenter Server RBAC 和 ONTAP RBAC 。用于向 vCenter Server 
  a| 
 ONTAP 版本
  a| 
-存储系统必须运行 ONTAP 9.3 ， 9.5 ， 9.6 ， 9.7 ， 9.8P1 或更高版本。
+存储系统必须运行ONTAP 9.7、9.8P1或更高版本。
 
 
 

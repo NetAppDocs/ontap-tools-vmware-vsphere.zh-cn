@@ -17,7 +17,7 @@ summary: 适用于 VMware vSphere 的 ONTAP 工具提供了一个选项，可用
 
 * 您必须已设置 vCenter Server 实例并配置 ESXi 。
 * 您必须已部署 ONTAP 工具。
-* 只有在要配置 Site Recovery Manager （ SRM ）灾难恢复解决方案时，您才能下载适用于 SRA 插件的 ` .msi` 文件或适用于 SRM 设备的 ` .tar.gz` 文件。
+* 您必须已下载 `.tar.gz` 只有在要配置Site Recovery Manager (SRM)灾难恢复解决方案 时、才会为SRM设备创建此文件。
 +
 https://docs.vmware.com/en/Site-Recovery-Manager/8.2/com.vmware.srm.install_config.doc/GUID-B3A49FFF-E3B9-45E3-AD35-093D896596A0.html["Site Recovery Manager 安装和配置 Site Recovery Manager 8.2"] 了解更多信息。
 
@@ -30,38 +30,25 @@ https://docs.vmware.com/en/Site-Recovery-Manager/8.2/com.vmware.srm.install_conf
 * 步骤 *
 
 . 登录到 VMware vSphere 的 Web 用户界面。
-. 在 vSphere Client 中，单击 * 菜单 * > * ONTAP Tools Console* 。
+. 在vSphere Client中，单击*菜单*>*NetApp ONTAP tools*控制台。
 . 单击 * 设置 * 。
 . 单击 * 管理设置 * 选项卡中的 * 管理功能 * 。
 . 在 * 管理功能 * 对话框中，选择要启用的 SRA 扩展。
 . 输入 ONTAP 工具的 IP 地址和管理员密码，然后单击 * 应用 * 。
 . 您可以使用以下方法之一部署 SRA ：
 +
-|===
+* 对于 SRM 设备 *
 
-
- a| 
-* 对于 Windows SRM*
-| * 对于 SRM 设备 * 
-
-
- a| 
-.. 双击已下载的 SRA 插件的 ` .msi` 安装程序。
-.. 按照屏幕上的说明进行操作。
-.. 输入已部署 ONTAP 工具的 IP 地址和密码。
-
- a| 
++
 .. 访问 SRM 设备页面，然后转到 SRM 设备的存储复制适配器页面。
 .. 单击 * 新建适配器 * 。
 .. 将 SRA 插件的 _.tar.gz_ 安装程序上传到 SRM 。
 .. 重新扫描适配器以验证是否已在 "SRM Storage Replication Adapter" 页面中更新详细信息。
 
 
-|===
-+
+
+
 您必须从 vSphere Client 中注销，然后重新登录以验证选定扩展是否可配置。
-
-
 
 * 相关信息 *
 

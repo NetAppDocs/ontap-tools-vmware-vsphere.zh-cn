@@ -28,7 +28,7 @@ https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src
 * 您必须已下载 _.ova_ 文件。
 * 您必须具有 vCenter Server 实例的管理员登录凭据。
 * 您应已注销并关闭 vSphere Client 的所有浏览器会话，并删除浏览器缓存，以避免在部署 ONTAP 工具期间出现任何浏览器缓存问题描述。
-* 您必须已启用 Internet 控制消息协议（ Internet Control Message Protocol ， ICMP ）。
+* 您必须已启用Internet控制消息协议(Internet Control Message Protocol、ICMP)。
 +
 如果禁用 ICMP ，则 ONTAP 工具的初始配置将失败，并且 VSC 在部署后无法启动 VSC 和 VASA Provider 服务。您必须在部署后手动启用 VSC 和 VASA Provider 服务。
 
@@ -43,8 +43,8 @@ link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html
 * 步骤 *
 
 . 登录到 vSphere Client 。
-. 选择 * 主页 * > * 主机和集群 * 。
-. 右键单击所需的数据中心，然后单击 * 部署 OVA 模板 * 。
+. 选择*主页*>*主机和群集*。
+. 右键单击所需的数据中心，然后单击*Deploy OVF temple...*。
 . 选择适当的方法为 ONTAP 工具提供部署文件，然后单击 * 下一步 * 。
 +
 |===
@@ -63,7 +63,7 @@ URL
  a| 
 文件夹
  a| 
-从保存的位置为 ONTAP 工具选择 _.ova_ 文件。
+将包含.ova文件的.zip文件解压缩到本地系统。在选择一个OVF模板页面上、指定.ova文件在提取的文件夹中的位置。
 
 |===
 . 输入详细信息以自定义部署向导。
@@ -81,7 +81,7 @@ URL
 
 . 启动 ONTAP Tools 虚拟机，然后打开运行 ONTAP 工具的虚拟机的控制台。
 . 在部署完成后，验证 ONTAP 工具是否正在运行。
-. 如果 ONTAP 工具未注册到任何 vCenter Server ，请使用 `` https://appliance_ip:8143/Register.html` 注册 VSC 实例。
+. 如果ONTAP 工具未注册到任何vCenter Server、请使用 `\https://appliance_ip:8143/Register.html` 注册VSC实例。Register.html会将您重定向到Swagger页面。从ONTAP tools 9.12开始、ONTAP 工具向vCenter注册将通过Swagger页面进行。
 . 注销并重新登录到 vSphere Client 以查看已部署的 ONTAP 工具。
 +
 在 vSphere Client 中更新此插件可能需要几分钟的时间。
@@ -93,9 +93,6 @@ URL
 link:../deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html["清除 vSphere 缓存的已下载插件软件包"]
 
 
-
-
-NOTE: 如果您使用的是 ONTAP 9.6 或更早版本，则要查看 VVOL 信息板，必须下载并安装 OnCommand API 服务。但是，对于 ONTAP 9.7 ，您不需要向 VASA Provider 注册 OnCommand API 服务。
 
 link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html["启用 VASA Provider 以配置虚拟数据存储库"]
 

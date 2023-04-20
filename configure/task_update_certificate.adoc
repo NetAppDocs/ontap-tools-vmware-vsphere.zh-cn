@@ -1,0 +1,18 @@
+---
+permalink: configure/task_update_certificate.html 
+sidebar: sidebar 
+keywords:  
+summary: 当证书到期或手动更改证书时、您需要更新证书。当客户端或集群证书过期或不匹配时、与ONTAP 系统的通信将中断。 
+---
+= 更新证书
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+当客户端或集群证书即将过期或已过期时、或者手动更改集群证书时、您需要更新此证书。当客户端或集群证书过期或不匹配时、与ONTAP 系统的通信将中断。
+
+集群证书是存储管理员在ONTAP 端生成的服务器证书。可以在ONTAP 工具中生成客户端证书。集群证书过期后、存储管理员需要在ONTAP 端生成新证书。修改存储系统窗口会自动从ONTAP 存储提取集群证书、您需要对此集群证书进行授权。
+
+如果证书即将过期或已过期、请按照中的操作步骤 进行操作 link:../configure/task_modify_storage_system.html["修改存储系统"] 部分以更新证书。

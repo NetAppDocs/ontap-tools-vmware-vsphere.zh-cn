@@ -45,6 +45,6 @@ https://<appliance_ip>:8143/vsc/public/writable/solaris_gos_timeout-install.iso
 https://<appliance_ip>:8143/vsc/public/writable/solaris_gos_timeout_190-install.iso
 
 |===
-您应从已注册到管理虚拟机的 vCenter Server 的 VSC 实例副本安装此脚本。如果您的环境包含多个 vCenter Server ，则应选择包含要设置存储超时值的虚拟机的服务器。
+您应从已注册到管理虚拟机的vCenter Server (ELM)的VSC实例副本安装此脚本。如果您的环境包含多个vCenter Server、则应选择包含要设置存储超时值的虚拟机的实例。
 
 您应登录到虚拟机，然后运行脚本以设置存储超时值。

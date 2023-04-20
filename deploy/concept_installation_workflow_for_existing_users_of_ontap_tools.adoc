@@ -36,19 +36,17 @@ link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html["升�
 
 * 如果您使用的是 SRA 2.1 或 3.0 ，则应首先记下现有站点配置详细信息。
 +
-《适用于 ONTAP 的存储复制适配器 4.0 安装和设置指南》中的详细说明位于 " 升级概述 " 一节中。这些 SRA 版本还使用 VASA Provider ，因此您必须取消注册 VASA Provider ，然后部署最新版本的 ONTAP 工具。升级完成后，可以删除先前版本的服务器（` 。 ova` ）。
+适用于ONTAP 版本的Storage Replication Adapter (SRA) 4.0也会使用VASA Provider、因此您必须取消注册VASA Provider、然后部署最新版本的ONTAP 工具。服务器的先前版本 (`.ova`)、可以在升级完成后删除。
 
 
-
-对于任何 SRA 升级，应从 Site Recovery Manager 服务器中删除 SRA 软件（ Site Recovery Manager 服务器上由 ` .msi` 文件安装的适配器）。您可以使用 Windows 系统控制面板卸载此软件，然后使用 ` .msi` 文件在 SRA 服务器上安装最新的 SRA 软件。
 
 如果您已部署 VASA Provider ，则在从现有设置升级后，必须使用 `编辑设置` 选项将 ONTAP 工具的内存大小配置为 12 GB 。您还必须修改虚拟内存预留。要修改内存大小，必须关闭虚拟机。
 
 如果您拥有 VSC ， VASA Provider 和 SRA 虚拟设备 7.2 或 7.2.1 版，则无法直接升级到统一设备的 9.7P1 或更高版本。您必须先将现有设置升级到虚拟设备 9.7 版，然后再升级到最新版本。
 
-要从ONTAP Tools 9.10及更高版本升级、请运行虚拟设备9.7P1或更高版本。不支持从虚拟设备 9.7P1 之前的早期版本升级。
+要升级到ONTAP 工具9.10及更高版本、您应运行虚拟设备9.7P1或更高版本。不支持从虚拟设备 9.7P1 之前的早期版本升级。
 
-如果您要部署最新版本的 ONTAP 工具，则必须查看主题 `部署 ONTAP 工具的要求。` 主题 `升级到最新版本的 ONTAP Tools` 提供了有关执行原位升级的信息。
+如果您要部署最新版本的ONTAP 工具、则必须查看相关主题 link:..deploy/concept_requirements_for_deploying_ontap_tools_for_vmware_vsphere.html["部署 ONTAP 工具的要求"]。主题 link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html["升级到最新版本的 ONTAP 工具"] 具有有关执行原位升级的信息。
 
 * 相关信息 *
 

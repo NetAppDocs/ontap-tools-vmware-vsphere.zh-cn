@@ -69,7 +69,7 @@ NOTE: 指定的超时间隔为最大值。您无需等待达到最大超时值�
 
 您还应在 vvol.properties 文件中设置 SRA 执行单个操作的最长时间： offtap.operation.timeout.period.seconds=86400 。
 
-https://kb.netapp.com/app/answers/answer_view/a_id/1001111["NetApp 知识库问题解答 1001111 ：《适用于 ONTAP 的 NetApp 存储复制适配器 4.0/7.X 规模估算指南》"]
+https://kb.netapp.com/mgmt/OTV/SRA/NetApp_Storage_Replication_Adapter_4.0%2F%2F7.X_for_ONTAP_Sizing_Guide["NetApp 知识库问题解答 1001111 ：《适用于 ONTAP 的 NetApp 存储复制适配器 4.0/7.X 规模估算指南》"]
 
 有关修改 SAN Provider 设置的 VMware 文档提供了更多信息。
 

@@ -16,7 +16,7 @@ summary: 首次在 vSphere Client 中运行 Virtual Storage Console （ VSC\ ）
 * 您需要的内容 *
 
 * 所有 ESXi 主机都必须已启动并连接。
-* 要发现的所有 Storage Virtual Machine （ SVM ）都必须正在运行，并且每个集群节点必须至少为正在使用的存储协议（ NFS ， iSCSI 或 FC ）配置一个数据 LIF 。
+* 要发现的所有Storage Virtual Machine (SVM)都必须正在运行、并且每个集群节点必须至少为正在使用的存储协议(NFS、iSCSI、FC或NVMe/FC)配置一个数据LIF。
 
 
 * 关于此任务 *
@@ -28,14 +28,14 @@ summary: 首次在 vSphere Client 中运行 Virtual Storage Console （ VSC\ ）
 * 步骤 *
 
 . 从 vSphere Client 主页页面中，选择 * 主机和集群 * 。
-. 右键单击所需的数据中心，然后选择 * NetApp VSC* > * 更新主机和存储数据 * 。
+. 右键单击所需的数据中心，然后选择*NetApp ONTAP tools*>*更新主机和存储数据*。
 +
-VSC 将显示一个确认对话框，告知您此操作可能需要很长时间。
+VSC将显示确认对话框、通知您此操作将重新开始发现所有已连接存储系统、并且可能需要几分钟时间。是否要继续？
 
-. 单击 * 确定 * 。
-. 选择状态为 "`Authentication Failure` " 的已发现存储控制器，然后单击 * 操作 * > * 修改 * 。
-. 在修改存储系统对话框中填写所需信息。
-. 对状态为 "`Authentication Failure` " 的所有存储控制器重复步骤 4 和 5 。
+. 单击*是*。
+. 选择具有状态的已发现存储控制器 `Authentication Failure`，然后单击*Actions*>*Modify*。
+. 在*修改存储系统*对话框中填写所需信息。
+. 对具有的所有存储控制器重复步骤4和5 `Authentication Failure` 状态。
 
 
 发现过程完成后，请执行以下操作：

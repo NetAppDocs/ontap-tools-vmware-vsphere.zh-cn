@@ -54,21 +54,21 @@ NOTE: ONTAP 工具 9.10 版支持为全 SAN 阵列（ ASA ）类型的 ONTAP 9.9
  a| 
 数据中心中的所有主机
  a| 
-右键单击某个数据中心，然后选择 * NetApp VSC* > * 配置数据存储库 * 。
+右键单击某个数据中心，然后选择 * NetApp ONTAP Tools* > * 配置数据存储库 * 。
 
 
 
  a| 
 集群中的所有主机
  a| 
-右键单击某个集群，然后选择 * NetApp VSC* > * 配置数据存储库 * 。
+右键单击某个集群、然后选择*NetApp ONTAP tools*>*配置数据存储库*。
 
 
 
  a| 
 一台主机
  a| 
-右键单击某个主机，然后选择 * NetApp VSC* > * 配置数据存储库 * 。
+右键单击某个主机，然后选择*NetApp ONTAP tools*>*配置数据存储库*。
 
 |===
 . 填写新建数据存储库对话框中的字段以创建数据存储库。
@@ -86,6 +86,11 @@ NOTE: ONTAP 工具 9.10 版支持为全 SAN 阵列（ ASA ）类型的 ONTAP 9.9
 常规
  a| 
 " 新建数据存储库 " 对话框的 " 常规 " 部分提供了用于输入新数据存储库的位置，名称，问题描述，类型和协议的选项。VVOL 数据存储库类型用于配置 VVOL 数据存储库。
+
+如果启用了vvol提供程序功能、则可以配置vvol数据存储库。请参见、 link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html["启用 VASA Provider 以配置虚拟数据存储库"] 了解详细信息。此VMO数据存储库支持NFS、iSCSI、FC/FEoE和NVMe/FC协议。
+
+
+NOTE: 如果ONTAP 工具已向vCenter 8.0及更高版本注册、并且ONTAP 版本为ONTAP 9.91P3及更高版本、则可使用适用于Vvol数据存储库的NVMe/FC协议。
 
 
 NOTE: 如果要为 VVOL 复制配置 iSCSI VVOL 数据存储库，则在目标站点上创建 VVOL 数据存储库之前，需要执行 SnapMirror 更新和集群重新发现。
@@ -115,7 +120,7 @@ NOTE: 如果要为 VVOL 复制配置 iSCSI VVOL 数据存储库，则在目标�
 
 
 |===
-. 在摘要部分中，单击 "**Finish" 。
+. 在摘要部分中，单击 * 完成 * 。
 
 
 * 结果 *

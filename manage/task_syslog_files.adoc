@@ -1,0 +1,41 @@
+---
+permalink: manage/task_syslog_files.html 
+sidebar: sidebar 
+keywords:  
+summary: 系统日志用于将系统日志发送到集中式日志记录服务器。 
+---
+= 管理系统日志
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用系统日志将系统日志发送到集中式日志记录服务器。
+
+* 关于此任务 *
+
+适用于VMware vSphere 9.12的ONTAP 工具删除了早期版本的2.0系统日志API、并包含新的3.0系统日志相关API、这些API支持相互身份验证。按照以下步骤设置系统日志。
+
+* 步骤 *
+
+. 运行_POST /2.0/secury/user/login以获取会话ID。
+. 通过传递在上述响应中收到的SessionID来运行_POST /3.0/Appliance管理/LOGGing-client-certification/_。
++
+此操作将为VP服务器以及VSC服务器生成证书。
+
+. 将这两个证书复制到系统日志服务器、并使其在系统日志服务器上可信。
++
+以下是如何对syslog-ng Docker执行此操作的示例：
+
++
+** JSON取消转义这两个证书、并将pm格式的证书复制到ca.d目录
+** `openssl x509 -noout -hash -in vsccert.pem` 结果为哈希(例如6d2962a8)
+** `ln -s vsccert.pem 6d2962a8.0` 此操作将创建一个以哈希形式(后缀为.0)指向证书的符号链接
+** 启动系统日志服务器
+
+
+. 通过传递服务器IP、端口、模式(可选)、log_level和系统日志服务器的公共证书来运行_patch /3.0/Appliance管理/syslog-config_ api。
+
+
+日志将路由到指定的系统日志服务器。

@@ -19,8 +19,8 @@ summary: 适用于 VMware vSphere 的 ONTAP ® 工具可检查并设置最适合
 
 * 步骤 *
 
-. 在 VMware vSphere Web Client 主页页面中，单击 * vCenter * > * 主机 * 。
-. 右键单击某个主机，然后选择 * 操作 * > * NetApp VSC* > * 设置建议值 * 。
+. 在VMware vSphere Web Client的主页页面中、单击*主机和群集*。
+. 右键单击某个主机，然后选择*Actions*>*NetApp ONTAP tools*>*设置建议值*。
 . 在 NetApp 建议设置对话框中，选择最适合您的系统的值。
 +
 默认情况下会设置标准建议值。

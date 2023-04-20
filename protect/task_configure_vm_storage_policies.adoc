@@ -19,8 +19,8 @@ vSphere Web Client 提供默认存储策略。但是，您可以创建策略并�
 
 * 步骤 *
 
-. 在 vSphere Client 页面上，单击 * 菜单 * > * 策略和配置文件 * 。
-. 单击 * 虚拟机存储策略 * > * 创建虚拟机存储策略 * 。
+. 在vSphere Client页面上、单击*策略和配置文件*。
+. 在VM存储策略页面中，单击*cree*。
 . 在 Create VM Storage Policy 页面中，提供以下详细信息：
 +
 .. 输入 VM 存储策略的名称和问题描述。
