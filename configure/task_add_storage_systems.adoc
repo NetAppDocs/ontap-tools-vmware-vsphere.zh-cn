@@ -20,6 +20,9 @@ NOTE: 如果ONTAP 集群启用了SAML、则与ONTAP 的通信将通过基本身�
 
 每次启动 Virtual Storage Console （ VSC ）或选择 * 重新发现全部 * 选项时， VSC 都会自动发现可用的存储系统。
 
+
+NOTE: 直接SVM不支持VVOV数据存储库。
+
 * 步骤 *
 
 . 使用ONTAP 工具主页中的任一选项向VSC添加存储系统：

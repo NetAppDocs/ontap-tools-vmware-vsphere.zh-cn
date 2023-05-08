@@ -805,13 +805,9 @@
   <block id="60a5cb8bad06dbd50e4b20c4a0e54bdc" category="paragraph">VSC 使用以下默认双向 TCP 端口：</block>
   <block id="ac234df83bfcb986ebeb55e2c7819fd9" category="cell">* 默认端口号 *</block>
   <block id="a44ba9086b2b83ccf2baf7c678723449" category="paragraph">9083.</block>
-  <block id="ecd50ff405da370c550857b00f4bbf8c" category="paragraph">启用后， VASA Provider 和 Storage Replication Adapter （ SRA ）均使用此端口与 vCenter Server 进行通信。要获取 TCP/IP 设置，也需要此端口。</block>
   <block id="13f3cf8c531952d72e5847c4183e6910" category="paragraph">443.</block>
-  <block id="b0ed24c095ae71a9e7a0b8c829f59e5e" category="paragraph">根据凭据的配置方式， VMware vCenter Server 和存储系统会侦听此端口上的安全通信。</block>
   <block id="0c95054981de037de06e544a52eb3613" category="paragraph">8143</block>
   <block id="c0874a8cac213072d254da44f2516ac3" category="paragraph">VSC 会侦听此端口上的安全通信。</block>
-  <block id="8f14e45fceea167a5a36dedd4bea2543" category="paragraph">7.</block>
-  <block id="f4f368700c2fc35eed8f90ab56432358" category="paragraph">VSC 会向 ONTAP 发送回显请求以验证可访问性，只有在添加存储系统时才需要此请求，并且可以稍后禁用。</block>
   <block id="6b4c21d373aa9752550838c028733812" category="admonition">在部署 ONTAP 工具之前，您应已启用 Internet 控制消息协议（ Internet Control Message Protocol ， ICMP ）。</block>
   <block id="63d4de9135523662dddc6029dfe2f1cf" category="paragraph">如果禁用 ICMP ，则 ONTAP 工具的初始配置将失败，并且 VSC 在部署后无法启动 VSC 和 VASA Provider 服务。您必须在部署后手动启用 VSC 和 VASA Provider 服务。</block>
   <block id="42bc4627d63b98bd97ba7ee44a76918d" category="summary">在为 VMware vSphere 部署 ONTAP 工具之前，您应熟悉部署软件包的空间要求以及一些基本主机系统要求。</block>
@@ -951,19 +947,10 @@
   <block id="b2dacb077897e6e20eab5019528b0b4d" category="paragraph">有关修改 SAN Provider 设置的 VMware 文档提供了更多信息。</block>
   <block id="c106a2cd545fb9665a990784905584ee" category="inline-link">VMware Site Recovery Manager 文档：更改存储设置</block>
   <block id="5ae0fbc5a94ef2dc0c2a09ad3529481f" category="paragraph"><block ref="5ae0fbc5a94ef2dc0c2a09ad3529481f" category="inline-link-rx"></block></block>
-  <block id="b63375020fe42de81afebfc9fc66baae" category="summary">在部署 ONTAP 工具之前，您应了解部署要求，并应确定要执行的任务。您可以根据任务选择部署 ONTAP 工具的部署模式</block>
   <block id="578d9149fa04c3d4f2229ad419fbfec3" category="doc">部署 ONTAP 工具的要求</block>
   <block id="147526bf2b5a3f09ae14e12840a1138e" category="summary">如果在部署或升级 ONTAP 工具后未自动更新插件，则应清理浏览器和 vCenter Server 上缓存的下载插件包以解决 vCenter Server 插件问题。</block>
-  <block id="2486f16fb02b577c6c3375ba9a93762d" category="paragraph">如果在部署或升级 ONTAP 工具后未自动更新插件，则应清理浏览器和 vCenter Server 上缓存的下载插件包以解决 vCenter Server 插件问题。</block>
-  <block id="928a0fc17a8823d170fddc579679a74b" category="list-text">从现有 vSphere Web Client 或 vSphere Client 注销。</block>
   <block id="a0616a23fd099dfad3eb5032733a31a3" category="list-text">删除浏览器缓存。</block>
-  <block id="a81218cfa1b12253d3738424f7fe41f1" category="list-text">删除 vSphere Client 缓存的插件软件包。</block>
-  <block id="d3f8fbc38c70102f80ae8f7fad51a2ba" category="cell">* 如果使用的是 ...*</block>
-  <block id="08ade16156fae5f96326f33fb911645a" category="paragraph">删除位于以下位置的以下文件夹 `com.netapp.vasa.vvol.webclient-x.x.x.xxxx` ， `com.netapp.nvpf.webclient-x.x.x.xxxx` 和 `com.netapp.vsch5-x.x.x.xxxx` ：</block>
-  <block id="c50bfe91c2a67370ca4e01f0fbcaa60b" category="list-text">vSphere Web Client 路径： `C ： \ProgramData\VMware\vCenterServer\cfg\vsphere-client\vc-packages\vsphere-client-serenity`</block>
-  <block id="dd286c989dcb346e3dcbcdcffb367513" category="list-text">vSphere Client （ HTML5 ）路径： `C ： \ProgramData\VMware\vCenterServer\cfg\vsphere-ui\vc-packages\vsphere-client-serenity`</block>
   <block id="7828ebc558b735f6dff95945a2060819" category="list-text">通过 SSH 连接到 VCSA 设备。</block>
-  <block id="04817d905fd962e9edfde7e6036e0241" category="list-text">使用以下命令登录到 vSphere 并重新启动 vSphere Web Client 和 vSphere Client 服务：</block>
   <block id="c78cdaf254148594556f4223226172c2" category="summary">您可以使用适用于 VMware vSphere 的 ONTAP 工具的图形用户界面安装适用于 VMware vStorage APIs for Array Integration\ （ VAAI\ ）的 NetApp NFS 插件。</block>
   <block id="e1f59101bee140f72feebf78fe15f214" category="doc">安装 NFS VAAI 插件</block>
   <block id="85637215a3126011e3e4c6bca49d2263" category="paragraph">您可以使用适用于 VMware vSphere 的 ONTAP 工具的图形用户界面安装适用于 VMware vStorage APIs for Array Integration （ VAAI ）的 NetApp NFS 插件。</block>
@@ -1576,11 +1563,6 @@
   <block id="12681823486b41daa05bf9d691b0f8cd" category="sidebar">将 Windows SRM 迁移到 SRM 设备</block>
   <block id="3d7d171ecad1cba0c2d8d707b648b023" category="sidebar">配置受保护站点和恢复站点</block>
   <block id="6956cfc9382ccb41c8ac57f99255b409" category="sidebar">验证复制的存储系统</block>
-  <block id="6022f5a040dd9eabb5e196140c0a3837" category="paragraph">Windows vCenter 服务器</block>
-  <block id="32b6ae27b932f6df4adc3773921186b2" category="paragraph">VCSA</block>
-  <block id="c2893b865600d46b6cf4853c3e95aaef" category="list-text">使用 `cd /etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity` 将目录更改为 vCenter Web 客户端 UI 扩展目录</block>
-  <block id="c967b27fa47f0711ff8f4f94f6001d1c" category="list-text">使用 `rm -rf` 命令删除 NetApp 专用的缓存插件软件包：示例：此处 x.x.xxxx 是您的插件版本。— rm -rf com.netapp.vasa.vvol.webclient-x.x.x.xxxx rm -rf com.netapp.nvpf.webclient-x.x.x.xxxx rm -rf com.netapp.vsch5-x.x.x.xxxx —</block>
-  <block id="e8472057a9b51ca61b841e7cba26f994" category="list-text">使用 `rm -rf` 命令删除特定于 NetApp 插件的缓存插件软件包：示例：此处 x.x.xxxx 是您的插件版本— rm -rf com.netapp.vasa.vvol.webclient-x.x.x.xxxx rm -rf com.netapp.nvpf.webclient-x.x.x.xxxx rm -rf com.netapp.vsch5-x.x.x.xxxx ——</block>
   <block id="77508822eda5d675bed0a20bfe5cf0ff" category="paragraph">`无法与服务器通信。`</block>
   <block id="6065b86534f4e1dc9696d0369170eb2d" category="summary">如果您在一个 VMware vSphere HTML5 客户端管理多个 vCenter Server 实例的环境中使用适用于 VMware vSphere 的 ONTAP ® 工具，则必须向每个 vCenter Server 注册一个 VSC 实例，以便 VSC 与 vCenter Server 之间建立 1 ： 1 配对关系。这样，您就可以通过一个 vSphere HTML5 客户端在链接模式和非链接模式下管理运行 vCenter 6.0 或更高版本的所有服务器。</block>
   <block id="c741ed49a5385413c6168a727f99799f" category="paragraph">您可以使用适用于 VMware vSphere 的 ONTAP 工具为 vCenter Server 中的存储系统设置默认凭据。</block>
@@ -1607,7 +1589,6 @@
   <block id="940e6992d6d93b47b8889b1f27daa310" category="section-title">准备安装</block>
   <block id="8ee2af7eaf4bb800c6978db4ecfbf9c8" category="paragraph">您可以将此插件部署为虚拟设备，这样可以减少在 vCenter Server 中单独安装和注册每个产品的工作量。</block>
   <block id="ff31982aef870d546d52f49bb30ef34b" category="section-title">部署要求</block>
-  <block id="7dbc03160c35d84d113cf544dad5f6f0" category="paragraph">ONTAP 工具可与 Windows vCenter Server 或 VMware vCenter Server 虚拟设备（ vCSA ）结合使用。您必须在包含 ESXi 系统的受支持 vSphere 上部署 ONTAP 工具。</block>
   <block id="b1b9e64fcb7143271a2c70320984f7a7" category="paragraph">最小空间和主机规模估算要求如下：</block>
   <block id="dc1ecf8620e5c055a2b23392f8e7f25d" category="cell">* 系统 *</block>
   <block id="d54802040021d687335cbcb507d0a765" category="cell">* 最低要求 *</block>
@@ -1624,7 +1605,6 @@
   <block id="d80c1bd338ebb1110423911faecee190" category="paragraph">ONTAP 工具使用以下默认双向 TCP 端口：</block>
   <block id="89a71adc7ceff2f08a2162d1abfd9de6" category="cell">* 其他要求 *</block>
   <block id="ad3fbba845249aa049a193e4e344bf61" category="cell">* 问题描述列 *</block>
-  <block id="f6bfd6bd8ed886acfafded075083f4f4" category="cell">启用后， VASA Provider 和 SRA 均使用此端口与 vCenter Server 进行通信。要获取 TCP/IP 设置，也需要此端口。</block>
   <block id="97157b0bbe0ba304414559c34c463fa8" category="paragraph">最低存储和应用程序要求：</block>
   <block id="495d63c3f347c7d241c61c9f988a6523" category="cell">* 存储，主机和应用程序 *</block>
   <block id="beb34180fd99ea25331033f185458b28" category="cell">* 版本要求 *</block>
@@ -1737,7 +1717,6 @@
   <block id="c24f54bbbe4e8d99ba7daa84a6860772" category="list-text">如果从早期版本的 ONTAP 工具升级到最新版本，则会发现 `vvol.properties 文件中缺少 `vvol.rebalance.threshold` 属性。</block>
   <block id="a7189062665fe6b8b3263ee857e62834" category="paragraph">如果您是 VMware 的新用户且从未使用过 NetApp ONTAP 工具产品，则在部署和配置 ONTAP 工具之前，您需要配置 vCenter Server 并设置 ESXi 主机。</block>
   <block id="78b9c306d2b9e90dc4612872a3412b17" category="image-alt">新用户部署</block>
-  <block id="bd102b609640a336d673bcb7001cf07e" category="list-text">使用 `cd /etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity` 将目录更改为 vCenter Client （ HTML5 ） UI 扩展目录</block>
   <block id="5584c9cd70ee56e5a5efd81211571c12" category="paragraph">Virtual Storage Console 6.x ， Storage Replication Adapter 2.x ， 3.x ， 4.x 和 VASA Provider 6.x 等各个应用程序的早期版本使用不同的升级过程。如果您在设置中安装了这些旧版本的 VSC ， VASA Provider 或 SRA ，则应执行以下操作：</block>
   <block id="7f92b985b9e4bff91f2d31ae0cc7bdd7" category="list-text">如果您使用的是 SRA 4.0P1 ，则必须先升级到 SRA9.6 ，然后再原位升级 SRA 9.6 版。您可以稍后升级到最新版本的 ONTAP 工具。</block>
   <block id="e2444e964cdc125f0e5e638cd372f502" category="paragraph">如果您拥有 VSC ， VASA Provider 和 SRA 虚拟设备 7.2 或 7.2.1 版，则无法直接升级到统一设备的 9.7P1 或更高版本。您必须先将现有设置升级到虚拟设备 9.7 版，然后再升级到最新版本。</block>
@@ -1861,7 +1840,6 @@
   <block id="7ea5502ed4cc89cb1fc4be2cc51190f4" category="admonition">Register.html将在即将发布的ONTAP 工具版本中删除。</block>
   <block id="af2e98a831555badce1ec02cfe100834" category="paragraph">适用于ONTAP 版本的Storage Replication Adapter (SRA) 4.0也会使用VASA Provider、因此您必须取消注册VASA Provider、然后部署最新版本的ONTAP 工具。服务器的先前版本 <block ref="8d8b01a4d628953e7a2225813c8edb3f" prefix="(" category="inline-code"></block>)、可以在升级完成后删除。</block>
   <block id="c20f9adcd877706d050f9e7249f16810" category="paragraph">要升级到ONTAP 工具9.10及更高版本、您应运行虚拟设备9.7P1或更高版本。不支持从虚拟设备 9.7P1 之前的早期版本升级。</block>
-  <block id="9540fc60d33ac231357b4fd7310065a9" category="paragraph">如果您要部署最新版本的ONTAP 工具、则必须查看相关主题 <block ref="1f5f630effbb534deb34c8700cc819c7" category="inline-link-macro-rx"></block>。主题 <block ref="6db555bae030dd891aa85762ae9d5b14" category="inline-link-macro-rx"></block> 具有有关执行原位升级的信息。</block>
   <block id="bd5b59e1812c598c5458ce040cc8fd66" category="doc">为VMware vSphere存储系统配置ONTAP 工具</block>
   <block id="8854c86add608ae836aaeb597474bb7b" category="paragraph">将存储系统添加到 VSC 时，必须提供存储系统的 IP 地址以及与该系统关联的用户名和密码对。您可以设置 VSC 在存储系统发现过程中要使用的默认凭据，也可以在发现存储系统后手动输入凭据。添加到 VSC 的存储系统的详细信息会自动推送到您在部署中启用的扩展。您无需手动向 VASA Provider 和 Storage Replication Adapter （ SRA ）添加存储。VSC 和 SRA 均支持在集群级别和 Storage Virtual Machine （ SVM ）级别添加凭据。VASA Provider 仅支持使用集群级别的凭据来添加存储系统。添加存储系统时、ONTAP 工具插件与存储系统之间的任何通信都应进行相互身份验证。</block>
   <block id="f3adfda90e905d04465d600d9b713b48" category="list-text">您可以单击存储系统页面中的*重新发现全部*按钮，也可以单击主机或数据中心，从*操作*菜单(*操作*&gt;*NetApp ONTAP 工具*&gt;*更新主机和存储数据*)中选择该按钮。您也可以单击概述部分的入门选项卡上的 * 发现 * 。</block>
@@ -2089,4 +2067,30 @@
   <block id="ffca6b6ccf577f01ebec5049ed6530d7" category="inline-link">适用于VMware vSphere 9.12的ONTAP 工具的注意事项</block>
   <block id="58c791a72760f6b1607675a232883816" category="paragraph"><block ref="58c791a72760f6b1607675a232883816" category="inline-link-rx"></block></block>
   <block id="a80f3275e655b331da24a4073b9c6ed4" category="sidebar">适用于VMware vSphere 9.12的ONTAP 工具文档</block>
+  <block id="fb6e6c413e9963fd23d2a0dd101c04ac" category="admonition">直接SVM不支持VVOV数据存储库。</block>
+  <block id="017f8e6e7370b01bd1fed75ddba8b8d3" category="paragraph">请参见 <block ref="97253b89ed0b6873167793a2fe7f5831" category="inline-link-macro-rx"></block> 部分操作步骤。</block>
+  <block id="69ac127712ba2f454cf4501e9db7a265" category="paragraph-title">quick_resync功能激活</block>
+  <block id="107cd024dfeeb71b9a8570d7f9a25a64" category="paragraph">您可以启用quick_resync标志以在SRA中执行重新保护和还原操作。这仅适用于具有异步SnapMirror关系的卷所支持的数据存储库。quick_resync标志可加快目标卷的重新同步速度、因为重新同步不会在传输新数据之前产生存储效率开销。默认情况下、不会启用quick_resync。建议启用quick_resync标志：</block>
+  <block id="1c52dcdd4491d0706b3364ecaca3636e" category="list-text">重新同步源未启用卷效率。</block>
+  <block id="9fff6c8ee7fb3c43cbe3124a1d4883a7" category="list-text">缩短重新同步时间比在网络上保留所有可能的存储效率更重要。</block>
+  <block id="91a71eb29f05d0e0d765dd24efd35e07" category="paragraph">按照以下步骤启用quick_resync标志：</block>
+  <block id="992e4c552a6e3e8132e2ff5dcf4d9ba2" category="list-text">登录到控制面板、网址为_https：//CLI：9083_、然后单击&lt;IP address&gt; Based命令行界面。</block>
+  <block id="933360919bcc7a54c2c15a9ba3062f75" category="list-text">运行命令<block ref="a20fbe11e2f20ab8ef5cc0bc3aa22e41" prefix=" " category="inline-code"></block>。</block>
+  <block id="ba2a1e4d95dc56709260e82cca20a789" category="list-text">运行命令<block ref="6d83e9fce5e947159c3c34b9f499e80e" prefix=" " category="inline-code"></block>。</block>
+  <block id="bec4fe8b0a1c02393fd0700875750a56" category="list-text">从现有vSphere Web Client或vSphere UI注销。</block>
+  <block id="fae0172133f0506cbb207e15e1eb4aef" category="list-text">删除 vSphere Client 缓存的插件软件包。对于VCCSA、请执行以下操作：</block>
+  <block id="a8f3b27f04ef4962a5caf70a06ae28fb" category="list-text">停止VMware vSphere Client服务：<block ref="4ad331c0aae87e53252a4e9c0fb7b3fe" prefix=" " category="inline-code"></block></block>
+  <block id="2096eb0aa64e2928992af27ac4402e59" category="list-text">将目录更改为vCenter Client UI扩展目录：<block ref="877ddb80b516a509c7c154978a1ff7ee" prefix=" " category="inline-code"></block></block>
+  <block id="dc37c1c22c04fc5e7386e3092519eac8" category="list-text">使用删除特定于NetApp的缓存插件软件包<block ref="373d5cc730dd449760c437daf3d5a6d5" prefix=" " category="inline-code"></block> 命令：</block>
+  <block id="ea51a159279a27e3f4ac4547881ff688" category="paragraph"><block ref="91fa5c8593259f0cb6f0845470d72256" prefix="" category="inline-code"></block></block>
+  <block id="5e9e6efcbe65718c4f8940b263317a69" category="paragraph"><block ref="7f4891afcb11aecd70e2cfd4c1573829" prefix="" category="inline-code"></block></block>
+  <block id="5547d8d27b62c49e4555e1f79122a342" category="paragraph"><block ref="9e427bf42ac054021120757914ef1809" prefix="" category="inline-code"></block></block>
+  <block id="b8ace162f3094fd5ac1138ced112d7a7" category="list-text">启动VMware vSphere Client服务：<block ref="bfbe7f4b006f6fcfc7bb66e075309067" prefix=" " category="inline-code"></block></block>
+  <block id="02026f27af003e00469addac855d370b" category="paragraph">如果您要部署最新版本的ONTAP 工具、则必须查看相关主题 <block ref="44969696c082c6abaae247e8c1723287" category="inline-link-macro-rx"></block>。主题 <block ref="6db555bae030dd891aa85762ae9d5b14" category="inline-link-macro-rx"></block> 具有有关执行原位升级的信息。</block>
+  <block id="36716d5924fd9465137a810fd76c2f48" category="paragraph">启用后， VASA Provider 和 Storage Replication Adapter （ SRA ）均使用此端口与 vCenter Server 进行通信。要获取 TCP/IP 设置，也需要此端口。此端口用于下载VP支持包、访问Web-CLI用户界面以及控制从VMware到VP的通信路径。</block>
+  <block id="71a6973fa992a434c0d25fb07bd6f07d" category="paragraph">根据凭据的配置方式， VMware vCenter Server 和存储系统会侦听此端口上的安全通信。此端口用于客户端-服务器通信架构。默认情况下、安全连接会启用443端口。此客户端可以是使用REST API的任何自动化客户端、它会启动与服务器的连接、并且端点会交换数据。</block>
+  <block id="8678399a2b31de4e8e3f91c25fdbb6f4" category="paragraph">VSC 会侦听此端口上的安全通信。此端口用于客户端-服务器通信架构。此客户端可以是使用REST API的任何自动化客户端、它会启动与服务器的连接、并且端点会交换数据。此端口可用于VSC服务和导出VSC服务器日志。register.html页面托管在此端口上。REST Swagger将在此端口上公开。</block>
+  <block id="94694a876801fa4851e5478564de6f4a" category="paragraph">ONTAP 工具可与VMware vCenter Server虚拟设备(vCSA)结合使用。您必须在包含 ESXi 系统的受支持 vSphere 上部署 ONTAP 工具。</block>
+  <block id="21076231e2fb130435663c1226fafb7f" category="cell">启用后， VASA Provider 和 Storage Replication Adapter （ SRA ）均使用此端口与 vCenter Server 进行通信。要获取 TCP/IP 设置，也需要此端口。此端口支持捆绑包下载、Web-CLI用户界面以及从VMware到VP的控制路径通信。SRA可通过此端口号与后端SRA服务进行通信。</block>
+  <block id="9abf7c4d6f8e5b536137c70ad41a5f3b" category="paragraph"><block ref="9abf7c4d6f8e5b536137c70ad41a5f3b" category="inline-link-rx"></block></block>
 </blocks>

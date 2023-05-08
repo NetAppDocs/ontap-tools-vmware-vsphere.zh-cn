@@ -46,7 +46,7 @@ link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html["升�
 
 要升级到ONTAP 工具9.10及更高版本、您应运行虚拟设备9.7P1或更高版本。不支持从虚拟设备 9.7P1 之前的早期版本升级。
 
-如果您要部署最新版本的ONTAP 工具、则必须查看相关主题 link:..deploy/concept_requirements_for_deploying_ontap_tools_for_vmware_vsphere.html["部署 ONTAP 工具的要求"]。主题 link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html["升级到最新版本的 ONTAP 工具"] 具有有关执行原位升级的信息。
+如果您要部署最新版本的ONTAP 工具、则必须查看相关主题 link:../deploy/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html["ONTAP 工具的空间和规模估算要求"]。主题 link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html["升级到最新版本的 ONTAP 工具"] 具有有关执行原位升级的信息。
 
 * 相关信息 *
 
