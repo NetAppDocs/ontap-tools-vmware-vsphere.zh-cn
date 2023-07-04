@@ -42,17 +42,20 @@ NOTE: 作为ONTAP 工具9.12升级的一部分、所有存储系统的身份验�
 
 添加不带证书身份验证的存储系统受到限制。
 
-如果使用json文件向存储系统添加了自定义创建的集群范围用户、而您希望升级到9.12、请在升级之前在ONTAP 命令行界面上运行以下命令、以便在适用于VMware vSphere的ONTAP 工具与ONTAP 之间启用基于证书的通信：
+如果使用json文件添加了具有自定义创建的集群范围用户的存储系统、而您希望升级到9.12、则
+升级之前、请在ONTAP命令行界面上运行以下命令、以便在适用于VMware vSphere的ONTAP工具与ONTAP之间启用基于证书的通信。
 
-. _security login Role create -Role <role-name> -cmddirname "security login show"-access all_
-. _security login Role create -Role <role-name> -cmddirname "security certificat show"-access all_
-. _security login Role create -Role <role-name> -cmddirname "security certificat install"-access all_
+. _security login Role create -Role <existing-role-name>-cmddirname "security login show"-access all_
+. _security login Role create -Role <existing-role-name>-cmddirname "security certificat show"-access all_
+. _security login Role create -Role <existing-role-name>-cmddirname "security certificat install"-access all_
 
 
 如果使用json文件使用自定义创建的SVM范围用户添加存储系统、而您要升级到9.12、 然后、在升级之前、在具有集群管理员访问权限的ONTAP 命令行界面上运行以下命令、以便在适用于VMware vSphere的ONTAP 工具与ONTAP 之间启用基于证书的通信：
 
-. _security login Role create -Role <role-name> -cmddirname "security certificat install"-access all -vserver <vserver-name> _
-. _security login Role create -Role <role-name> -cmddirname "security certificat show"-access all -vserver <vserver-name> _
+. _security login Role create -Role <existing-role-name>-cmddirname "security certificat install"-access all -vserver <vserver-name>_
+. _security login Role create -Role <existing-role-name>-cmddirname "security certificat show"-access all -vserver <vserver-name>_
+. _security login create -user-or-group-name <user>-application http -authentication方法cert -Role <existing-role-name>-vserver <vserver-name>_
+. _security login create -user-or-group-name <user>-application ontapi -authentication方法cert -Role <existing-role-name>-vserver <vserver-name>_
 
 
 * 步骤 *
@@ -65,7 +68,7 @@ NOTE: 作为ONTAP 工具9.12升级的一部分、所有存储系统的身份验�
 
 
 . 访问已部署 ONTAP 工具的摘要选项卡。
-. 单击 *image:../media/launch_maintenance_console.gif[""]* 以启动维护控制台。
+. 启动维护控制台。
 . 在 `M菜单` 提示符处，为 * 系统配置 * 输入选项 `2` ，然后为 * 升级 * 输入选项 `8` 。
 +
 升级完成后， ONTAP 工具将重新启动。ONTAP 工具会使用与升级前相同的 IP 地址注册到 vCenter Server 。

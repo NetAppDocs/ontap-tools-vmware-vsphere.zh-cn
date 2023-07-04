@@ -26,7 +26,7 @@ summary: 适用于 VMware vSphere 的 ONTAP ® 工具可检查并设置最适合
 默认情况下会设置标准建议值。
 
 +
-image::../media/vsc_recommended_hosts_settings.gif[VSC 建议的主机设置]
+image::../media/vsc_recommended_hosts_settings.gif[设置建议值屏幕]
 
 . 单击 * 确定 * 。
 

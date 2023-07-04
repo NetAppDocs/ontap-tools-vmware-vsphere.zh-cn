@@ -19,11 +19,11 @@ summary: 您可以使用 VSC 图形用户界面（ GUI\ ）中提供的选项收
 
 ` https://vm_ip:9083`
 
-您可以使用 VSC 图形用户界面中的 "`导出 VSC 日志` " 功能来收集 VSC 日志文件。在启用了 VASA Provider 的情况下收集 VSC 日志包时， VSC 日志包也会包含 VP 日志。以下步骤说明了如何收集 VSC 日志文件：
+您可以使用VSC图形用户界面中的"`Export ONTAP tools for VMware vSphere Logs`"功能收集适用于VMware vSphere的ONTAP工具日志文件。在启用了VASA Provider的情况下收集适用于VMware vSphere的ONTAP工具日志包时、适用于VMware vSphere的ONTAP工具日志包也会包含VP日志。以下步骤说明如何收集适用于VMware vSphere的ONTAP工具日志文件：
 
 * 步骤 *
 
-. 在 ONTAP 工具主页中，单击 * 配置 * > * 导出 VSC 日志 * 。
+. 在ONTAP工具主页中，单击*Configuration*>*Export ONTAP tools for VMware vSphere Logs*。
 +
 此操作可能需要几分钟时间。
 

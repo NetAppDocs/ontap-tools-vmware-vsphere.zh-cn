@@ -30,7 +30,7 @@ summary: 您必须映射受保护站点和恢复站点上的网络，才能在�
 . 登录到 vCenter Server ，然后单击 * 站点恢复 * > * 站点 * 。
 . 选择受保护站点，然后单击 * 管理 * 。
 . 在管理选项卡中，选择 * 网络映射 * 。
-. 单击 image:../media/new_network_mappings.gif[""] 图标以创建新的网络映射。
+. 单击 image:../media/new_network_mappings.gif["地球图标"] 图标以创建新的网络映射。
 +
 此时将显示创建网络映射向导。
 

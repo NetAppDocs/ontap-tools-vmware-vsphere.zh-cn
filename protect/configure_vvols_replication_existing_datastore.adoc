@@ -45,7 +45,7 @@ NOTE: 如果您使用 System Manager 保护 FlexVol 卷，并且存储功能配�
 . 将复制组添加到未受保护的虚拟机。
 
 
-image::../media/vvols_replication_existing_datastore.png[VVOL 复制现有数据存储库]
+image::../media/vvols_replication_existing_datastore.png[新用户和现有用户工作流]
 
 * 注： *
 

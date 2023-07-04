@@ -26,7 +26,7 @@ summary: 默认情况下，适用于 VMware vSphere 的 ONTAP 工具已启用 VA
 * 步骤 *
 
 . 登录到 VMware vSphere 的 Web 用户界面。
-. 在vSphere Client中，单击*菜单*>*NetApp ONTAP tools*控制台。
+. 在vSphere Client中，选择*Menu"(菜单)*> NetApp ONTAP tools*。
 . 单击 * 设置 * 。
 . 单击管理设置选项卡中的 * 管理功能 * 。
 . 在管理功能对话框中，选择要启用的 VASA Provider 扩展。

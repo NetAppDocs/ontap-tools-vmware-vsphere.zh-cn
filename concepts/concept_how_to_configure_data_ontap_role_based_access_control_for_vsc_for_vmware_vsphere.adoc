@@ -2,7 +2,7 @@
 permalink: concepts/concept_how_to_configure_data_ontap_role_based_access_control_for_vsc_for_vmware_vsphere.html 
 sidebar: sidebar 
 keywords:  
-summary: 如果要对适用于 VMware vSphere 的 ONTAP ® 工具使用基于角色的访问控制，则必须在存储系统上配置 ONTAP 基于角色的访问控制 \ （ RBAC ）。您可以使用 ONTAP RBAC 功能创建一个或多个具有有限访问权限的自定义用户帐户。 
+summary: '如果要对适用于VMware vSphere的ONTAP工具使用基于角色的访问控制、则必须在存储系统上配置ONTAP基于角色的访问控制(RBAC)。您可以使用 ONTAP RBAC 功能创建一个或多个具有有限访问权限的自定义用户帐户。' 
 ---
 = 如何为适用于 VMware vSphere 的 ONTAP 工具配置 ONTAP 基于角色的访问控制
 :allow-uri-read: 
@@ -13,25 +13,25 @@ summary: 如果要对适用于 VMware vSphere 的 ONTAP ® 工具使用基于角
 [role="lead"]
 如果要将基于角色的访问控制与适用于 VMware vSphere 的 ONTAP 工具结合使用，则必须在存储系统上配置 ONTAP 基于角色的访问控制（ Role-Based Access Control ， RBAC ）。您可以使用 ONTAP RBAC 功能创建一个或多个具有有限访问权限的自定义用户帐户。
 
-VSC 和 SRA 可以在集群级别或 Storage Virtual Machine （ SVM ） SVM 级别访问存储系统。如果要在集群级别添加存储系统，则必须提供管理员用户的凭据，以提供所有必需的功能。如果您要通过直接添加 SVM 详细信息来添加存储系统，则必须注意 "`vsadmin` " 用户没有执行某些任务所需的所有角色和功能。
+ONTAP工具和SRA可以在集群级别或Storage Virtual Machine (SVM) SVM级别访问存储系统。如果要在集群级别添加存储系统，则必须提供管理员用户的凭据，以提供所有必需的功能。如果您要通过直接添加 SVM 详细信息来添加存储系统，则必须注意 "`vsadmin` " 用户没有执行某些任务所需的所有角色和功能。
 
-VASA Provider 只能在集群级别访问存储系统。如果特定存储控制器需要 VASA Provider ，则必须在集群级别将存储系统添加到 VSC 中，即使您使用的是 VSC 或 SRA 也是如此。
+VASA Provider 只能在集群级别访问存储系统。如果特定存储控制器需要VASA Provider、则必须在集群级别将存储系统添加到ONTAP工具中、即使您使用的是ONTAP工具或SRA也是如此。
 
 要创建新用户并将集群或 SVM 连接到 ONTAP 工具，应执行以下操作：
 
 * 使用ONTAP System Manager 9.8P1或更高版本创建集群管理员或SVM管理员角色。请参见 link:../configure/task_configure_user_role_and_privileges.html["配置用户角色和权限"] 有关详细信息 ...
 * 使用 ONTAP 创建已分配角色并设置了相应应用程序的用户
 +
-要为 VSC 配置存储系统，您需要这些存储系统凭据。您可以通过在 VSC 中输入凭据来为 VSC 配置存储系统。每次使用这些凭据登录到存储系统时，您都将有权访问在创建凭据时在 ONTAP 中设置的 VSC 功能。
+要为ONTAP工具配置存储系统、您需要这些存储系统凭据。您可以通过在ONTAP工具中输入凭据来为ONTAP工具配置存储系统。每次使用这些凭据登录到存储系统时、您都将有权访问创建这些凭据时在ONTAP中设置的ONTAP工具功能。
 
-* 将存储系统添加到 VSC 中，并提供您刚刚创建的用户的凭据
-
-
+* 将存储系统添加到ONTAP工具中、并提供刚刚创建的用户的凭据
 
 
-== VSC 角色
 
-VSC 会将 ONTAP 特权分为以下几组 VSC 角色：
+
+== ONTAP工具角色
+
+ONTAP工具将ONTAP特权分为以下一组ONTAP工具角色：
 
 * 发现
 +
@@ -63,4 +63,4 @@ VSC 会将 ONTAP 特权分为以下几组 VSC 角色：
 
 SRA 会在集群级别或 SVM 级别将 ONTAP 权限分为 SAN 或 NAS 角色。这样，用户就可以运行 SRM 操作。
 
-将集群添加到 VSC 时， VSC 会对 ONTAP RBAC 角色执行初始权限验证。如果添加了直接 SVM 存储 IP ，则 VSC 不会执行初始验证。VSC 会稍后在任务工作流中检查并强制实施这些特权。
+将集群添加到ONTAP工具时、ONTAP工具会对ONTAP RBAC角色执行初始权限验证。如果添加了直接SVM存储IP、则ONTAP工具不会执行初始验证。ONTAP工具会稍后在任务工作流中检查并强制实施特权。

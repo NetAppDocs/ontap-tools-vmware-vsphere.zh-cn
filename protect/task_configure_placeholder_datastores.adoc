@@ -24,7 +24,7 @@ summary: 您必须配置占位数据存储库，以便在受保护虚拟机（ V
 . 登录到 vCenter Server ，然后单击 * 站点恢复 * > * 站点 * 。
 . 选择受保护站点，然后单击 * 管理 * 。
 . 在 Manage 选项卡中，选择 * 占位数据存储库 * 。
-. 单击 image:../media/new_placeholder_datastore.gif[""] 图标以创建新的占位数据存储库。
+. 单击 image:../media/new_placeholder_datastore.gif["搜索和添加图标"] 图标以创建新的占位数据存储库。
 . 选择适当的数据存储库，然后单击 * 确定 * 。
 +
 

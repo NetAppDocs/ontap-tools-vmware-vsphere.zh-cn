@@ -18,7 +18,7 @@ summary: 您可以使用 ONTAP 工具的维护控制台来管理应用程序，�
 
 NOTE: 您必须为设置密码 `diag` 用户。
 
-您应使用已部署 ONTAP 工具的 * 摘要 * 选项卡访问维护控制台。单击时 image:../media/launch_maintenance_console.gif[""]，此时维护控制台将启动。
+您应使用已部署 ONTAP 工具的 * 摘要 * 选项卡访问维护控制台。单击时  image:../media/launch_maintenance_console.gif["播放按钮"]，此时维护控制台将启动。
 
 |===
 

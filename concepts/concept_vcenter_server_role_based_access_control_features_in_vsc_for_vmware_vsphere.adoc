@@ -2,7 +2,7 @@
 permalink: concepts/concept_vcenter_server_role_based_access_control_features_in_vsc_for_vmware_vsphere.html 
 sidebar: sidebar 
 keywords:  
-summary: vCenter Server 提供了基于角色的访问控制（ RBAC ），可用于控制对 vSphere 对象的访问。在适用于 VMware vSphere 的 ONTAP ® 工具中， vCenter Server RBAC 可与 ONTAP RBAC 结合使用，以确定特定用户可以对特定存储系统上的对象执行哪些 VSC 任务。 
+summary: vCenter Server 提供了基于角色的访问控制（ RBAC ），可用于控制对 vSphere 对象的访问。在适用于VMware vSphere的ONTAP工具中、vCenter Server RBAC与ONTAP RBAC结合使用来确定特定用户可以对特定存储系统上的对象执行哪些ONTAP工具任务。 
 ---
 = ONTAP 工具中基于角色的访问控制概述
 :allow-uri-read: 
@@ -11,8 +11,8 @@ summary: vCenter Server 提供了基于角色的访问控制（ RBAC ），可�
 
 
 [role="lead"]
-vCenter Server 提供了基于角色的访问控制（ Role-Based Access Control ， RBAC ），可用于控制对 vSphere 对象的访问。在适用于 VMware vSphere 的 ONTAP ® 工具中， vCenter Server RBAC 可与 ONTAP RBAC 结合使用，以确定特定用户可以对特定存储系统上的对象执行哪些 VSC 任务。
+vCenter Server 提供了基于角色的访问控制（ Role-Based Access Control ， RBAC ），可用于控制对 vSphere 对象的访问。在适用于VMware vSphere的ONTAP®工具中，vCenter Server RBAC与ONTAP RBAC结合使用，以确定特定用户可以对特定存储系统上的对象执行哪些ONTAP工具任务。
 
-要成功完成任务，您必须具有适当的 vCenter Server RBAC 权限。在执行任务期间， VSC 会先检查用户的 vCenter Server 权限，然后再检查用户的 ONTAP 权限。
+要成功完成任务，您必须具有适当的 vCenter Server RBAC 权限。执行任务期间、ONTAP工具会先检查用户的vCenter Server权限、然后再检查用户的ONTAP权限。
 
 您可以对根对象（也称为根文件夹）设置 vCenter Server 权限。然后，您可以通过限制不需要这些权限的子实体来细化安全性。

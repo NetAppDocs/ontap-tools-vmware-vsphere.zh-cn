@@ -15,12 +15,12 @@ summary: 如果您正在使用基于 Windows 的 Site Recovery Manager （ SRM �
 
 迁移灾难恢复所涉及的步骤包括：
 
-. 将现有 ONTAP 工具升级到 9.7.1 版。
+. 将现有ONTAP工具设备升级到最新版本。
 +
 link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html["升级到最新版本的 ONTAP 工具"]
 
-. 将基于 Windows 的 Storage Replication Adapter 迁移到基于设备的 SRA 。
-. 将 Windows SRM 数据迁移到 SRM 设备。
+. 将基于Windows的Storage Replication Adapter迁移到基于设备的SRA。
+. 将Windows SRM数据迁移到SRM设备。
 
 
 请参见 https://docs.vmware.com/en/Site-Recovery-Manager/8.2/com.vmware.srm.install_config.doc/GUID-F39A84D3-2E3D-4018-97DD-5D7F7E041B43.html["从 Site Recovery Manager for Windows 迁移到 Site Recovery Manager 虚拟设备"] 了解详细步骤。

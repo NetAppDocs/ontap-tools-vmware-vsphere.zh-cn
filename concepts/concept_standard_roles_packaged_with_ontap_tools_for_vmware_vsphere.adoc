@@ -2,7 +2,7 @@
 permalink: concepts/concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html 
 sidebar: sidebar 
 keywords:  
-summary: 为了简化 vCenter Server 特权和基于角色的访问控制的使用， Virtual Storage Console （ VSC\ ）提供了标准 VSC 角色，可用于执行关键 VSC 任务。此外，您还可以使用只读角色查看 VSC 信息，但不能执行任何任务。 
+summary: '为了简化vCenter Server特权和基于角色的访问控制(RBAC)的使用、ONTAP工具提供了标准ONTAP工具角色、可用于执行关键ONTAP工具任务。此外、还有一个只读角色、可用于查看信息、但不能执行任何任务。' 
 ---
 = ONTAP 工具附带的标准角色
 :allow-uri-read: 
@@ -11,18 +11,18 @@ summary: 为了简化 vCenter Server 特权和基于角色的访问控制的使�
 
 
 [role="lead"]
-为了简化 vCenter Server 特权和基于角色的访问控制（ Role-Based Access Control ， RBAC ）的使用， Virtual Storage Console （ VSC ）提供了标准 VSC 角色，可用于执行关键 VSC 任务。此外，您还可以使用只读角色查看 VSC 信息，但不能执行任何任务。
+为了简化vCenter Server特权和基于角色的访问控制(Role-Based Access Control、RBAC)的使用、ONTAP工具提供了标准ONTAP工具角色、可用于执行关键ONTAP工具任务。此外、还有一个只读角色、可用于查看信息、但不能执行任何任务。
 
-标准 VSC 角色具有用户执行 VSC 任务所需的 VSC 专用特权和原生 vCenter Server 特权。此外，这些角色会进行设置，以便在所有受支持的 vCenter Server 版本中具有所需的特权。
+标准ONTAP工具角色具有用户执行ONTAP工具任务所需的ONTAP工具专用特权和本机vCenter Server特权。此外，这些角色会进行设置，以便在所有受支持的 vCenter Server 版本中具有所需的特权。
 
 作为管理员，您可以根据需要将这些角色分配给用户。
 
 
-NOTE: 将 VSC 升级到最新版本时，标准角色会自动升级以使用新版本的 VSC 。
+NOTE: 在将ONTAP工具升级到最新版本时、标准角色会自动升级、以使用新版本的工具。
 
-您可以单击 vSphere Client 主页页面上的 * 角色 * 来查看 VSC 标准角色。
+您可以通过单击vSphere Client主页页面上的*角色*来查看ONTAP工具标准角色。
 
-通过 VSC 提供的角色，您可以执行以下任务：
+通过ONTAP工具提供的角色、您可以执行以下任务：
 
 |===
 
@@ -33,21 +33,21 @@ NOTE: 将 VSC 升级到最新版本时，标准角色会自动升级以使用新
  a| 
 VSC 管理员
  a| 
-提供执行所有 VSC 任务所需的所有原生 vCenter Server 特权和 VSC 专用特权。
+提供执行所有ONTAP工具任务所需的所有本机vCenter Server特权和ONTAP工具专用特权。
 
 
 
  a| 
 VSC 只读
  a| 
-提供对 VSC 的只读访问权限。这些用户无法执行任何受访问控制的 VSC 操作。
+提供对ONTAP工具的只读访问权限。这些用户无法执行任何受访问控制的ONTAP工具操作。
 
 
 
  a| 
 VSC 配置
  a| 
-提供配置存储所需的所有原生 vCenter Server 特权和 VSC 专用特权。您可以执行以下任务：
+提供配置存储所需的所有本机vCenter Server特权和ONTAP工具专用特权。您可以执行以下任务：
 
 * 创建新数据存储库
 * 销毁数据存储库
@@ -57,32 +57,32 @@ VSC 配置
 |===
 
 
-== 使用 VSC 标准角色的准则
+== 使用ONTAP工具标准角色的准则
 
 使用适用于 VMware vSphere 角色的标准 ONTAP 工具时，应遵循特定准则。
 
-您不应直接修改标准角色。否则，每次升级 VSC 时， VSC 都会覆盖您所做的更改。每次升级 VSC 时，安装程序都会更新标准角色定义。这样可以确保角色对于您的 VSC 版本以及所有受支持的 vCenter Server 版本均为最新角色。
+您不应直接修改标准角色。如果这样做、ONTAP工具将在每次升级时覆盖您所做的更改。安装程序会在您每次升级ONTAP工具时更新标准角色定义。这样可以确保这些角色对于您的ONTAP工具版本以及所有受支持的vCenter Server版本都是最新的。
 
-但是，您可以使用标准角色创建根据您的环境量身定制的角色。为此，您应复制 VSC 标准角色，然后编辑复制的角色。通过创建新角色，即使重新启动或升级 VSC Windows 服务，您也可以保持此角色。
+但是，您可以使用标准角色创建根据您的环境量身定制的角色。要执行此操作、您应复制ONTAP工具标准角色、然后编辑复制的角色。通过创建新角色、即使重新启动或升级ONTAP工具Windows服务、您也可以保留此角色。
 
-使用 VSC 标准角色的一些方法包括：
+您可以通过以下方式使用ONTAP工具标准角色：
 
-* 对所有 VSC 任务使用标准 VSC 角色。
+* 对所有ONTAP工具任务使用标准ONTAP工具角色。
 +
-在这种情况下，标准角色可提供用户执行 VSC 任务所需的所有特权。
+在这种情况下、标准角色提供了用户执行ONTAP工具任务所需的所有特权。
 
 * 合并角色以扩展用户可以执行的任务。
 +
-如果标准 VSC 角色为您的环境提供的粒度过高，您可以通过创建包含多个角色的更高级别组来扩展角色。
+如果标准ONTAP工具角色为您的环境提供的粒度过高、您可以通过创建包含多个角色的更高级别组来扩展角色。
 
 +
-如果用户需要执行其他需要额外原生 vCenter Server 特权的非 VSC 任务，您可以创建一个提供这些特权的角色，并将其添加到组中。
+如果用户需要执行其他非ONTAP工具任务、而这些任务需要额外的本机vCenter Server特权、您也可以创建一个角色来提供这些特权、并将其添加到组中。
 
 * 创建更细化的角色。
 +
-如果您的公司要求您实施比标准 VSC 角色限制性更强的角色，则可以使用 VSC 角色创建新角色。
+如果公司要求您实施比标准ONTAP工具角色限制性更强的角色、您可以使用ONTAP工具角色创建新角色。
 
 +
-在这种情况下，您需要克隆所需的 VSC 角色，然后编辑克隆的角色，使其仅具有用户所需的权限。
+在这种情况下、您可以克隆必要的ONTAP工具角色、然后编辑克隆的角色、使其仅具有用户所需的权限。
 
 
