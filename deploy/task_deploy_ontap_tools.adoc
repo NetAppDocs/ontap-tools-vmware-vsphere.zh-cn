@@ -82,6 +82,14 @@ URL
 . 启动 ONTAP Tools 虚拟机，然后打开运行 ONTAP 工具的虚拟机的控制台。
 . 在部署完成后，验证 ONTAP 工具是否正在运行。
 . 如果ONTAP 工具未注册到任何vCenter Server、请使用 `\https://appliance_ip:8143/Register.html` 注册VSC实例。Register.html会将您重定向到Swagger页面。从ONTAP tools 9.12开始、ONTAP 工具向vCenter注册将通过Swagger页面进行。
++
+从9.12开始、使用POST API向vCenter注册ONTAP工具。
+
++
+[listing]
+----
+/2.0/plugin/vcenter
+----
 . 注销并重新登录到 vSphere Client 以查看已部署的 ONTAP 工具。
 +
 在 vSphere Client 中更新此插件可能需要几分钟的时间。

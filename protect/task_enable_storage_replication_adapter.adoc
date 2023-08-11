@@ -2,7 +2,7 @@
 permalink: protect/task_enable_storage_replication_adapter.html 
 sidebar: sidebar 
 keywords:  
-summary: 适用于 VMware vSphere 的 ONTAP 工具提供了一个选项，可用于在 VSC 中使用 SRA 功能来配置灾难恢复。 
+summary: 适用于VMware vSphere的ONTAP工具提供了一个选项、可以将SRA功能与ONTAP工具结合使用来配置灾难恢复。 
 ---
 = 启用 SRA 以保护数据存储库
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 适用于 VMware vSphere 的 ONTAP 工具提供了一个选项，可用
 
 
 [role="lead"]
-适用于 VMware vSphere 的 ONTAP 工具提供了一个选项，可用于在 VSC 中使用 SRA 功能来配置灾难恢复。
+适用于VMware vSphere的ONTAP工具提供了一个选项、可以将SRA功能与ONTAP工具结合使用来配置灾难恢复。
 
 * 您需要的内容 *
 
@@ -40,7 +40,7 @@ https://docs.vmware.com/en/Site-Recovery-Manager/8.2/com.vmware.srm.install_conf
 * 对于 SRM 设备 *
 
 +
-.. 访问VMware SRM设备管理界面、然后转到SRM设备的存储复制适配器页面。
+.. 使用以下URL访问VMware SRM设备管理界面： https://:<srm_ip>:5480[]，然后转至VMware SRM设备管理界面中的存储复制适配器。
 .. 单击 * 新建适配器 * 。
 .. 将 SRA 插件的 _.tar.gz_ 安装程序上传到 SRM 。
 .. 重新扫描适配器以验证是否已在 "SRM Storage Replication Adapter" 页面中更新详细信息。

@@ -66,7 +66,7 @@ ONTAP 工具使用以下默认双向 TCP 端口：
 | 9083. | 启用后， VASA Provider 和 Storage Replication Adapter （ SRA ）均使用此端口与 vCenter Server 进行通信。要获取 TCP/IP 设置，也需要此端口。此端口支持捆绑包下载、Web-CLI用户界面以及从VMware到VP的控制路径通信。SRA可通过此端口号与后端SRA服务进行通信。 
 
 
-| 8143 | VSC 会侦听此端口上的安全通信。 
+| 8143 | ONTAP工具会侦听此端口上的安全通信。 
 |===
 最低存储和应用程序要求：
 

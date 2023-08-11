@@ -2,7 +2,7 @@
 permalink: manage/task_collect_the_log_files.html 
 sidebar: sidebar 
 keywords:  
-summary: 您可以使用 VSC 图形用户界面（ GUI\ ）中提供的选项收集适用于 VMware vSphere 的 ONTAP ® 工具的日志文件。技术支持可能会要求您收集日志文件以帮助解决问题。 
+summary: '您可以通过ONTAP工具图形用户界面\(gui\}中的选项收集适用于VMware vSphere的ONTAP®工具的日志文件。技术支持可能会要求您收集日志文件以帮助解决问题。' 
 ---
 = 收集日志文件
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 您可以使用 VSC 图形用户界面（ GUI\ ）中提供的选项收
 
 
 [role="lead"]
-您可以通过 VSC 图形用户界面（ GUI ）中的选项收集适用于 VMware vSphere 的 ONTAP 工具的日志文件。技术支持可能会要求您收集日志文件以帮助解决问题。
+您可以通过ONTAP工具图形用户界面(GUI)中的选项收集适用于VMware vSphere的ONTAP工具的日志文件。技术支持可能会要求您收集日志文件以帮助解决问题。
 
 * 关于此任务 *
 
@@ -19,7 +19,7 @@ summary: 您可以使用 VSC 图形用户界面（ GUI\ ）中提供的选项收
 
 ` https://vm_ip:9083`
 
-您可以使用VSC图形用户界面中的"`Export ONTAP tools for VMware vSphere Logs`"功能收集适用于VMware vSphere的ONTAP工具日志文件。在启用了VASA Provider的情况下收集适用于VMware vSphere的ONTAP工具日志包时、适用于VMware vSphere的ONTAP工具日志包也会包含VP日志。以下步骤说明如何收集适用于VMware vSphere的ONTAP工具日志文件：
+您可以使用ONTAP工具图形用户界面中的"`Export ONTAP tools for VMware vSphere Logs`"功能收集适用于VMware vSphere的ONTAP工具日志文件。在启用了VASA Provider的情况下收集适用于VMware vSphere的ONTAP工具日志包时、适用于VMware vSphere的ONTAP工具日志包也会包含VP日志。以下步骤说明如何收集适用于VMware vSphere的ONTAP工具日志文件：
 
 * 步骤 *
 

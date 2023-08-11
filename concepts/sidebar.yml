@@ -18,7 +18,7 @@ entries:
     url: "/concepts/reference_key_points_about_assigning_and_modifying_permissions.html"
   - title: ONTAP 工具附带的标准角色
     url: "/concepts/concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html"
-  - title: VSC 任务所需的特权
+  - title: ONTAP工具任务所需的特权
     url: "/concepts/concept_privileges_required_for_vsc_tasks.html"
   - title: ONTAP 存储系统和 vSphere 对象的权限
     url: "/concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html"

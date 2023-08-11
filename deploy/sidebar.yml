@@ -12,7 +12,7 @@ entries:
   url: "/qsg.html"
 - title: 部署 ONTAP 工具的要求
   entries:
-  - title: VSC 的端口要求
+  - title: ONTAP工具的端口要求
     url: "/deploy/reference_port_requirements_for_vsc.html"
   - title: ONTAP 工具的空间和规模估算要求
     url: "/deploy/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html"

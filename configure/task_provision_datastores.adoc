@@ -15,7 +15,7 @@ summary: 配置数据存储库会为虚拟机及其虚拟机磁盘（ VMDK\ ）�
 
 * 您需要的内容 *
 
-* 要在直接连接到 Virtual Storage Console （ VSC ）的 SVM 上配置数据存储库，必须事先使用具有适当权限的用户帐户（而不是默认 vsadmin 用户帐户或 vsadmin 角色）将 SVM 添加到 VSC 中。
+* 要在直接连接到ONTAP工具的SVM上配置数据存储库、必须事先使用具有适当权限的用户帐户(而不是默认vsadmin用户帐户或vsadmin角色)将SVM添加到ONTAP工具中。
 +
 您也可以通过添加集群来配置数据存储库。
 
@@ -25,7 +25,7 @@ summary: 配置数据存储库会为虚拟机及其虚拟机磁盘（ VMDK\ ）�
 
 * 如果您使用 NFS 或 iSCSI ，并且 ESXi 主机和存储系统的子网不同，则 kaminoprefs 首选项文件中的 NFS 或 iSCSI 设置必须包括 ESXi 主机子网掩码。
 +
-此首选项文件也适用于创建 VVOL 数据存储库。有关详细信息，请参见 _Enable datastore mounting across different subnets_ 和 _Configure the VSC preferences files_ 。
+此首选项文件也适用于创建 VVOL 数据存储库。有关详细信息、请参见_在不同子网中启用数据存储库挂载_和_配置ONTAP工具首选项文件_。
 
 * 如果已启用 VASA Provider ，并且要为 NFS 数据存储库或 VMFS 数据存储库指定存储功能配置文件，则必须已创建一个或多个存储功能配置文件。
 * 要创建 NFSv4.1 数据存储库，必须已在 SVM 级别启用 NFSv4.1 。
@@ -38,10 +38,10 @@ summary: 配置数据存储库会为虚拟机及其虚拟机磁盘（ VMDK\ ）�
 * 从vSphere 8.0版开始、支持NVMe/FC协议。
 
 
-VSC 可以在 NFS 卷或 LUN 上创建数据存储库：
+ONTAP工具可以在NFS卷或LUN上创建数据存储库：
 
-* 对于 NFS 数据存储库， VSC 会在存储系统上创建 NFS 卷，然后更新导出策略。
-* 对于 VMFS 数据存储库， VSC 会创建一个新卷（如果选择了该选项，则会使用现有卷），然后创建一个 LUN 和一个 igroup 。
+* 对于NFS数据存储库、ONTAP工具会在存储系统上创建NFS卷、然后更新导出策略。
+* 对于VMFS数据存储库、ONTAP工具会创建一个新卷(或者如果选择了相应选项、则会使用现有卷)、然后创建一个LUN和一个igrou。
 
 
 [NOTE]
@@ -182,7 +182,7 @@ Kerberos 身份验证
  a| 
 存储属性
  a| 
-默认情况下， VSC 会填充 * 聚合 * 和 * 卷 * 选项的建议值。您可以根据自己的要求自定义这些值。FlexGroup 数据存储库不支持选择聚合，因为 ONTAP 负责管理聚合选择。
+默认情况下，ONTAP工具会填充*Aggregates *和*Volumes*选项的建议值。您可以根据自己的要求自定义这些值。FlexGroup 数据存储库不支持选择聚合，因为 ONTAP 负责管理聚合选择。
 
 此外，还会填充 * 高级 * 菜单下的 * 空间预留 * 选项，以获得最佳结果。
 

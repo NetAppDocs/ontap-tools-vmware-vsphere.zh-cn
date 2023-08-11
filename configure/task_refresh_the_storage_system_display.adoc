@@ -2,7 +2,7 @@
 permalink: configure/task_refresh_the_storage_system_display.html 
 sidebar: sidebar 
 keywords:  
-summary: 您可以使用适用于 VMware vSphere 的 ONTAP ® 工具提供的更新功能刷新有关存储系统的信息，并强制 Virtual Storage Console （ VSC\ ）发现存储系统。 
+summary: 您可以使用适用于VMware vSphere的ONTAP®工具提供的更新功能来刷新有关存储系统的信息并强制ONTAP工具发现存储系统。 
 ---
 = 刷新存储系统显示内容
 :allow-uri-read: 
@@ -11,11 +11,11 @@ summary: 您可以使用适用于 VMware vSphere 的 ONTAP ® 工具提供的更
 
 
 [role="lead"]
-您可以使用适用于 VMware vSphere 的 ONTAP ® 工具提供的更新功能来刷新有关存储系统的信息，并强制 Virtual Storage Console （ VSC ）发现存储系统。
+您可以使用适用于VMware vSphere的ONTAP®工具提供的更新功能来刷新有关存储系统的信息并强制ONTAP工具发现存储系统。
 
 * 关于此任务 *
 
-。 `refresh` 如果您在收到身份验证错误后更改了存储系统的默认凭据、则选项非常有用。如果在存储系统报告后更改了存储系统凭据、则应始终执行更新操作 `Authentication Failure Status`。在更新操作期间， VSC 会尝试使用新凭据连接到存储系统。
+。 `refresh` 如果您在收到身份验证错误后更改了存储系统的默认凭据、则选项非常有用。如果在存储系统报告后更改了存储系统凭据、则应始终执行更新操作 `Authentication Failure Status`。在更新操作期间、ONTAP工具会尝试使用新凭据连接到存储系统。
 
 根据您的系统设置，此任务可能需要很长时间才能完成。
 

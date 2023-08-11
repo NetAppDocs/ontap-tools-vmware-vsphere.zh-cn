@@ -2,35 +2,35 @@
 permalink: configure/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html 
 sidebar: sidebar 
 keywords:  
-summary: 如果您在一个 VMware vSphere HTML5 客户端管理多个 vCenter Server 实例的环境中使用适用于 VMware vSphere 的 ONTAP ® 工具，则必须向每个 vCenter Server 注册一个 VSC 实例，以便 VSC 与 vCenter Server 之间建立 1 ： 1 配对关系。这样，您就可以通过一个 vSphere HTML5 客户端在链接模式和非链接模式下管理运行 vCenter 6.0 或更高版本的所有服务器。 
+summary: 如果在一个VMware vSphere HTML5客户端管理多个vCenter Server实例的环境中使用适用于VMware vSphere的ONTAP®工具、 您必须向每个vCenter Server注册一个ONTAP工具实例、以使ONTAP工具与vCenter Server实现1：1配对。这样，您就可以通过一个 vSphere HTML5 客户端在链接模式和非链接模式下管理运行 vCenter 6.0 或更高版本的所有服务器。 
 ---
-= 在多个 vCenter Server 环境中注册 VSC 的要求
+= 在多vCenter Server环境中注册ONTAP工具的要求
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-如果您在一个 VMware vSphere HTML5 客户端管理多个 vCenter Server 实例的环境中使用适用于 VMware vSphere 的 ONTAP 工具，则必须向每个 vCenter Server 注册一个 VSC 实例，以便 VSC 与 vCenter Server 之间存在 1 ： 1 配对关系。这样、您就可以通过一个vSphere HTML5客户端在链接模式和非链接模式下管理运行vCenter 7.0或更高版本的所有服务器。
+如果在一个VMware vSphere HTML5客户端管理多个vCenter Server实例的环境中使用适用于VMware vSphere的ONTAP工具、 您必须向每个vCenter Server注册一个ONTAP工具实例、以使ONTAP工具与vCenter Server实现1：1配对。这样、您就可以通过一个vSphere HTML5客户端在链接模式和非链接模式下管理运行vCenter 7.0或更高版本的所有服务器。
 
 
-NOTE: 如果要将 VSC 与 vCenter Server 结合使用，则必须为要管理的每个 vCenter Server 实例设置或注册一个 VSC 实例。每个已注册的 VSC 实例必须具有相同的版本。
+NOTE: 如果要在vCenter Server中使用ONTAP工具、则必须为要管理的每个vCenter Server实例设置或注册一个ONTAP工具实例。每个已注册的ONTAP工具实例的版本必须相同。
 
 链接模式会在 vCenter Server 部署期间自动安装。链接模式使用 Microsoft Active Directory 应用程序模式（ ADAM ）在多个 vCenter Server 系统之间存储和同步数据。
 
-使用 vSphere HTML5 客户端跨多个 vCenter Server 执行 VSC 任务需要满足以下要求：
+使用vSphere HTML5客户端跨多个vCenter Server执行ONTAP工具任务需要满足以下要求：
 
-* 要管理的 VMware 清单中的每个 vCenter Server 都必须在其上注册一个 VSC 服务器，并进行唯一的 1 ： 1 配对。
+* VMware清单中要管理的每个vCenter Server都必须注册一个ONTAP Tools服务器、并使其采用唯一的1：1配对关系。
 +
-例如，您可以将 VSC 服务器 A 注册到 vCenter Server A ，将 VSC 服务器 B 注册到 vCenter Server B ，将 VSC 服务器 C 注册到 vCenter Server C 等。
-
-+
-您 * 无法 * 将 VSC 服务器 A 同时注册到 vCenter Server A 和 vCenter Server B
+例如、您可以将ONTAP工具服务器A注册到vCenter Server A、将ONTAP工具服务器B注册到vCenter Server B、将ONTAP工具服务器C注册到vCenter Server C、以此类推。
 
 +
-如果 VMware 清单中包含未注册 VSC 服务器的 vCenter Server ，但有一个或多个 vCenter Server 已注册到 VSC ， 然后，您可以查看 VSC 实例并对已注册 VSC 的 vCenter Server 执行 VSC 操作。
+您*不能*将ONTAP工具服务器A同时注册到vCenter Server A和vCenter Server B
 
-* 对于已注册到单点登录（ SSO ）的每个 vCenter Server ，您必须具有 VSC 专用的查看权限。
++
+如果VMware清单中的某个vCenter Server未注册ONTAP工具服务器、但有一个或多个vCenter Server已注册到ONTAP工具中、 然后、您可以查看ONTAP工具的实例、并对已注册ONTAP工具的vCenter Server执行ONTAP工具操作。
+
+* 对于已注册到单点登录(SSO)的每个vCenter Server、您必须具有ONTAP工具专用的查看特权。
 +
 您还必须具有正确的 RBAC 权限。
 
@@ -40,6 +40,6 @@ NOTE: 如果要将 VSC 与 vCenter Server 结合使用，则必须为要管理�
 
 如果存储的位置已知（例如，当您使用配置向导且数据存储库位于由特定 vCenter Server 管理的主机上时），则 vCenter Server 列表将显示为只读选项。只有在使用右键单击选项选择 vSphere Web Client 中的某个项目时，才会发生这种情况。
 
-当您尝试选择不受 VSC 管理的对象时， VSC 会向您发出警告。
+当您尝试选择不受ONTAP管理的对象时、它会向您发出警告。
 
-您可以从 VSC 摘要页面根据特定 vCenter Server 筛选存储系统。向 vCenter Server 注册的每个 VSC 实例都会显示一个摘要页面。您可以管理与特定 VSC 实例和 vCenter Server 关联的存储系统，但如果您运行的是多个 VSC 实例，则应将每个存储系统的注册信息分开。
+您可以从ONTAP工具摘要页面中根据特定vCenter Server筛选存储系统。已向vCenter Server注册的每个ONTAP工具实例都会显示一个摘要页面。您可以管理与特定ONTAP工具实例和vCenter Server关联的存储系统、但如果您正在运行多个ONTAP工具实例、则应将每个存储系统的注册信息分开。

@@ -2,7 +2,7 @@
 permalink: configure/task_regenerate_an_ssl_certificate_for_vsc.html 
 sidebar: sidebar 
 keywords:  
-summary: 安装 Virtual Storage Console （ VSC\ ）时会生成 SSL 证书。为 SSL 证书生成的可分辨名称 \ （ DN\ ）可能不是客户端计算机可以识别的通用名称 \ （ CN\ ）。通过更改密钥库和私钥密码，您可以重新生成证书并创建站点专用的证书。 
+summary: 安装ONTAP工具时会生成SSL证书。为 SSL 证书生成的可分辨名称 \ （ DN\ ）可能不是客户端计算机可以识别的通用名称 \ （ CN\ ）。通过更改密钥库和私钥密码，您可以重新生成证书并创建站点专用的证书。 
 ---
 = 为 Virtual Storage Console 重新生成 SSL 证书
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 安装 Virtual Storage Console （ VSC\ ）时会生成 SSL 证书。�
 
 
 [role="lead"]
-安装 Virtual Storage Console （ VSC ）时会生成 SSL 证书。为 SSL 证书生成的可分辨名称（ Distinguished Name ， DN ）可能不是客户端计算机可以识别的公用名（ Common Name ， CN ）。通过更改密钥库和私钥密码，您可以重新生成证书并创建站点专用的证书。
+安装ONTAP工具时会生成SSL证书。为 SSL 证书生成的可分辨名称（ Distinguished Name ， DN ）可能不是客户端计算机可以识别的公用名（ Common Name ， CN ）。通过更改密钥库和私钥密码，您可以重新生成证书并创建站点专用的证书。
 
 * 关于此任务 *
 

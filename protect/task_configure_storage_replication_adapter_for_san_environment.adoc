@@ -13,6 +13,10 @@ summary: 在为 Site Recovery Manager （ SRM\ ）运行 Storage Replication Ada
 [role="lead"]
 在运行适用于 Site Recovery Manager （ SRM ）的 Storage Replication Adapter （ SRA ）之前，必须先设置存储系统。
 
+适用于VMware vSphere的ONTAP工具支持VMware的SRM共享恢复站点配置。有关详细信息，请参见 https://docs.vmware.com/en/Site-Recovery-Manager/8.6/com.vmware.srm.install_config.doc/GUID-EBF84252-DF37-43CD-ADC8-E90F5254F315.html["共享恢复站点配置中的Site Recovery Manager"]。
+
+。 https://kb.netapp.com/mgmt/OTV/SRA/Storage_Replication_Adapter%3A_How_to_configure_SRA_in_a_SRM_Shared_Recovery_Site["如何在SRM共享恢复站点中配置SRA"] 知识库文章详细介绍了用于设置SRA以支持SRM共享恢复站点配置的操作步骤。
+
 * 您需要的内容 *
 
 您必须已在受保护站点和恢复站点上安装以下程序：

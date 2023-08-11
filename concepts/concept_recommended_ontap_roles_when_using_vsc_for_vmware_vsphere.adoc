@@ -2,7 +2,7 @@
 permalink: concepts/concept_recommended_ontap_roles_when_using_vsc_for_vmware_vsphere.html 
 sidebar: sidebar 
 keywords:  
-summary: 您可以设置多个建议的 ONTAP 角色，以便使用适用于 VMware vSphere 的 ONTAP ® 工具以及基于角色的访问控制 \ （ RBAC ）。这些角色包含执行虚拟存储控制台（ VSC\ ）任务所需的存储操作所需的 ONTAP 特权。 
+summary: 您可以设置多个建议的 ONTAP 角色，以便使用适用于 VMware vSphere 的 ONTAP ® 工具以及基于角色的访问控制 \ （ RBAC ）。这些角色包含执行ONTAP工具任务所需的存储操作所需的ONTAP特权。 
 ---
 = 使用适用于 VMware vSphere 的 ONTAP 工具时的建议 ONTAP 角色
 :allow-uri-read: 
@@ -11,15 +11,15 @@ summary: 您可以设置多个建议的 ONTAP 角色，以便使用适用于 VMw
 
 
 [role="lead"]
-您可以设置多个建议的 ONTAP 角色，以便使用适用于 VMware vSphere 的 ONTAP 工具和基于角色的访问控制（ Role-Based Access Control ， RBAC ）。这些角色包含执行虚拟存储控制台（ VSC ）任务所需的存储操作所需的 ONTAP 特权。
+您可以设置多个建议的 ONTAP 角色，以便使用适用于 VMware vSphere 的 ONTAP 工具和基于角色的访问控制（ Role-Based Access Control ， RBAC ）。这些角色包含执行ONTAP工具任务所需的存储操作所需的ONTAP特权。
 
 要创建新的用户角色，您必须以管理员身份登录到运行 ONTAP 的存储系统。您可以使用ONTAP System Manager 9.8P1或更高版本创建ONTAP 角色。请参见link:../configure/task_configure_user_role_and_privileges.html["配置用户角色和权限"] 有关详细信息 ...
 
 每个 ONTAP 角色都有一个关联的用户名和密码对，这两个用户名和密码对构成了该角色的凭据。如果不使用这些凭据登录，则无法访问与此角色关联的存储操作。
 
-作为一项安全措施， VSC 专用的 ONTAP 角色按分层结构排序。这意味着，第一个角色的限制性最强，并且只具有与一组最基本的 VSC 存储操作关联的特权。下一个角色既包括自己的特权，也包括与上一个角色关联的所有特权。对于支持的存储操作，每个附加角色的限制性都较低。
+作为一项安全措施、ONTAP工具专用的ONTAP角色按分层结构进行排序。这意味着、第一个角色的限制性最强、它只具有与一组最基本的ONTAP工具存储操作关联的特权。下一个角色既包括自己的特权，也包括与上一个角色关联的所有特权。对于支持的存储操作，每个附加角色的限制性都较低。
 
-以下是使用 VSC 时建议使用的一些 ONTAP RBAC 角色。创建这些角色后，您可以将这些角色分配给必须执行与存储相关的任务的用户，例如配置虚拟机。
+下面列出了一些使用ONTAP工具时建议使用的ONTAP RBAC角色。创建这些角色后，您可以将这些角色分配给必须执行与存储相关的任务的用户，例如配置虚拟机。
 
 . 发现
 +

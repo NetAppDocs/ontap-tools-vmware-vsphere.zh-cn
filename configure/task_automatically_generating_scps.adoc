@@ -15,8 +15,8 @@ summary: 通过适用于 ONTAP 的 VASA Provider ，您可以自动为现有传�
 
 * 您需要的内容 *
 
-* 您必须已向 Virtual Storage Console （ VSC ）注册 VASA Provider 实例。
-* VSC 必须已发现您的存储。
+* 您必须已向ONTAP工具注册VASA Provider实例。
+* ONTAP工具必须已发现您的存储。
 
 
 * 关于此任务 *

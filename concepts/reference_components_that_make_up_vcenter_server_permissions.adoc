@@ -98,6 +98,6 @@ VSC 管理员
 您可以使用 Active Directory （或本地 vCenter Server 计算机）设置用户和用户组。然后、您可以使用vCenter Server权限为这些用户或组授予访问权限、使其能够执行特定的ONTAP工具任务。
 
 
-NOTE: 这些vCenter Server权限适用于ONTAP工具vCenter用户、而不适用于VSC管理员。默认情况下， VSC 管理员对产品具有完全访问权限，不需要为其分配权限。
+NOTE: 这些vCenter Server权限适用于ONTAP工具vCenter用户、而不适用于ONTAP工具管理员。默认情况下、ONTAP工具管理员对产品拥有完全访问权限、不需要为其分配权限。
 
 没有为用户和组分配角色。他们通过加入 vCenter Server 权限来获得某个角色的访问权限。

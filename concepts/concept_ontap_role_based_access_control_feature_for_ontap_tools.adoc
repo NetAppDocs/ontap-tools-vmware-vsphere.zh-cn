@@ -1,5 +1,5 @@
 ---
-permalink: concepts/concept_ontap_role_bastoolsed_access_control_feature_for_ontap_tools.html 
+permalink: concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html 
 sidebar: sidebar 
 keywords:  
 summary: 通过 ONTAP 基于角色的访问控制 \ （ RBAC ），您可以控制对特定存储系统的访问，并控制用户可以对这些存储系统执行的操作。在适用于VMware vSphere的ONTAP®工具中，ONTAP RBAC与vCenter Server RBAC结合使用，以确定特定用户可以对特定存储系统上的对象执行哪些ONTAP工具任务。 

@@ -1,0 +1,15 @@
+---
+permalink: manage/vasa_provider_disaster_recovery.html 
+sidebar: sidebar 
+keywords: scope of guide 
+summary: '如果VASA Provider (VP)虚拟设备丢失、无法访问或无法正常运行、您可能需要执行VP灾难恢复。 ' 
+---
+= VASA Provider灾难恢复
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果VASA Provider (VP)虚拟设备丢失、无法访问或无法正常运行、您可能需要执行VP灾难恢复。
+有关详细信息，请参见 https://kb.netapp.com/mgmt/OTV/Virtual_Storage_Console/How_to_perform_a_VASA_Provider_Disaster_Recovery_-_Resolution_Guide["如何执行VASA Provider灾难恢复—解决方案指南"]
