@@ -19,7 +19,7 @@ summary: 提供有关部署和初始化适用于 VMware vSphere 的 ONTAP 工具
 
 
 [role="lead"]
-适用于 VMware vSphere 的 ONTAP 工具是一个 vCenter Server 插件，其中包括 VSC ， VASA Provider 和 Storage Replication Adapter （ SRA ）扩展。建议在所有 ONTAP vSphere 环境中使用 VSC ，因为 VSC 会根据最佳实践配置 ESXi 主机设置并配置 ONTAP 存储。要支持虚拟卷（ VVOL ），需要使用 VASA Provider ，而 SRA 可与 VMware Site Recovery Manager 配合使用。
+适用于VMware vSphere的ONTAP工具是一个vCenter Server插件、其中包括ONTAP工具、VASA Provider和Storage Replication Adapter (SRA)扩展。建议对所有ONTAP vSphere环境使用ONTAP工具、因为它会根据最佳实践配置ESXi主机设置和配置ONTAP存储。要支持虚拟卷（ VVOL ），需要使用 VASA Provider ，而 SRA 可与 VMware Site Recovery Manager 配合使用。
 
 
 

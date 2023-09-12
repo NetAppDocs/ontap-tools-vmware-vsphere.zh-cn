@@ -2,7 +2,7 @@
 permalink: configure/reference_set_ipv4_or_ipv6.html 
 sidebar: sidebar 
 keywords:  
-summary: 在首选项文件 kaminoprefs.xml中 添加了一个新选项，您可以设置该选项，以便为添加到 VSC 的所有存储系统启用 IPv4 或 IPv6 支持。 
+summary: 首选项文件kmingoprefs.xml新增 了一个选项、您可以设置此选项来为添加到ONTAP工具的所有存储系统启用IPv4或IPv6支持。 
 ---
 = 使用首选项文件设置 IPv4 或 IPv6
 :allow-uri-read: 
@@ -11,21 +11,21 @@ summary: 在首选项文件 kaminoprefs.xml中 添加了一个新选项，您可
 
 
 [role="lead"]
-首选项文件包含用于控制 VMware vSphere 操作的 ONTAP 工具的设置。在大多数情况下，您无需修改这些文件中的设置。了解 Virtual Storage Console （ VSC ）使用哪些首选项文件很有帮助。
+首选项文件包含用于控制 VMware vSphere 操作的 ONTAP 工具的设置。在大多数情况下，您无需修改这些文件中的设置。了解ONTAP工具使用的首选项文件非常有用。
 
-VSC 具有多个首选项文件。这些文件包含输入关键字和值，用于确定 VSC 如何执行各种操作。以下是 VSC 使用的一些首选项文件：
+ONTAP工具具有多个首选项文件。这些文件包含一些输入项和值、用于确定ONTAP工具如何执行各种操作。以下是ONTAP工具使用的一些首选项文件：
 
 ` /opt/netapp/vscserver/etc/kamino/kaminoprefs.xml`
 
 ` /opt/netapp/vscserver/etc/vsc/vscPreferences.xml`
 
-在某些情况下，您可能需要修改首选项文件。例如、如果您使用iSCSI或NFS、并且ESXi主机和存储系统的子网不同、则必须修改首选项文件。如果不修改首选项文件中的设置，则数据存储库配置将失败，因为 VSC 无法挂载数据存储库。
+在某些情况下，您可能需要修改首选项文件。例如、如果您使用iSCSI或NFS、并且ESXi主机和存储系统的子网不同、则必须修改首选项文件。如果不修改首选项文件中的设置、则数据存储库配置将失败、因为ONTAP工具无法挂载数据存储库。
 
-在首选项文件 `kaminoprefs.xml` 中添加了一个新选项，您可以将该选项设置为对添加到 VSC 的所有存储系统启用 IPv4 或 IPv6 支持。
+首选项文件中添加了一个新选项 `kaminoprefs.xml` 您可以设置为为为添加到ONTAP工具的所有存储系统启用IPv4或IPv6支持。
 
 * `default.override.option.provision.mount.datastore.address.family` 参数已添加到 `kaminoprefs.xml` 首选项文件中，用于为数据存储库配置设置首选数据 LIF 协议。
 +
-此首选项适用于添加到 VSC 中的所有存储系统。
+此首选项适用于添加到ONTAP工具中的所有存储系统。
 
 * 新选项的值为 `IPv4` ， `IPv6` 和 `none` 。
 * 默认情况下，此值设置为 `none` 。

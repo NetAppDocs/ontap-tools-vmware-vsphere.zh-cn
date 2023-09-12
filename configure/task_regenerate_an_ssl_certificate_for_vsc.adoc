@@ -23,6 +23,6 @@ https://kb.netapp.com/advice_and_troubleshooting/data_storage_software/vsc_and_v
 
 . 登录到维护控制台。
 . 输入 `1` 以访问应用程序配置菜单。
-. 在应用程序配置菜单中，输入 `3` 以停止 VSC 服务。
+. 在Application Configuration菜单中、输入 `3` 停止ONTAP工具服务。
 . 输入 `7` 以重新生成 SSL 证书。
 

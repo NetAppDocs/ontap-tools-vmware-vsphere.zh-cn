@@ -15,7 +15,8 @@ summary: 遇到错误时，您可以检查 /opt/netapp/vscserver/log 目录和 /
 
 以下三个日志文件有助于确定问题：
 
-* `cxf.log` ，包含有关进出 VASA Provider *`kaminoPrefs.xml` 的 API 流量的信息，包含有关 VSC 设置的信息
+* `cxf.log`、包含有关进出VASA Provider的API流量的信息
+*`kaminoPrefs.xml`，包含有关ONTAP工具设置的信息
 * `vvolvp.log` ，包含有关 VASA Provider 的所有日志信息
 
 
@@ -29,7 +30,7 @@ summary: 遇到错误时，您可以检查 /opt/netapp/vscserver/log 目录和 /
 
 设置日志级别后，以下文件将更新：
 
-* VSC 服务器： `kamino.log` 和 `vvolvp.log`
+* ONTAP工具服务器： `kamino.log` 和 `vvolvp.log`
 * VASA Provider 服务器： `vvolvp.log` ， `error.log` 和 `netapp.log`
 
 

@@ -2,7 +2,7 @@
 permalink: manage/concept_virtual_storage_console_reports.html 
 sidebar: sidebar 
 keywords:  
-summary: 您可以使用 ONTAP 工具控制台报告菜单查看特定 vCenter Server 中选定 VSC 实例管理的所有数据存储库的预定义报告。您可以执行排序和导出报告等操作。 
+summary: 您可以使用ONTAP工具控制台报告菜单查看特定vCenter Server中选定ONTAP工具实例管理的所有数据存储库的预定义报告。您可以执行排序和导出报告等操作。 
 ---
 = ONTAP 工具数据存储库和 VVOL 报告概述
 :allow-uri-read: 
@@ -11,13 +11,13 @@ summary: 您可以使用 ONTAP 工具控制台报告菜单查看特定 vCenter S
 
 
 [role="lead"]
-您可以使用 ONTAP 工具控制台 * 报告 * 菜单查看特定 vCenter Server 中选定 VSC 实例管理的所有数据存储库的预定义报告。您可以执行排序和导出报告等操作。
+您可以使用ONTAP工具控制台*报告*菜单查看特定vCenter Server中选定ONTAP工具实例管理的所有数据存储库的预定义报告。您可以执行排序和导出报告等操作。
 
 报告可显示有关数据存储库和虚拟机的详细信息，使您可以查看和确定 vCenter Server 中数据存储库和虚拟机的潜在问题
 
 您可以查看，排序和导出报告。
 
-Virtual Storage Console （ VSC ）提供了以下预定义报告：
+ONTAP工具提供以下预定义报告：
 
 * 数据存储库报告
 * 虚拟机报告
@@ -73,7 +73,7 @@ NOTE: 直接存储虚拟机（ SVM ）上配置的 FlexGroup 数据存储库不�
 
 * 虚拟机报告 *
 
-虚拟机报告菜单提供了使用 VSC 为选定 vCenter Server 配置的数据存储库的所有虚拟机的性能指标。虚拟机报告中显示的虚拟机指标是指传统数据存储库上的虚拟机每 30 分钟收集一次的历史数据。" 上次刷新时间 " 和 " 下次刷新时间 " 将添加到表中，以提供有关数据收集时间以及下次数据收集时间的详细信息。
+虚拟机报告菜单提供了使用ONTAP工具为选定vCenter Server配置的数据存储库的所有虚拟机的性能指标。虚拟机报告中显示的虚拟机指标是指传统数据存储库上的虚拟机每 30 分钟收集一次的历史数据。" 上次刷新时间 " 和 " 下次刷新时间 " 将添加到表中，以提供有关数据收集时间以及下次数据收集时间的详细信息。
 
 * 虚拟机的名称
 * 数据存储库名称
@@ -179,7 +179,7 @@ VVOL 提供了以下预制报告：
 
 适用于VMware vSphere的ONTAP 工具会为以下项生成审核日志记录：
 
-* VSC服务
+* ONTAP工具服务
 +
 vscservice的审核日志位置：/opt/NetApp/vscservice/vsc-audie.log_。您可以在_/opt/NetApp/vscserver/etc/log4j2.properties_文件中更改日志完整性报告的以下参数：
 

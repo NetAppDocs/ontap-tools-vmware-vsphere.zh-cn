@@ -29,7 +29,7 @@ summary: 您可以使用适用于 VMware vSphere 的 ONTAP 工具的图形用户
 
 * 步骤 *
 
-. 将从 NetApp 支持站点下载的 ` .vib` 文件重命名为 NetAppNasPlugy.vib ，以匹配 VSC 使用的预定义名称。
+. 重命名 `.vib` 您从NetApp 支持站点 下载到NetApp NasPlugin.vib以匹配ONTAP工具使用的预定义名称的文件。
 . 单击 ONTAP 工具主页中的 * 设置 * 。
 . 单击 * NFS VAAI 工具 * 选项卡。
 . 单击 * 现有版本 * 部分中的 * 更改 * 。
@@ -40,6 +40,6 @@ summary: 您可以使用适用于 VMware vSphere 的 ONTAP 工具的图形用户
 
 . 安装完成后重新启动 ESXi 主机。
 +
-重新启动 ESXi 主机时， VSC 会自动检测 NFS VAAI 插件。您无需执行其他步骤即可启用此插件。
+重新启动ESXi主机时、ONTAP工具会自动检测NFS VAAI插件。您无需执行其他步骤即可启用此插件。
 
 

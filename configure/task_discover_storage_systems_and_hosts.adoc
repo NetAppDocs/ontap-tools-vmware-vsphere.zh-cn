@@ -2,7 +2,7 @@
 permalink: configure/task_discover_storage_systems_and_hosts.html 
 sidebar: sidebar 
 keywords:  
-summary: 首次在 vSphere Client 中运行 Virtual Storage Console （ VSC\ ）时， VSC 将发现 ESXi 主机，其 LUN 和 NFS 导出以及拥有这些 LUN 和导出的 NetApp 存储系统。 
+summary: 首次在vSphere Client中运行ONTAP工具时、ONTAP工具会发现ESXi主机、其LUN和NFS导出以及这些LUN和导出所属的NetApp存储系统。 
 ---
 = 发现存储系统和主机
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 首次在 vSphere Client 中运行 Virtual Storage Console （ VSC\ ）
 
 
 [role="lead"]
-首次在 vSphere Client 中运行 Virtual Storage Console （ VSC ）时， VSC 将发现 ESXi 主机，其 LUN 和 NFS 导出以及拥有这些 LUN 和导出的 NetApp 存储系统。
+首次在vSphere Client中运行ONTAP工具时、ONTAP工具会发现ESXi主机、其LUN和NFS导出以及这些LUN和导出所属的NetApp存储系统。
 
 * 您需要的内容 *
 
@@ -21,16 +21,16 @@ summary: 首次在 vSphere Client 中运行 Virtual Storage Console （ VSC\ ）
 
 * 关于此任务 *
 
-您可以随时发现新的存储系统或更新有关现有存储系统的信息，以获取最新的容量和配置信息。您还可以修改 VSC 用于登录到存储系统的凭据。
+您可以随时发现新的存储系统或更新有关现有存储系统的信息，以获取最新的容量和配置信息。您还可以修改ONTAP工具用于登录到存储系统的凭据。
 
-发现存储系统时， VSC 会从 vCenter Server 实例管理的 ESXi 主机收集信息。
+发现存储系统时、ONTAP工具会从vCenter Server实例管理的ESXi主机收集信息。
 
 * 步骤 *
 
 . 从 vSphere Client 主页页面中，选择 * 主机和集群 * 。
 . 右键单击所需的数据中心，然后选择*NetApp ONTAP tools*>*更新主机和存储数据*。
 +
-VSC将显示确认对话框、通知您此操作将重新开始发现所有已连接存储系统、并且可能需要几分钟时间。是否要继续？
+ONTAP工具会显示确认对话框、通知您此操作将重新开始发现所有已连接存储系统、并且可能需要几分钟时间。是否要继续？
 
 . 单击*是*。
 . 选择具有状态的已发现存储控制器 `Authentication Failure`，然后单击*Actions*>*Modify*。
@@ -40,6 +40,6 @@ VSC将显示确认对话框、通知您此操作将重新开始发现所有已�
 
 发现过程完成后，请执行以下操作：
 
-* 使用 VSC 为适配器设置列， MPIO 设置列或 NFS 设置列中显示警报图标的主机配置 ESXi 主机设置。
+* 使用ONTAP工具为在适配器设置列、MPIO设置列或NFS设置列中显示警报图标的主机配置ESXi主机设置。
 * 提供存储系统凭据。
 

@@ -23,6 +23,7 @@ summary: 部署 SRM 设备后，您应在 SRM 设备上配置 SRA 。成功配�
 
 * 步骤 *
 
+. 在vSphere客户端菜单上、选择*工具*>*设置*>*管理设置*>*管理功能*>*启用NetApp ONTAP复制适配器(SRA)*
 . 在 SRM 设备屏幕上，单击 * 存储复制适配器 * > * 新适配器 * 。
 . 将 _.tar.gz_ 文件上传到 SRM 。
 . 重新扫描适配器以验证是否已在 "SRM Storage Replication Adapter" 页面中更新详细信息。

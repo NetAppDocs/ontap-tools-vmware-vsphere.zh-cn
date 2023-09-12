@@ -15,14 +15,15 @@ summary: 系统日志用于将系统日志发送到集中式日志记录服务�
 
 * 关于此任务 *
 
-适用于VMware vSphere 9.12的ONTAP 工具删除了早期版本的2.0系统日志API、并包含新的3.0系统日志相关API、这些API支持相互身份验证。按照以下步骤设置系统日志。
+从适用于VMware vSphere 9.12及更高版本的ONTAP工具中、ONTAP工具会删除早期版本的2.0系统日志API。它们包含新的3.0系统日志相关API、这些API支持相互身份验证。
+按照以下步骤设置系统日志。
 
 * 步骤 *
 
 . 运行_POST /2.0/secury/user/login以获取会话ID。
 . 通过传递在上述响应中收到的SessionID来运行_POST /3.0/Appliance管理/LOGGing-client-certification/_。
 +
-此操作将为VP服务器以及VSC服务器生成证书。
+此操作将为VP服务器以及ONTAP工具服务器生成证书。
 
 . 将这两个证书复制到系统日志服务器、并使其在系统日志服务器上可信。
 +

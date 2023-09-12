@@ -20,7 +20,7 @@ entries:
     url: "/configure/task_run_the_gos_timeout_scripts_for_solaris.html"
   - title: 为 Linux 子操作系统设置超时值
     url: "/configure/task_run_the_gos_timeout_scripts_for_rhel4_or_sles9.html"
-- title: 在多个 vCenter Server 环境中注册 VSC 的要求
+- title: 在多vCenter Server环境中注册ONTAP工具的要求
   url: "/configure/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html"
 - title: 配置 ONTAP 工具首选项文件
   entries:
@@ -30,7 +30,7 @@ entries:
     url: "/configure/add_different_subnets.html"
   - title: 在不同子网之间启用数据存储库挂载
     url: "/configure/task_enable_datastore_mounting_across_different_subnets.html"
-  - title: 为 VSC 重新生成 SSL 证书
+  - title: 为ONTAP工具重新生成SSL证书
     url: "/configure/task_regenerate_an_ssl_certificate_for_vsc.html"
 - title: 配置存储系统
   entries:

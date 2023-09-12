@@ -2,7 +2,7 @@
 permalink: configure/task_enable_datastore_mounting_across_different_subnets.html 
 sidebar: sidebar 
 keywords:  
-summary: 如果您使用 iSCSI 或 NFS ，并且 ESXi 主机和存储系统的子网不同，则必须修改适用于 VMware vSphere 首选项文件的 ONTAP 工具。如果不修改首选项文件，则数据存储库配置将失败，因为 Virtual Storage Console （ VSC\ ）无法挂载数据存储库。 
+summary: 如果您使用 iSCSI 或 NFS ，并且 ESXi 主机和存储系统的子网不同，则必须修改适用于 VMware vSphere 首选项文件的 ONTAP 工具。如果不修改首选项文件、则数据存储库配置将失败、因为ONTAP工具无法挂载数据存储库。 
 ---
 = 在不同子网之间启用数据存储库挂载
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 如果您使用 iSCSI 或 NFS ，并且 ESXi 主机和存储系统的�
 
 
 [role="lead"]
-如果您使用 iSCSI 或 NFS ，并且 ESXi 主机和存储系统的子网不同，则必须修改适用于 VMware vSphere 首选项文件的 ONTAP 工具。如果不修改首选项文件，则数据存储库配置将失败，因为 Virtual Storage Console （ VSC ）无法挂载数据存储库。
+如果您使用 iSCSI 或 NFS ，并且 ESXi 主机和存储系统的子网不同，则必须修改适用于 VMware vSphere 首选项文件的 ONTAP 工具。如果不修改首选项文件、则数据存储库配置将失败、因为ONTAP工具无法挂载数据存储库。
 
 * 关于此任务 *
 

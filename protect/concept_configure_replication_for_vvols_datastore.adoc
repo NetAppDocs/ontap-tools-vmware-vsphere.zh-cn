@@ -13,6 +13,9 @@ summary: 您可以使用 ONTAP 工具为 VVOL 数据存储库配置复制。VVOL
 [role="lead"]
 您可以使用 ONTAP 工具为 VVOL 数据存储库配置复制。VVOL 复制的主要目的是，在灾难恢复期间使用 VMware Site Recovery Manager （ SRM ）保护关键虚拟机。
 
+
+NOTE: vCenter 8.0中的Site Recovery Manager (SRM)工作流失败、并显示一条错误消息。在vCenter 7.0u3版本中、vVol复制工作正常。
+
 但是，要为 ONTAP 工具配置 VVOL 复制，必须启用 VASA Provider 功能和 VVOL 复制。默认情况下， VASA Provider 在 ONTAP 工具中处于启用状态。基于阵列的复制在 FlexVol 级别执行。每个 VVOL 数据存储库都会映射到一个包含一个或多个 FlexVol 卷的存储容器。FlexVol 卷应使用 ONTAP 中的 SnapMirror 进行预配置。
 
 

@@ -104,7 +104,7 @@ NOTE: 如果要为 VVOL 复制配置 iSCSI VVOL 数据存储库，则在目标�
 
 * 注： * 在 ONTAP 中创建 FlexVol 卷时，应确保使用要在存储功能配置文件中选择的属性创建这些卷。读写和数据保护 FlexVol 卷都应具有类似的属性。
 
-创建 FlexVol 卷并在 ONTAP 中初始化 SnapMirror 后，您应在 VSC 中运行存储重新发现，以便能够查看新卷。
+在ONTAP中创建FlexVol卷并初始化SnapMirror后、您应在ONTAP工具中运行存储重新发现、以便能够查看新卷。
 
 
 

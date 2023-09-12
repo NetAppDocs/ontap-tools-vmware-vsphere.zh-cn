@@ -39,11 +39,11 @@ summary: 在自定义部署 ONTAP 工具时，您必须考虑一些限制。
 
 * 您应提供要将 ONTAP 工具注册到的 vCenter Server 实例的 IP 地址（ IPv4 或 IPv6 ）。
 +
-生成的 VSC 和 VASA 证书类型取决于您在部署期间提供的 IP 地址（ IPv4 或 IPv6 ）。在部署 ONTAP 工具时，如果尚未输入任何静态 IP 详细信息和 DHCP ，则网络将同时提供 IPv4 和 IPv6 地址。
+生成的ONTAP工具和VASA证书类型取决于您在部署期间提供的IP地址(IPv4或IPv6)。在部署 ONTAP 工具时，如果尚未输入任何静态 IP 详细信息和 DHCP ，则网络将同时提供 IPv4 和 IPv6 地址。
 
 * 用于向 vCenter Server 注册的 ONTAP 工具 IP 地址取决于在部署向导中输入的 vCenter Server IP 地址类型（ IPv4 或 IPv6 ）。
 +
-VSC 和 VASA 证书都将使用在 vCenter Server 注册期间使用的相同类型的 IP 地址生成。
+ONTAP工具和VASA证书将使用vCenter Server注册期间使用的相同IP地址类型来生成。
 
 +
 

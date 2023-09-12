@@ -82,7 +82,7 @@ NetApp Virtual Storage Console > 基于策略的管理 > 管理或 privilege.nvp
  a| 
 VSC 管理员
  a| 
-与存储功能配置文件和阈值设置相关的 VSC 和 VASA Provider 任务。
+与存储功能配置文件和阈值设置相关的ONTAP工具和VASA Provider任务。
 
 |===
 

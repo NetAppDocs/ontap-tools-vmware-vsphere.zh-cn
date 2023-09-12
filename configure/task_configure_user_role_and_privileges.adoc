@@ -45,4 +45,4 @@ summary: 您可以使用随 ONTAP 工具和 ONTAP System Manager 提供的 JSON 
 此时将添加新角色和用户，您可以在已配置的角色下查看详细权限。
 
 
-NOTE: 卸载操作不会删除 VSC 角色，但会删除 VSC 专用特权的本地化名称，并将前缀附加到 "`XXX missing privilege` " 中。之所以出现此行为，是因为 vCenter Server 不提供删除权限的选项。重新安装 VSC 或升级到较新版本的 VSC 时，所有标准 VSC 角色和 VSC 专用特权都会还原。
+NOTE: 卸载操作不会删除ONTAP工具角色、但会删除ONTAP工具专用特权的本地化名称、并将前缀附加到"`XXX missing"`。之所以出现此行为，是因为 vCenter Server 不提供删除权限的选项。在重新安装ONTAP工具或升级到更高版本的ONTAP工具时、所有标准ONTAP工具角色和ONTAP工具专用特权都会还原。

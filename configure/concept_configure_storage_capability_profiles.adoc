@@ -15,7 +15,7 @@ summary: 您可以通过适用于 ONTAP 的 VASA Provider 创建存储功能配�
 
 存储功能是一组存储系统属性，用于确定特定级别的存储性能，存储效率以及其他功能，例如与存储功能关联的存储对象的加密。
 
-对于传统数据存储库，您可以使用存储功能配置文件一致地创建具有通用属性的数据存储库，并为其分配 QoS 策略。在配置期间， VSC 会显示与存储功能配置文件匹配的集群， SVM 和聚合。您可以使用存储映射菜单中的 * 全局自动生成配置文件 * 选项从现有传统数据存储库生成存储功能配置文件。创建配置文件后，您可以使用 VSC 监控数据存储库与配置文件的合规性。
+对于传统数据存储库，您可以使用存储功能配置文件一致地创建具有通用属性的数据存储库，并为其分配 QoS 策略。配置期间、ONTAP工具会显示与存储功能配置文件匹配的集群、SVM和聚合。您可以使用存储映射菜单中的 * 全局自动生成配置文件 * 选项从现有传统数据存储库生成存储功能配置文件。创建配置文件后、您可以使用ONTAP工具监控数据存储库是否符合此配置文件。
 
 
 NOTE: 直接SVM不支持VVOV数据存储库。
@@ -24,15 +24,30 @@ NOTE: 直接SVM不支持VVOV数据存储库。
 
 与 VVOL 结合使用时，存储功能配置文件还用于设置各个虚拟机的存储性能，并将其放置在 VVOL 数据存储库中最能满足性能要求的 FlexVol 卷上。您可以为性能指定具有最小和 / 或最大 IOPS 的 QoS 策略。您可以在最初配置虚拟机时使用默认策略，也可以在日后业务需求发生变化时更改虚拟机存储策略。此版本的 ONTAP 工具的默认存储功能配置文件：
 
-* AFF_Thick
-* FAS_MAX20
-* FAS_Default
-* AFF_Default
-* AFF_Tiering
-* AFF_encrypted
-* AFF_Encrypted_Tiering
-* AFF_Encrypted_Min50
-* 白金级
+* Platinum AF_A
+* Platinum AF_C
+* Platinum_ASA_A
+* AF_NVMe_AF_A
+* AF_NVMe_AF_C
+* AIF_NVMe_ASA_A
+* AF_Thick_AF_A
+* AIF_Thick_AF_C
+* AIF_Thick_ASA_A
+* AF_Default_AF_A
+* AF_Default_AF_C
+* AIF_Default_ASA_A
+* AF_Tiering AF_A
+* AF_Tiering AF_C
+* AF_Tiering Asa_A
+* AF_加密 的AF_A
+* AF_加密 的AF_C
+* AF_加密_ASA_A
+* AF_加密_层_AF_A
+* AF_加密 的层_AF_C
+* AF_加密_层_ASA_A
+* AF_加密_Min50_AF_A
+* AF_加密_Min50_AF_C
+* AF_加密_Min50_ASA_A
 * 铜牌
 
 
@@ -51,9 +66,9 @@ NOTE: 直接SVM不支持VVOV数据存储库。
 +
 通过此功能，可以更灵活地为虚拟数据存储库上配置的同一虚拟机的不同 VMDK 分配不同的 QoS 指标。
 
-* 您可以为 FAS 和 AFF 数据存储库配置存储功能配置文件。
+* 您可以为闪存阵列混合存储、ASA和AFF数据存储库配置存储功能配置文件。
 +
-对于 FAS 和 AFF 系统，您可以将空间预留配置为厚或精简。
+对于闪存阵列混合、ASA和AFF系统、您可以将空间预留配置为厚或精简。
 
 * 您可以使用存储功能配置文件为数据存储库提供加密。
 * 从适用于 VMware vSphere 的 ONTAP 工具的早期版本升级到最新版本的 ONTAP 工具后，您将无法修改现有存储功能配置文件（在 7.2 版之前创建）。

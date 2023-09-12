@@ -2,7 +2,7 @@
 permalink: configure/task_configure_alarm_thresholds.html 
 sidebar: sidebar 
 keywords:  
-summary: 您可以使用 VSC 设置警报，以便在卷阈值和聚合阈值达到设置的限制时向您发出通知。 
+summary: 您可以使用ONTAP工具设置警报、以便在卷阈值和聚合阈值达到设置限制时向您发出通知。 
 ---
 = 配置警报阈值
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 您可以使用 VSC 设置警报，以便在卷阈值和聚合阈值达
 
 
 [role="lead"]
-您可以使用 VSC 设置警报，以便在卷阈值和聚合阈值达到设置的限制时向您发出通知。
+您可以使用ONTAP工具设置警报、以便在卷阈值和聚合阈值达到设置限制时向您发出通知。
 
 * 步骤 *
 

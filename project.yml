@@ -1,6 +1,6 @@
 ---
 settings:
-  name: ONTAP tools for VMware vSphere 9.12
+  name: ONTAP tools for VMware vSphere 9.13
   internal:
     pdf_enabled: true
   prod:
@@ -9,6 +9,9 @@ settings:
   versions:
   - name: 适用于 VMware vSphere 的 ONTAP 工具
     url: "/ontap-tools-vmware-vsphere"
+    version-number: '9.13'
+  - name: 适用于 VMware vSphere 的 ONTAP 工具
+    url: "/ontap-tools-vmware-vsphere-912"
     version-number: '9.12'
   - name: 适用于 VMware vSphere 的 ONTAP 工具
     url: "/ontap-tools-vmware-vsphere-911"
@@ -22,7 +25,7 @@ settings:
   langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
-  - title: 适用于VMware vSphere 9.12的ONTAP 工具文档
+  - title: 适用于VMware vSphere 9.13的ONTAP工具文档
     url: "/index.html"
   - title: 发行说明
     url: "/release_notes.html"
@@ -38,7 +41,7 @@ homepage:
   - title: 入门
     links:
     - title: 发行说明
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2885833
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2886292
     - title: 了解适用于 VMware vSphere 的 ONTAP 工具
       url: "/concepts/concept_virtual_storage_console_overview.html"
     - title: ONTAP 工具快速入门

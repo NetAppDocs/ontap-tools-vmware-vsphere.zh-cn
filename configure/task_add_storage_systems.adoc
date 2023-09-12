@@ -2,7 +2,7 @@
 permalink: configure/task_add_storage_systems.html 
 sidebar: sidebar 
 keywords:  
-summary: 您可以手动将存储系统添加到 Virtual Storage Console （ VSC\ ）。 
+summary: 您可以手动将存储系统添加到ONTAP工具。 
 ---
 = 添加存储系统
 :allow-uri-read: 
@@ -11,21 +11,21 @@ summary: 您可以手动将存储系统添加到 Virtual Storage Console （ VSC
 
 
 [role="lead"]
-您可以手动将存储系统添加到 Virtual Storage Console （ VSC ）。
+您可以手动将存储系统添加到ONTAP工具。
 
 
 NOTE: 如果ONTAP 集群启用了SAML、则与ONTAP 的通信将通过基本身份验证完成。
 
 * 关于此任务 *
 
-每次启动 Virtual Storage Console （ VSC ）或选择 * 重新发现全部 * 选项时， VSC 都会自动发现可用的存储系统。
+每次启动ONTAP工具或选择*重新发现全部*选项时，ONTAP工具都会自动发现可用的存储系统。
 
 
 NOTE: 直接SVM不支持VVOV数据存储库。
 
 * 步骤 *
 
-. 使用ONTAP 工具主页中的任一选项向VSC添加存储系统：
+. 使用ONTAP工具主页中的任一选项将存储系统添加到ONTAP工具：
 +
 ** 单击 * 存储系统 * > * 添加 * 。或
 ** 单击 * 概述 * > * 入门 * ，然后单击添加存储系统下的 * 添加 * 按钮。
@@ -39,7 +39,7 @@ NOTE: 直接SVM不支持VVOV数据存储库。
 您还可以使用集群或 SVM 的 IPv6 地址添加存储系统。
 
 +
-从VSC存储系统页面添加存储时、请指定存储所在的vCenter Server实例。添加存储系统对话框提供了一个下拉列表，其中列出了可用的 vCenter Server 实例。如果要向已与 vCenter Server 实例关联的数据中心添加存储，则 VSC 不会显示此选项。
+从ONTAP工具的存储系统页面添加存储时、请指定存储所在的vCenter Server实例。添加存储系统对话框提供了一个下拉列表，其中列出了可用的 vCenter Server 实例。如果要向已与vCenter Server实例关联的数据中心添加存储、则ONTAP工具不会显示此选项。
 
 +
 注意

@@ -38,11 +38,11 @@ OpenSSL dgst -SHA256 -verifyCcs-prod-OTV-SRA-TGZ.pub -Signature NetApp-ONATP-too
 NOTE: 您只能从现有9.10或更高版本原位升级到ONTAP 工具的最新版本。
 
 
-NOTE: 作为ONTAP 工具9.12升级的一部分、所有存储系统的身份验证和通信过程都会通过自动信任ONTAP 存储证书从基本身份验证更改为基于证书的身份验证。无需用户执行任何操作。
+NOTE: 从ONTAP tools 9.12升级开始、所有存储系统的身份验证和通信过程都会通过自动信任ONTAP存储证书从基本身份验证更改为基于证书的身份验证。无需用户执行任何操作。
 
 添加不带证书身份验证的存储系统受到限制。
 
-如果使用json文件添加了具有自定义创建的集群范围用户的存储系统、而您希望升级到9.12、则
+如果使用json文件添加了具有自定义创建的集群范围用户的存储系统、而您希望升级到9.12及更高版本、则
 升级之前、请在ONTAP命令行界面上运行以下命令、以便在适用于VMware vSphere的ONTAP工具与ONTAP之间启用基于证书的通信。
 
 . _security login Role create -Role <existing-role-name>-cmddirname "security login show"-access all_
@@ -50,7 +50,8 @@ NOTE: 作为ONTAP 工具9.12升级的一部分、所有存储系统的身份验�
 . _security login Role create -Role <existing-role-name>-cmddirname "security certificat install"-access all_
 
 
-如果使用json文件使用自定义创建的SVM范围用户添加存储系统、而您要升级到9.12、 然后、在升级之前、在具有集群管理员访问权限的ONTAP 命令行界面上运行以下命令、以便在适用于VMware vSphere的ONTAP 工具与ONTAP 之间启用基于证书的通信：
+如果使用json文件使用自定义创建的SVM范围用户添加存储系统、而您要升级到9.12及更高版本、则
+升级之前、在具有集群管理员访问权限的ONTAP命令行界面上运行以下命令、以便在适用于VMware vSphere的ONTAP工具与ONTAP之间启用基于证书的通信：
 
 . _security login Role create -Role <existing-role-name>-cmddirname "security certificat install"-access all -vserver <vserver-name>_
 . _security login Role create -Role <existing-role-name>-cmddirname "security certificat show"-access all -vserver <vserver-name>_
