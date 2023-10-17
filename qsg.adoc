@@ -60,13 +60,37 @@ ONTAP 工具可与VMware vCenter Server虚拟设备(vCSA)结合使用。您必�
 ONTAP 工具使用以下默认双向 TCP 端口：
 
 |===
+
+
 | * 其他要求 * | * 问题描述列 * 
 
 
-| 9083. | 启用后， VASA Provider 和 Storage Replication Adapter （ SRA ）均使用此端口与 vCenter Server 进行通信。要获取 TCP/IP 设置，也需要此端口。此端口支持捆绑包下载、Web-CLI用户界面以及从VMware到VP的控制路径通信。SRA可通过此端口号与后端SRA服务进行通信。 
+ a| 
+9083.
+ a| 
+启用后， VASA Provider 和 Storage Replication Adapter （ SRA ）均使用此端口与 vCenter Server 进行通信。要获取 TCP/IP 设置，也需要此端口。此端口用于下载VP支持包、访问Web-CLI用户界面以及控制从VMware到VP的通信路径。
 
 
-| 8143 | ONTAP工具会侦听此端口上的安全通信。 
+
+ a| 
+443.
+ a| 
+根据凭据的配置方式， VMware vCenter Server 和存储系统会侦听此端口上的安全通信。此端口用于客户端-服务器通信架构。默认情况下、安全连接会启用443端口。此客户端可以是使用REST API的任何自动化客户端、它会启动与服务器的连接、并且端点会交换数据。
+
+
+
+ a| 
+8143
+ a| 
+ONTAP工具会侦听此端口上的安全通信。此端口用于客户端-服务器通信架构。此客户端可以是使用REST API的任何自动化客户端、它会启动与服务器的连接、并且端点会交换数据。此端口可用于ONTAP工具服务和导出ONTAP工具服务器日志。register.html页面托管在此端口上。REST Swagger将在此端口上公开。
+
+
+
+ a| 
+8443
+ a| 
+此端口用于远程插件服务。
+
 |===
 最低存储和应用程序要求：
 

@@ -14,9 +14,6 @@ summary: 适用于 VMware vSphere 的 ONTAP 工具支持对 ONTAP 使用 MetroCl
 适用于 VMware vSphere 的 ONTAP 工具支持对 ONTAP 使用 MetroCluster IP 和 FC 配置的环境。大多数情况下，这种支持都是自动提供的。但是、在将MetroCluster环境与ONTAP工具和VASA Provider结合使用时、您可能会注意到一些差异。
 
 
-NOTE: SRA 不支持 MetroCluster 配置。
-
-
 
 == MetroCluster配置和ONTAP工具
 
@@ -37,3 +34,17 @@ VASA Provider 会自动支持使用 MetroCluster 配置的环境。切换在 VAS
 
 
 NOTE: 在切换后， VASA Provider 不会在二级站点上的 SVM 名称后面附加 "` -mc` " 后缀。
+
+
+
+== MetroCluster 配置和SRA
+
+Storage Replication Adapter (SRA)支持使用采用FC协议的MetroCluster配置(MCC)的环境。
+
+作为MCC和SRA配置的前提条件、所有Storage Virtual Machine (SVM)名称在MCC集群上都应是唯一的。如果名称不唯一、则会导致冲突、并且SRA工作流将失败。
+
+所需操作：
+
+. 在执行MCC切换或切回后、请确保源集群上的_SnapMirror list-目的地_命令使用新的<vserver_name>名称(SVM -MC)显示正确的输出。此命令可能需要长达30分钟才能运行。
+. 请先从SRM UI执行发现设备操作、然后再继续执行其他SRA工作流。此操作可确保SRM了解切换或切回后SVM名称发生的更改。
+

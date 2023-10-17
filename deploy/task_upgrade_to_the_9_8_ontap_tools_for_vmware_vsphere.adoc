@@ -98,12 +98,13 @@ IMPORTANT: 只有 vCenter Server 6.7 及更高版本才支持 IPv6 。
 
 [NOTE]
 ====
+* 从适用于VMware vSphere 9.12及更高版本的ONTAP工具开始、通过证书对ONTAP进行身份验证。您可以添加CA签名证书或自签名证书。请参见、 link:../configure/task_modify_storage_system.html["修改存储系统"] 有关说明，请参见。
 * 如果从 ONTAP 工具 7.0 版升级到 ONTAP 工具的最新版本，则必须先创建存储功能配置文件，然后再尝试编辑现有虚拟机存储策略，否则可能会收到错误，指出值不正确或缺失。
 * 如果从早期版本的 ONTAP 工具升级到最新版本，则会发现 `vvol.properties 文件中缺少 `vvol.rebalance.threshold` 属性。
 +
-属性的默认值设置为 85% 。
+此属性的默认值设置为85%。*在升级到已启用FIPS的最新ONTAP工具版本后、如果您的vCenter版本较旧、但不支持FIPS、则此部署仍将有效。
+但是，如果您将 vCenter 升级到支持 FIPS 的最新版本，并且您使用的是早期版本的 ONTAP 工具，则只有在 vCenter 上禁用了 FIPS 时，部署才会起作用。
 
-* 升级到已启用FIPS的最新ONTAP 工具版本、但您的vCenter版本不支持FIPS后、此部署仍将有效。但是，如果您将 vCenter 升级到支持 FIPS 的最新版本，并且您使用的是早期版本的 ONTAP 工具，则只有在 vCenter 上禁用了 FIPS 时，部署才会起作用。
 
 
 ====

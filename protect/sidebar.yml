@@ -10,6 +10,8 @@ entries:
     url: "/protect/task_configure_storage_replication_adapter_for_san_environment.html"
   - title: 为高度扩展的环境配置存储
     url: "/protect/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html"
+  - title: 在共享恢复站点配置中使用SRM配置SRA
+    url: "/protect/configure_sra_with_srm_shared_site.html"
 - title: 在 SRM 设备上配置 SRA
   url: "/protect/task_configure_sra_on_srm_appliance.html"
 - title: 更新 SRA 凭据

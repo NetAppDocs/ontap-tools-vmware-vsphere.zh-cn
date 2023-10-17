@@ -1,0 +1,18 @@
+---
+permalink: protect/configure_sra_with_srm_shared_site.html 
+sidebar: sidebar 
+keywords: SRA with SRM 
+summary: 适用于VMware vSphere的ONTAP工具支持VMware SRM共享恢复站点配置。 
+---
+= 在共享恢复站点配置中使用SRM配置SRA
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+适用于VMware vSphere的ONTAP工具支持VMware的SRM共享恢复站点配置。有关详细信息，请参见 https://docs.vmware.com/en/Site-Recovery-Manager/8.6/com.vmware.srm.install_config.doc/GUID-EBF84252-DF37-43CD-ADC8-E90F5254F315.html["共享恢复站点配置中的Site Recovery Manager"]。恢复站点上的Site Recovery Manager Server实例连接到相同的vCenter Server实例。
+
+在SRM共享恢复站点配置中、每个SRM服务器都需要具有一个专用的SRA实例(SRM和SRA之间的1：1关系)。将VCF模式下的OTV配置为每个SRM服务器的专用SRA实例。此外、您还可以部署未启用SRA的ONTAP工具设备、此设备已向vCenter注册、并用于非SRA任务、例如数据存储库配置。
+
+。 https://kb.netapp.com/mgmt/OTV/SRA/Storage_Replication_Adapter%3A_How_to_configure_SRA_in_a_SRM_Shared_Recovery_Site["如何在SRM共享恢复站点中配置SRA"] 知识库文章详细介绍了用于设置SRA以支持SRM共享恢复站点配置的操作步骤。

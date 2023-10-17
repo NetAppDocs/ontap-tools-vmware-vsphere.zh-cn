@@ -15,9 +15,16 @@ summary: 您可以使用随 ONTAP 工具和 ONTAP System Manager 提供的 JSON 
 
 * 您需要的内容 *
 
-* 您应已使用 https://{virtual_appliance_IP}:9083/vsc/config/VSC_ONTAP_User_Privileges.zip 从 ONTAP 工具下载 ONTAP 权限文件。
+* 您应已按照以下步骤从ONTAP工具下载ONTAP权限文件：
++
+** 导航到 https://{virtual_appliance_IP}:9083/vsc/config/[]
+** 下载文件VSC_ONTAP_User_Privileges.zip
+** 解压缩下载的VSC_ONTAP_User_Privileges.zip文件
+** 访问System Manager
 +
 请参见知识库文章- https://kb.netapp.com/mgmt/OTV/Virtual_Storage_Console/Virtual_Storage_Console%3A_How_to_retrieve_the_JSON_file_to_configure_user_roles_and_privileges["Virtual Storage Console：如何检索JSON文件以配置用户角色和权限"] 有关如何从WebCLI下载ONTAP权限文件的说明。
+
+
 
 * 您应已配置 ONTAP 9.8P1 或更高版本的存储。
 * 您应已使用存储系统的管理员权限登录。

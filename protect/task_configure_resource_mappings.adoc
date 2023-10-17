@@ -25,7 +25,7 @@ NOTE: 在 Site Recovery Manager （ SRM ）中，资源可以是资源池， ESX
 . 登录到 vCenter Server ，然后单击 * 站点恢复 * > * 站点 * 。
 . 选择受保护站点，然后单击 * 管理 * 。
 . 在管理选项卡中，选择 * 资源映射 * 。
-. 单击 image:../media/new_resource_mappings.gif[""] 图标以创建新的资源映射。
+. 单击 image:../media/new_resource_mappings.gif["地球图标"] 图标以创建新的资源映射。
 +
 此时将显示创建资源映射向导。
 

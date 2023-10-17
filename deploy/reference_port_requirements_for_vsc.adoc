@@ -44,6 +44,21 @@ ONTAP 工具使用以下默认双向 TCP 端口：
  a| 
 ONTAP工具会侦听此端口上的安全通信。此端口用于客户端-服务器通信架构。此客户端可以是使用REST API的任何自动化客户端、它会启动与服务器的连接、并且端点会交换数据。此端口可用于ONTAP工具服务和导出ONTAP工具服务器日志。register.html页面托管在此端口上。REST Swagger将在此端口上公开。
 
+
+
+ a| 
+8443
+ a| 
+此端口用于远程插件服务。
+
+
+
+ a| 
+7.
+ a| 
+ONTAP工具会向ONTAP发送回应请求以验证可访问性、并且只有在添加存储时才需要
+系统、可稍后禁用。
+
 |===
 
 NOTE: 在部署 ONTAP 工具之前，您应已启用 Internet 控制消息协议（ Internet Control Message Protocol ， ICMP ）。
