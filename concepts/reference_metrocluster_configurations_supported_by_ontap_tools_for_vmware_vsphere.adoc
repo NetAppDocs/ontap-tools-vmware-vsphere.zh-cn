@@ -39,9 +39,9 @@ NOTE: 在切换后， VASA Provider 不会在二级站点上的 SVM 名称后面
 
 == MetroCluster 配置和SRA
 
-Storage Replication Adapter (SRA)支持使用采用FC协议的MetroCluster配置(MCC)的环境。
+Storage Replication Adapter (SRA)支持使用采用NFS、iSCSI和FCP协议的MetroCluster配置(MCC)的环境。
 
-作为MCC和SRA配置的前提条件、所有Storage Virtual Machine (SVM)名称在MCC集群上都应是唯一的。如果名称不唯一、则会导致冲突、并且SRA工作流将失败。
+作为MCC SRA配置的前提条件、所有Storage Virtual Machine (SVM)名称在MCC集群上都应是唯一的。如果名称不唯一、则会导致冲突、并且SRA工作流将失败。
 
 所需操作：
 

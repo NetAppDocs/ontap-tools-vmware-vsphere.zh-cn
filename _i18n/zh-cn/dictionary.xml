@@ -2128,8 +2128,6 @@
   <block id="b1caae1e6a180ff384d708f6f5f51304" category="admonition">在ONTAP工具维护控制台中更改管理员密码后、如果在ONTAP工具上启用并配置了SRA、请执行中提供的*更新SRA凭据*操作步骤 <block ref="1e7a640d1bcd6b5c87262f4ec3ea69d7" category="inline-link-macro-rx"></block> 部分。如果未能遵循这些说明、则会在SRM上报告错误。</block>
   <block id="bdc5a4ba1115f3f724e1f81e7f41eeef" category="list-text">右键单击该数据存储库并选择* tools*&gt;*调整非NetApp ONTAP数据存储库大小*。</block>
   <block id="2d7ee85ca6eba61e2ebc56fcd9749a22" category="section-title">MetroCluster 配置和SRA</block>
-  <block id="566082b04c4b3f59fa2abd9407221d29" category="paragraph">Storage Replication Adapter (SRA)支持使用采用FC协议的MetroCluster配置(MCC)的环境。</block>
-  <block id="dd316d5ffd2f84622629d92855047e4d" category="paragraph">作为MCC和SRA配置的前提条件、所有Storage Virtual Machine (SVM)名称在MCC集群上都应是唯一的。如果名称不唯一、则会导致冲突、并且SRA工作流将失败。</block>
   <block id="a3a5ab624299236efd1aa00751d3e9d9" category="paragraph">所需操作：</block>
   <block id="9a5bef2e6baedf8812a9649b615baf1a" category="list-text">在执行MCC切换或切回后、请确保源集群上的_SnapMirror list-目的地_命令使用新的&lt;vserver_name&gt;名称(SVM -MC)显示正确的输出。此命令可能需要长达30分钟才能运行。</block>
   <block id="44a62aa72367cca25b9e3f92da55ace0" category="list-text">请先从SRM UI执行发现设备操作、然后再继续执行其他SRA工作流。此操作可确保SRM了解切换或切回后SVM名称发生的更改。</block>
@@ -2154,4 +2152,6 @@
   <block id="c65d22128372567906e7fa3a79c5aa8c" category="list-text">从适用于VMware vSphere 9.12及更高版本的ONTAP工具开始、通过证书对ONTAP进行身份验证。您可以添加CA签名证书或自签名证书。请参见、 <block ref="6424e4a6ccc5b08f64694eae7a99760f" category="inline-link-macro-rx"></block> 有关说明，请参见。</block>
   <block id="ce1bc9deb1a63ccda9fedbd2789b5462" category="paragraph">此属性的默认值设置为85%。*在升级到已启用FIPS的最新ONTAP工具版本后、如果您的vCenter版本较旧、但不支持FIPS、则此部署仍将有效。
 但是，如果您将 vCenter 升级到支持 FIPS 的最新版本，并且您使用的是早期版本的 ONTAP 工具，则只有在 vCenter 上禁用了 FIPS 时，部署才会起作用。</block>
+  <block id="700f785cc3b0c94782ea099d30974628" category="paragraph">Storage Replication Adapter (SRA)支持使用采用NFS、iSCSI和FCP协议的MetroCluster配置(MCC)的环境。</block>
+  <block id="b0cf503432f798961e23d246f3541857" category="paragraph">作为MCC SRA配置的前提条件、所有Storage Virtual Machine (SVM)名称在MCC集群上都应是唯一的。如果名称不唯一、则会导致冲突、并且SRA工作流将失败。</block>
 </blocks>
