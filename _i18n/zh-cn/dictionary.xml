@@ -571,13 +571,6 @@
   <block id="fdb7cb8f657426e7c409bfd6d1a36ce4" category="paragraph">IPv6</block>
   <block id="84352d61ae57e04f51d94168326532bc" category="list-text">在选定 SVM 中使用 IPv6 数据 LIF 进行配置。</block>
   <block id="abee77fec5734e47dadcf71227420618" category="list-text">如果 SVM 没有 IPv6 数据 LIF ，则会通过 IPv4 数据 LIF 进行配置（如果此数据 LIF 在 SVM 中可用）。</block>
-  <block id="5385433ee01cd2037e0f3275521224ae" category="summary">您可以使用适用于 VMware vSphere 的 ONTAP ® 工具为 vCenter Server 中的存储系统设置默认凭据。</block>
-  <block id="3cabeb9f2dfaeed94f3553f24bb6697f" category="doc">设置存储系统的默认凭据</block>
-  <block id="79709e46ab199855d00cbacbb6cc6473" category="paragraph">您必须已选择要用于创建默认凭据的 vCenter Server 。</block>
-  <block id="975c4484ae2524f3de4c1fe48b561c9e" category="list-text">在 ONTAP 工具的主页页面上，单击 * 设置 * &gt; * 管理设置 * &gt; * 配置存储系统的默认凭据 * 。</block>
-  <block id="4753a60fdd29d20db04cca9e9d56fba7" category="list-text">在存储系统默认凭据对话框中，输入存储系统的用户名和密码。</block>
-  <block id="b241564d6daa7ecf800e2fce4f75c26d" category="paragraph">存储控制器凭据会根据用户名和密码对在 ONTAP 中分配。存储控制器凭据可以是管理员帐户，也可以是使用基于角色的访问控制（ Role-Based Access Control ， RBAC ）的自定义帐户。</block>
-  <block id="5d647a0e64f2ce6656770c3697c2e747" category="list-text">单击 * 确定 * 以保存默认凭据。</block>
   <block id="cee064a38177c0438cb03601edf062b9" category="summary">您可以使用随 ONTAP 工具和 ONTAP System Manager 提供的 JSON 文件配置新的用户角色来管理存储系统。</block>
   <block id="89a5a7f6d403e822b0f7c5a54be2c63c" category="list-text">您应已使用存储系统的管理员权限登录。</block>
   <block id="9f3b5f112da0a41ef067cf24d498af34" category="list-text">解压缩下载的 ` \https://{virtual_appliance_IP}:9083/vsc/config/VSC_ONTAP_User_Privileges.zip` 文件。</block>
@@ -829,7 +822,6 @@
   <block id="53d2ec82e60f2fa8563f76e1038a66bc" category="list-text">此时间将到期。</block>
   <block id="3d7fb394c85bb4d38079573b5a7dd241" category="paragraph">登录会话仅在第二天午夜之前有效。</block>
   <block id="89d6409d2df201f4f1ab3e5173030ee0" category="list-text">您再次使用 SSH 以 diag 用户身份登录。</block>
-  <block id="ae8542fbf5a656049ee2f2fc888a8431" category="list-text">从 vCenter Server 中，打开一个 VASA Provider 控制台。</block>
   <block id="87c93b9816d806cccc58f0b610872eda" category="list-text">输入 `4` 以选择支持和诊断。</block>
   <block id="4a046628c353b3aadc7da0fe8feb02e5" category="list-text">输入 `3` 以选择启用远程诊断访问。</block>
   <block id="950be4668cb2fcdd834d276e66e90c4d" category="list-text">在确认对话框中输入 `y` 以启用远程诊断访问。</block>
@@ -1332,7 +1324,6 @@
   <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">概念</block>
   <block id="bba5d660126dffb643c6c3cc6300704d" category="sidebar">用于灾难恢复的 Storage Replication Adapter</block>
   <block id="99da96b7c57595264a2d5f3ba294a0af" category="sidebar">基于角色的访问控制</block>
-  <block id="96ab5f4eecc9217c7e8b30303647f507" category="sidebar">ONTAP 工具基于角色的访问控制概述</block>
   <block id="f15e14b44728511393b49d485af9e88b" category="sidebar">如何为 ONTAP 工具配置基于角色的访问控制</block>
   <block id="a7c1f19a0afcdde0b988ba73af98d366" category="sidebar">配置 ONTAP 工具</block>
   <block id="d323122d1d04a198d3dd6ef4bae01b87" category="sidebar">配置 ESXi 设置</block>
@@ -1359,7 +1350,6 @@
   <block id="3d7d171ecad1cba0c2d8d707b648b023" category="sidebar">配置受保护站点和恢复站点</block>
   <block id="6956cfc9382ccb41c8ac57f99255b409" category="sidebar">验证复制的存储系统</block>
   <block id="77508822eda5d675bed0a20bfe5cf0ff" category="paragraph">`无法与服务器通信。`</block>
-  <block id="c741ed49a5385413c6168a727f99799f" category="paragraph">您可以使用适用于 VMware vSphere 的 ONTAP 工具为 vCenter Server 中的存储系统设置默认凭据。</block>
   <block id="32767fdce160df9addbb5084b54551c6" category="paragraph">请参见 * 在不同子网之间启用数据存储库挂载 * 一节。</block>
   <block id="c6f86e205896dda442288a84af6c1576" category="paragraph"><block ref="c6f86e205896dda442288a84af6c1576" category="inline-link-macro-rx"></block></block>
   <block id="dcf31c875641db4a234eb4a24983f4eb" category="paragraph">请参见在不同子网之间启用数据存储库挂载一节。</block>
@@ -1685,7 +1675,6 @@
   <block id="70443b52a86c20ad89a6e02da197f589" category="list-text">对具有的所有存储控制器重复步骤4和5<block ref="b7aa7656b58c3a7862a86f5f8cd10336" prefix=" " category="inline-code"></block> 状态。</block>
   <block id="b5d3f62910840da363dc00c277bb04bb" category="paragraph">'无法继续。交叉引用控制器上的内核 IP 地址和地址时未找到 IP 地址。找不到与这些主机的NFS挂载卷匹配的网络。'</block>
   <block id="dd21e95246bd9b59a210f7335f293a0f" category="paragraph"><block ref="dd21e95246bd9b59a210f7335f293a0f" category="inline-link-macro-rx"></block></block>
-  <block id="2384e9746fd49297b20eb475ef6c5bce" category="paragraph">请参见 <block ref="e3114922664a9d29184df9e8de358b9e" category="inline-link-macro-rx"></block>部分。</block>
   <block id="fdd13b82fb6d2a4ce51b8d8b17c621f9" category="paragraph">右键单击某个集群、然后选择*NetApp ONTAP tools*&gt;*配置数据存储库*。</block>
   <block id="c3cee4f156cedf6cebe2ab86a8a41d7c" category="paragraph">右键单击某个主机，然后选择*NetApp ONTAP tools*&gt;*配置数据存储库*。</block>
   <block id="d1866eae9a3efecf8de082c109301663" category="paragraph">如果启用了vvol提供程序功能、则可以配置vvol数据存储库。请参见、 <block ref="b6e18cc642479d1ec82545b2ffe73f70" category="inline-link-macro-rx"></block> 了解详细信息。此VMO数据存储库支持NFS、iSCSI、FC/FEoE和NVMe/FC协议。</block>
@@ -1764,7 +1753,6 @@
   <block id="f3f47521549e89ed7cb7b073ea8a7d66" category="list-text">输入 ...<block ref="1679091c5a880faf6fb5e6087eb1b2dc" prefix=" " category="inline-code"></block> 选择*更改管理员用户密码*。</block>
   <block id="4fe6063d6d8500b42fd9878de1689157" category="list-text">请输入一个密码、此密码应至少包含8个字符、最多包含30个字符。密码必须至少包含一个大写、一个小写、一个数字和一个特殊字符。重置密码75天后、系统将显示密码到期警告。新密码不能与上次使用的密码相同。</block>
   <block id="2223c21ac625f0e9df4fbd3476db44ed" category="paragraph">如果不遵循密码建议、则维护控制台选项仅限于更改密码。密码过期后、系统将提示您更改密码。</block>
-  <block id="c38b8f955a1f067bf2f51d940354b04d" category="paragraph">请参见 <block ref="e3114922664a9d29184df9e8de358b9e" category="inline-link-macro-rx"></block>部分ONTAP。</block>
   <block id="9566e142d595702f8d77be59e617fade" category="list-text">日志完整性报告</block>
   <block id="e5c7f658fde95383afe704dfbf972436" category="list-text">数据存储库类型：NFS和VMFS</block>
   <block id="ac48ff6b348f6f42e4ba7777328ae401" category="paragraph">您可以查看，组织和导出报告。"Virtual vols数据存储库和虚拟机"报告的数据由ONTAP 提供。</block>
@@ -1901,7 +1889,6 @@
   <block id="f09ce17953135a26f2f12c89bb1b9a79" category="paragraph">您应使用已部署 ONTAP 工具的 * 摘要 * 选项卡访问维护控制台。单击时  <block ref="80abd5c70dec820fc31b07b6e3d6acac" category="inline-image-macro-rx" type="image"></block>，此时维护控制台将启动。</block>
   <block id="ad6409a6647b6007d0c59236c9a9526d" category="inline-image-macro">地球图标</block>
   <block id="de0b37295bc569e05978d71253c5fc03" category="list-text">单击 <block ref="10af7a3d6b71a29635365f6da600da8a" category="inline-image-macro-rx" type="image"></block> 图标以创建新的网络映射。</block>
-  <block id="a86a5be1650520ca8fdf9ff8bc76967f" category="list-text">将现有ONTAP工具设备升级到最新版本。</block>
   <block id="ceafa9243433e49b5a0576a4ed1cd4b5" category="list-text">将基于Windows的Storage Replication Adapter迁移到基于设备的SRA。</block>
   <block id="81f65208775e1359f20f81e36c085f41" category="list-text">将Windows SRM数据迁移到SRM设备。</block>
   <block id="008e64a5de1742c87435cc61c7288a46" category="image-alt">新用户和现有用户工作流</block>
@@ -1927,9 +1914,6 @@
   <block id="cd407a7dc68ec4931863b0a4b9511c12" category="summary">适用于VMware vSphere的ONTAP工具提供了一个选项、可以将SRA功能与ONTAP工具结合使用来配置灾难恢复。</block>
   <block id="75d26898739bfbd118ceb40ee609588b" category="list-text">使用以下URL访问VMware SRM设备管理界面：<block ref="65934cfc97d2d08e8dbabc6019658190" category="inline-link-rx"></block>，然后转至VMware SRM设备管理界面中的存储复制适配器。</block>
   <block id="fcfc4d0541fcfaef918a6982404c79f6" category="paragraph">如果您希望ONTAP工具在调整VMFS数据存储库的大小时调整所属卷的大小、则在最初配置VMFS数据存储库时、不应使用存储属性部分下的*使用现有卷*选项、而应让它自动为每个数据存储库创建一个新卷。</block>
-  <block id="0660b9689bf2b0fa8177b2047a37e93b" category="paragraph">如果您为存储系统设置了默认凭据、ONTAP工具将使用这些凭据登录到ONTAP工具刚刚发现的存储系统。如果默认凭据不起作用，您必须手动登录到存储系统。ONTAP工具和SRA支持在集群级别或SVM级别添加存储系统凭据。但是， VASA Provider 只能使用集群级别的凭据。</block>
-  <block id="4dc8b39d7d7b6d7c31dfedf281c6ce67" category="paragraph">您不能使用ONTAP工具更改与存储控制器的用户名和密码对关联的角色。要修改或创建新的 ONTAP 用户角色以用于 ONTAP 工具，您可以使用 System Manager 。</block>
-  <block id="abfa917bee29e9d6901145eb371db3c3" category="paragraph">由于存储系统报告而更新了存储系统凭据<block ref="b7aa7656b58c3a7862a86f5f8cd10336" prefix=" " category="inline-code"></block> 状态时，应单击“存储系统”页面上的“重新发现全部”选项。执行此操作时、ONTAP工具会尝试使用新凭据连接到存储系统。</block>
   <block id="51f5ef577515311d873f15616c367953" category="summary">如果VASA Provider (VP)虚拟设备丢失、无法访问或无法正常运行、您可能需要执行VP灾难恢复。 </block>
   <block id="b8d4b381d817836a8a1f3e5c51418019" category="doc">VASA Provider灾难恢复</block>
   <block id="6799b6ec743f9159edf3b43790210a11" category="inline-link">如何执行VASA Provider灾难恢复—解决方案指南</block>
@@ -2154,4 +2138,8 @@
 但是，如果您将 vCenter 升级到支持 FIPS 的最新版本，并且您使用的是早期版本的 ONTAP 工具，则只有在 vCenter 上禁用了 FIPS 时，部署才会起作用。</block>
   <block id="700f785cc3b0c94782ea099d30974628" category="paragraph">Storage Replication Adapter (SRA)支持使用采用NFS、iSCSI和FCP协议的MetroCluster配置(MCC)的环境。</block>
   <block id="b0cf503432f798961e23d246f3541857" category="paragraph">作为MCC SRA配置的前提条件、所有Storage Virtual Machine (SVM)名称在MCC集群上都应是唯一的。如果名称不唯一、则会导致冲突、并且SRA工作流将失败。</block>
+  <block id="ebfe914a124eb1ec0cc1d8f6d6c420cb" category="list-text">NetApp NFS VAAI插件2.0.1 (内部版本16)支持vSphere 8.x。</block>
+  <block id="142666c1fbe08e639361aca9fb6d3d5a" category="list-text">将现有ONTAP Tools设备升级到最新版本。</block>
+  <block id="7ffdc51b9c93dfaa755052457f971d9e" category="list-text">从vCenter Server中、打开一个ONTAP Tools设备虚拟机控制台。</block>
+  <block id="d0119a1425315c47822975d16de6de70" category="sidebar">ONTAP工具基于角色的访问控制概述</block>
 </blocks>
