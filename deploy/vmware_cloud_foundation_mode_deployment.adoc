@@ -13,7 +13,7 @@ summary: 适用于 VMware vSphere 的 ONTAP 工具可以部署在 VMware Cloud �
 [role="lead"]
 适用于 VMware vSphere 的 ONTAP 工具可以部署在 VMware Cloud Foundation （ VCF ）环境中。VCF 部署的主要目标是在云设置中使用 ONTAP 工具，并在不使用 vCenter Server 的情况下创建容器。
 
-通过 VCF 模式，您无需 vCenter Server 即可为存储创建容器。在 VCF 模式下部署 ONTAP 工具后， VASA Provider 默认处于启用状态。部署完成后，您可以使用 REST API 添加存储系统并创建容器。下面的文章提供了在启用VCF后向ONTAP工具添加存储的操作步骤、 https://kb.netapp.com/mgmt/OTV/SRA/Storage_Replication_Adapter%3A_How_to_configure_SRA_in_a_SRM_Shared_Recovery_Site["通过Swagger-UI将存储添加到ONTAP工具"]。
+通过 VCF 模式，您无需 vCenter Server 即可为存储创建容器。在 VCF 模式下部署 ONTAP 工具后， VASA Provider 默认处于启用状态。部署完成后、您可以添加、删除或修改存储系统、以及使用REST API创建容器。下面的文章提供了在启用VCF后向ONTAP工具添加存储的操作步骤、 https://kb.netapp.com/mgmt/OTV/SRA/Storage_Replication_Adapter%3A_How_to_configure_SRA_in_a_SRM_Shared_Recovery_Site["通过Swagger-UI将存储添加到ONTAP工具"]。
 
 引入了一个新的 API ，用于生成用于对 API 调用进行身份验证的 _appliation-api-token_ 。对某些现有 API 进行了修改，以包括 _appliation-api-token_ 标头。从ONTAP工具9.12版本开始、swagger不支持1.0 API。以前在1.0上运行的指针将移至2.0或3.0 API。
 
@@ -78,6 +78,28 @@ NOTE: 从适用于VMware vSphere 9.13的ONTAP工具中、2.0存储功能配置�
 发布
  a| 
 已修改
+ a| 
+存储系统
+
+
+
+ a| 
+/3.0/storage/Clusters
+ a| 
+删除
+ a| 
+新增
+ a| 
+存储系统
+
+
+
+ a| 
+/3.0/storage/Clusters
+ a| 
+PUT
+ a| 
+新增
  a| 
 存储系统
 
@@ -177,6 +199,15 @@ Platinum_ASA_A
 
 
  a| 
+Platinum_ASA_C
+ a| 
+两者
+ a| 
+两者
+
+
+
+ a| 
 AF_NVMe_AF_A
  a| 
 两者
@@ -196,6 +227,15 @@ AF_NVMe_AF_C
 
  a| 
 AIF_NVMe_ASA_A
+ a| 
+两者
+ a| 
+两者
+
+
+
+ a| 
+AIF_NVMe_ASA_C
  a| 
 两者
  a| 
@@ -231,6 +271,15 @@ AIF_Thick_ASA_A
 
 
  a| 
+AIF_Thick_ASA_C
+ a| 
+两者
+ a| 
+两者
+
+
+
+ a| 
 AF_Default_AF_A
  a| 
 背景
@@ -250,6 +299,15 @@ AF_Default_AF_C
 
  a| 
 AIF_Default_ASA_A
+ a| 
+背景
+ a| 
+无
+
+
+
+ a| 
+AIF_Default_ASA_C
  a| 
 背景
  a| 
@@ -285,6 +343,15 @@ AF_Tiering Asa_A
 
 
  a| 
+AIF_Tiering Asa_C
+ a| 
+两者
+ a| 
+两者
+
+
+
+ a| 
 AF_加密 的AF_A
  a| 
 两者
@@ -304,6 +371,15 @@ AF_加密 的AF_C
 
  a| 
 AF_加密_ASA_A
+ a| 
+两者
+ a| 
+两者
+
+
+
+ a| 
+AF_加密_ASA_C
  a| 
 两者
  a| 
@@ -339,6 +415,15 @@ AF_加密_层_ASA_A
 
 
  a| 
+AF_加密 的层_ASA_C
+ a| 
+两者
+ a| 
+两者
+
+
+
+ a| 
 AF_加密_Min50_AF_A
  a| 
 两者
@@ -358,6 +443,15 @@ AF_加密_Min50_AF_C
 
  a| 
 AF_加密_Min50_ASA_A
+ a| 
+两者
+ a| 
+两者
+
+
+
+ a| 
+AF_加密_Min50_ASA_C
  a| 
 两者
  a| 

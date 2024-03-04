@@ -27,27 +27,35 @@ NOTE: 直接SVM不支持VVOV数据存储库。
 * Platinum AF_A
 * Platinum AF_C
 * Platinum_ASA_A
+* Platinum_ASA_C
 * AF_NVMe_AF_A
 * AF_NVMe_AF_C
 * AIF_NVMe_ASA_A
+* AIF_NVMe_ASA_C
 * AF_Thick_AF_A
 * AIF_Thick_AF_C
 * AIF_Thick_ASA_A
+* AIF_Thick_ASA_C
 * AF_Default_AF_A
 * AF_Default_AF_C
 * AIF_Default_ASA_A
+* AIF_Default_ASA_C
 * AF_Tiering AF_A
 * AF_Tiering AF_C
 * AF_Tiering Asa_A
+* AIF_Tiering Asa_C
 * AF_加密 的AF_A
 * AF_加密 的AF_C
 * AF_加密_ASA_A
+* AF_加密_ASA_C
 * AF_加密_层_AF_A
 * AF_加密 的层_AF_C
 * AF_加密_层_ASA_A
+* AF_加密 的层_ASA_C
 * AF_加密_Min50_AF_A
 * AF_加密_Min50_AF_C
 * AF_加密_Min50_ASA_A
+* AF_加密_Min50_ASA_C
 * 铜牌
 
 
@@ -76,5 +84,4 @@ NOTE: 直接SVM不支持VVOV数据存储库。
 保留原有存储功能配置文件以实现向后兼容性。如果未使用默认模板，则在升级到最新版本的 ONTAP 工具期间，系统会覆盖现有模板，以反映与存储功能配置文件性能相关的新 QoS 指标和分层策略。
 
 * 您不能修改或使用原有存储功能配置文件来配置新的虚拟数据存储库或 VM 存储策略。
-* 您必须对所有新数据存储库使用新的存储功能配置文件。
 
