@@ -18,7 +18,7 @@ NOTE: 建议您在执行VASACleanup之前删除所有VVOs数据存储库。
 
 * 步骤 *
 
-. 通过进入取消注册此插件 https://OTV_IP:8143/Register.html[]
+. 通过进入取消注册此插件 `\https://OTV_IP:8143/Register.html`
 . 确认此插件在vCenter上不再可用。
 . 关闭适用于VMware vSphere VM的ONTAP 工具
 . 删除适用于VMware vSphere VM的ONTAP 工具

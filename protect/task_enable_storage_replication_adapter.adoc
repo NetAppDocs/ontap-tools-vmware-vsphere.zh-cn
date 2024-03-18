@@ -40,7 +40,7 @@ https://docs.vmware.com/en/Site-Recovery-Manager/8.2/com.vmware.srm.install_conf
 * 对于 SRM 设备 *
 
 +
-.. 使用以下URL访问VMware SRM设备管理界面： https://:<srm_ip>:5480[]，然后转至VMware SRM设备管理界面中的存储复制适配器。
+.. 使用以下URL访问VMware SRM设备管理界面：\https：//：<srm_ip>：5480、然后转到VMware SRM设备管理界面中的存储复制适配器。
 .. 单击 * 新建适配器 * 。
 .. 将 SRA 插件的 _.tar.gz_ 安装程序上传到 SRM 。
 .. 重新扫描适配器以验证是否已在 "SRM Storage Replication Adapter" 页面中更新详细信息。

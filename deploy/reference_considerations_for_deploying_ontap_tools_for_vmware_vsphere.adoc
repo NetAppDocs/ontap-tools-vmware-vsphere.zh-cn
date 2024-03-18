@@ -88,7 +88,7 @@ link:../configure/task_regenerate_an_ssl_certificate_for_vsc.html["为 Virtual S
  a| 
 基于角色的访问控制（ RBAC ）的要求
  a| 
-ONTAP工具支持vCenter Server RBAC和ONTAP RBAC。用于向vCenter Server注册ONTAP工具的帐户 (`https://<appliance_ip>:8143/Register.html`)必须是vCenter Server管理员(已分配给vCenter Server管理员或管理员角色)。如果您计划以管理员身份运行ONTAP工具、则必须具有执行所有任务所需的所有权限和特权。
+ONTAP工具支持vCenter Server RBAC和ONTAP RBAC。用于向vCenter Server注册ONTAP工具的帐户 (`\https://<appliance_ip>:8143/Register.html`)必须是vCenter Server管理员(已分配给vCenter Server管理员或管理员角色)。如果您计划以管理员身份运行ONTAP工具、则必须具有执行所有任务所需的所有权限和特权。
 
 如果公司要求您限制对vSphere对象的访问、您可以为用户创建标准ONTAP工具角色并将其分配给用户、以满足vCenter Server的要求。
 
@@ -139,7 +139,7 @@ ONTAP 版本
 
 您可以在部署 ONTAP 工具时设置 vCenter Server 的管理员凭据。
 
-如果 vCenter Server 的密码发生变化，则可以使用以下 URL 更新管理员的密码： `` \https://<IP>:8143/Register.html` ，其中 IP 地址是您在部署期间提供的 ONTAP 工具的 IP 地址。
+如果vCenter Server的密码发生更改、则可以使用以下URL更新管理员的密码： `\https://<IP>:8143/Register.html` 其中、IP地址是您在部署期间提供的ONTAP 工具的IP地址。
 
 
 

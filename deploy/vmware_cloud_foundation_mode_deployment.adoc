@@ -13,7 +13,12 @@ summary: 适用于 VMware vSphere 的 ONTAP 工具可以部署在 VMware Cloud �
 [role="lead"]
 适用于 VMware vSphere 的 ONTAP 工具可以部署在 VMware Cloud Foundation （ VCF ）环境中。VCF 部署的主要目标是在云设置中使用 ONTAP 工具，并在不使用 vCenter Server 的情况下创建容器。
 
-通过 VCF 模式，您无需 vCenter Server 即可为存储创建容器。在 VCF 模式下部署 ONTAP 工具后， VASA Provider 默认处于启用状态。部署完成后、您可以添加、删除或修改存储系统、以及使用REST API创建容器。下面的文章提供了在启用VCF后向ONTAP工具添加存储的操作步骤、 https://kb.netapp.com/mgmt/OTV/SRA/Storage_Replication_Adapter%3A_How_to_configure_SRA_in_a_SRM_Shared_Recovery_Site["通过Swagger-UI将存储添加到ONTAP工具"]。
+通过 VCF 模式，您无需 vCenter Server 即可为存储创建容器。在 VCF 模式下部署 ONTAP 工具后， VASA Provider 默认处于启用状态。部署完成后、您可以添加、删除或修改存储系统、以及使用REST API创建容器。
+
+
+NOTE: 从适用于VMware vSphere 9.13P1的ONTAP工具版本开始、支持修改和删除存储系统。
+
+下面的文章提供了在启用VCF后向ONTAP工具添加存储的操作步骤、 https://kb.netapp.com/mgmt/OTV/SRA/Storage_Replication_Adapter%3A_How_to_configure_SRA_in_a_SRM_Shared_Recovery_Site["通过Swagger-UI将存储添加到ONTAP工具"]。
 
 引入了一个新的 API ，用于生成用于对 API 调用进行身份验证的 _appliation-api-token_ 。对某些现有 API 进行了修改，以包括 _appliation-api-token_ 标头。从ONTAP工具9.12版本开始、swagger不支持1.0 API。以前在1.0上运行的指针将移至2.0或3.0 API。
 
@@ -469,7 +474,7 @@ AF_加密_Min50_ASA_C
 |===
 您可以使用 ONTAP 修补程序 API 设置适当的值。
 
-`https://<machine_IP>/api/storage/volumes/{uuid}`
+`\https://<machine_IP>/api/storage/volumes/{uuid}`
 
 ONTAP 工具的 VCF 部署仅允许容器创建工作流。如果要使用其他工作流、例如配置数据存储库、创建存储功能配置文件或灾难恢复、则应使用Swagger页面向vCenter Server注册ONTAP 工具。从ONTAP tools 9.12开始、ONTAP 工具向vCenter注册将通过Swagger页面进行。ONTAP 工具在VCF模式下的限制是、在注册插件之前、无法为SRA配置灾难恢复。如果在不使用VCF模式的情况下部署ONTAP 工具、则会自动进行注册。
 

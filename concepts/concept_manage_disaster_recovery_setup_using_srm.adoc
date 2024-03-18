@@ -32,7 +32,7 @@ NOTE: VMware Site Recovery Manager （ SRM ）不使用 SRA 管理 VVOL 数据�
 按照以下步骤启用quick_resync标志：
 
 .步骤
-. 登录到控制面板、网址为_https：//CLI：9083_、然后单击<IP address> Based命令行界面。
+. 登录到控制面板 `/https://<IP address>:9083` 然后单击基于Web的命令行界面。
 . 运行命令 `vp updateconfig -key=snapmirror.quick.resync.enabled -value=true`。
 . 运行命令 `vp reloadconfig`。
 

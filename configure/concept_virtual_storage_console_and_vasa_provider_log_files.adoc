@@ -34,4 +34,4 @@ summary: 遇到错误时，您可以检查 /opt/netapp/vscserver/log 目录和 /
 * VASA Provider 服务器： "vvolvp.log" ， "error.log" 和 "netapp.log"
 
 
-此外， VASA Provider Web 命令行界面（ CLI ）页面还包含已发出的 API 调用，返回的错误以及几个与性能相关的计数器。Web 命令行界面页面位于 'https://<IP_address_or_hostname>:9083/stats'[]。
+此外， VASA Provider Web 命令行界面（ CLI ）页面还包含已发出的 API 调用，返回的错误以及几个与性能相关的计数器。Web 命令行界面页面位于 `\https://<IP_address_or_hostname>:9083/stats`。
