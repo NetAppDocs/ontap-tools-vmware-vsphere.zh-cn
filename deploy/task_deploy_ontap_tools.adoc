@@ -68,7 +68,9 @@ URL
 |===
 . 输入详细信息以自定义部署向导。
 +
-（可选）在配置 vCenter 或启用 VCF 部分中，选中 * 启用 VMware Cloud Foundation （ VCF ） * 复选框，并为 ONTAP 工具凭据提供密码。您不需要提供 IP 地址，但必须提供密码。有关完整的详细信息，请参见以下内容。
+（可选）在配置 vCenter 或启用 VCF 部分中，选中 * 启用 VMware Cloud Foundation （ VCF ） * 复选框，并为 ONTAP 工具凭据提供密码。ONTAP工具以编码格式存储用户详细信息。对于从ONTAP工具到vCenter的任何通信、都会使用这些vCenter用户详细信息。
+您不需要提供 IP 地址，但必须提供密码。
+有关完整的详细信息，请参见以下内容。
 
 +
 ** link:../deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html["部署自定义注意事项"]
@@ -80,6 +82,10 @@ URL
 在等待部署完成时，您可以从任务选项卡查看部署进度。
 
 . 启动 ONTAP Tools 虚拟机，然后打开运行 ONTAP 工具的虚拟机的控制台。
++
+
+NOTE: 请勿将ONTAP Tools虚拟机存储在其管理的VVOV数据存储库上。
+
 . 在部署完成后，验证 ONTAP 工具是否正在运行。
 . 如果ONTAP 工具未注册到任何vCenter Server、请使用 `\https://appliance_ip:8143/Register.html` 注册ONTAP工具实例。Register.html会将您重定向到Swagger页面。从ONTAP tools 9.12开始、ONTAP 工具向vCenter注册将通过Swagger页面进行。
 +

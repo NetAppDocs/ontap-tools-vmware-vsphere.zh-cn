@@ -35,7 +35,7 @@ summary: 配置数据存储库会为虚拟机及其虚拟机磁盘（ VMDK\ ）�
 
 * NFSv3 和 NFSv4.1
 * VMFS5 和 VMFS6
-* 从vSphere 8.0版开始、支持NVMe/FC协议。
+* 从vSphere 8.0版开始、VVOV数据存储库支持NVMe/FC协议。
 
 
 ONTAP工具可以在NFS卷或LUN上创建数据存储库：

@@ -50,8 +50,7 @@ NOTE: 从ONTAP tools 9.12升级开始、所有存储系统的身份验证和通�
 . _security login Role create -Role <existing-role-name>-cmddirname "security certificat install"-access all_
 
 
-如果使用json文件使用自定义创建的SVM范围用户添加存储系统、而您要升级到9.12及更高版本、则
-升级之前、在具有集群管理员访问权限的ONTAP命令行界面上运行以下命令、以便在适用于VMware vSphere的ONTAP工具与ONTAP之间启用基于证书的通信：
+如果使用json文件使用自定义创建的SVM范围用户添加存储系统、而您要升级到9.12及更高版本、 然后、在升级之前、在具有集群管理员访问权限的ONTAP命令行界面上运行以下命令、以便在适用于VMware vSphere的ONTAP工具与ONTAP之间启用基于证书的通信：
 
 . _security login Role create -Role <existing-role-name>-cmddirname "security certificat install"-access all -vserver <vserver-name>_
 . _security login Role create -Role <existing-role-name>-cmddirname "security certificat show"-access all -vserver <vserver-name>_

@@ -803,7 +803,6 @@
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">有关 NetApp 拥有的专利的最新列表，请访问：</block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隐私政策</block>
   <block id="8f7be3c874feb6ef0fd5f20afd8d5fbb" category="summary">通过适用于 VMware vSphere 的 ONTAP 工具，您可以在 vCenter Server 环境中配置，管理和保护虚拟数据存储库。</block>
-  <block id="46c4d9bfa1c229940459326940489ab0" category="doc">适用于 VMware vSphere 的 ONTAP 工具文档</block>
   <block id="5a26627e54a06d78a8fc3c6d0b650e36" category="summary">您可以在部署后使用维护控制台更改 ONTAP 工具的管理员密码。</block>
   <block id="52647063d814c613fad4a8b5a1bbf24d" category="doc">更改管理员密码</block>
   <block id="061b5268326e0d136c3975f7544ea2fb" category="list-text">从 vCenter Server 中，打开一个控制台，访问 ONTAP 工具。</block>
@@ -1195,7 +1194,6 @@
   <block id="3e06c9490934f18ce97a637bf06b781e" category="paragraph">此时将显示一条成功消息，确认存储凭据已存储。SRA 可以使用提供的 IP 地址，端口和凭据与 SRA 服务器进行通信。</block>
   <block id="652ad8bc056a4a1827fa19aee589e718" category="summary">要使 SRM 能够与 SRA 通信，如果您修改了 SRA 凭据，则应更新 SRM 服务器上的 SRA 凭据。</block>
   <block id="dfb1f7e164fa9a18cdccdd70cc836871" category="doc">更新 SRA 凭据</block>
-  <block id="91041cdb80acf69ffc64bea820b683a1" category="list-text">使用以下命令删除 ` /SRM/SRA 或 confdirectory` 的内容：</block>
   <block id="c8c76585229a8fa67ac61e761baed2fc" category="list-text">`cd /SRM/SRA / conf`</block>
   <block id="bc5ad92fecd3f6eeb4473c9df6479d46" category="list-text">`rm -rf *`</block>
   <block id="42f35b3ef9c82737da1f02ca0b45f308" category="list-text">执行 perl 命令以使用新凭据配置 SRA ：</block>
@@ -1453,7 +1451,6 @@
   <block id="78b9c306d2b9e90dc4612872a3412b17" category="image-alt">新用户部署</block>
   <block id="7f92b985b9e4bff91f2d31ae0cc7bdd7" category="list-text">如果您使用的是 SRA 4.0P1 ，则必须先升级到 SRA9.6 ，然后再原位升级 SRA 9.6 版。您可以稍后升级到最新版本的 ONTAP 工具。</block>
   <block id="e2444e964cdc125f0e5e638cd372f502" category="paragraph">如果您拥有 VSC ， VASA Provider 和 SRA 虚拟设备 7.2 或 7.2.1 版，则无法直接升级到统一设备的 9.7P1 或更高版本。您必须先将现有设置升级到虚拟设备 9.7 版，然后再升级到最新版本。</block>
-  <block id="ff22f9429bb46603451057ba28a08029" category="paragraph">（可选）在配置 vCenter 或启用 VCF 部分中，选中 * 启用 VMware Cloud Foundation （ VCF ） * 复选框，并为 ONTAP 工具凭据提供密码。您不需要提供 IP 地址，但必须提供密码。有关完整的详细信息，请参见以下内容。</block>
   <block id="db87f0e7d398509389710de2acd5bc37" category="list-text"><block ref="db87f0e7d398509389710de2acd5bc37" category="inline-link-macro-rx"></block></block>
   <block id="4782e61635c721d2ac646cbaa6066487" category="inline-link-macro">适用于 ONTAP 工具的 VMware 云基础部署模式</block>
   <block id="86c1acfce4de432d234f580b141148df" category="list-text"><block ref="86c1acfce4de432d234f580b141148df" category="inline-link-macro-rx"></block></block>
@@ -1537,8 +1534,6 @@
   <block id="f41a0f70d00fe5c4c096315736c1c5f5" category="paragraph">要使用用户界面配置IPv4或IPv6、请参见以下各节：</block>
   <block id="9e61293b777b055e3576d637f3d16625" category="list-text"><block ref="9e61293b777b055e3576d637f3d16625" category="inline-link-macro-rx"></block></block>
   <block id="c012b5b3ff136d3277c106ffd47bf52e" category="list-text"><block ref="c012b5b3ff136d3277c106ffd47bf52e" category="inline-link-macro-rx"></block></block>
-  <block id="a88efd6c9b7763df783d278ede79c4a6" category="list-text">使用ONTAP 工具IP地址和密码配置SRM：<block ref="4222690b3b5a5c9afb047223bc02154e" prefix=" " category="inline-code"></block>此时将显示一条成功消息，确认存储凭据已存储。</block>
-  <block id="092016eb57c00c965fc19b3bff7ff343" category="list-text"><block ref="4222690b3b5a5c9afb047223bc02154e" prefix="" category="inline-code"></block></block>
   <block id="0e28dc8bb869d015f17f333c6255226d" category="list-text">您应已下载适用于VAAI的NFS插件的安装包 <block ref="d7d0fd6d41e4cc9c277d6e7d82ae6981" prefix="(" category="inline-code"></block>) NetApp 支持站点。<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block></block>
   <block id="389fed57e0f06c0d1d884e132105585a" category="list-text">您应安装vSphere 7.x版、因为vSphere 6.5已弃用、不支持vSphere 8.x。</block>
   <block id="5ccc8ee8b61049069fbdba29f36f4627" category="paragraph">您可以下载<block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block> 包含中适用于VMware vSphere的ONTAP 工具的二进制文件(_.ova_)和签名证书的文件<block ref="c28762f698ce57f013f1f9dff01575ab" category="inline-link-rx"></block>。</block>
@@ -1623,7 +1618,6 @@
   <block id="7aab78a1b39daabb0255f06097941141" category="paragraph">_This将删除通过关闭当前工作流输入的数据、并打开创建存储功能配置文件工作流。是否要继续？_</block>
   <block id="f604eb859718e32220986583f0dd60f8" category="list-text">单击*是*打开创建存储功能配置文件窗口。</block>
   <block id="f5881ae95eaddf3eaa37ea9dfa5a4025" category="paragraph">在执行需要指定vCenter Server的任务时、屏幕左上角的*实例*选择器会按字母顺序显示可用的vCenter Server。默认 vCenter Server 始终是下拉列表中的第一个服务器。</block>
-  <block id="3ba26e2ef418a8000e72bed69c2b1204" category="list-text">从vSphere 8.0版开始、支持NVMe/FC协议。</block>
   <block id="cfbd5fccaf4fd8045e424e51da259e46" category="paragraph">您可以选择*NFS*、*vmfs*或*vols*类型来配置数据存储库。如果选择了此类型、则NVMe/FC协议将变为可用。</block>
   <block id="18da7537a6d6a586cd1724bd68e0f65b" category="admonition">ONTAP 9.91P3及更高版本支持NVMe/FC协议。</block>
   <block id="ee3acded2da3caf4c3251cbe51ed714f" category="list-text">NFS：您可以使用NFS3或NFS4.1协议配置NFS数据存储库。</block>
@@ -2045,8 +2039,6 @@
   <block id="47036403afaaf8ca717ff4a9ab5e937f" category="admonition">从ONTAP tools 9.12升级开始、所有存储系统的身份验证和通信过程都会通过自动信任ONTAP存储证书从基本身份验证更改为基于证书的身份验证。无需用户执行任何操作。</block>
   <block id="58219ebdf648f85e26c26438bb61d686" category="paragraph">如果使用json文件添加了具有自定义创建的集群范围用户的存储系统、而您希望升级到9.12及更高版本、则
 升级之前、请在ONTAP命令行界面上运行以下命令、以便在适用于VMware vSphere的ONTAP工具与ONTAP之间启用基于证书的通信。</block>
-  <block id="c8651a1e5e8dc4eb77c21ebfee7aa345" category="paragraph">如果使用json文件使用自定义创建的SVM范围用户添加存储系统、而您要升级到9.12及更高版本、则
-升级之前、在具有集群管理员访问权限的ONTAP命令行界面上运行以下命令、以便在适用于VMware vSphere的ONTAP工具与ONTAP之间启用基于证书的通信：</block>
   <block id="89ee3f6f60ef2fe23bff96f279b6d85a" category="summary">您必须在VMware vSphere环境中下载并部署ONTAP工具、然后根据要使用ONTAP工具、VASA Provider和SRA执行的任务配置所需的应用程序。</block>
   <block id="7c3f9f49cd79868d0fe504cc021d45ff" category="doc">部署或升级适用于VMware vSphere的ONTAP工具</block>
   <block id="5ee2d67e9c2037d55fb50ede660fd324" category="list-text">重命名<block ref="74f7b54ea713d9f5b69839982911bbf7" prefix=" " category="inline-code"></block> 您从NetApp 支持站点 下载到NetApp NasPlugin.vib以匹配ONTAP工具使用的预定义名称的文件。</block>
@@ -2120,5 +2112,40 @@
   <block id="8b0a036d076285ea830ca8290e260a77" category="list-text">通过进入取消注册此插件<block ref="3668afd07686ea27a6f1590042360bee" prefix=" " category="inline-code"></block></block>
   <block id="4b8bd3e99bfcc26c0f74b6bf405ef012" category="list-text">请输入一个密码、此密码应至少包含8个字符、最多包含30个字符。密码必须至少包含一个大写、一个小写、一个数字和一个特殊字符。重置密码75天后、系统将显示密码到期警告。新密码不能与上次使用的密码相同。您需要每90天更改一次密码。</block>
   <block id="062f397773db685232413bdf1cdc77d6" category="list-text">使用以下URL访问VMware SRM设备管理界面：\https：//：&lt;srm_ip&gt;：5480、然后转到VMware SRM设备管理界面中的存储复制适配器。</block>
-  <block id="02d748a182bd49eb68c66826e023ae52" category="list-text">使用以下命令使用ONTAP 工具IP地址和密码配置SRM：<block ref="80e6857610e0d41189fe70adcfa7e87b" prefix=" " category="inline-code"></block></block>
+  <block id="fad46460446354fa80d2500a2f1c2238" category="list-text">使用ONTAP 工具IP地址和密码配置SRM：<block ref="4222690b3b5a5c9afb047223bc02154e" prefix=" " category="inline-code"></block>。您需要在密码值周围使用一个引号。
+此时将显示一条成功消息，确认存储凭据已存储。SRA 可以使用提供的 IP 地址，端口和凭据与 SRA 服务器进行通信。</block>
+  <block id="86e0bf9c3c7b551354475df97b7d9009" category="list-text"><block ref="4222690b3b5a5c9afb047223bc02154e" prefix="" category="inline-code"></block>。您需要在密码值周围使用一个引号。</block>
+  <block id="48ac6224163e1e40df5fddadacfd3cab" category="list-text">使用以下命令使用ONTAP 工具IP地址和密码配置SRM：<block ref="4222690b3b5a5c9afb047223bc02154e" prefix=" " category="inline-code"></block>。您需要在密码值周围使用一个引号。</block>
+  <block id="68e962ea1c22b4a4ce454c6d0243fb84" category="paragraph">您需要删除SRM计算机文件夹缓存的ONTAP工具用户名密码、然后重新安装SRA。</block>
+  <block id="3642e7476d2c39d4c6204e36acaa5431" category="list-text">运行以下命令以删除SRM计算机文件夹缓存的ONTAP工具用户名密码：</block>
+  <block id="98ea8bb5748846a8eb48ec17775dd65c" category="list-text"><block ref="73be5ab307e7055f684cc317b6aff741" prefix="" category="inline-code"></block></block>
+  <block id="9aac114d9a8bbe576d39d35cf5fad65b" category="list-text"><block ref="5ec1d0f6687a4c1e0107632871d4a131" prefix="" category="inline-code"></block></block>
+  <block id="be886d30990ecb1cd7da9458a1301ba3" category="list-text"><block ref="ed73a6dfaf2769c449bcf6ac1257b40e" prefix="" category="inline-code"></block></block>
+  <block id="2a7f66eb3c213058f0136bcf65d63f11" category="list-text"><block ref="1c2934a64ebf7e159bf45c1e6c30b478" prefix="" category="inline-code"></block></block>
+  <block id="c6503e5473d2858467146e434dedb32e" category="list-text">运行perl命令为SRA配置新凭据：</block>
+  <block id="d2ef96c1cd4e9e918af9cc6fe693d19c" category="list-text"><block ref="3e82875f30595fcc3e2ea7112a52aec3" prefix="" category="inline-code"></block></block>
+  <block id="9f39a8ba317fa65df6bf0329cacd5667" category="paragraph">如果使用json文件使用自定义创建的SVM范围用户添加存储系统、而您要升级到9.12及更高版本、 然后、在升级之前、在具有集群管理员访问权限的ONTAP命令行界面上运行以下命令、以便在适用于VMware vSphere的ONTAP工具与ONTAP之间启用基于证书的通信：</block>
+  <block id="6b93e6fdc6e3dbf8009c665ddf94abcf" category="paragraph">（可选）在配置 vCenter 或启用 VCF 部分中，选中 * 启用 VMware Cloud Foundation （ VCF ） * 复选框，并为 ONTAP 工具凭据提供密码。ONTAP工具以编码格式存储用户详细信息。对于从ONTAP工具到vCenter的任何通信、都会使用这些vCenter用户详细信息。
+您不需要提供 IP 地址，但必须提供密码。
+有关完整的详细信息，请参见以下内容。</block>
+  <block id="8cc72bf41639ac37b90eb2211ba395af" category="admonition">请勿将ONTAP Tools虚拟机存储在其管理的VVOV数据存储库上。</block>
+  <block id="fb65092a2b1818d2f28038d58c52a701" category="paragraph">启用后， VASA Provider 和 Storage Replication Adapter （ SRA ）均使用此端口与 vCenter Server 进行通信。要获取 TCP/IP 设置，也需要此端口。需要在从ESXi主机到ONTAP工具设备的防火墙上启用此端口。此端口用于下载VP支持包、访问Web-CLI用户界面以及控制从VMware到VP的通信路径。</block>
+  <block id="552de149f7e69b0800ade32a13e7e6f1" category="list-text">从vSphere 8.0版开始、VVOV数据存储库支持NVMe/FC协议。</block>
+  <block id="26ffc687a7267f96a389530199971cd1" category="sidebar">适用于VMware vSphere的ONTAP工具文档</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
+  <block id="da951ef1610be90b45b31baf7b25b179" category="sidebar">了解适用于 VMware vSphere 的 ONTAP 工具</block>
+  <block id="21e2a89d708329706ec6ed3fc989a1f6" category="sidebar">使用 ONTAP 工具</block>
+  <block id="317bbf73ff27c5f981628c8fb83ebf22" category="sidebar">配置基于角色的访问控制</block>
+  <block id="48bc2d028cb2a507ef974230ca3ba793" category="sidebar">配置远程诊断</block>
+  <block id="641e9457539249e880725760f91d5ee2" category="sidebar">配置高可用性</block>
+  <block id="04edeb5424c826c14a69edb777edf395" category="sidebar">保护和管理数据存储库</block>
+  <block id="eaf78ca462bf848b7c59c410077002b6" category="sidebar">保护数据存储库</block>
+  <block id="c724784c65896d8b16350f4b0580dfd4" category="sidebar">保护虚拟机</block>
+  <block id="5267febc97a2cc385cc5c73995dc64df" category="sidebar">监控传统数据存储库和虚拟机</block>
+  <block id="3123ece3c3b36f605758cb0c9a28f904" category="sidebar">监控 VVOL 数据存储库和虚拟机</block>
+  <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">更多资源</block>
+  <block id="51cf1968b9a38ab03f7396d237ad0be6" category="sidebar">适用于 VMware 的早期版本 ONTAP 工具的文档</block>
+  <block id="4c3c39a603eb21106d2df2836d4b456c" category="sidebar">NetApp 知识库— ONTAP 工具</block>
+  <block id="bbf1057ad175e1e1664e224351019ac9" category="sidebar">NetApp 导入实用程序—视频</block>
+  <block id="72393f9ef0b6b69526a30ac7ce5276bc" category="sidebar">NetApp 社区— ONTAP 工具</block>
 </blocks>
