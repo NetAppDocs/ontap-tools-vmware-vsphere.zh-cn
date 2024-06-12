@@ -77,7 +77,7 @@ NOTE: 从ONTAP tools 9.12升级开始、所有存储系统的身份验证和通�
 +
 .. 取消注册 ONTAP 工具。
 .. 使用 * 注册 * 页面将 ONTAP 工具的 IPv6 地址注册到 vCenter Server 。
-.. 注册后重新生成ONTAP工具和VASA Provider证书。
+.. 注册后、重新生成适用于VMware vSphere的ONTAP工具和VASA Provider证书。
 
 
 +

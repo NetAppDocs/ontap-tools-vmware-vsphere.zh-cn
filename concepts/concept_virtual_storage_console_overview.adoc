@@ -17,7 +17,7 @@ ONTAP 工具可与 vSphere Client 集成，使您能够使用单点登录（ Sin
 
 ONTAP 工具中的每个组件都提供有助于更高效地管理存储的功能。
 
-VMware vSphere Client远程插件工具旨在将插件功能集成到vSphere Client中、而无需在vCenter Server中运行。这样可以隔离插件、并可横向扩展在大型vSphere环境中运行的插件。
+VMware vSphere Client插件工具旨在将插件功能集成到vSphere Client中、而无需在vCenter Server中运行。这样可以隔离插件、并可横向扩展在大型vSphere环境中运行的插件。
 
 
 

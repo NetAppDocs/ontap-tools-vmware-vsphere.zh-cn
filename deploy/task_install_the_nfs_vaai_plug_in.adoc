@@ -41,6 +41,6 @@ summary: 您可以使用适用于 VMware vSphere 的 ONTAP 工具的图形用户
 
 . 安装完成后重新启动 ESXi 主机。
 +
-重新启动ESXi主机时、ONTAP工具会自动检测NFS VAAI插件。您无需执行其他步骤即可启用此插件。
+重新启动ESXi主机后、适用于VMware vSphere的ONTAP工具会自动检测NFS VAAI插件。您无需执行其他步骤即可启用此插件。
 
 

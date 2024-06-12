@@ -2,7 +2,7 @@
 permalink: concepts/concept_privileges_required_for_vsc_tasks.html 
 sidebar: sidebar 
 keywords:  
-summary: 不同的适用于VMware vSphere的ONTAP工具任务需要不同的ONTAP工具特权和本机vCenter Server特权组合。 
+summary: 不同的适用于VMware vSphere的ONTAP工具任务需要不同的特权组合、这些特权组合特定于适用于VMware vSphere的ONTAP工具、而本机vCenter Server特权则不同。 
 ---
 = ONTAP工具任务所需的特权
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 不同的适用于VMware vSphere的ONTAP工具任务需要不同的ONTA
 
 
 [role="lead"]
-不同的适用于VMware vSphere的ONTAP工具任务需要不同的ONTAP工具特权和本机vCenter Server特权组合。
+不同的适用于VMware vSphere的ONTAP工具任务需要不同的特权组合、这些特权组合特定于适用于VMware vSphere的ONTAP工具、而本机vCenter Server特权则不同。
 
 有关ONTAP工具任务所需特权的信息、请参见NetApp知识库文章1032542。
 

@@ -15,7 +15,7 @@ summary: 如果您正在使用基于 Windows 的 Site Recovery Manager （ SRM �
 
 迁移灾难恢复所涉及的步骤包括：
 
-. 将现有ONTAP Tools设备升级到最新版本。
+. 将适用于VMware vSphere设备的现有ONTAP工具升级到最新版本。
 +
 link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html["升级到最新版本的 ONTAP 工具"]
 

@@ -2,7 +2,7 @@
 permalink: configure/concept_configure_storage_systems_for_ontap_tools_for_vmware_vsphere.html 
 sidebar: sidebar 
 keywords:  
-summary: 您应使用ONTAP工具界面向ONTAP工具添加存储系统并根据需要设置默认凭据。 
+summary: 您应使用ONTAP工具界面将存储系统添加到适用于VMware vSphere的ONTAP工具中、并根据需要设置默认凭据。 
 ---
 = ONTAP 工具存储系统概述
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 您应使用ONTAP工具界面向ONTAP工具添加存储系统并根据�
 
 
 [role="lead"]
-您应使用ONTAP工具界面向ONTAP工具添加存储系统并根据需要设置默认凭据。
+您应使用ONTAP工具界面将存储系统添加到适用于VMware vSphere的ONTAP工具中、并根据需要设置默认凭据。
 
 适用于 VMware vSphere 的 ONTAP 工具提供了一种发现存储系统和设置存储凭据的机制。这些凭据提供了ONTAP工具用户使用存储系统执行任务所需的ONTAP权限。
 
@@ -20,7 +20,7 @@ summary: 您应使用ONTAP工具界面向ONTAP工具添加存储系统并根据�
 
 NOTE: 如果您以管理员身份登录，则会自动拥有该存储系统的所有特权。
 
-将存储系统添加到ONTAP工具时、必须提供存储系统的IP地址以及与该系统关联的用户名和密码对。您可以设置ONTAP工具在存储系统发现过程中要使用的默认凭据、也可以在发现存储系统后手动输入凭据。添加到ONTAP工具中的存储系统详细信息会自动推送到您在部署中启用的扩展。您无需手动向 VASA Provider 和 Storage Replication Adapter （ SRA ）添加存储。ONTAP工具和SRA均支持在集群级别和Storage Virtual Machine (SVM)级别添加凭据。VASA Provider 仅支持使用集群级别的凭据来添加存储系统。添加存储系统时、ONTAP 工具插件与存储系统之间的任何通信都应进行相互身份验证。
+将存储系统添加到ONTAP工具时、必须提供存储系统的IP地址以及与该系统关联的用户名和密码对。您可以设置ONTAP工具在存储系统发现过程中要使用的默认凭据、也可以在发现存储系统后手动输入凭据。添加到适用于VMware vSphere的ONTAP工具中的存储系统详细信息会自动推送到您在部署中启用的扩展。您无需手动向 VASA Provider 和 Storage Replication Adapter （ SRA ）添加存储。适用于VMware vSphere和SRA的ONTAP工具均支持在集群级别和Storage Virtual Machine (SVM)级别添加凭据。VASA Provider 仅支持使用集群级别的凭据来添加存储系统。添加存储系统时、ONTAP 工具插件与存储系统之间的任何通信都应进行相互身份验证。
 
 如果您的环境包含多个vCenter Server实例、则在通过存储系统页面向ONTAP工具添加存储系统时、添加存储系统对话框会显示一个vCenter Server框、您可以在其中指定要将存储系统添加到哪个vCenter Server实例。如果您通过右键单击数据中心名称来添加存储系统，则无法指定 vCenter Server 实例，因为服务器已与该数据中心关联。
 

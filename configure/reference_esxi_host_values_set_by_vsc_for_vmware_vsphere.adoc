@@ -17,7 +17,7 @@ summary: 您可以使用适用于 VMware vSphere 的 ONTAP 工具在 ESXi 主机
 
 
 
-== ESXi 高级配置
+== ESXi主机高级配置
 
 * * VMFS3.HardwareAcceleratedLocking *
 +

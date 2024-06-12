@@ -2,7 +2,7 @@
 permalink: configure/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html 
 sidebar: sidebar 
 keywords:  
-summary: 如果在一个VMware vSphere HTML5客户端管理多个vCenter Server实例的环境中使用适用于VMware vSphere的ONTAP®工具、 您必须向每个vCenter Server注册一个ONTAP工具实例、以使ONTAP工具与vCenter Server实现1：1配对。这样，您就可以通过一个 vSphere HTML5 客户端在链接模式和非链接模式下管理运行 vCenter 6.0 或更高版本的所有服务器。 
+summary: 如果在一个VMware vSphere HTML5客户端管理多个vCenter Server实例的环境中使用适用于VMware vSphere的ONTAP®工具、 您必须向每个vCenter Server注册一个ONTAP工具实例、以使适用于VMware vSphere的ONTAP工具与vCenter Server实现1：1配对。这样，您就可以通过一个 vSphere HTML5 客户端在链接模式和非链接模式下管理运行 vCenter 6.0 或更高版本的所有服务器。 
 ---
 = 在多vCenter Server环境中注册ONTAP工具的要求
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 如果在一个VMware vSphere HTML5客户端管理多个vCenter Server�
 
 
 [role="lead"]
-如果在一个VMware vSphere HTML5客户端管理多个vCenter Server实例的环境中使用适用于VMware vSphere的ONTAP工具、 您必须向每个vCenter Server注册一个ONTAP工具实例、以使ONTAP工具与vCenter Server实现1：1配对。这样、您就可以通过一个vSphere HTML5客户端在链接模式和非链接模式下管理运行vCenter 7.0或更高版本的所有服务器。
+如果在一个VMware vSphere HTML5客户端管理多个vCenter Server实例的环境中使用适用于VMware vSphere的ONTAP工具、 您必须向每个vCenter Server注册一个ONTAP工具实例、以使适用于VMware vSphere的ONTAP工具与vCenter Server实现1：1配对。这样、您就可以通过一个vSphere HTML5客户端在链接模式和非链接模式下管理运行vCenter 7.0或更高版本的所有服务器。
 
 
 NOTE: 如果要在vCenter Server中使用ONTAP工具、则必须为要管理的每个vCenter Server实例设置或注册一个ONTAP工具实例。每个已注册的ONTAP工具实例的版本必须相同。
@@ -28,7 +28,7 @@ NOTE: 如果要在vCenter Server中使用ONTAP工具、则必须为要管理的�
 您*不能*将ONTAP工具服务器A同时注册到vCenter Server A和vCenter Server B
 
 +
-如果VMware清单中的某个vCenter Server未注册ONTAP工具服务器、但有一个或多个vCenter Server已注册到ONTAP工具中、 然后、您可以查看ONTAP工具的实例、并对已注册ONTAP工具的vCenter Server执行ONTAP工具操作。
+如果VMware清单中的某个vCenter Server未注册ONTAP工具服务器、但有一个或多个vCenter Server已注册到ONTAP工具中、 然后、您可以查看适用于VMware vSphere的ONTAP工具实例、并对已注册ONTAP工具的vCenter Server执行ONTAP工具操作。
 
 * 对于已注册到单点登录(SSO)的每个vCenter Server、您必须具有ONTAP工具专用的查看特权。
 +

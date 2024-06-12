@@ -23,7 +23,7 @@ ONTAP 工具依靠 VMware vSphere 高可用性（ HA ）功能和 vSphere 容错
 
 要使 ONTAP 工具提供高可用性，无需进行其他配置。只能根据 vCenter Server 和 ESXi 主机的要求为其配置 VMware vSphere HA 功能或 vSphere FT 功能。HA 和 FT 都需要集群主机以及共享存储。FT 具有其他要求和限制。
 
-除了 VMware vSphere HA 解决方案和 vSphere FT 解决方案之外， ONTAP 工具还有助于保持 ONTAP 工具服务始终运行。ONTAP 工具 watchdog 进程会定期监控所有三项服务，并在检测到任何类型的故障时自动重新启动这些服务。这有助于防止应用程序出现故障。
+除了VMware vSphere HA解决方案和vSphere FT解决方案之外、适用于VMware vSphere的ONTAP工具还有助于保持ONTAP工具服务始终运行。ONTAP 工具 watchdog 进程会定期监控所有三项服务，并在检测到任何类型的故障时自动重新启动这些服务。这有助于防止应用程序出现故障。
 
 
 NOTE: ONTAP 工具不支持 vCenter HA 。

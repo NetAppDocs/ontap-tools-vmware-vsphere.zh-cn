@@ -24,7 +24,7 @@ Virtual Storage Console 6.x ， Storage Replication Adapter 2.x ， 3.x ， 4.x 
 
 link:../configure/reference_set_ipv4_or_ipv6.html["使用首选项文件设置 IPv4 或 IPv6"]
 
-在许多情况下，您可能不需要迁移配置数据。但是，如果您之前已自定义了首选项文件，则可能需要查看这些文件并对新部署的 ONTAP 工具进行类似的更改。您可以将存储系统添加到新部署的ONTAP 工具中、并在添加时指定凭据。
+在许多情况下，您可能不需要迁移配置数据。但是，如果您之前已自定义了首选项文件，则可能需要查看这些文件并对新部署的 ONTAP 工具进行类似的更改。您可以将存储系统添加到新部署的适用于VMware vSphere的ONTAP工具中、并在添加时指定凭据。
 
 如果要从 VASA Provider 6.X 升级，则应在升级之前取消注册 VASA Provider 。有关详细信息，请参见当前版本的文档。
 

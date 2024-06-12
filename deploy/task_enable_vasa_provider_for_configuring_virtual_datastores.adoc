@@ -31,7 +31,7 @@ summary: 默认情况下，适用于 VMware vSphere 的 ONTAP 工具已启用 VA
 . 单击管理设置选项卡中的 * 管理功能 * 。
 . 在管理功能对话框中，选择要启用的 VASA Provider 扩展。
 . 如果要对 VVOL 数据存储库使用复制功能，请使用 * 启用 VVOL 复制 * 切换按钮。
-. 输入 ONTAP 工具的 IP 地址和管理员密码，然后单击 * 应用 * 。
+. 输入适用于VMware vSphere的ONTAP工具的IP地址和管理员密码、然后单击*应用*。
 +
 
 NOTE: 如果在启用 VASA Provider 扩展后， VASA Provider 状态仍显示为 "`脱机` " ，请检查 `` /var/log/vmware/vmware-sps/sps.log` 文件中是否存在与 VASA Provider 的任何连接错误，或者重新启动 "`vmware-sps` " 服务。

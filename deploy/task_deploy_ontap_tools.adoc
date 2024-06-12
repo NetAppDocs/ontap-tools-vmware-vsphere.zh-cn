@@ -2,7 +2,7 @@
 permalink: deploy/task_deploy_ontap_tools.html 
 sidebar: sidebar 
 keywords:  
-summary: 您应在环境中部署 ONTAP 工具并指定所需的参数，以便能够使用此设备。 
+summary: 要使用适用于VMware vSphere设备的ONTAP工具、请在您的环境中部署适用于VMware vSphere的ONTAP工具并指定所需参数。 
 ---
 = 如何部署 ONTAP 工具
 :allow-uri-read: 
@@ -11,14 +11,14 @@ summary: 您应在环境中部署 ONTAP 工具并指定所需的参数，以便�
 
 
 [role="lead"]
-您应在环境中部署 ONTAP 工具并指定所需的参数，以便能够使用此设备。
+要使用适用于VMware vSphere设备的ONTAP工具、请在您的环境中部署适用于VMware vSphere的ONTAP工具并指定所需参数。
 
 * 您需要的内容 *
 
-* 您必须运行受支持的 vCenter Server 版本。
+* 您必须已安装受支持的vCenter Server版本。
 +
 
-NOTE: 可以将 ONTAP 工具注册到 vCenter Server 的 Windows 部署或 VMware vCenter Server 虚拟设备（ vCSA ）部署中。
+NOTE: 您可以将适用于VMware vSphere的ONTAP工具注册到vCenter Server的Windows部署或VMware vCenter Server虚拟设备(vCSA)部署中。
 
 +
 https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT["互操作性表工具"^]
@@ -30,13 +30,13 @@ https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src
 * 您应已注销并关闭 vSphere Client 的所有浏览器会话，并删除浏览器缓存，以避免在部署 ONTAP 工具期间出现任何浏览器缓存问题描述。
 * 您必须已启用Internet控制消息协议(Internet Control Message Protocol、ICMP)。
 +
-如果禁用ICMP、则ONTAP工具的初始配置将失败、并且ONTAP工具将无法在部署后启动ONTAP工具和VASA Provider服务。您必须在部署后手动启用ONTAP工具和VASA Provider服务。
+如果禁用ICMP、则对适用于VMware vSphere的ONTAP工具进行初始配置将失败。在部署后、您必须手动为VMware vSphere和VASA Provider服务启用ONTAP工具。
 
 
 
 * 关于此任务 *
 
-如果要部署全新安装的 ONTAP 工具，则默认情况下会启用 VASA Provider 。但是，如果从早期版本的 ONTAP 工具升级，则 VASA Provider 的状态会保留下来，您可能需要手动启用 VASA Provider 。
+对于全新安装的适用于VMware vSphere的ONTAP工具、默认情况下会启用VASA Provider。但是、如果从早期版本升级、则会保留VASA Provider的状态、您可能需要手动启用VASA Provider。
 
 link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html["启用 VASA Provider 以配置虚拟数据存储库"]
 
@@ -45,6 +45,10 @@ link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html
 . 登录到 vSphere Client 。
 . 选择*主页*>*主机和群集*。
 . 右键单击所需的数据中心，然后单击*Deploy OVF temple...*。
++
+
+NOTE: 请勿将ONTAP工具VMware vSphere虚拟机部署在其管理的vvol数据存储库上。
+
 . 选择适当的方法为 ONTAP 工具提供部署文件，然后单击 * 下一步 * 。
 +
 |===
@@ -82,10 +86,6 @@ URL
 在等待部署完成时，您可以从任务选项卡查看部署进度。
 
 . 启动 ONTAP Tools 虚拟机，然后打开运行 ONTAP 工具的虚拟机的控制台。
-+
-
-NOTE: 请勿将ONTAP Tools虚拟机存储在其管理的VVOV数据存储库上。
-
 . 在部署完成后，验证 ONTAP 工具是否正在运行。
 . 如果ONTAP 工具未注册到任何vCenter Server、请使用 `\https://appliance_ip:8143/Register.html` 注册ONTAP工具实例。Register.html会将您重定向到Swagger页面。从ONTAP tools 9.12开始、ONTAP 工具向vCenter注册将通过Swagger页面进行。
 +

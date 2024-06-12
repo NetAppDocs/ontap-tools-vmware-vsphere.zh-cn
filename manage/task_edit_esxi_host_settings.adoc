@@ -52,7 +52,7 @@ vSphere Client 主页
 
 
  a| 
-ESXi 主机系统 portlet
+ESXi主机系统portlet
  a| 
 .. 单击ONTAP工具概述部分中的*Traditional DABRAD*选项卡。
 .. 单击 * 编辑 ESXi 主机设置 * 。

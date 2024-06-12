@@ -35,7 +35,7 @@ summary: 您可以配置 ONTAP 工具，以便为 diag 用户启用 SSH 访问�
 
 * 步骤 *
 
-. 从vCenter Server中、打开一个ONTAP Tools设备虚拟机控制台。
+. 从vCenter Server中、打开一个控制台、访问适用于VMware vSphere设备虚拟机的ONTAP Tools。
 . 以维护用户身份登录。
 . 输入 `4` 以选择支持和诊断。
 . 输入 `3` 以选择启用远程诊断访问。

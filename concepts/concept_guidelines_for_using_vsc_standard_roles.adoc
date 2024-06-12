@@ -13,7 +13,7 @@ summary: 使用适用于 VMware vSphere 角色的标准 ONTAP ® 工具时，应
 [role="lead"]
 使用适用于 VMware vSphere 角色的标准 ONTAP 工具时，应遵循特定准则。
 
-您不应直接修改标准角色。否则、ONTAP工具将在您每次升级ONTAP工具时覆盖您所做的更改。安装程序会在您每次升级ONTAP工具时更新标准角色定义。这样可以确保这些角色对于您的ONTAP工具版本以及所有受支持的vCenter Server版本都是最新的。
+您不应直接修改标准角色。否则、ONTAP工具将在您每次升级ONTAP工具时覆盖您所做的更改。安装程序会在您每次升级ONTAP工具时更新标准角色定义。这样可以确保这些角色对于您的适用于VMware vSphere的ONTAP工具版本以及所有受支持的vCenter Server版本都是最新的。
 
 但是，您可以使用标准角色创建根据您的环境量身定制的角色。要执行此操作、您应复制ONTAP工具标准角色、然后编辑复制的角色。通过创建新角色、即使重新启动或升级ONTAP工具Windows服务、您也可以保留此角色。
 

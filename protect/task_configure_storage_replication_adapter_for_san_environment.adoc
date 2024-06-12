@@ -36,7 +36,8 @@ https://www.vmware.com/support/pubs/srm_pubs.html["VMware Site Recovery Manager 
 . 验证 LUN 是否位于主存储系统上已将 `ostype` 选项设置为 _vmware_ 的 igroup 中。
 . 验证恢复站点上的 ESXi 主机是否与 Storage Virtual Machine （ SVM ）具有适当的 FC 或 iSCSI 连接。二级站点ESXi主机应能够访问二级站点存储、同样、主站点ESXi主机也应能够访问主站点存储。
 +
-为此，您可以验证 ESXi 主机是否已在 SVM 上连接本地 LUN ，也可以在 SVM 上使用 `fcp show initiators` 命令或 `iscsi show initiators` 命令。检查ESXi中映射的LUN的LUN访问权限、以验证FC和iSCSI连接。
+为此、您可以验证ESXi主机是否已在SVM上连接本地LUN、也可以使用 `fcp show initiators` 命令或 `iscsi show initiators` 命令。
+在ESXi主机中检查映射的LUN的LUN访问、以验证FC和iSCSI连接。
 
 
 

@@ -24,7 +24,7 @@ summary: 在为 VMware vSphere 部署 ONTAP 工具之前，最好先对部署进
  a| 
 首次部署 ONTAP 工具
  a| 
-ONTAP工具的部署会自动安装ONTAP工具功能。
+在部署适用于VMware vSphere的ONTAP工具时、系统会自动安装ONTAP工具功能。
 
 link:../deploy/concept_installation_workflow_for_new_users.html["适用于 VMware vSphere 的 ONTAP 工具的新用户部署工作流"]
 
@@ -88,7 +88,7 @@ link:../configure/task_regenerate_an_ssl_certificate_for_vsc.html["为 Virtual S
  a| 
 基于角色的访问控制（ RBAC ）的要求
  a| 
-ONTAP工具支持vCenter Server RBAC和ONTAP RBAC。用于向vCenter Server注册ONTAP工具的帐户 (`\https://<appliance_ip>:8143/Register.html`)必须是vCenter Server管理员(已分配给vCenter Server管理员或管理员角色)。如果您计划以管理员身份运行ONTAP工具、则必须具有执行所有任务所需的所有权限和特权。
+ONTAP工具支持vCenter Server RBAC和ONTAP RBAC。用于向vCenter Server注册ONTAP工具的帐户 (`\https://<appliance_ip>:8143/Register.html`)必须是vCenter Server管理员(已分配给vCenter Server管理员或管理员角色)。如果您计划以管理员身份运行适用于VMware vSphere的ONTAP工具、则必须具有执行所有任务所需的所有权限和特权。
 
 如果公司要求您限制对vSphere对象的访问、您可以为用户创建标准ONTAP工具角色并将其分配给用户、以满足vCenter Server的要求。
 

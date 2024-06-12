@@ -4,9 +4,9 @@ title: 配置 ONTAP 工具
 entries:
 - title: 用于配置 ONTAP 工具的工作流
   url: "/configure/concept_workflow_for_configuring_the_unified_appliance.html"
-- title: 配置 ESXi 设置
+- title: 配置ESXi主机设置
   entries:
-  - title: 配置 ESXi 服务器多路径和超时设置
+  - title: 配置ESXi主机服务器多路径和超时设置
     url: "/configure/task_configure_esx_server_multipathing_and_timeout_settings.html"
   - title: 使用 ONTAP 工具设置的 ESXi 主机值
     url: "/configure/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html"

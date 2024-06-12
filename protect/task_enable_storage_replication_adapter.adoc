@@ -34,7 +34,7 @@ https://docs.vmware.com/en/Site-Recovery-Manager/8.2/com.vmware.srm.install_conf
 . 单击 * 设置 * 。
 . 单击 * 管理设置 * 选项卡中的 * 管理功能 * 。
 . 在 * 管理功能 * 对话框中，选择要启用的 SRA 扩展。
-. 输入 ONTAP 工具的 IP 地址和管理员密码，然后单击 * 应用 * 。
+. 输入适用于VMware vSphere的ONTAP工具的IP地址和管理员密码、然后单击*应用*。
 . 您可以使用以下方法之一部署 SRA ：
 +
 * 对于 SRM 设备 *

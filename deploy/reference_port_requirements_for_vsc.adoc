@@ -28,7 +28,7 @@ ONTAP 工具使用以下默认双向 TCP 端口：
  a| 
 9083.
  a| 
-启用后， VASA Provider 和 Storage Replication Adapter （ SRA ）均使用此端口与 vCenter Server 进行通信。要获取 TCP/IP 设置，也需要此端口。需要在从ESXi主机到ONTAP工具设备的防火墙上启用此端口。此端口用于下载VP支持包、访问Web-CLI用户界面以及控制从VMware到VP的通信路径。
+启用后， VASA Provider 和 Storage Replication Adapter （ SRA ）均使用此端口与 vCenter Server 进行通信。要获取 TCP/IP 设置，也需要此端口。需要在从ESXi主机到适用于VMware vSphere设备的ONTAP工具的防火墙上启用此端口。此端口用于下载VP支持包、访问Web-CLI用户界面以及控制从VMware到VP的通信路径。
 
 
 
@@ -49,7 +49,7 @@ ONTAP工具会侦听此端口上的安全通信。此端口用于客户端-服�
  a| 
 8443
  a| 
-此端口用于远程插件服务。
+此端口用于适用于VMware vSphere的ONTAP工具插件服务。
 
 
 
@@ -63,4 +63,4 @@ ONTAP工具会向ONTAP发送回应请求以验证可访问性、并且只有在�
 
 NOTE: 在部署 ONTAP 工具之前，您应已启用 Internet 控制消息协议（ Internet Control Message Protocol ， ICMP ）。
 
-如果禁用ICMP、则ONTAP工具的初始配置将失败、并且ONTAP工具将无法在部署后启动ONTAP工具和VASA Provider服务。您必须在部署后手动启用ONTAP工具和VASA Provider服务。
+如果禁用ICMP、则ONTAP工具的初始配置将失败、并且ONTAP工具将无法在部署后启动适用于VMware vSphere和VASA Provider服务的ONTAP工具。在部署后、您必须手动为VMware vSphere和VASA Provider服务启用ONTAP工具。

@@ -36,7 +36,27 @@ rebalance 命令可删除空的 FlexVol 卷，以便为其他数据存储库提�
 
 
 * 如果 FlexVol 卷具有快照，则在 VVol 重新平衡操作期间，由于有关空间利用率的详细信息不足， VVol 无法正确重新平衡。
-* 如果容器重新平衡操作期间发生超时，您可以将 VASA Provider 属性 _enable.update.vvol.through .discovery_ 设置为 true ，以在 ONTAP 工具和 ONTAP 之间获取一致的数据。
+* 您可以将VASA Provider属性_enable．update．vvol.through．discovery_设置为true、以便在容器重新平衡操作期间发生超时时时、在适用于VMware vSphere的ONTAP工具和ONTAP之间获取一致的数据。
+* 没有可用于重新平衡VVOV数据存储库的公开REST API。
 
 
 ====
+.* 开始之前 *
+* 从维护控制台生成Web-CLI令牌：
++
+.. 登录到maine控制台。
+.. 选择选项*1*设备配置。
+.. 选择选项*12*生成Web-CLI验证令牌。
+
+
+* 从vCenter或Web-CLI获取容器名称和FlexVol卷名称。
+要获取连接到容器的FlexVol卷的列表、请从Web-CLI运行命令_container list_。您可以在Web-CLI页面上找到容器重新平衡命令的详细信息。
+
+
+
+NOTE: 您需要提供容器名称、以便在连接到该容器的所有FlexVol卷之间执行重新平衡。但是、如果提供了FlexVol卷参数、则只会在提供的FlexVol卷之间执行重新平衡。
+
+.* 步骤 *
+. 使用URL从Web-CLI登录 `\https://<OTV-IP>:9083/`
+. 运行命令：_container real均势-container_name=container_<container-name>
+

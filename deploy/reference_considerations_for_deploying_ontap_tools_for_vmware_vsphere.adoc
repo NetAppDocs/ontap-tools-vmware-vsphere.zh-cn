@@ -24,7 +24,7 @@ summary: 在为 VMware vSphere 部署 ONTAP 工具之前，最好先对部署进
  a| 
 首次部署 ONTAP 工具
  a| 
-ONTAP工具的部署会自动安装ONTAP工具功能。
+在部署适用于VMware vSphere的ONTAP工具时、系统会自动安装ONTAP工具功能。
 
 link:../deploy/concept_installation_workflow_for_new_users.html["适用于 VMware vSphere 的 ONTAP 工具的新用户部署工作流"]
 
@@ -88,7 +88,7 @@ link:../configure/task_regenerate_an_ssl_certificate_for_vsc.html["为 Virtual S
  a| 
 基于角色的访问控制（ RBAC ）的要求
  a| 
-ONTAP工具支持vCenter Server RBAC和ONTAP RBAC。用于向vCenter Server注册ONTAP工具的帐户 (`\https://<appliance_ip>:8143/Register.html`)必须是vCenter Server管理员(已分配给vCenter Server管理员或管理员角色)。如果您计划以管理员身份运行ONTAP工具、则必须具有执行所有任务所需的所有权限和特权。
+ONTAP工具支持vCenter Server RBAC和ONTAP RBAC。用于向vCenter Server注册ONTAP工具的帐户 (`\https://<appliance_ip>:8143/Register.html`)必须是vCenter Server管理员(已分配给vCenter Server管理员或管理员角色)。如果您计划以管理员身份运行适用于VMware vSphere的ONTAP工具、则必须具有执行所有任务所需的所有权限和特权。
 
 如果公司要求您限制对vSphere对象的访问、您可以为用户创建标准ONTAP工具角色并将其分配给用户、以满足vCenter Server的要求。
 
@@ -153,11 +153,11 @@ ONTAP 版本
 
 * 您应提供要将 ONTAP 工具注册到的 vCenter Server 实例的 IP 地址（ IPv4 或 IPv6 ）。
 +
-生成的ONTAP工具和VASA证书类型取决于您在部署期间提供的IP地址(IPv4或IPv6)。在部署 ONTAP 工具时，如果尚未输入任何静态 IP 详细信息和 DHCP ，则网络将同时提供 IPv4 和 IPv6 地址。
+所生成的适用于VMware vSphere的工具类型和ONTAP证书取决于您在部署期间提供的IP地址(IPv4或IPv6)。在部署 ONTAP 工具时，如果尚未输入任何静态 IP 详细信息和 DHCP ，则网络将同时提供 IPv4 和 IPv6 地址。
 
 * 用于向 vCenter Server 注册的 ONTAP 工具 IP 地址取决于在部署向导中输入的 vCenter Server IP 地址类型（ IPv4 或 IPv6 ）。
 +
-ONTAP工具和VASA证书将使用vCenter Server注册期间使用的相同IP地址类型来生成。
+适用于VMware vSphere的ONTAP工具和vASA证书都将使用vCenter Server注册期间使用的相同IP地址类型来生成。
 
 +
 
@@ -169,4 +169,4 @@ NOTE: 只有 vCenter Server 6.7 及更高版本才支持 IPv6 。
 
 === 设备网络属性
 
-如果不使用 DHCP ，请为 ONTAP 工具和其他网络参数指定有效的 DNS 主机名（非限定）以及静态 IP 地址。要正确安装和操作，所有这些参数都是必需的。
+如果未使用DHCP、请为适用于VMware vSphere的ONTAP工具指定有效的DNS主机名(非限定)以及静态IP地址以及其他网络参数。要正确安装和操作，所有这些参数都是必需的。
