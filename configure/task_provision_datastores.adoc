@@ -46,7 +46,7 @@ ONTAP工具可以在NFS卷或LUN上创建数据存储库：
 
 [NOTE]
 ====
-* 如果在运行 ONTAP 9.8 及更高版本的 ASA 和经批准的 AFF 系统中使用 VMFS5 和 VMFS6 数据存储库，则 ONTAP 工具支持将其配置为最大 VMFS LUN 和 64 TB 的卷大小。
+* 如果在所有运行ONTAP 9.8或更高版本的ASA系统以及所有其他运行ONTAP 9.12.1P2或更高版本的系统上使用、则ONTAP工具支持将VMFS5和VMFS6数据存储库的最大VMFS LUN和卷大小配置为64 TB。
 +
 在其他平台上，支持的最大 LUN 大小为 16 TB 。
 

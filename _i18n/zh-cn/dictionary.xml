@@ -732,28 +732,19 @@
   <block id="fa43d63ba917729629ab7f912cf6f6ca" category="paragraph">您必须根据建议的设置配置存储超时间隔，以使 Storage Replication Adapter （ SRA ）能够在高度扩展的环境中以最佳性能运行。</block>
   <block id="383c9f9f08441de49a64fa51e25ad9c9" category="section-title">存储提供程序设置</block>
   <block id="68c185224c05d2129a14987da1b847a6" category="paragraph">您应在 SRM 上为扩展环境设置以下超时值：</block>
-  <block id="fe4c6a5e7bd6793b37370e4e46daf998" category="cell">高级设置</block>
-  <block id="2d454f7be17f2289142fb73539ba0c06" category="cell">超时值</block>
-  <block id="cfb1af8547e34b1470b19edbde9418b8" category="paragraph">StorageProvider.resignatureTimeout</block>
   <block id="341bac145cc58ec7a7ab03eba3971c0b" category="paragraph">将设置值从 900 秒增加到 12000 秒。</block>
-  <block id="084a7cbae7a12c6ad6f1f66a39e88f9b" category="paragraph">storageProvider.hostRescanDelay</block>
   <block id="072b030ba126b2f4b2374f342be9ed44" category="paragraph">60</block>
-  <block id="aa18dc2961636b24cb5d5f9e925404a9" category="paragraph">storageProvider.hostRescanRepeatCnt</block>
   <block id="98f13708210194c475687be6106a3b84" category="paragraph">20</block>
-  <block id="c1533677fede32792c4b54cf81865145" category="paragraph">storageProvider.hostRescanTimeoutSec</block>
   <block id="9df3b59d2f557fab39346b37532a0832" category="paragraph">设置一个高值（例如： 99999 ）</block>
-  <block id="3868919c1577c6c9fcb90f12ff7241a9" category="paragraph">您还应启用 StorageProvider.autoResignatureMode 选项。</block>
   <block id="7ab0999b0811be49a9148b1092cf0095" category="paragraph">有关修改存储提供程序设置的详细信息，请参见 VMware 文档。</block>
   <block id="7ceb96cf2f53ab82cf68115087e42798" category="inline-link">VMware vSphere 文档：更改存储提供程序设置</block>
   <block id="6b9647887381f9ce12a57a287e1bafbd" category="paragraph"><block ref="6b9647887381f9ce12a57a287e1bafbd" category="inline-link-rx"></block></block>
   <block id="6deaa5e1cafca832bac1b468485b9454" category="section-title">存储设置</block>
-  <block id="202667bd06a4b1c9918ebf1e566e60f2" category="paragraph">对于高度扩展的环境，必须将 storage.commandTimeout 和 storage.maxConcurrentCommandCnt 超时间隔的值设置为 99 ， 999 秒。</block>
   <block id="00a510939945fb6eb144a70baf6f9fd4" category="admonition">指定的超时间隔为最大值。您无需等待达到最大超时值。大多数命令都会在设置的最大超时间隔内完成。</block>
   <block id="e8e75924ea6b1743aedaf9cdc60f2811" category="paragraph">您还应在 vvol.properties 文件中设置 SRA 执行单个操作的最长时间： offtap.operation.timeout.period.seconds=86400 。</block>
   <block id="0a757269d3671e08f4647a4a3f39c7af" category="inline-link">NetApp 知识库问题解答 1001111 ：《适用于 ONTAP 的 NetApp 存储复制适配器 4.0/7.X 规模估算指南》</block>
   <block id="b2dacb077897e6e20eab5019528b0b4d" category="paragraph">有关修改 SAN Provider 设置的 VMware 文档提供了更多信息。</block>
   <block id="c106a2cd545fb9665a990784905584ee" category="inline-link">VMware Site Recovery Manager 文档：更改存储设置</block>
-  <block id="5ae0fbc5a94ef2dc0c2a09ad3529481f" category="paragraph"><block ref="5ae0fbc5a94ef2dc0c2a09ad3529481f" category="inline-link-rx"></block></block>
   <block id="578d9149fa04c3d4f2229ad419fbfec3" category="doc">部署 ONTAP 工具的要求</block>
   <block id="147526bf2b5a3f09ae14e12840a1138e" category="summary">如果在部署或升级 ONTAP 工具后未自动更新插件，则应清理浏览器和 vCenter Server 上缓存的下载插件包以解决 vCenter Server 插件问题。</block>
   <block id="a0616a23fd099dfad3eb5032733a31a3" category="list-text">删除浏览器缓存。</block>
@@ -1263,7 +1254,6 @@
   <block id="abc76e74279f9441a4a6c363c930ab48" category="paragraph">`storageProvider.hostRescanRepeatCnt`</block>
   <block id="d9ad1cd9ed6154c08811ffdbeec40f42" category="paragraph">`storageProvider.hostRescanTimeoutSec`</block>
   <block id="c30b7c029fe2d9044307db1e0f6ea417" category="paragraph">您还应启用 `StorageProvider.autoResignatureMode` 选项。</block>
-  <block id="686f64fc789747485a424cbfcfd51b54" category="paragraph">对于高度扩展的环境，必须将 `storage.commandTimeout` 和 `storage.maxConcurrentCommandCnt` 超时间隔的值设置为 99 ， 999 秒。</block>
   <block id="21f42d9016dfb5108147b0d1fd86ab98" category="summary">您可以使用 ONTAP 工具为 VVOL 数据存储库配置复制。VVOL 复制的主要目的是，在灾难恢复期间使用 VMware Site Recovery Manager （ SRM\ ）保护关键虚拟机。</block>
   <block id="0e96e89e8bdbddc24e1527490b23a25f" category="doc">为 VVOL 数据存储库配置复制以保护虚拟机</block>
   <block id="83e09c19742d5aebbbeca5a4592f4483" category="paragraph">您可以使用 ONTAP 工具为 VVOL 数据存储库配置复制。VVOL 复制的主要目的是，在灾难恢复期间使用 VMware Site Recovery Manager （ SRM ）保护关键虚拟机。</block>
@@ -1410,7 +1400,6 @@
   <block id="2efb0fa4cef9462e9a212abf6778b626" category="list-text">对 iSCSI 子网访问重复上述步骤，然后单击 * 应用 * 。</block>
   <block id="e9df7d5252c2104198351b64e368569b" category="paragraph">您可以使用适用于 VMware vSphere 的 ONTAP 工具在 ESXi 主机上设置超时和其他值，以确保性能最佳并成功进行故障转移。ONTAP 工具设置的值基于 NetApp 内部测试。</block>
   <block id="56cfa018d4e9a7aa0b73e64b0dd88f77" category="paragraph">请参见 " 在不同子网之间启用数据存储库挂载 " 。</block>
-  <block id="ec2fa05ad1e1cd992e000b32058b54e0" category="list-text">如果在运行 ONTAP 9.8 及更高版本的 ASA 和经批准的 AFF 系统中使用 VMFS5 和 VMFS6 数据存储库，则 ONTAP 工具支持将其配置为最大 VMFS LUN 和 64 TB 的卷大小。</block>
   <block id="1e188467952fdbff98e3068f89af769c" category="summary">ONTAP 工具支持使用命令重新平衡数据中心中的 FlexVol 卷。主要目标是在 FlexVol 卷之间实现均匀的空间利用率。ONTAP 工具会根据空间使用情况，精简配置， LUN 计数和存储功能配置文件在现有卷之间重新分布 VVOL 。</block>
   <block id="a0df72576daf9a1137d39f7553d36e82" category="list-text">铜牌</block>
   <block id="ae430c36b97e2fb5fad06eb10d89e8f4" category="paragraph">借助 ONTAP 工具，您可以为每个虚拟卷（ VVol ）数据存储库配置一个新的存储功能配置文件，该配置文件支持在同一个 VVol 数据存储库上配置具有不同 IOPS 要求的虚拟机。在执行具有 IOPS 要求的虚拟机配置工作流时，所有 VVOL 数据存储库都会列在兼容数据存储库列表中。</block>
@@ -1743,7 +1732,6 @@
   <block id="5547d8d27b62c49e4555e1f79122a342" category="paragraph"><block ref="9e427bf42ac054021120757914ef1809" prefix="" category="inline-code"></block></block>
   <block id="b8ace162f3094fd5ac1138ced112d7a7" category="list-text">启动VMware vSphere Client服务：<block ref="bfbe7f4b006f6fcfc7bb66e075309067" prefix=" " category="inline-code"></block></block>
   <block id="02026f27af003e00469addac855d370b" category="paragraph">如果您要部署最新版本的ONTAP 工具、则必须查看相关主题 <block ref="44969696c082c6abaae247e8c1723287" category="inline-link-macro-rx"></block>。主题 <block ref="6db555bae030dd891aa85762ae9d5b14" category="inline-link-macro-rx"></block> 具有有关执行原位升级的信息。</block>
-  <block id="36716d5924fd9465137a810fd76c2f48" category="paragraph">启用后， VASA Provider 和 Storage Replication Adapter （ SRA ）均使用此端口与 vCenter Server 进行通信。要获取 TCP/IP 设置，也需要此端口。此端口用于下载VP支持包、访问Web-CLI用户界面以及控制从VMware到VP的通信路径。</block>
   <block id="71a6973fa992a434c0d25fb07bd6f07d" category="paragraph">根据凭据的配置方式， VMware vCenter Server 和存储系统会侦听此端口上的安全通信。此端口用于客户端-服务器通信架构。默认情况下、安全连接会启用443端口。此客户端可以是使用REST API的任何自动化客户端、它会启动与服务器的连接、并且端点会交换数据。</block>
   <block id="94694a876801fa4851e5478564de6f4a" category="paragraph">ONTAP 工具可与VMware vCenter Server虚拟设备(vCSA)结合使用。您必须在包含 ESXi 系统的受支持 vSphere 上部署 ONTAP 工具。</block>
   <block id="9abf7c4d6f8e5b536137c70ad41a5f3b" category="paragraph"><block ref="9abf7c4d6f8e5b536137c70ad41a5f3b" category="inline-link-rx"></block></block>
@@ -2162,4 +2150,6 @@
   <block id="c4d7bfe92b4693a00e8289e45547ab0d" category="paragraph">在SRM共享恢复站点配置中、每个SRM服务器都需要具有一个专用的SRA实例(SRM和SRA之间的1：1关系)。将VCF模式下的OTV配置为每个SRM服务器的专用SRA实例。此外、您还可以为VMware vSphere设备部署未启用SRA的ONTAP工具、此工具已向vCenter注册、并用于非SRA任务、例如数据存储库配置。</block>
   <block id="ffb65cab8d95fee8d80abc7ceaa0a0ec" category="list-text">如果在执行重新保护操作后、适用于VMware vSphere的ONTAP工具中未显示数据存储库、则应运行存储系统发现或等待下一个计划的发现操作。</block>
   <block id="1030a4736944c363305ecfdc816d75b0" category="sidebar">配置ESXi主机设置</block>
+  <block id="5f479a62f2104046972d10f2cbf88255" category="paragraph">当您遇到超时时时、请增加的值<block ref="e7a7316b2dab3875c5aa0977c256ae38" prefix=" " category="inline-code"></block> 和<block ref="b6c033f4806640a2a2858512cf9f8c1b" prefix=" " category="inline-code"></block> 更高的值。</block>
+  <block id="7e2e86e08ed241dcd1c4a60663089958" category="list-text">如果在所有运行ONTAP 9.8或更高版本的ASA系统以及所有其他运行ONTAP 9.12.1P2或更高版本的系统上使用、则ONTAP工具支持将VMFS5和VMFS6数据存储库的最大VMFS LUN和卷大小配置为64 TB。</block>
 </blocks>
