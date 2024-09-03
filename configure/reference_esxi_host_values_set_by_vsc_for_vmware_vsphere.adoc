@@ -65,6 +65,10 @@ summary: 您可以使用适用于 VMware vSphere 的 ONTAP 工具在 ESXi 主机
 +
 对于所有NFS配置、请将此值设置为5。
 
+* *SURPC.MaxConnPerIP*
++
+如果使用的是vSphere 7.0或更高版本、则应将此值设置为128。
+
 
 
 

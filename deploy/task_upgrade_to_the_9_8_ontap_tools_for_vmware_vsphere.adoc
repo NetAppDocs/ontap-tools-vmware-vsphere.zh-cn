@@ -15,6 +15,8 @@ summary: 您可以按照此处提供的说明、从现有9.10或更高版本设�
 
 * 您需要的内容 *
 
+互操作性表工具（ IMT ）包含有关受支持的 ONTAP ， vCenter Server ， ESXi 主机，插件应用程序和 Site Recovery Manager （ SRM ）版本的最新信息。 https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT["互操作性表工具"^]有关所有受支持的升级路径信息、请参见。
+
 * 您必须已下载最新版本 ONTAP 工具的 _.ISO_ 文件。
 * 您必须至少预留 12 GB RAM ， ONTAP 工具才能在升级后以最佳状态运行。
 * 您必须清理 vSphere Client 浏览器缓存。

@@ -2152,4 +2152,7 @@
   <block id="1030a4736944c363305ecfdc816d75b0" category="sidebar">配置ESXi主机设置</block>
   <block id="5f479a62f2104046972d10f2cbf88255" category="paragraph">当您遇到超时时时、请增加的值<block ref="e7a7316b2dab3875c5aa0977c256ae38" prefix=" " category="inline-code"></block> 和<block ref="b6c033f4806640a2a2858512cf9f8c1b" prefix=" " category="inline-code"></block> 更高的值。</block>
   <block id="7e2e86e08ed241dcd1c4a60663089958" category="list-text">如果在所有运行ONTAP 9.8或更高版本的ASA系统以及所有其他运行ONTAP 9.12.1P2或更高版本的系统上使用、则ONTAP工具支持将VMFS5和VMFS6数据存储库的最大VMFS LUN和卷大小配置为64 TB。</block>
+  <block id="df5910bf5ed161a784cc7b4fb3fc0a84" category="list-text">*SURPC.MaxConnPerIP*</block>
+  <block id="4a8c1c4202dd77901215a87452e10629" category="paragraph">如果使用的是vSphere 7.0或更高版本、则应将此值设置为128。</block>
+  <block id="34881aef32159ff28f8619a31ff308a3" category="paragraph">互操作性表工具（ IMT ）包含有关受支持的 ONTAP ， vCenter Server ， ESXi 主机，插件应用程序和 Site Recovery Manager （ SRM ）版本的最新信息。<block ref="c4e3c5dd56e9c0925a46d52133eef091" category="inline-link-rx"></block>有关所有受支持的升级路径信息、请参见。</block>
 </blocks>
