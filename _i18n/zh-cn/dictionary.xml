@@ -6,8 +6,6 @@
   <block id="07e195d60b7b7cc8a76a0e66e6ec1692" category="paragraph">发生切换时，二级站点上的 SVM 将接管。这些 SVM 的名称后面附加了 "` -mc` " 后缀。如果在执行配置数据存储库等操作时发生切换操作，则数据存储库所在 SVM 的名称将更改为包含 "` -mc` " 后缀。发生切回时，此后缀将被丢弃，而主站点上的 SVM 将恢复控制。</block>
   <block id="25a08ebfd4f1cc837be8e7fd29c9e2a1" category="section-title">MetroCluster 配置和 VASA Provider</block>
   <block id="aa01ce52a20efe46b8d9f8d571874ece" category="admonition">在切换后， VASA Provider 不会在二级站点上的 SVM 名称后面附加 "` -mc` " 后缀。</block>
-  <block id="6b894d7e8f2bb219ece874c3c249c3f7" category="inline-link">如何为 Virtual Storage Console 配置 RBAC</block>
-  <block id="14d107055fdbd0aa4ef3c23300469f88" category="paragraph"><block ref="14d107055fdbd0aa4ef3c23300469f88" category="inline-link-rx"></block></block>
   <block id="74d56f13e9a7c977cac9a88a879fcbfc" category="paragraph">建议将根对象分配给包含查看权限的任何权限。</block>
   <block id="2bf690158e044812ab33988c70464eba" category="summary">ONTAP 工具支持高可用性 \ （ HA\ ）配置，以帮助在发生故障时使 ONTAP 工具能够无中断地运行。</block>
   <block id="08bab46947b750954e0eb5a840fc8f07" category="doc">为 ONTAP 工具配置高可用性</block>
@@ -1419,7 +1417,6 @@
   <block id="1242e163636ceb52703fad8214a2bedc" category="list-text">您应已配置 ONTAP 9.8P1 或更高版本的存储。</block>
   <block id="2dc470ea65bfb20ee49093121123d780" category="list-text">您必须已下载最新版本 ONTAP 工具的 _.ISO_ 文件。</block>
   <block id="c24f54bbbe4e8d99ba7daa84a6860772" category="list-text">如果从早期版本的 ONTAP 工具升级到最新版本，则会发现 `vvol.properties 文件中缺少 `vvol.rebalance.threshold` 属性。</block>
-  <block id="a7189062665fe6b8b3263ee857e62834" category="paragraph">如果您是 VMware 的新用户且从未使用过 NetApp ONTAP 工具产品，则在部署和配置 ONTAP 工具之前，您需要配置 vCenter Server 并设置 ESXi 主机。</block>
   <block id="78b9c306d2b9e90dc4612872a3412b17" category="image-alt">新用户部署</block>
   <block id="7f92b985b9e4bff91f2d31ae0cc7bdd7" category="list-text">如果您使用的是 SRA 4.0P1 ，则必须先升级到 SRA9.6 ，然后再原位升级 SRA 9.6 版。您可以稍后升级到最新版本的 ONTAP 工具。</block>
   <block id="e2444e964cdc125f0e5e638cd372f502" category="paragraph">如果您拥有 VSC ， VASA Provider 和 SRA 虚拟设备 7.2 或 7.2.1 版，则无法直接升级到统一设备的 9.7P1 或更高版本。您必须先将现有设置升级到虚拟设备 9.7 版，然后再升级到最新版本。</block>
@@ -1650,7 +1647,6 @@
   <block id="148d96a120a3dbbdac7376feadd4f4e7" category="paragraph">您应已执行本主题中提到的步骤 <block ref="a7b1731ee7a384d42899d1089c98fcd0" category="inline-link-macro-rx"></block></block>
   <block id="50344e3c61009efb2aa76acc2330e318" category="list-text">在vSphere Client页面上、单击*策略和配置文件*。</block>
   <block id="f9945d9a9730b8841a7d9375a4e7d470" category="list-text">在VM存储策略页面中，单击*cree*。</block>
-  <block id="ef9991a7cf13c45bcebdc7db419b4a5b" category="summary">适用于 VMware vSphere 的 ONTAP 工具可为使用 NetApp 存储系统的 VMware 环境中的虚拟机提供端到端生命周期管理。它使管理员可以直接管理vCenter Server中的存储、从而简化VMware环境的存储和数据管理。</block>
   <block id="35b93a81a0436a7a2cfd708e05194805" category="paragraph">ONTAP 工具可与 vSphere Client 集成，使您能够使用单点登录（ Single Sign-On ， SSO ）服务。在具有多个vCenter Server实例的环境中、您要管理的每个vCenter Server实例都必须具有各自已注册的ONTAP 工具实例。</block>
   <block id="b0fc0bed1deb4cd0ac1733c83406a338" category="list-text">使用ONTAP System Manager 9.8P1或更高版本创建集群管理员或SVM管理员角色。请参见 <block ref="b36e85751d57920856a667a70fbd44c3" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
   <block id="36a3e078a9ae64bd58305972fd6b6a14" category="paragraph">要创建新的用户角色，您必须以管理员身份登录到运行 ONTAP 的存储系统。您可以使用ONTAP System Manager 9.8P1或更高版本创建ONTAP 角色。请参见 <block ref="b36e85751d57920856a667a70fbd44c3" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
@@ -2155,4 +2151,9 @@
   <block id="df5910bf5ed161a784cc7b4fb3fc0a84" category="list-text">*SURPC.MaxConnPerIP*</block>
   <block id="4a8c1c4202dd77901215a87452e10629" category="paragraph">如果使用的是vSphere 7.0或更高版本、则应将此值设置为128。</block>
   <block id="34881aef32159ff28f8619a31ff308a3" category="paragraph">互操作性表工具（ IMT ）包含有关受支持的 ONTAP ， vCenter Server ， ESXi 主机，插件应用程序和 Site Recovery Manager （ SRM ）版本的最新信息。<block ref="c4e3c5dd56e9c0925a46d52133eef091" category="inline-link-rx"></block>有关所有受支持的升级路径信息、请参见。</block>
+  <block id="dc00c7eca4a9deab6a54899a9976ba3a" category="inline-link">适用于VMware vSphere的ONTAP工具：RBAC配置</block>
+  <block id="788b65c29277d612dded28375da10d63" category="paragraph"><block ref="788b65c29277d612dded28375da10d63" category="inline-link-rx"></block></block>
+  <block id="7230ef1fabe08177b3b9d5485ebc25c0" category="summary">适用于VMware vSphere的ONTAP工具可为使用NetApp存储系统的VMware环境中的虚拟机提供端到端生命周期管理。它使管理员可以直接管理vCenter Server中的存储、从而简化VMware环境的存储和数据管理。</block>
+  <block id="47635be81cb27fe24be3c1541e49e8c2" category="doc">ONTAP工具概述</block>
+  <block id="693059892f5ca1ab1683c98e037ee404" category="summary">如果您是VMware的新用户且从未使用过NetApp ONTAP工具产品、则需要在部署和配置ONTAP工具之前配置vCenter Server并设置ESXi主机。</block>
 </blocks>

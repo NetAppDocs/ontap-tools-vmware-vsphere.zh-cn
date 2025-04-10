@@ -15,7 +15,7 @@ summary: 不同的适用于VMware vSphere的ONTAP工具任务需要不同的特�
 
 有关ONTAP工具任务所需特权的信息、请参见NetApp知识库文章1032542。
 
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/How_to_configure_RBAC_for_Virtual_Storage_Console["如何为 Virtual Storage Console 配置 RBAC"]
+https://kb.netapp.com/data-mgmt/OTV/VSC_Kbs/VSC_VASA_and_SRA_ONTAP_RBAC_Configuration["适用于VMware vSphere的ONTAP工具：RBAC配置"]
 
 
 
