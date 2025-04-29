@@ -34,5 +34,5 @@ Storage Replication Adapter （ SRA ）需要以下许可证：
 要查看数据存储库的 IOPS ，必须启用存储 I/O 控制或取消选中存储 I/O 控制配置中的禁用存储 I/O 统计信息收集复选框。只有在从 VMware 获得 Enterprise Plus 许可证后，才能启用存储 I/O 控制。
 
 * https://kb.vmware.com/s/article/1022091["对存储 I/O 控制进行故障排除"]
-* https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.resmgmt.doc/GUID-37CC0E44-7BC7-479C-81DC-FFFC21C1C4E3.html["存储 I/O 控制要求"]
+* https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-5/vsphere-resource-management-6-5.html["vSphere资源管理"]
 

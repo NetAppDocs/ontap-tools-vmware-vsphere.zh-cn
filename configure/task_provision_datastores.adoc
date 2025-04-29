@@ -223,4 +223,4 @@ https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/concept_kerbero
 
 https://docs.netapp.com/us-en/ontap/nfs-config/create-kerberos-config-task.html["在数据 LIF 上启用 Kerberos"]
 
-https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-BDCB7500-72EC-4B6B-9574-CFAEAF95AE81.html["为ESXi主机配置Kerberos身份验证"]
+https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-storage-7-0.html["vSphere存储"]

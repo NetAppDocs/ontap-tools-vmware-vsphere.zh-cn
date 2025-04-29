@@ -11,7 +11,7 @@ summary: 适用于VMware vSphere的ONTAP工具支持VMware SRM共享恢复站点
 
 
 [role="lead"]
-适用于VMware vSphere的ONTAP工具支持VMware的SRM共享恢复站点配置。有关详细信息，请参见 https://docs.vmware.com/en/Site-Recovery-Manager/8.6/com.vmware.srm.install_config.doc/GUID-EBF84252-DF37-43CD-ADC8-E90F5254F315.html["共享恢复站点配置中的Site Recovery Manager"]。恢复站点上的Site Recovery Manager Server实例连接到相同的vCenter Server实例。
+适用于VMware vSphere的ONTAP工具支持VMware的SRM共享恢复站点配置。有关详细信息，请参阅： https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-8/site-recovery-manager-installation-and-configuration-8-8.html["共享恢复站点配置中的Site Recovery Manager"]。恢复站点上的Site Recovery Manager Server实例连接到相同的vCenter Server实例。
 
 在SRM共享恢复站点配置中、每个SRM服务器都需要具有一个专用的SRA实例(SRM和SRA之间的1：1关系)。将VCF模式下的OTV配置为每个SRM服务器的专用SRA实例。此外、您还可以为VMware vSphere设备部署未启用SRA的ONTAP工具、此工具已向vCenter注册、并用于非SRA任务、例如数据存储库配置。
 

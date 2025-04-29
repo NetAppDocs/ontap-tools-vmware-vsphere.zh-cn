@@ -54,9 +54,9 @@ summary: 您必须根据建议的设置配置存储超时间隔，以使 Storage
 |===
 您还应启用 `StorageProvider.autoResignatureMode` 选项。
 
-有关修改存储提供程序设置的详细信息，请参见 VMware 文档。
+有关修改存储提供程序设置的详细信息、请参见Broadcom文档。
 
-https://docs.vmware.com/en/Site-Recovery-Manager/6.5/com.vmware.srm.admin.doc/GUID-E4060824-E3C2-4869-BC39-76E88E2FF9A0.html["VMware vSphere 文档：更改存储提供程序设置"]
+https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-8/site-recovery-manager-administration-8-8/advanced-srm-configuration/reconfigure-srm-settings/change-storage-provider-settings.html["更改存储提供程序设置"]
 
 
 
@@ -71,6 +71,6 @@ NOTE: 指定的超时间隔为最大值。您无需等待达到最大超时值�
 
 https://kb.netapp.com/mgmt/OTV/SRA/NetApp_Storage_Replication_Adapter_4.0%2F%2F7.X_for_ONTAP_Sizing_Guide["NetApp 知识库问题解答 1001111 ：《适用于 ONTAP 的 NetApp 存储复制适配器 4.0/7.X 规模估算指南》"]
 
-有关修改 SAN Provider 设置的 VMware 文档提供了更多信息。
+有关修改SAN Provider设置的Broadcom文档提供了详细信息。
 
-https://docs.vmware.com/en/Site-Recovery-Manager/index.html?hWord=N4IghgNiBcIGoFkDuYBOBTABAZQJYBcsAldAYwHsA3dVAT0wTADswBzGzAEXNIFcBbdE3xh8uckxABfIA["VMware Site Recovery Manager 文档：更改存储设置"]
+https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-8/site-recovery-manager-administration-8-8/advanced-srm-configuration/reconfigure-srm-settings/change-storage-settings.html["更改存储设置"]

@@ -21,12 +21,7 @@ summary: 您必须对使用 vSphere Client 创建的受保护站点和恢复站�
 
 * 关于此任务 *
 
-SnapMirror 扇出配置是指将源卷复制到两个不同目标的配置。当 SRM 需要从目标恢复虚拟机时，这些问题会在恢复期间造成问题。
-
-
-NOTE: Storage Replication Adapter （ SRA ）不支持扇出 SnapMirror 配置。
-
-* 步骤 *
+SnapMirror 扇出配置是指将源卷复制到两个不同目标的配置。当 SRM 需要从目标恢复虚拟机时，这些问题会在恢复期间造成问题。* 步骤 *
 
 . 双击 vSphere Client 主页上的 * 站点恢复 * ，然后单击 * 站点 * 。
 . 单击 * 对象 * > * 操作 * > * 配对站点 * 。

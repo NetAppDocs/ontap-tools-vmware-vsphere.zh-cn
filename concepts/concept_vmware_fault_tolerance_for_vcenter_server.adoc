@@ -23,4 +23,4 @@ VMware vSphere Fault Tolerance （ FT ）功能可在更高级别提供高可用
 
 用于配置 HA 的操作步骤取决于 vCenter Server 的版本。例如，您可以使用以下参考链接并选择所需的 vCenter Server 版本，以查看配置 HA 的步骤。
 
-https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-57929CF0-DA9B-407A-BF2E-E7B72708D825.html["VMware vSphere 文档：容错要求，限制和许可"]
+https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-5/vsphere-availability.html["容错要求、限制和许可"]

@@ -2,7 +2,7 @@
 section: concepts
 title: 概念
 entries:
-- title: ONTAP 工具概述
+- title: ONTAP工具概述
   url: "/concepts/concept_virtual_storage_console_overview.html"
 - title: VVOL 的 VASA Provider 配置
   url: "/concepts/concept_configure_vvols_datastores.html"
