@@ -40,7 +40,7 @@ OpenSSL dgst -SHA256 -verifyCcs-prod-OTV-SRA-TGZ.pub -Signature NetApp-ONATP-too
 NOTE: 您只能从现有9.10或更高版本原位升级到ONTAP 工具的最新版本。
 
 
-NOTE: 从ONTAP tools 9.12升级开始、所有存储系统的身份验证和通信过程都会通过自动信任ONTAP存储证书从基本身份验证更改为基于证书的身份验证。无需用户执行任何操作。
+NOTE: 从ONTAP工具 9.12 升级开始，所有存储系统的身份验证和通信过程都从基本身份验证更改为基于证书的身份验证，自动信任ONTAP存储证书。
 
 添加不带证书身份验证的存储系统受到限制。
 

@@ -1123,7 +1123,6 @@
   <block id="56d43ad1a280ada5e16fd2960ae44b32" category="list-text">SRM</block>
   <block id="1eb176cea5abcd7b2040e0863742d426" category="paragraph">有关安装 SRM 的文档，请参见 VMware 站点。</block>
   <block id="4617dd5a7193927c5552182931541c9c" category="inline-link">VMware Site Recovery Manager 文档</block>
-  <block id="2b27cdd9529ad91885c6c019ee8329ee" category="paragraph"><block ref="2b27cdd9529ad91885c6c019ee8329ee" category="inline-link-rx"></block></block>
   <block id="406292f3c5b20715e348f48fa5e6d6e3" category="list-text">SRA</block>
   <block id="1a4c02d907de9cf09a31d1f5f6ab334f" category="paragraph">适配器安装在 SRM 和 SRA 服务器上。</block>
   <block id="bdeb77edc25aca768d0b70a5251e91d6" category="list-text">验证受保护站点上的数据存储库是否包含已向 vCenter Server 注册的虚拟机。</block>
@@ -1161,7 +1160,6 @@
   <block id="39b58596949c4b9771bc20ef05dffce8" category="list-text">您必须已将 SRM 中的受保护站点和恢复站点配对。</block>
   <block id="0fef91ca040522ee258c514383b22085" category="list-text">在配置阵列管理器之前，您必须已配置存储。</block>
   <block id="c57d1578817fecd8541ae081dd3b752e" category="list-text">您必须已在受保护站点和恢复站点之间配置和复制 SnapMirror 关系。</block>
-  <block id="43195d9f7cab578cb244f5f740f6e085" category="list-text">您必须已启用 SVM 管理 LIF 以启用多租户。</block>
   <block id="7945c1d153109a7470a701147eb9bf91" category="paragraph">SRA 支持集群级别的管理和 SVM 级别的管理。如果您在集群级别添加存储，则可以发现集群中的所有 SVM 并对其执行操作。如果在 SVM 级别添加存储，则只能管理该特定 SVM 。</block>
   <block id="e074ce1ed2ac873058a796fcf283eedd" category="admonition">VMware 不支持对 SRM 使用 NFS4.1 协议。</block>
   <block id="7fdab6ccf999bb53d546254efa8e925a" category="list-text">在 SRM 中，单击 * 阵列管理器 * ，然后单击 * 添加阵列管理器 * 。</block>
@@ -1947,7 +1945,6 @@
   <block id="9854c166539f1bb4ba9e61f895f32a6f" category="paragraph">引入了一个新的 API ，用于生成用于对 API 调用进行身份验证的 _appliation-api-token_ 。对某些现有 API 进行了修改，以包括 _appliation-api-token_ 标头。从ONTAP工具9.12版本开始、swagger不支持1.0 API。以前在1.0上运行的指针将移至2.0或3.0 API。</block>
   <block id="ca98aaad89f286b4cde26867bc59bed4" category="admonition">从适用于VMware vSphere 9.13的ONTAP工具中、2.0存储功能配置文件API不再可用。</block>
   <block id="92ac68c3c800987e3d8470f227aef494" category="paragraph">_.ova_ 文件包含 ONTAP 工具。部署完成后、系统将在您的环境中安装ONTAP工具、VASA和SRA产品。默认情况下、一旦您确定后续部署模式并根据需要选择是否启用VASA Provider和SRA、ONTAP工具就会开始工作。</block>
-  <block id="47036403afaaf8ca717ff4a9ab5e937f" category="admonition">从ONTAP tools 9.12升级开始、所有存储系统的身份验证和通信过程都会通过自动信任ONTAP存储证书从基本身份验证更改为基于证书的身份验证。无需用户执行任何操作。</block>
   <block id="58219ebdf648f85e26c26438bb61d686" category="paragraph">如果使用json文件添加了具有自定义创建的集群范围用户的存储系统、而您希望升级到9.12及更高版本、则
 升级之前、请在ONTAP命令行界面上运行以下命令、以便在适用于VMware vSphere的ONTAP工具与ONTAP之间启用基于证书的通信。</block>
   <block id="89ee3f6f60ef2fe23bff96f279b6d85a" category="summary">您必须在VMware vSphere环境中下载并部署ONTAP工具、然后根据要使用ONTAP工具、VASA Provider和SRA执行的任务配置所需的应用程序。</block>
@@ -2153,4 +2150,7 @@
   <block id="d2a8cc12733d837b21d04e966da18849" category="inline-link">Site Recovery Manager安装和配置Site Recovery Manager</block>
   <block id="aa7e72b3419247f39d0e6b1a10ecde90" category="paragraph"><block ref="e8cde9e1b38fd82f2c0a7be37ca3e90f" category="inline-link-rx"></block>了解更多信息。</block>
   <block id="1131b5ba310f0132fa89f2e2bc52cb0c" category="paragraph">SnapMirror 扇出配置是指将源卷复制到两个不同目标的配置。当 SRM 需要从目标恢复虚拟机时，这些问题会在恢复期间造成问题。* 步骤 *</block>
+  <block id="e9137eaa9a63d9c4bceed13dfb01d6db" category="admonition">从ONTAP工具 9.12 升级开始，所有存储系统的身份验证和通信过程都从基本身份验证更改为基于证书的身份验证，自动信任ONTAP存储证书。</block>
+  <block id="04afb3bdbc4139cf45256b44141b1a77" category="list-text">您必须启用 SVM 管理 LIF 以支持多租户。</block>
+  <block id="0d6d5f3b6b0d7149732baa366c9a237a" category="paragraph"><block ref="0d6d5f3b6b0d7149732baa366c9a237a" category="inline-link-rx"></block></block>
 </blocks>

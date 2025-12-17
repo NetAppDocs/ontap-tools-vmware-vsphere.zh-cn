@@ -22,7 +22,7 @@ summary: 在运行适用于 VMware vCenter Site Recovery Manager （ SRM\ ）的
 有关安装 SRM 的文档，请参见 VMware 站点。
 
 +
-https://www.vmware.com/support/pubs/srm_pubs.html["VMware Site Recovery Manager 文档"]
+https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-7/site-recovery-manager-installation-and-configuration-8-7/overview-of-vmware-site-recovery-manager.html["VMware Site Recovery Manager 文档"]
 
 * SRA
 +
