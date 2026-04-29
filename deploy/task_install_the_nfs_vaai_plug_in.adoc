@@ -15,7 +15,7 @@ summary: 您可以使用适用于 VMware vSphere 的 ONTAP 工具的图形用户
 
 * 您需要的内容 *
 
-* 您应已下载适用于VAAI的NFS插件的安装包 (``.vib`) NetApp 支持站点。 https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"]
+* 您应该已经从 NetApp 支持站点下载了适用于 VAAI (``.vib` 的 NFS 插件的安装包。 https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]
 * 您应已安装 ESXi 主机 6.5 或更高版本以及 ONTAP 9.1 或更高版本。
 * 您应已启动 ESXi 主机并挂载 NFS 数据存储库。
 * 您应已将 `DataMover.HardwareAcceleratedMove` ， `DataMover.HardwareAcceleratedInit` 和 `VMFS3.HardwareAcceleratedLocking` 主机设置的值设置为 "`1` " 。

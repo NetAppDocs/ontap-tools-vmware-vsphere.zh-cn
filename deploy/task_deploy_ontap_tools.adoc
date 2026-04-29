@@ -112,4 +112,4 @@ link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html
 
 * 相关信息 *
 
-https://kb.netapp.com/?title=Advice_and_Troubleshooting%2FData_Storage_Software%2FVirtual_Storage_Console_for_VMware_vSphere%2FError_during_fresh_deployment_of_virtual_appliance_for_VSC%252C_VASA_Provider%252C_and_SRA["全新部署 VSC ， VASA Provider 和 SRA 虚拟设备期间出错"]
+https://kb.netapp.com/?title=Advice_and_Troubleshooting%2FData_Storage_Software%2FVirtual_Storage_Console_for_VMware_vSphere%2FError_during_fresh_deployment_of_virtual_appliance_for_VSC%252C_VASA_Provider%252C_and_SRA["全新部署 VSC ， VASA Provider 和 SRA 虚拟设备期间出错"^]

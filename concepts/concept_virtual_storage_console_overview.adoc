@@ -68,4 +68,4 @@ VSC 未附带适用于 VAAI 的 NetApp NFS 插件。但是，您可以从 NetApp
 
 * 相关信息 *
 
-https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"]
+https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]

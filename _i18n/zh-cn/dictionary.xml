@@ -131,7 +131,6 @@
   <block id="ecc73715a6caa4489796ed0e7795a35d" category="paragraph">启用 SRA 并将其与 VMware Site Recovery Manager （ SRM ）结合使用后，您可以在发生故障时恢复 vCenter Server 数据存储库和虚拟机。通过 SRA ，您可以对受保护站点和恢复站点使用基于阵列的复制（ ABR ），以便在发生故障时进行灾难恢复。</block>
   <block id="d33f2a600ba4fe43084a26e95e4908c0" category="paragraph">* 相关信息 *</block>
   <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link">NetApp 支持</block>
-  <block id="cba784dbb6dad30cadc1fcb2d1b5ee81" category="paragraph"><block ref="cba784dbb6dad30cadc1fcb2d1b5ee81" category="inline-link-rx"></block></block>
   <block id="a3a3f39887f64ae51ced6d024f11ac31" category="summary">vCenter Server 可识别权限，而不是权限。每个 vCenter Server 权限都包含三个组件。</block>
   <block id="054195114e28f4a480374b34e3d89663" category="doc">vCenter Server 权限的组成部分</block>
   <block id="5c88132196c6909932172f7c24e72f30" category="paragraph">vCenter Server 包含以下组件：</block>
@@ -344,7 +343,6 @@
   <block id="7a77e32a055e6275e64bb08b9acbc01d" category="doc">为 Virtual Storage Console 重新生成 SSL 证书</block>
   <block id="3f401b3e8f8f4b1b523ddd65e0bafd07" category="paragraph">您可以使用维护控制台启用远程诊断并生成站点专用证书。</block>
   <block id="198cc30ac53c3cd09ebeb0c95455013c" category="inline-link">Virtual Storage Console ：实施 CA 签名的证书</block>
-  <block id="242fdf0a7f57f76859f5a36880054cd4" category="paragraph"><block ref="242fdf0a7f57f76859f5a36880054cd4" category="inline-link-rx"></block></block>
   <block id="0d0a739781e7d3d46a2b5e7fe7c596ba" category="list-text">登录到维护控制台。</block>
   <block id="6db7b939a3be36f91f51e71d13cb0304" category="list-text">输入 `1` 以访问应用程序配置菜单。</block>
   <block id="48338f7803b0a0ee3e139e1a605abe67" category="list-text">输入 `7` 以重新生成 SSL 证书。</block>
@@ -382,7 +380,6 @@
   <block id="01c940a8320a768f254d17b5ad22e77d" category="paragraph">右键单击某个主机，然后选择 * NetApp ONTAP tools* &gt; * 配置数据存储库 * 。</block>
   <block id="290612199861c31d1036b185b4e69b75" category="paragraph">摘要</block>
   <block id="db25841cad5f4a3789c93e40d334c1b8" category="inline-link">当卷状态更改为脱机时，无法访问数据存储库</block>
-  <block id="e8f51520d45845b237d7483dd8e847f2" category="paragraph"><block ref="e8f51520d45845b237d7483dd8e847f2" category="inline-link-rx"></block></block>
   <block id="22c20260fcf54db5b5e7d5a6b8682d2c" category="paragraph">` /opt/netapp/vscserver/etc/kamino/kaminoprefs.xml`</block>
   <block id="f8e055ec64cf85c1c5c3149068354117" category="paragraph">` /opt/netapp/vscserver/etc/vsc/vscPreferences.xml`</block>
   <block id="aea7e5fa2b5a5d2b03f6f239eea1f546" category="summary">如果您使用的是 ONTAP 9.6 或更早版本，则只有在您已为 VASA Provider 注册 OnCommand API 服务以获取 VVOL VM 和数据存储库报告的数据时， VVOL 信息板才能显示 VMware 虚拟卷 \ （ VVols\ ）数据存储库和虚拟机的详细信息。</block>
@@ -580,7 +577,6 @@
   <block id="3ae61be31aa01d055d528fae2744ec15" category="inline-link-macro">适用于 VMware vSphere 的 ONTAP 工具的新用户部署工作流</block>
   <block id="4c33ba4d1376693557bea306916b8d27" category="paragraph"><block ref="4c33ba4d1376693557bea306916b8d27" category="inline-link-macro-rx"></block></block>
   <block id="de48798a02181429a319c23b6ef01a3a" category="inline-link-macro">适用于现有 ONTAP 工具用户的部署工作流</block>
-  <block id="f941583eff3ed87da8d807407294540f" category="paragraph"><block ref="f941583eff3ed87da8d807407294540f" category="inline-link-macro-rx"></block></block>
   <block id="708822da1391b85edd88bf31bc5f6c80" category="paragraph">升级前的最佳实践：</block>
   <block id="985891724c140ff1738f6e5f372c2aa8" category="list-text">您应记录有关正在使用的存储系统及其凭据的信息。</block>
   <block id="fe5d0412a91ef8d1b0aaff837ddcb6a6" category="paragraph">升级后，您应验证是否已自动发现所有存储系统，以及这些存储系统是否具有正确的凭据。</block>
@@ -597,7 +593,6 @@
   <block id="41e3c086373eb94bd53162317558cb17" category="paragraph">基于角色的访问控制（ RBAC ）的要求</block>
   <block id="9fc8af37850fff94dfaee9d2c16a4e2a" category="paragraph">您可以使用 ONTAP System Manager 使用随 ONTAP 工具提供的 JSON 文件创建建议的 ONTAP 角色。</block>
   <block id="2969f17b1d37023acfb2431cca2058fb" category="paragraph">如果用户尝试在没有正确权限的情况下执行任务，则任务选项将灰显。</block>
-  <block id="52b95ac1087cc8a2310e7b2234240c33" category="list-text"><block ref="52b95ac1087cc8a2310e7b2234240c33" category="inline-link-macro-rx"></block></block>
   <block id="0cf4bfaf0eaed89a2885aaaf7a6dc39a" category="list-text"><block ref="0cf4bfaf0eaed89a2885aaaf7a6dc39a" category="inline-link-macro-rx"></block></block>
   <block id="3b2a75ebc087c7f3c4fa9ac0e2a92ebe" category="paragraph">ONTAP 版本</block>
   <block id="1f5e81b542fa08ff985de2e77e2a621a" category="paragraph">存储功能配置文件</block>
@@ -672,7 +667,6 @@
   <block id="3e44226773fd5e723731c1d4266a9cac" category="paragraph">要对 SRA 执行测试故障转移操作，必须启用 FlexClone 许可证。</block>
   <block id="a919e368cdc2a31db9bf251c27d9df05" category="paragraph">要查看数据存储库的 IOPS ，必须启用存储 I/O 控制或取消选中存储 I/O 控制配置中的禁用存储 I/O 统计信息收集复选框。只有在从 VMware 获得 Enterprise Plus 许可证后，才能启用存储 I/O 控制。</block>
   <block id="334d1eb45fc0c2dc8df94b8b513b8df4" category="inline-link">对存储 I/O 控制进行故障排除</block>
-  <block id="1a5f6041f129f43810f85de306ad33b2" category="list-text"><block ref="1a5f6041f129f43810f85de306ad33b2" category="inline-link-rx"></block></block>
   <block id="988a8cbd50f072106aa0cc7589031a95" category="doc">如何部署 ONTAP 工具</block>
   <block id="0efacb73c35dfad8adbb34de54b95af2" category="list-text">您必须已配置和设置 vCenter Server 环境。</block>
   <block id="ba4e8017753da6e2cad1d40cac107160" category="list-text">您必须已为虚拟机设置 ESXi 主机。</block>
@@ -695,7 +689,6 @@
   <block id="a1b22c4e860c222593e335f2f89f0846" category="list-text">注销并重新登录到 vSphere Client 以查看已部署的 ONTAP 工具。</block>
   <block id="64f9a35a2eeb85b42855122a932f1a1c" category="paragraph">* 故障排除： * 如果登录后仍无法查看此插件，则必须清理 vSphere Client 缓存。</block>
   <block id="a001ce2a2f719c7ab3b42e8b33cfc003" category="inline-link">全新部署 VSC ， VASA Provider 和 SRA 虚拟设备期间出错</block>
-  <block id="66d64def2411cb336365eb2aa4c8c21d" category="paragraph"><block ref="66d64def2411cb336365eb2aa4c8c21d" category="inline-link-rx"></block></block>
   <block id="bcbd9f9d2ccf0cb7b5832aca2ca7d2b1" category="summary">在自定义部署 ONTAP 工具时，您必须考虑一些限制。</block>
   <block id="936fb671452b1fa70f30a482a2adf742" category="section-title">设备管理员用户密码</block>
   <block id="8d8b5664d88102f63bdc8eb0650ec133" category="paragraph">管理员密码不得使用任何空格。</block>
@@ -1460,13 +1453,10 @@
   <block id="f112f880ee3808f45fa645d31a60919e" category="paragraph">您可以查看为新数据存储库指定的参数摘要。</block>
   <block id="d95d2027ad4faa7afb16847cf6829317" category="paragraph">通过字段"`卷模式`"、您可以区分创建的数据存储库类型。"`卷模式` " 可以是 "`FlexVol` " 或 "`FlexGroup` " 。</block>
   <block id="fe0891bb90d313b1b9098fdd3e5f531a" category="inline-link">ONTAP 支持 Kerberos</block>
-  <block id="5e31aad48428786bd6d1afc4fa881f95" category="paragraph"><block ref="5e31aad48428786bd6d1afc4fa881f95" category="inline-link-rx"></block></block>
   <block id="b492eaf1aa700257b5bd87a0787ffbba" category="inline-link">使用 NFS 配置 Kerberos 的要求</block>
   <block id="2f9647a83c40cf2ae0233ad123484629" category="paragraph"><block ref="2f9647a83c40cf2ae0233ad123484629" category="inline-link-rx"></block></block>
   <block id="0503dc7bdab97ba0513cd725666d3394" category="inline-link">使用 System Manager — ONTAP 9.7 及更早版本管理 Kerberos 域服务</block>
-  <block id="7fe6d5584982526cfe5bb1b708c9e10f" category="paragraph"><block ref="7fe6d5584982526cfe5bb1b708c9e10f" category="inline-link-rx"></block></block>
   <block id="1a69d38f7b46901c58e85d024e87b034" category="inline-link">在数据 LIF 上启用 Kerberos</block>
-  <block id="bcafb10f2c5e3e1c946d39793d902146" category="paragraph"><block ref="bcafb10f2c5e3e1c946d39793d902146" category="inline-link-rx"></block></block>
   <block id="f05d67a2632f89a349f888bc1abd2314" category="paragraph">VVOL 数据存储库的重新平衡通过 LUN 移动或文件移动来执行。VVOL重新平衡期间考虑的标准如下：</block>
   <block id="4240120fee603161e3f32fa6a4127dc3" category="list-text">不支持NFS VVol数据存储库</block>
   <block id="d9feb2b730ded2731ab499f4b64cca33" category="paragraph"><block ref="ccafd2400edf7c1aa273a76ad605940f" category="inline-link-rx"></block></block>
@@ -1477,13 +1467,11 @@
   <block id="f41a0f70d00fe5c4c096315736c1c5f5" category="paragraph">要使用用户界面配置IPv4或IPv6、请参见以下各节：</block>
   <block id="9e61293b777b055e3576d637f3d16625" category="list-text"><block ref="9e61293b777b055e3576d637f3d16625" category="inline-link-macro-rx"></block></block>
   <block id="c012b5b3ff136d3277c106ffd47bf52e" category="list-text"><block ref="c012b5b3ff136d3277c106ffd47bf52e" category="inline-link-macro-rx"></block></block>
-  <block id="0e28dc8bb869d015f17f333c6255226d" category="list-text">您应已下载适用于VAAI的NFS插件的安装包 <block ref="d7d0fd6d41e4cc9c277d6e7d82ae6981" prefix="(" category="inline-code"></block>) NetApp 支持站点。<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block></block>
   <block id="389fed57e0f06c0d1d884e132105585a" category="list-text">您应安装vSphere 7.x版、因为vSphere 6.5已弃用、不支持vSphere 8.x。</block>
   <block id="5ccc8ee8b61049069fbdba29f36f4627" category="paragraph">您可以下载<block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block> 包含中适用于VMware vSphere的ONTAP 工具的二进制文件(_.ova_)和签名证书的文件<block ref="c28762f698ce57f013f1f9dff01575ab" category="inline-link-rx"></block>。</block>
   <block id="74b89574ae17445aac6b10c4285106ea" category="list-text">您必须已启用Internet控制消息协议(Internet Control Message Protocol、ICMP)。</block>
   <block id="88ba567f89bd6b5781bd16462ced3cfb" category="list-text">右键单击所需的数据中心，然后单击*Deploy OVF temple...*。</block>
   <block id="b88becdec97888719cfd32ce88b5cf5d" category="paragraph">将包含.ova文件的.zip文件解压缩到本地系统。在选择一个OVF模板页面上、指定.ova文件在提取的文件夹中的位置。</block>
-  <block id="58ea740e145f2581727a12d0fe5a5b26" category="paragraph"><block ref="58ea740e145f2581727a12d0fe5a5b26" category="inline-link-rx"></block></block>
   <block id="6d53290ed2111f8c9818e2ed626ab039" category="paragraph">存储系统必须运行ONTAP 9.7、9.8P1或更高版本。</block>
   <block id="c54809bc7a48985187fe5a263ee76985" category="section-title">应用程序用户密码</block>
   <block id="2cdba874d869148b30cb8051d47b193e" category="paragraph">这是分配给管理员帐户的密码。出于安全原因、建议密码长度为8到30个字符、并且至少包含一个大写、一个小写、一个数字和一个特殊字符。密码将在90天后过期。</block>
@@ -1788,14 +1776,11 @@
   <block id="95d6102c2b97fc1611d099336db2e0a9" category="paragraph">您可以设置多个建议的 ONTAP 角色，以便使用适用于 VMware vSphere 的 ONTAP 工具和基于角色的访问控制（ Role-Based Access Control ， RBAC ）。这些角色包含执行ONTAP工具任务所需的存储操作所需的ONTAP特权。</block>
   <block id="d2d9d75ad75bd8f07c048d74285c7e91" category="inline-link">共享恢复站点配置中的Site Recovery Manager</block>
   <block id="2ecc9eaf40eeff2a5d5bfdebc62550bb" category="inline-link">如何在SRM共享恢复站点中配置SRA</block>
-  <block id="15057a3e38aae03f9f465ba7ab620903" category="paragraph">。<block ref="5415c0f790a03b5f7964b877faa0433d" category="inline-link-rx"></block> 知识库文章详细介绍了用于设置SRA以支持SRM共享恢复站点配置的操作步骤。</block>
   <block id="cd407a7dc68ec4931863b0a4b9511c12" category="summary">适用于VMware vSphere的ONTAP工具提供了一个选项、可以将SRA功能与ONTAP工具结合使用来配置灾难恢复。</block>
   <block id="fcfc4d0541fcfaef918a6982404c79f6" category="paragraph">如果您希望ONTAP工具在调整VMFS数据存储库的大小时调整所属卷的大小、则在最初配置VMFS数据存储库时、不应使用存储属性部分下的*使用现有卷*选项、而应让它自动为每个数据存储库创建一个新卷。</block>
   <block id="51f5ef577515311d873f15616c367953" category="summary">如果VASA Provider (VP)虚拟设备丢失、无法访问或无法正常运行、您可能需要执行VP灾难恢复。 </block>
   <block id="b8d4b381d817836a8a1f3e5c51418019" category="doc">VASA Provider灾难恢复</block>
   <block id="6799b6ec743f9159edf3b43790210a11" category="inline-link">如何执行VASA Provider灾难恢复—解决方案指南</block>
-  <block id="8ddd69dbd7e32f9100a31c9917dec7fe" category="paragraph">如果VASA Provider (VP)虚拟设备丢失、无法访问或无法正常运行、您可能需要执行VP灾难恢复。
-有关详细信息，请参见<block ref="4f93ad428ff5409cfa4e0415508a7d46" category="inline-link-rx"></block></block>
   <block id="aaed3a0449e88e224602fbed57441135" category="list-text">单击ONTAP工具概述部分中的*Traditional DABRAD*选项卡。</block>
   <block id="7a045a9aece435d3dce410c093a75c11" category="summary">您可以通过ONTAP工具图形用户界面\(gui\}中的选项收集适用于VMware vSphere的ONTAP®工具的日志文件。技术支持可能会要求您收集日志文件以帮助解决问题。</block>
   <block id="9e6b4a70561c2cfee8a253d124baff0c" category="paragraph">您可以通过ONTAP工具图形用户界面(GUI)中的选项收集适用于VMware vSphere的ONTAP工具的日志文件。技术支持可能会要求您收集日志文件以帮助解决问题。</block>
@@ -2001,7 +1986,6 @@
 平台类型和非对称标志的组合决定了SCP的类型。例如：Platinum_ASA_A、Platinum_ASA_C、Platinum_AF_A、Platinum_AF_C</block>
   <block id="27f262ec74ac82537b4fcf302c54dd8a" category="paragraph">通过 VCF 模式，您无需 vCenter Server 即可为存储创建容器。在 VCF 模式下部署 ONTAP 工具后， VASA Provider 默认处于启用状态。部署完成后、您可以添加、删除或修改存储系统、以及使用REST API创建容器。</block>
   <block id="0217011105625dba328834ca1b076000" category="admonition">从适用于VMware vSphere 9.13P1的ONTAP工具版本开始、支持修改和删除存储系统。</block>
-  <block id="e76565c604215fd9c06d43c315eb188d" category="paragraph">下面的文章提供了在启用VCF后向ONTAP工具添加存储的操作步骤、<block ref="3ac4be985d9966f37c32d23f811ada05" category="inline-link-rx"></block>。</block>
   <block id="4bbb01941f5b07d2c77548cf3627e172" category="paragraph"><block ref="8869387a67183bd24545ffe85b9a9099" prefix="" category="inline-code"></block></block>
   <block id="6d8436bffc0c48236c84f818b9aaae0b" category="paragraph">如果vCenter Server的密码发生更改、则可以使用以下URL更新管理员的密码：<block ref="fcb4077147c7d02d070a79e490ef6b9c" prefix=" " category="inline-code"></block> 其中、IP地址是您在部署期间提供的ONTAP 工具的IP地址。</block>
   <block id="72b2d9b8e8dba06573c834c69c8207cf" category="list-text">登录到控制面板<block ref="dfe4a562f2165dbf9c7017bc505a6f5c" prefix=" " category="inline-code"></block> 然后单击基于Web的命令行界面。</block>
@@ -2063,7 +2047,6 @@
   <block id="c71e03344577d02ef3009ee117ef69be" category="list-text">使用URL从Web-CLI登录<block ref="0c5d4f4ca099b609e46294cd8e7f09f4" prefix=" " category="inline-code"></block></block>
   <block id="56e361a727d7c8be2da77a7d1290523f" category="list-text">运行命令：_container real均势-container_name=container_&lt;container-name&gt;</block>
   <block id="2eff8c5cbf745b3780c6f1612188440c" category="summary">您可以使用适用于VMware vSphere的ONTAP工具和ONTAP System Manager提供的JSON文件配置用于管理存储系统的新用户角色。</block>
-  <block id="e24be7b35f96ddd58f0132a81b0f7875" category="paragraph">请参见知识库文章-<block ref="f570808767cb759d95e66df23ec84de1" category="inline-link-rx"></block> 有关如何从Web-CLI下载ONTAP权限文件的说明。</block>
   <block id="ea31b9056d95d4ca86334ad5105cc7f8" category="section-title">ESXi主机高级配置</block>
   <block id="a7c754e77e58c49e49144277cc8ff540" category="list-text">从vSphere 8.0版开始、VVOV数据存储库支持NVMe/FC协议。</block>
   <block id="53a08b8f8dc82c05fb2ee606dd5fc1ee" category="paragraph">如果在配置期间未指定存储功能配置文件，您可以稍后使用存储映射页面将数据存储库映射到存储功能配置文件。您可以对 FlexGroup 支持的数据存储库上配置的虚拟机的数据 VMDK 文件应用存储服务质量设置，吞吐量上限（最大 IOPS ）和吞吐量下限（最小 IOPS ）。可以通过右键单击数据存储库在数据存储库级别或单个虚拟机级别应用 QoS 设置。右键单击选项仅适用于由 FlexGroup 数据存储库提供支持的数据存储库或虚拟机。将 QoS 应用于数据存储库后，任何已存在的数据存储库或虚拟机 QoS 设置将被覆盖。无法在数据存储库级别或虚拟机级别对SVM用户上配置的数据存储库应用QoS设置、因为ONTAP在SVM管理级别不支持QoS。</block>
@@ -2124,33 +2107,48 @@
   <block id="4a8c1c4202dd77901215a87452e10629" category="paragraph">如果使用的是vSphere 7.0或更高版本、则应将此值设置为128。</block>
   <block id="34881aef32159ff28f8619a31ff308a3" category="paragraph">互操作性表工具（ IMT ）包含有关受支持的 ONTAP ， vCenter Server ， ESXi 主机，插件应用程序和 Site Recovery Manager （ SRM ）版本的最新信息。<block ref="c4e3c5dd56e9c0925a46d52133eef091" category="inline-link-rx"></block>有关所有受支持的升级路径信息、请参见。</block>
   <block id="dc00c7eca4a9deab6a54899a9976ba3a" category="inline-link">适用于VMware vSphere的ONTAP工具：RBAC配置</block>
-  <block id="788b65c29277d612dded28375da10d63" category="paragraph"><block ref="788b65c29277d612dded28375da10d63" category="inline-link-rx"></block></block>
   <block id="7230ef1fabe08177b3b9d5485ebc25c0" category="summary">适用于VMware vSphere的ONTAP工具可为使用NetApp存储系统的VMware环境中的虚拟机提供端到端生命周期管理。它使管理员可以直接管理vCenter Server中的存储、从而简化VMware环境的存储和数据管理。</block>
   <block id="47635be81cb27fe24be3c1541e49e8c2" category="doc">ONTAP工具概述</block>
   <block id="693059892f5ca1ab1683c98e037ee404" category="summary">如果您是VMware的新用户且从未使用过NetApp ONTAP工具产品、则需要在部署和配置ONTAP工具之前配置vCenter Server并设置ESXi主机。</block>
   <block id="65448065a2f2f124958039e28edbabea" category="inline-link">vSphere可用性</block>
-  <block id="fbb57199ec923b67225d34045004bf6b" category="paragraph"><block ref="fbb57199ec923b67225d34045004bf6b" category="inline-link-rx"></block></block>
   <block id="b43fbfd98dfaf4b96f25257f3e9b2fb2" category="inline-link">容错要求、限制和许可</block>
-  <block id="a64b4ff92d509abdca37912d111d8b75" category="paragraph"><block ref="a64b4ff92d509abdca37912d111d8b75" category="inline-link-rx"></block></block>
   <block id="9eb2bd2480a35c698be7fc3c56207ade" category="inline-link">创建和使用 vSphere HA 集群</block>
-  <block id="8ba8db309cceba7f21a793574c1afe8d" category="paragraph"><block ref="8ba8db309cceba7f21a793574c1afe8d" category="inline-link-rx"></block></block>
   <block id="d5a602ee44affae0e4490dbbdbaa5f11" category="inline-link">vSphere存储</block>
-  <block id="d8c3126ce2b45ce0418b727a648690c0" category="paragraph"><block ref="d8c3126ce2b45ce0418b727a648690c0" category="inline-link-rx"></block></block>
   <block id="98ce2155c1121498c5a221338cbeabba" category="inline-link">vSphere资源管理</block>
-  <block id="39fb4c28a1b3e9f759d4f64e35c4a186" category="list-text"><block ref="39fb4c28a1b3e9f759d4f64e35c4a186" category="inline-link-rx"></block></block>
   <block id="ea27a0fe6615456106a8a8e14128e542" category="inline-link">Site Recovery Manager安装和配置</block>
-  <block id="c54cdda5633175090273d24b51dc5af3" category="paragraph">有关详细步骤、请参见<block ref="6cc195dce48bd2dd3ffe672df568b352" category="inline-link-rx"></block></block>
-  <block id="fe59e60e6aae6c7bf8042ac60c40cebe" category="paragraph">适用于VMware vSphere的ONTAP工具支持VMware的SRM共享恢复站点配置。有关详细信息，请参阅：<block ref="75e1fea3675e833813f99378d6c8fa43" category="inline-link-rx"></block>。恢复站点上的Site Recovery Manager Server实例连接到相同的vCenter Server实例。</block>
   <block id="06c1fc03fbada06f75d3f177d952839e" category="paragraph">有关修改存储提供程序设置的详细信息、请参见Broadcom文档。</block>
   <block id="1766c36b7d852fbd898c8f3e8757adf1" category="inline-link">更改存储提供程序设置</block>
-  <block id="41b16f1277747476a53e60ae7f8ab4f1" category="paragraph"><block ref="41b16f1277747476a53e60ae7f8ab4f1" category="inline-link-rx"></block></block>
   <block id="8238925ee972c823b0ce36f54dc053b2" category="paragraph">有关修改SAN Provider设置的Broadcom文档提供了详细信息。</block>
   <block id="09662246d40be3f3890675feb3a8d887" category="inline-link">更改存储设置</block>
-  <block id="0d951b75f45de16bce85b82098223cfd" category="paragraph"><block ref="0d951b75f45de16bce85b82098223cfd" category="inline-link-rx"></block></block>
   <block id="d2a8cc12733d837b21d04e966da18849" category="inline-link">Site Recovery Manager安装和配置Site Recovery Manager</block>
   <block id="aa7e72b3419247f39d0e6b1a10ecde90" category="paragraph"><block ref="e8cde9e1b38fd82f2c0a7be37ca3e90f" category="inline-link-rx"></block>了解更多信息。</block>
   <block id="1131b5ba310f0132fa89f2e2bc52cb0c" category="paragraph">SnapMirror 扇出配置是指将源卷复制到两个不同目标的配置。当 SRM 需要从目标恢复虚拟机时，这些问题会在恢复期间造成问题。* 步骤 *</block>
   <block id="e9137eaa9a63d9c4bceed13dfb01d6db" category="admonition">从ONTAP工具 9.12 升级开始，所有存储系统的身份验证和通信过程都从基本身份验证更改为基于证书的身份验证，自动信任ONTAP存储证书。</block>
   <block id="04afb3bdbc4139cf45256b44141b1a77" category="list-text">您必须启用 SVM 管理 LIF 以支持多租户。</block>
-  <block id="0d6d5f3b6b0d7149732baa366c9a237a" category="paragraph"><block ref="0d6d5f3b6b0d7149732baa366c9a237a" category="inline-link-rx"></block></block>
+  <block id="91b8be87790f1992cddb99c3df97687e" category="paragraph"><block ref="91b8be87790f1992cddb99c3df97687e" category="inline-link-rx"></block></block>
+  <block id="be6b1b2df308def05b1fc2cc80c66b9f" category="paragraph"><block ref="be6b1b2df308def05b1fc2cc80c66b9f" category="inline-link-rx"></block></block>
+  <block id="d73eca98393b4e64f0e6ff440a390d4a" category="paragraph"><block ref="d73eca98393b4e64f0e6ff440a390d4a" category="inline-link-rx"></block></block>
+  <block id="f4d1718476f238773172cc8143587c05" category="paragraph"><block ref="f4d1718476f238773172cc8143587c05" category="inline-link-rx"></block></block>
+  <block id="4ea857035eb7bf4e5b487fd0017b6c49" category="paragraph"><block ref="4ea857035eb7bf4e5b487fd0017b6c49" category="inline-link-rx"></block></block>
+  <block id="078fd89e0663e2908a75d4151cbe2013" category="paragraph">有关如何从 Web-CLI 下载 ONTAP Privileges 文件的说明，请参见知识库文章 -<block ref="a811573e906ec8cd3af841b21d99cf53" category="inline-link-rx"></block>。</block>
+  <block id="ecc8859ed404439e7c5bcc5c72862732" category="paragraph"><block ref="ecc8859ed404439e7c5bcc5c72862732" category="inline-link-rx"></block></block>
+  <block id="3c2a09ae9f6decfa93e974177c15dd90" category="paragraph"><block ref="3c2a09ae9f6decfa93e974177c15dd90" category="inline-link-rx"></block></block>
+  <block id="61a6de8750122ad61076204cae050faa" category="paragraph"><block ref="61a6de8750122ad61076204cae050faa" category="inline-link-rx"></block></block>
+  <block id="61cd5b04105d081343fdec1179cf5901" category="paragraph"><block ref="61cd5b04105d081343fdec1179cf5901" category="inline-link-rx"></block></block>
+  <block id="7eefdc8bb60be1218fa934f9272631eb" category="paragraph"><block ref="7eefdc8bb60be1218fa934f9272631eb" category="inline-link-rx"></block></block>
+  <block id="fe668ea642ee362aeac68eed271a41d1" category="paragraph"><block ref="fe668ea642ee362aeac68eed271a41d1" category="inline-link-rx"></block></block>
+  <block id="e6de46eb127ec26f1447e73128975188" category="list-text"><block ref="e6de46eb127ec26f1447e73128975188" category="inline-link-rx"></block></block>
+  <block id="2303e6aa70eff9f1c774171f6d746383" category="list-text"><block ref="2303e6aa70eff9f1c774171f6d746383" category="inline-link-rx"></block></block>
+  <block id="02d0a0958e73fd8f6b196e0763aac98c" category="paragraph"><block ref="02d0a0958e73fd8f6b196e0763aac98c" category="inline-link-macro-rx"></block></block>
+  <block id="35b3af1a1cfa9f1cc6b3609a268a2504" category="paragraph"><block ref="35b3af1a1cfa9f1cc6b3609a268a2504" category="inline-link-rx"></block></block>
+  <block id="a2b32ea321e4a534147eb3bd7b2401cf" category="list-text">您应该已经从 NetApp 支持站点下载了适用于 VAAI <block ref="d7d0fd6d41e4cc9c277d6e7d82ae6981" prefix="(" category="inline-code"></block> 的 NFS 插件的安装包。<block ref="9a6f401ca1e7e89d8a0c29fb0cbe81b7" category="inline-link-rx"></block></block>
+  <block id="47470aed48989570ecc100f705ba53d0" category="paragraph">以下文章介绍了在启用 VCF 时向 ONTAP tools 添加存储的过程<block ref="ed33ddf5955a0bf4a289f507365f374d" category="inline-link-rx"></block>。</block>
+  <block id="a17ed124c8a1d2ae0f4150f5a3889e1b" category="paragraph">如果 VASA Provider (VP) 虚拟设备已丢失、无法访问或无法正常工作，则可能需要执行 VP 灾难恢复。有关详细信息，请参见<block ref="c0341709ce6c395f05b5ec7753855022" category="inline-link-rx"></block></block>
+  <block id="0889dd4939bf5d40755aefbc2b5ace6f" category="paragraph">有关详细步骤，请参见<block ref="87a41be64e346e7d37a848b921c8decc" category="inline-link-rx"></block></block>
+  <block id="b6fba731e586f3b19d6e2331982bf2b0" category="paragraph">ONTAP tools for VMware vSphere 支持 VMware 的 SRM 共享恢复站点配置。有关详细信息，请参见：<block ref="6779726ca24d7c4928fe6124f1eb99f8" category="inline-link-rx"></block>。恢复站点上的 Site Recovery Manager 服务器实例连接到相同的 vCenter 服务器实例。</block>
+  <block id="fefa96cf077a556cb227c891a2811c15" category="paragraph"><block ref="06aedc9caf62247608d9c38d40992e5c" category="inline-link-rx"></block> 知识库文章详细介绍了设置 SRA 以支持 SRM 共享恢复站点配置的过程。</block>
+  <block id="4e4691c15ed08225f90ace194f612972" category="paragraph"><block ref="4e4691c15ed08225f90ace194f612972" category="inline-link-rx"></block></block>
+  <block id="da5ccd5e0d25abdde390a07b70563258" category="paragraph"><block ref="da5ccd5e0d25abdde390a07b70563258" category="inline-link-rx"></block></block>
+  <block id="a4070a999b4b824e32915e4ad5eb924b" category="paragraph"><block ref="a4070a999b4b824e32915e4ad5eb924b" category="inline-link-rx"></block></block>
+  <block id="3904b96e16e0546b33dbcc3f9cc072d0" category="paragraph"><block ref="3904b96e16e0546b33dbcc3f9cc072d0" category="inline-link-rx"></block></block>
 </blocks>

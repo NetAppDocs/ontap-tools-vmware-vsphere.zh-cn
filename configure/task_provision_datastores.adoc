@@ -213,14 +213,14 @@ NOTE: 传统数据存储库中的 FlexGroup 不能缩减到低于现有大小，
 
 * 相关信息 *
 
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/Datastore_inaccessible_when_volume_status_is_changed_to_offline["当卷状态更改为脱机时，无法访问数据存储库"]
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/Datastore_inaccessible_when_volume_status_is_changed_to_offline["当卷状态更改为脱机时，无法访问数据存储库"^]
 
-https://docs.netapp.com/us-en/ontap/nfs-admin/ontap-support-kerberos-concept.html["ONTAP 支持 Kerberos"]
+https://docs.netapp.com/us-en/ontap/nfs-admin/ontap-support-kerberos-concept.html["ONTAP 支持 Kerberos"^]
 
 https://docs.netapp.com/us-en/ontap/nfs-admin/requirements-configuring-kerberos-concept.html["使用 NFS 配置 Kerberos 的要求"]
 
-https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/concept_kerberos_realm_services.html["使用 System Manager — ONTAP 9.7 及更早版本管理 Kerberos 域服务"]
+https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/concept_kerberos_realm_services.html["使用 System Manager — ONTAP 9.7 及更早版本管理 Kerberos 域服务"^]
 
-https://docs.netapp.com/us-en/ontap/nfs-config/create-kerberos-config-task.html["在数据 LIF 上启用 Kerberos"]
+https://docs.netapp.com/us-en/ontap/nfs-config/create-kerberos-config-task.html["在数据 LIF 上启用 Kerberos"^]
 
-https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-storage-7-0.html["vSphere存储"]
+https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-storage-7-0.html["vSphere存储"^]

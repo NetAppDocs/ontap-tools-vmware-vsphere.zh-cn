@@ -40,4 +40,4 @@ NOTE: 如果在启用 VASA Provider 扩展后， VASA Provider 状态仍显示�
 
 * 相关信息 *
 
-https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"]
+https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]
